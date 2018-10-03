@@ -1,0 +1,32 @@
+nav {
+	background-color: rgb(102, 102, 102);
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+
+nav a {
+	/* structure */
+	display: inline-block;
+	padding: .5rem .8rem;
+	font-size: 1.2rem;
+	
+	/* color & design */
+	color: white;
+	text-decoration: none;
+	background-color: rgb(102, 102, 102);
+	
+}
+
+nav a.first {
+	border-radius: 15px 0px 0px 15px;
+}
+
+nav a#current-tab {
+	background-color: rgb(255, 187, 64);
+}
+
+nav a:hover {
+	background-color: #888;
+	opacity: 1;
+}
