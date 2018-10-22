@@ -14,14 +14,17 @@ $(document).ready(function() {
                 content += `
                     <tr>
                         <td>${track_no}</td>
-                        <td>${recording.source}</td>
+
                         <td> 
+                            <!--            
                             <audio id="${filename}" src="data/${filename}"></audio>
                             <span> 
                                 <button name="${filename}" onclick="togglePlayAudio('${filename}')">${playSymbol}</button> 
                             </span>
-                            ${sourceLink} <br>
+                            -->
 
+                            ${sourceLink} <br>
+                           
                             <!-- 
                             <audio controls>
                                 <source src="data/${filename}" type="audio/mpeg">
@@ -32,10 +35,13 @@ $(document).ready(function() {
                             </audio> 
                             -->
 
-
                         </td>
+
+                        <td><audio src="data/${filename}" controls="controls"></audio></td>			
+                        <td>${recording.source}</td>
                         <td>${recording.type}</td>	
-                        <td style="white-space:nowrap;">${recording.recording_date}</td>				
+                        <td style="white-space:nowrap;">${recording.recording_date}</td>	
+                        
                     </tr>
                 `;
                 track_no--; 
