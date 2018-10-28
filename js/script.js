@@ -3,93 +3,70 @@ let stopSymbol = '&#9724;';
 
 $(document).ready(function() {
     $.getJSON('data/audio.json', function(recordings) {         
+
+        // remove empty records
+        recordings = recordings.filter((r) => {return r.title != ''})
+
+
+        // paging
+        let pageNum = parseInt(getQueryParam('page'));
+        pageNum = pageNum ? pageNum : 1; 
+        const PAGE_LIMIT = 10;
+
+        let page = { 
+            offset: (pageNum > 0) ? (pageNum - 1) * PAGE_LIMIT : 0,
+            max:  Math.ceil((recordings.length-1) / PAGE_LIMIT), 
+            min: 1,
+        }
+
+        $('#pageNum').append(pageNum); 
+        $('#pageMax').append(page.max); 
+        
+        if (pageNum - 1 >= page.min) {
+            $('#prevLink').attr('href', '?page='+(pageNum-1));
+        } else { 
+            $('#prevLink').addClass('disabled');
+        }
+        
+        if (pageNum + 1 <= page.max) {
+            $('#nextLink').attr('href', '?page='+(pageNum+1));
+        } else { 
+            $('#nextLink').addClass('disabled');
+        }
+
+        // get first 10 records from recording 
+        let records = recordings.slice(page.offset, page.offset + PAGE_LIMIT); 
+
         let content = ''; 
-        let track_no = recordings.length - 1;
-        recordings.map( (recording)=> { 
-            if (recording.title) {
-                let filename = recording.recording_date + '.mp3';
-                let sourceLink = (recording.url) 
-                                ? `<a href="${recording.url}">${recording.title}</a>`
-                                : `<span>${recording.title}</span>`; 
+        records.map( (record) => { 
+            if (record.title) {
+                let filename = record.recording_date + '.mp3';
+                let sourceLink = (record.url) 
+                                ? `<a href="${record.url}">${record.title}</a>`
+                                : `<span>${record.title}</span>`; 
                 content += `
                     <tr>
-                        <td>${track_no}</td>
-
-                        <td> 
-                            <!--            
-                            <audio id="${filename}" src="data/${filename}"></audio>
-                            <span> 
-                                <button name="${filename}" onclick="togglePlayAudio('${filename}')">${playSymbol}</button> 
-                            </span>
-                            -->
-
-                            ${sourceLink} <br>
-                           
-                            <!-- 
-                            <audio controls>
-                                <source src="data/${filename}" type="audio/mpeg">
-                                <p>
-                                    Your browser does not support HTML5 audio, but you can still 
-                                    <a href="${filename}">download the audio file</a>.
-                                </p>
-                            </audio> 
-                            -->
-
-                        </td>
-
+                        <td>${record.id}</td>
+                        <td>${sourceLink}</td>
                         <td><audio src="data/${filename}" controls="controls"></audio></td>			
-                        <td>${recording.source}</td>
-                        <td>${recording.type}</td>	
-                        <td style="white-space:nowrap;">${recording.recording_date}</td>	
-                        
+                        <td>${record.source}</td>
+                        <td>${record.type}</td>	
+                        <td style="white-space:nowrap;">${record.recording_date}</td>	
                     </tr>
                 `;
-                track_no--; 
             }
             
         })
-        $('#audio_table').append(content); 
+        $('#audio_table_body').append(content); 
     });
 }); 
 
-var playingFilename = ''; 
-
-function togglePlayAudio(filename) { 
-    let audioFile = document.getElementById(filename); 
-    let buttonPlayStatus = $('button[name="'+ filename + '"]'); 
-    
-
-    if (playingFilename) { 
-        if (playingFilename != filename) {
-            // Pause the previous selected track
-            let prevAudioFile =  document.getElementById(playingFilename);
-            let prevButtonPlayStatus = $('button[name="'+ playingFilename + '"]'); 
-            stopAudio(prevAudioFile, prevButtonPlayStatus); 
-            
-            playAudio(); 
-        }
-        else { 
-           stopAudio(audioFile, buttonPlayStatus); 
-        }
-    } else { 
-        playAudio(); 
-    }
-
-
-    function playAudio() { 
-        audioFile.play();
-        buttonPlayStatus.html(stopSymbol);
-        playingFilename = filename; 
-    }    
-
-    function stopAudio(audioFile, buttonPlayStatus) { 
-        audioFile.pause(); 
-        audioFile.currentTime = 0;
-        buttonPlayStatus.html(playSymbol);
-
-        playingFilename = '';
-    }
-    
+function getQueryParam(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-window.togglePlayAudio = togglePlayAudio;

@@ -46,6 +46,21 @@ a {
 	color: orange;
 }
 
+a.button { 
+	background: #aaa;
+	padding: 1px 3px;
+	border-radius: 2px;
+	font-weight: bold;
+	color: white;
+}
+
+a.button.disabled { 
+	background: white;
+	padding: 1px 3px;
+	opacity: 5;
+	font-weight: bold;
+	color: white;
+}
 
 
 .hide { 

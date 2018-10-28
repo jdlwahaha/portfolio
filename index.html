@@ -27,17 +27,35 @@
 			<div class="box-content">
 				 
 				<table id="audio_table">
-					<tr>
-						<th>#</th>
-						<th>Title</th>
-						<th>Audio</th>
-						<th>Source</th>
-						<th>Type</th>
-						<th>Date
-							<span title="Date of Recording">&#9432;</span>
-						</th>
-					</tr>
-				
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Title</th>
+							<th>Audio</th>
+							<th>Source</th>
+							<th>Type</th>
+							<th>Date
+								<span title="Date of Recording">&#9432;</span>
+							</th>
+						</tr>
+					</thead>
+					
+					<tbody id="audio_table_body">
+						<!-- jQuery generated -->
+					</tbody>
+
+					<tfoot>
+						<tr>
+							<td colspan="6">
+								<span style="float: right">
+									<a id="prevLink" class="button">&lt;</a>
+									Page <span id="pageNum"></span> out of <span id="pageMax"></span>
+									<a id="nextLink" class="button">&gt;</a>
+								</span>
+							</td>
+						</tr>
+					</tfoot>
+
 				</table>
 				
 				<p>
