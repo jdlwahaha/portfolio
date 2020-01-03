@@ -24,7 +24,7 @@ footer {
 	color: white;
 }
 
-#content {
+.content {
 	background-color: #efefef;
 	border-radius: 15px 15px 0 0;
 	
@@ -34,8 +34,14 @@ footer {
 	
 	margin-bottom: 0;
 	
+	/* display: block; */
+	display: none;
+}
+
+.active-content { 
 	display: block;
 }
+
 
 h1 { 
     font-weight: bold; 

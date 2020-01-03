@@ -2,6 +2,12 @@ let playSymbol = '&#9658;';
 let stopSymbol = '&#9724;'; 
 
 $(document).ready(function() {
+
+
+
+    loadPage(''); 
+
+
     $.getJSON('data/audio.json', function(recordings) {         
 
         // remove empty records
@@ -69,4 +75,18 @@ function getQueryParam(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+function loadPage(page) { 
+    var pages = ['home', 'quotes', 'books', 'jdreads']; 
+
+    // Remove all tab selection
+    $('nav a').removeClass('current-tab');
+    $('div.content').removeClass('active-content');
+
+    // Check if the url is valid. If not, redirect to home page 
+    var selectedPage = pages.find(p => p==page) ? page : pages[0]; 
+
+    $('#'+ selectedPage +'-content').addClass('active-content');
+    $(`a[href="#${selectedPage}"]`).addClass('current-tab');
 }
