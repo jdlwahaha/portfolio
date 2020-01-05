@@ -24,7 +24,7 @@ footer {
 	color: white;
 }
 
-#content {
+.content {
 	background-color: #efefef;
 	border-radius: 15px 15px 0 0;
 	
@@ -36,6 +36,11 @@ footer {
 	
 	display: block;
 }
+
+.active-content { 
+	display: block;
+}
+
 
 h1 { 
     font-weight: bold; 
@@ -65,4 +70,13 @@ a.button.disabled {
 
 .hide { 
     display: none;
+}
+
+ul { 
+	padding: 0 1rem; 
+	margin: 0;
+}
+ul > li{ 
+	list-style-type: square;
+	padding: .5rem 0;
 }
