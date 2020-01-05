@@ -34,8 +34,7 @@ footer {
 	
 	margin-bottom: 0;
 	
-	/* display: block; */
-	display: none;
+	display: block;
 }
 
 .active-content { 
@@ -71,4 +70,13 @@ a.button.disabled {
 
 .hide { 
     display: none;
+}
+
+ul { 
+	padding: 0 1rem; 
+	margin: 0;
+}
+ul > li{ 
+	list-style-type: square;
+	padding: .5rem 0;
 }
