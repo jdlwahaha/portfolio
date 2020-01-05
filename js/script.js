@@ -7,25 +7,25 @@
     
 
     function loadHeader() { 
-        var headerHtml = 
-            '<h1>My Little Space</h1>' +
-            '<nav>' +
-                '<!-- <a href="index.html" class="first">Home</a> -->' +
-                '<a href="jdreads.html" class="first">JDReads</a>' +
-                '<a href="quotes.html">Quotes</a>' +
-                '<!-- <a href="books.html">Books</a> -->' +
-            '</nav>';
+        var headerHtml = `
+            <h1>My Little Space</h1>
+            <nav>
+                <!-- <a href="index.html" class="first">Home</a> -->
+                <a href="jdreads.html" class="first">JDReads</a>
+                <a href="quotes.html">Quotes</a>
+                <!-- <a href="books.html">Books</a> -->
+            </nav>
+        `;
         $('header').append(headerHtml); 
         
     
         // read url and highlight tab 
-        var pages = [//'index',
-             'quotes', 'books', 'jdreads']; 
+        var pages = ['index','quotes', 'books', 'jdreads']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
     
-        let currentPage = pages.find(x => currentPageStr.indexOf(x)>=0);
+        let currentPage = pages.find(x => currentPageStr.includes(x));
         if (currentPage) { 
             $(`a[href="${currentPage}.html"]`).addClass('current-tab');
         } else { 

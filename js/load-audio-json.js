@@ -49,11 +49,13 @@ $(document).ready(function() {
                 content += `
                     <tr>
                         <td>${record.id}</td>
-                        <td>${sourceLink}</td>
-                        <td><audio src="data/${filename}" controls="controls"></audio></td>			
-                        <td>${record.source}</td>
-                        <td>${record.type}</td>	
-                        <td style="white-space:nowrap;">${record.recording_date}</td>	
+                        <td>
+                            ${sourceLink} <br>
+                            <audio src="data/${filename}" controls="controls"></audio>
+                        </td>			
+                        <td class="desktop">${record.source}</td>
+                        <td class="desktop">${record.type}</td>	
+                        <td style="white-space:nowrap;" class="desktop">${record.recording_date}</td>	
                     </tr>
                 `;
             }

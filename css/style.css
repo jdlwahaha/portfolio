@@ -80,3 +80,15 @@ ul > li{
 	list-style-type: square;
 	padding: .5rem 0;
 }
+
+
+#audio_table { 
+	width: 100%;
+}
+
+
+@media (max-width: 500px) { 
+	.desktop { 
+		display: none;
+	}
+}
