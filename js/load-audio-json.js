@@ -9,6 +9,7 @@ $(document).ready(function() {
         // remove empty records
         recordings = recordings.filter((r) => {return r.title != ''})
 
+        $('#total2020').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2020').length);
 
         // paging
         let pageNum = parseInt(getQueryParam('page'));
