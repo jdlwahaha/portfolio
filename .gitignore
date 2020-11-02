@@ -2,3 +2,4 @@
 **/*.wav
 **/notes/*
 **/*.DS_Store
+**/go/*
