@@ -37,7 +37,7 @@
     
     
     function loadFooter() {
-        $('footer').append('Copyrighted &copy; 2018-2020');
+        $('footer').append('Copyrighted &copy; 2018-2021');
     }
     
 })(); 
