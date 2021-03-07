@@ -8,7 +8,7 @@
 
     function loadHeader() { 
         var headerHtml = `
-            <h1>JDReads</h1>
+            <a href="jdreads.html"><h1>JDReads</h1></a>
             <nav>
                 <!-- <a href="index.html" class="first">Home</a> -->
                 <a href="jdreads.html" class="first">JDReads</a>
@@ -19,6 +19,7 @@
         `;
         $('header').append(headerHtml); 
         
+
     
         // read url and highlight tab 
         var pages = ['index', 'jdreads', 'about']; 

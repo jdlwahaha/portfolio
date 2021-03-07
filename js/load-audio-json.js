@@ -9,11 +9,12 @@ $(document).ready(function() {
         // remove empty records
         recordings = recordings.filter((r) => {return r.title != ''})
 
-        // $('#total2020').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2020').length);
-        $('#total2021').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2021').length);
-        $('#total2020').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2020').length);
-        $('#total2019').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2019').length);
-        $('#total2018').append(recordings.filter(r => r.recording_date.substr(0, 4) === '2018').length);
+        let count2021 = recordings.filter(r => r.recording_date.substr(0, 4) === '2021').length;
+        let goal = 50.0; 
+
+        let percent = Math.floor(count2021 / goal * 100);
+        $('#total2021').append(count2021);
+        $('span#progressbar').attr('style',`width: ${percent}%`)
 
         // paging
         let pageNum = parseInt(getQueryParam('page'));
