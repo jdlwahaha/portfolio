@@ -4,6 +4,25 @@
         "source": "",
         "url": "",
         "recording_date": "2021--",
+        "mic": "",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2021--",
+        "mic": "",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2021--",
+        "mic": "",
         "type": "article",
         "id": 57
     },
@@ -13,29 +32,15 @@
         "url": "",
         "recording_date": "2021--",
         "type": "article",
+        "mic": "",
         "id": 57
     },
     {
-        "title": "",
-        "source": "",
-        "url": "",
-        "recording_date": "2021--",
-        "type": "article",
-        "id": 57
-    },
-    {
-        "title": "",
-        "source": "",
-        "url": "",
-        "recording_date": "2021--",
-        "type": "article",
-        "id": 57
-    },
-    {
-        "title": "",
-        "source": "",
-        "url": "",
-        "recording_date": "2021--",
+        "title": "Amazon Fresh opens first 'till-less' grocery store in UK",
+        "source": "The Guardian",
+        "url": "https://www.theguardian.com/technology/2021/mar/04/amazon-fresh-opens-first-till-less-grocery-store-in-uk",
+        "recording_date": "2021-03-07",
+        "mic": "solocast",
         "type": "article",
         "id": 69
     },
