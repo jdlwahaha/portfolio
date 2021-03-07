@@ -8,10 +8,52 @@
         "id": 57
     },
     {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2020--",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2020--",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2020--",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "",
+        "source": "",
+        "url": "",
+        "recording_date": "2020--",
+        "type": "article",
+        "id": 57
+    },
+    {
+        "title": "Facebook faces US investigation for 'systemic' racial bias in hiring",
+        "source": "The Guardian",
+        "url": "https://www.theguardian.com/technology/2021/mar/05/facebook-systemic-racial-bias-hiring-eeoc-investigation",
+        "recording_date": "2020-03-06",
+        "mic": "solocast",
+        "type": "article",
+        "id": 62
+    },
+    {
         "title": "Health Watch",
         "source": "The Costco Connection",
         "url": "https://www.costcoconnection.ca/connectioncaeng/20210102/MobilePagedReplica.action?pm=2&folio=12#pg15",
         "recording_date": "2021-03-01",
+        "mic": "solocast",
         "type": "magazine",
         "id": 61
     },
@@ -20,6 +62,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/games/2021/feb/23/sony-new-virtual-reality-headset-playstation-5-vr",
         "recording_date": "2021-02-23",
+        "mic": "solocast",
         "type": "article",
         "id": 60
     },
