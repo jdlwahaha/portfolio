@@ -60,7 +60,8 @@ $(document).ready(function() {
                             <audio src="data/${filename}" controls="controls"></audio>
                         </td>			
                         <td class="desktop">${record.source}</td>
-                        <td class="desktop">${record.type}</td>	
+                        <td class="desktop">${record.type}</td> 
+                        <td class="desktop">${record.mic}</td>	
                         <td style="white-space:nowrap;" class="desktop">${record.recording_date}</td>	
                     </tr>
                 `;

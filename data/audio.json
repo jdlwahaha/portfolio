@@ -71,6 +71,7 @@
         "source": "The Guardain",
         "url": "https://www.theguardian.com/technology/2020/oct/12/facebook-to-ban-content-that-denies-or-distorts-the-holocaust",
         "recording_date": "2020-10-12",
+        "mic": "dynex",
         "type": "article",
         "id": 65
     },
@@ -79,6 +80,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/games/2020/jun/12/playstation-5-video-games-console-not-dead-ps5",
         "recording_date": "2020-07-23",
+        "mic": "dynex",
         "type": "article",
         "id": 64
     },
@@ -88,6 +90,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.com/connection/202007/MobilePagedReplica.action?pm=1&folio=17#pg20",
         "recording_date": "2020-07-21",
+        "mic": "dynex",
         "type": "article",
         "id": 63
     },
@@ -96,6 +99,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.com/connection/202007/MobilePagedReplica.action?pm=1&folio=19#pg22",
         "recording_date": "2020-07-20",
+        "mic": "bose",
         "type": "article",
         "id": 62
     },
@@ -104,6 +108,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.com/connection/202007/MobilePagedReplica.action?pm=1&folio=15#pg18",
         "recording_date": "2020-07-16",
+        "mic": "dynex",
         "type": "article",
         "id": 61
     },
@@ -112,6 +117,7 @@
         "source": "The Costco Connection",
         "url": "https://www.costcoconnection.ca/connectioncaeng/20200708/MobilePagedReplica.action?pm=1&folio=11#pg14",
         "recording_date": "2020-07-15",
+        "mic": "dynex",
         "type": "article",
         "id": 60
     },
@@ -120,6 +126,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2020/jul/11/huawei-believes-it-can-supply-5g-kit-to-uk-despite-us-sanctions",
         "recording_date": "2020-07-13",
+        "mic": "dynex",
         "type": "article",
         "id": 59
     },
@@ -128,6 +135,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2020/feb/04/google-software-glitch-sent-some-users-videos-to-strangers",
         "recording_date": "2020-02-05",
+        "mic": "dynex",
         "type": "article",
         "id": 58
     },
@@ -136,6 +144,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2020/jan/15/twitter-drops-grindr-from-ad-network-over-data-breaches",
         "recording_date": "2020-01-15",
+        "mic": "dynex",
         "type": "article",
         "id": 57
     },
@@ -144,6 +153,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/commentisfree/2020/jan/11/we-are-approaching-the-limits-of-computer-power-we-need-new-programmers-n-ow",
         "recording_date": "2020-01-14",
+        "mic": "dynex",
         "type": "article",
         "id": 56
     },
@@ -152,6 +162,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.ca/connectioncaeng/20200102/MobilePagedReplica.action?pm=1&folio=11#pg14",
         "recording_date": "2020-01-12",
+        "mic": "dynex",
         "type": "magazine",
         "id": 55
     },
@@ -160,6 +171,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.com/connection/202001/MobilePagedReplica.action?pm=1&folio=27#pg30",
         "recording_date": "2020-01-05",
+        "mic": "dynex",
         "type": "magazine",
         "id": 54
     },
@@ -168,6 +180,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/money/2020/jan/03/uk-credit-card-debts-fall-for-first-time-since-2013",
         "recording_date": "2020-01-03",
+        "mic": "dynex",
         "type": "article",
         "id": 53
     },
@@ -177,6 +190,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/dec/31/get-cybersecure-for-2020-cybersecurity-passwords-smartphone",
         "recording_date": "2020-01-02",
+        "mic": "dynex",
         "type": "article",
         "id": 52
     },
@@ -185,6 +199,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/apr/15/free-speech-row-us-tv-channel-forces-removal-of-tweets",
         "recording_date": "2019-04-16",
+        "mic": "dynex",
         "type": "article",
         "id": 51
     },
@@ -193,6 +208,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/apr/09/facebook-to-use-artificial-intelligence-to-stop-telling-users-to-say-hi-to-dead-friends",
         "recording_date": "2019-04-09",
+        "mic": "dynex",
         "type": "article",
         "id": 50
     },
@@ -201,6 +217,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/mar/11/tesla-performs-u-turn-over-store-closures",
         "recording_date": "2019-03-11",
+        "mic": "dynex",
         "type": "article",
         "id": 49
     },
@@ -209,6 +226,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/mar/08/new-interracial-couple-emoji-tinder",
         "recording_date": "2019-03-10",
+        "mic": "dynex",
         "type": "article",
         "id": 48
     },
@@ -217,6 +235,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/feb/18/huawei-founder-defies-us-over-criminal-charges-against-firm",
         "recording_date": "2019-02-20",
+        "mic": "dynex",
         "type": "article",
         "id": 47
     },
@@ -225,6 +244,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/feb/08/facebook-youth-team-messenger-kids-app-lol-meme-hub",
         "recording_date": "2019-02-09",
+        "mic": "dynex",
         "type": "article",
         "id": 46
     },
@@ -233,6 +253,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/feb/05/eu-recalls-childrens-smartwatch-over-data-fears",
         "recording_date": "2019-02-05",
+        "mic": "dynex",
         "type": "article",
         "id": 45
     },
@@ -241,6 +262,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/feb/01/closure-google-plus-everything-you-need-to-know",
         "recording_date": "2019-02-04",
+        "mic": "dynex",
         "type": "article",
         "id": 44
     },
@@ -249,6 +271,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/jan/18/tesla-to-cut-more-than-3000-jobs-because-cars-still-too-expensive-elon-musk",
         "recording_date": "2019-01-18",
+        "mic": "dynex",
         "type": "article",
         "id": 43
     },
@@ -257,6 +280,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.ca/connectioncaeng/connectioncaeng?pg=32#pg32",
         "recording_date": "2019-01-17",
+        "mic": "dynex",
         "type": "magazine",
         "id": 42
     },
@@ -265,6 +289,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.ca/connectioncaeng/connectioncaeng?pg=14#pg14",
         "recording_date": "2019-01-16",
+        "mic": "dynex",
         "type": "magazine",
         "id": 41
     },
@@ -273,6 +298,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2019/jan/11/huawei-employee-arrested-in-poland-over-chinese-spy-allegations",
         "recording_date": "2019-01-14",
+        "mic": "dynex",
         "type": "article",
         "id": 40
     },
@@ -281,6 +307,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/lifeandstyle/2018/nov/24/joy-of-small-things-sounds-of-sports-hannah-jane-parkinson",
         "recording_date": "2018-12-03",
+        "mic": "dynex",
         "type": "article",
         "id": 39
     },
@@ -289,6 +316,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.ca/connectioncaeng/20181112?pg=20#pg20",
         "recording_date": "2018-11-26",
+        "mic": "dynex",
         "type": "magazine",
         "id": 38
     },
@@ -297,6 +325,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/nov/21/amazon-hit-with-major-data-breach-days-before-black-friday",
         "recording_date": "2018-11-25",
+        "mic": "dynex",
         "type": "article",
         "id": 37
     },
@@ -305,6 +334,7 @@
         "source": "The Costco Connection",
         "url": "http://www.costcoconnection.ca/connectioncaeng/20180910?pg=14#pg14",
         "recording_date": "2018-11-03",
+        "mic": "dynex",
         "type": "magazine",
         "id": 36
     },
@@ -313,6 +343,7 @@
         "source": "The Costco Connection",
         "url": "",
         "recording_date": "2018-10-27",
+        "mic": "dynex",
         "type": "magazine",
         "id": 35
     },
@@ -321,6 +352,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/oct/23/exclusive-tech-tax-jeffrey-sachs-ai-wealth-facebook-google-amazon",
         "recording_date": "2018-10-23",
+        "mic": "dynex",
         "type": "article",
         "id": 34
     },
@@ -329,6 +361,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/oct/18/amazon-creates-600-technology-jobs-in-manchester",
         "recording_date": "2018-10-21",
+        "mic": "dynex",
         "type": "article",
         "id": 33
     },
@@ -337,6 +370,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/lifeandstyle/2018/oct/14/four-steps-to-better-brain-health",
         "recording_date": "2018-10-15",
+        "mic": "dynex",
         "type": "article",
         "id": 32
     },
@@ -345,6 +379,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/oct/08/google-plus-security-breach-wall-street-journal",
         "recording_date": "2018-10-13",
+        "mic": "dynex",
         "type": "article",
         "id": 31
     },
@@ -353,6 +388,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/aug/09/from-virgin-to-tesla-why-companies-go-cool-on-public-ownership",
         "recording_date": "2018-10-11",
+        "mic": "dynex",
         "type": "article",
         "id": 30
     },
@@ -361,6 +397,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/oct/08/uk-high-court-blocks-mass-privacy-action-against-google",
         "recording_date": "2018-10-08",
+        "mic": "dynex",
         "type": "article",
         "id": 29
     },
@@ -369,6 +406,7 @@
         "source": "Investing.com",
         "url": "https://www.investing.com/news/stock-market-news/asian-shares-fall-as-china-set-to-reopen-after-beijing-eases-policy-1634936",
         "recording_date": "2018-10-07",
+        "mic": "dynex",
         "type": "article",
         "id": 28
     },
@@ -377,6 +415,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/business/2018/oct/04/world-markets-rattled-by-us-inflation-concerns",
         "recording_date": "2018-10-04",
+        "mic": "dynex",
         "type": "article",
         "id": 27
     },
@@ -385,6 +424,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/oct/04/apple-google-and-amazon-named-as-most-valuable-brands-in-world",
         "recording_date": "2018-10-03",
+        "mic": "dynex",
         "type": "article",
         "id": 26
     },
@@ -393,6 +433,7 @@
         "source": "Investing.com",
         "url": "https://www.investing.com/news/stock-market-news/tencents-online-music-unit-files-for-us-listing-1632123",
         "recording_date": "2018-10-02",
+        "mic": "dynex",
         "type": "article",
         "id": 25
     },
@@ -401,6 +442,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/music/2017/jun/17/katy-perry-beats-bieber-and-trump-to-top-100m-twitter-followers",
         "recording_date": "2018-09-30",
+        "mic": "dynex",
         "type": "article",
         "id": 24
     },
@@ -409,6 +451,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/sep/28/facebook-50-million-user-accounts-security-berach",
         "recording_date": "2018-09-29",
+        "mic": "dynex",
         "type": "article",
         "id": 23
     },
@@ -417,6 +460,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/sep/27/sec-sues-elon-musk-and-tesla-over-plans-to-make-company-private",
         "recording_date": "2018-09-28",
+        "mic": "dynex",
         "type": "article",
         "id": 22
     },
@@ -425,6 +469,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/sep/25/instagram-co-founders-resign-to-explore-creativity-again",
         "recording_date": "2018-09-25",
+        "mic": "dynex",
         "type": "article",
         "id": 21
     },
@@ -433,6 +478,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/sep/24/speech-recognition-tech-google",
         "recording_date": "2018-09-24",
+        "mic": "dynex",
         "type": "article",
         "id": 20
     },
@@ -441,6 +487,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/sep/04/amazon-becomes-worlds-second-1tn-company",
         "recording_date": "2018-09-05",
+        "mic": "dynex",
         "type": "article",
         "id": 19
     },
@@ -449,6 +496,7 @@
         "source": "The Costco Connection",
         "url": "",
         "recording_date": "2018-07-02",
+        "mic": "dynex",
         "type": "magazine",
         "id": 18
     },
@@ -457,6 +505,7 @@
         "source": "The Costco Connection",
         "url": "",
         "recording_date": "2018-07-01",
+        "mic": "dynex",
         "type": "magazine",
         "id": 17
     },
@@ -465,6 +514,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/29/lite-fantastic-why-slimmed-down-phone-apps-are-the-fast-way-forward",
         "recording_date": "2018-06-30",
+        "mic": "dynex",
         "type": "article",
         "id": 16
     },
@@ -473,6 +523,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/global/2018/jun/24/landline-mobile-guide-death-telephone",
         "recording_date": "2018-06-25",
+        "mic": "dynex",
         "type": "article",
         "id": 15
     },
@@ -481,6 +532,7 @@
         "source": "The Economist",
         "url": "https://www.highbeam.com/doc/1G1-542667309.html",
         "recording_date": "2018-06-24",
+        "mic": "dynex",
         "type": "article",
         "id": 14
     },
@@ -489,6 +541,7 @@
         "source": "The Economist",
         "url": "https://www.economist.com/science-and-technology/2018/06/16/computer-algorithms-can-test-the-dodginess-of-published-results",
         "recording_date": "2018-06-23",
+        "mic": "dynex",
         "type": "article",
         "id": 13
     },
@@ -497,6 +550,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/22/the-engineering-sector-needs-more-women",
         "recording_date": "2018-06-22",
+        "mic": "dynex",
         "type": "article",
         "id": 12
     },
@@ -505,6 +559,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/media/2018/jun/22/netflix-chief-of-communications-leaving-after-reports-of-using-n-word",
         "recording_date": "2018-06-21",
+        "mic": "dynex",
         "type": "article",
         "id": 11
     },
@@ -513,6 +568,7 @@
         "source": "The Economist",
         "url": "https://www.economist.com/finance-and-economics/2018/06/07/american-firms-will-be-hit-hard-by-retaliatory-tariffs",
         "recording_date": "2018-06-17",
+        "mic": "dynex",
         "type": "article",
         "id": 10
     },
@@ -521,6 +577,7 @@
         "source": "The Economist",
         "url": "https://www.economist.com/business/2018/06/14/google-runs-into-more-flak-on-artificial-intelligence",
         "recording_date": "2018-06-16",
+        "mic": "dynex",
         "type": "article",
         "id": 9
     },
@@ -529,6 +586,7 @@
         "source": "Brendon Burchard",
         "url": "https://www.amazon.ca/High-Performance-Habits-Extraordinary-People/dp/1401952852",
         "recording_date": "2018-06-15",
+        "mic": "dynex",
         "type": "book",
         "id": 8
     },
@@ -537,6 +595,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/08/facebook-advertises-for-fake-news-fact-checkers",
         "recording_date": "2018-06-10",
+        "mic": "dynex",
         "type": "article",
         "id": 7
     },
@@ -545,6 +604,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/09/apple-first-company-valued-at-1-trillion",
         "recording_date": "2018-06-09",
+        "mic": "dynex",
         "type": "article",
         "id": 6
     },
@@ -553,6 +613,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/askjack/2018/may/17/how-can-i-stop-an-unexpected-windows-10-update",
         "recording_date": "2018-06-08",
+        "mic": "dynex",
         "type": "article",
         "id": 5
     },
@@ -561,6 +622,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/07/scooters-littering-city-streets-shout-at-people-unlock-me-or-ill-call-the-police",
         "recording_date": "2018-06-07",
+        "mic": "dynex",
         "type": "article",
         "id": 4
     },
@@ -569,6 +631,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/05/ios-12-iphone-new-operating-system-everything-you-need-to-know-notifications-privacy-emoji",
         "recording_date": "2018-06-05",
+        "mic": "dynex",
         "type": "article",
         "id": 3
     },
@@ -577,6 +640,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/04/microsoft-is-buying-code-sharing-site-github-say-reports",
         "recording_date": "2018-06-04",
+        "mic": "dynex",
         "type": "article",
         "id": 2
     },
@@ -585,6 +649,7 @@
         "source": "The Guardian",
         "url": "https://www.theguardian.com/technology/2018/jun/01/facebook-teens-leaving-instagram-snapchat-study-user-numbers",
         "recording_date": "2018-06-03",
+        "mic": "dynex",
         "type": "article",
         "id": 1
     }
