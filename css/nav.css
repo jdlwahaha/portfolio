@@ -22,7 +22,8 @@ nav a.first {
 	border-radius: 15px 0px 0px 15px;
 }
 
-nav a.current-tab {
+nav a.current-tab, 
+nav a.current-tab:hover  {
 	background-color: rgb(255, 187, 64);
 }
 
