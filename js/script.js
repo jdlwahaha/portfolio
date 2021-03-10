@@ -22,7 +22,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['index', 'jdreads', 'about']; 
+        var pages = ['index', 'jdreads', 'about', 'typerace']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
