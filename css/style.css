@@ -142,3 +142,44 @@ ul > li{
     position: relative;
     overflow: hidden;
 }
+
+#youtube-calendar { 
+    border: solid #856404 1px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+ td, th {
+    border: solid #856404 1px;
+
+  }
+
+#youtube-calendar th {
+    width: 10%;
+    padding: 0;
+    text-align: left;
+    font-weight: normal;
+    color: black;
+}
+
+#youtube-calendar .today { 
+    background: #fff3cd;
+    border: solid 856404 1px;
+}
+
+#youtube-calendar tr.number td {
+    text-align: right;
+    margin-right: .2rem;
+    border-bottom: solid white 1px;
+    
+
+}
+
+#youtube-calendar tr.data td {
+    border-top: solid white 1px;
+    height: 100px;
+    /* border-bottom: solid black 1px; */
+    /* border-right: solid black 1px; */
+
+}

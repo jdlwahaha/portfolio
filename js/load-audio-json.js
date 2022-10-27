@@ -9,12 +9,6 @@ $(document).ready(function() {
         // remove empty records
         recordings = recordings.filter((r) => {return r.title != ''})
 
-        let count2021 = recordings.filter(r => r.recording_date.substr(0, 4) === '2021').length;
-        let goal = 50.0; 
-
-        let percent = Math.floor(count2021 / goal * 100);
-        $('#total2021').append(count2021);
-        $('span#progressbar').attr('style',`width: ${percent}%`)
 
         // paging
         let pageNum = parseInt(getQueryParam('page'));

@@ -8,12 +8,14 @@
 
     function loadHeader() { 
         var headerHtml = `
-            <a href="jdreads.html"><h1>JDReads</h1></a>
+            <a href="youtube.html"><h1>My Space</h1></a>
             <nav>
                 <!-- <a href="index.html" class="first">Home</a> -->
-                <a href="jdreads.html" class="first">JDReads</a>
+                <a href="youtube.html" class="first">YouTube</a>
+                <a href="jdreads.html">JDReads</a>
+
+
                 <!-- <a href="quotes.html">Quotes</a> -->
-                <a href="about.html">About</a>
                 <!-- <a href="books.html">Books</a> -->
             </nav>
         `;
@@ -22,7 +24,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['index', 'jdreads', 'about', 'typerace']; 
+        var pages = ['index', 'jdreads', 'quotes', 'typerace', 'youtube']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
@@ -32,14 +34,14 @@
             $(`a[href="${currentPage}.html"]`).addClass('current-tab');
         } else { 
             // redirect to home page
-            window.location.href = window.location.origin + '/portfolio/jdreads.html'; 
+            window.location.href = window.location.origin + '/portfolio/youtube.html'; 
         }
     
     }
     
     
     function loadFooter() {
-        $('footer').append('Copyrighted &copy; 2018-2021');
+        $('footer').append('Copyrighted &copy; 2018-2022');
     }
     
 })(); 
