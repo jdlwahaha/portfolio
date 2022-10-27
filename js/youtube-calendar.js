@@ -2,7 +2,7 @@
     $(document).ready(function () {
 
         $.getJSON('data/youtube2.json', function (videos) {
-            // let thisMonth = (new Date()).getMonth();
+            let thisMonth = (new Date()).getMonth();
             loadCalendar(videos, undefined);
 
             document.getElementById('prevMonthBtn').addEventListener('click', () => { 
