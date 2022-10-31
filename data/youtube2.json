@@ -1,4 +1,15 @@
 [
+
+    {
+        "title": "Tech Deck - SGCS Zombie Deck (Common)", 
+        "videoId": "sqnh97cPzeA", 
+        "date": { 
+            "year": 2022, 
+            "month": 9, 
+            "day": 31
+        }, 
+        "url": "https://www.youtube.com/watch?v=sqnh97cPzeA"
+    },
     {
         "title": "【Speaker Test】Gigabyte U4 i5 vs Macbook Air 2020 i7",
         "videoId": "CPjf5Gf-y5E",
@@ -20,7 +31,7 @@
         "url": "https://www.youtube.com/watch?v=uW58Xue3734"
     },
     {
-        "title": "Tech Deck - Finesse Mecha deck",
+        "title": "Tech Deck - Finesse Mecha deck (Rare)",
         "videoId": "Qoyvlhtx5gg",
         "date": {
             "year": 2022,
@@ -30,7 +41,7 @@
         "url": "https://www.youtube.com/watch?v=Qoyvlhtx5gg"
     },
     {
-        "title": "Tech Deck - DGK Neon Invasion",
+        "title": "Tech Deck - DGK Neon Invasion (Ultra Rare)",
         "videoId": "qSznDFbmqDI",
         "date": {
             "year": 2022,
@@ -60,7 +71,7 @@
         "url": "https://www.youtube.com/watch?v=YuC-KV4PwUk"
     },
     {
-        "title": "Tech Deck - Primitive Ultra Rare Platinum Skateboard",
+        "title": "Tech Deck - Primitive Platinum Skateboard (Ultra Rare)",
         "videoId": "Zu2Yc8nXb2U",
         "date": {
             "year": 2022,

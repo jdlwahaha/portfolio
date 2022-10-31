@@ -58,6 +58,12 @@ nav a:hover {
 .submenu a:hover { 
     color: rgb(255, 196, 0);
 }
+.submenu span.last-updated { 
+	border-bottom: none;
+	color: #333;
+    float: right;
+	font-size: 12px;
+}
 
 .month-nav { 
 	text-align: center;
@@ -69,3 +75,4 @@ nav a:hover {
 	display: inline-block;
 	font-size: larger;
 }
+

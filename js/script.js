@@ -11,7 +11,7 @@
             <a href="youtube.html"><h1>My Space</h1></a>
             <nav>
                 <!-- <a href="index.html" class="first">Home</a> -->
-                <a href="youtube.html" class="first">YouTube</a>
+                <a href="youtube.html" class="first">GO _</a>
                 <a href="jdreads.html">JDReads</a>
 
 
