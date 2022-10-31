@@ -21,7 +21,7 @@
         let htmlContent = '';
         videos.map(video => {
             if (video.videoId) {
-                const link = `https://youtu.be/${video.url}`
+                const link = `https://youtu.be/${video.videoId}`
                 htmlContent += `<a href="${link}" target="_blank">${video.title}</a><br>`
             }
         });

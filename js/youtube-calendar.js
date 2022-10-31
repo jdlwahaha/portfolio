@@ -101,7 +101,7 @@
                     if (publishedVideo) {
                         content = `
                             <td ${(isToday ? 'class="today"': '')}>
-                                <a target="_blank" href="${publishedVideo.url}">
+                                <a target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
                                     ${publishedVideo.title}
                                 </a>
                             </td>
