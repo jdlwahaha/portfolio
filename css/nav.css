@@ -35,10 +35,8 @@ nav a:hover {
 .submenu { 
 	padding-top: 1rem;
 	padding-left: 1rem;
-	padding-bottom: .5rem;
+	/* padding-bottom: .5rem; */
 	font-weight: bold;
-	margin-bottom: 1rem;
-	/* padding-bottom: 0; */
 }
 
 .submenu span, 
@@ -58,12 +56,6 @@ nav a:hover {
 .submenu a:hover { 
     color: rgb(255, 196, 0);
 }
-.submenu span.last-updated { 
-	border-bottom: none;
-	color: #333;
-    float: right;
-	font-size: 12px;
-}
 
 .month-nav { 
 	text-align: center;
@@ -71,8 +63,22 @@ nav a:hover {
 }
 
 .month-nav #selectedMonthName{ 
-	width: 100px;
+	width: 200px;
 	display: inline-block;
 	font-size: larger;
 }
 
+
+div.last-updated { 
+	margin-right: 1rem;
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+div.last-updated span { 
+	border-bottom: none;
+	color: #333;
+	font-size: 12px;
+    float: right;
+}

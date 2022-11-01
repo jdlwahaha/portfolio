@@ -150,16 +150,19 @@ ul > li{
 }
 
 
-td, th {
+#youtube-calendar td, 
+#youtube-calendar th {
     border: solid #856404 1px;
 }
 
 #youtube-calendar th {
     width: 10%;
     padding: 0;
-    text-align: left;
+    text-align: center;
     font-weight: normal;
     color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #youtube-calendar .today { 

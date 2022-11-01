@@ -58,7 +58,7 @@
         // let name = month[currentMonth];
         // console.log({uh:currentYear + "-" + (currentMonth+1) + "-01", lastDayOfMonth, dayOfFirst, currentYear, currentMonth, day, name})
         
-        document.getElementById('selectedMonthName').innerHTML =(getMonthName(currentMonth));
+        document.getElementById('selectedMonthName').innerHTML = (getMonthName(currentMonth)) + ' 2022';
 
         let dayCounter = 0;
         let dayCounterForData = 0;
