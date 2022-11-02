@@ -1,0 +1,39 @@
+#youtube-calendar { 
+    border: solid #856404 1px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#youtube-calendar td, 
+#youtube-calendar th {
+    border: solid #856404 1px;
+}
+
+#youtube-calendar th {
+    width: 10%;
+    padding: 0;
+    text-align: center;
+    font-weight: normal;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#youtube-calendar .today { 
+    background: #fff3cd;
+    border: solid 856404 1px;
+}
+
+#youtube-calendar tr.number td {
+    text-align: right;
+    margin-right: .2rem;
+    border-bottom: solid white 1px;
+}
+
+#youtube-calendar tr.data td {
+    border-top: solid white 1px;
+    height: 100px;
+    text-align: top;
+    vertical-align: top;
+}
