@@ -43,7 +43,7 @@ div.list-item {
 }
 
 
-@media (max-width: 600px) { 
+@media (max-width: 500px) { 
 
     #youtube-calendar tr.data td {
         height: 50px;
