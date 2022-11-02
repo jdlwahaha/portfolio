@@ -37,3 +37,15 @@
     text-align: top;
     vertical-align: top;
 }
+
+div.list-item { 
+    margin-bottom: .2rem;
+}
+
+
+@media (max-width: 600px) { 
+
+    #youtube-calendar tr.data td {
+        height: 50px;
+    }
+}

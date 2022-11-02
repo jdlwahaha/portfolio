@@ -72,7 +72,7 @@
             const videoDate = video.date.year + '-' + appendZero(video.date.month+1) + '-' + appendZero(video.date.day);
             if (video.videoId) {
                 const link = `https://youtu.be/${video.videoId}`
-                htmlContent += `${videoDate} <a href="${link}" target="_blank">${video.title}</a><br>`
+                htmlContent += `<div class="list-item">${videoDate} <a href="${link}" target="_blank">${video.title}</a><div>`
             }
         });
         return htmlContent;
