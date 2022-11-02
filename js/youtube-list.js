@@ -52,8 +52,8 @@
             <div class="meter">
                 <span class="progressbar" style="width: ${percent}%"></span>
                 <strong>
-                    <span class="progress">${current_count}</span> out of 
-                    <span class="goal">${video_num_goal}</span>
+                    <span class="progress">${current_count}</span> ${(current_count > 1) ? 'videos' : 'video'}
+                    <!--<span class="goal">${video_num_goal}</span> -->
                 </strong>
             </div>
             <br>
