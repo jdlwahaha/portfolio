@@ -102,13 +102,13 @@ ul > li{
 }
 
 
-@media (max-width: 600px) { 
+@media (max-width: 500px) { 
     .desktop { 
         display: none;
     }
 
     .mobile { 
-        display:inline-block;
+        display: inline-block;
     }
 }
 
