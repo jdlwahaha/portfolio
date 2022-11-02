@@ -72,6 +72,10 @@ a.button.disabled {
     display: none;
 }
 
+.mobile { 
+    display: none;
+}
+
 ul { 
     padding: 0 1rem; 
     margin: 0;
@@ -86,13 +90,6 @@ ul > li{
     width: 100%;
 }
 
-
-@media (max-width: 500px) { 
-    .desktop { 
-        display: none;
-    }
-}
-
 #yearSelection { 
     text-align: center;
     font-size: 16px;
@@ -103,3 +100,15 @@ ul > li{
     font-weight: bold;
     border-color: gold
 }
+
+
+@media (max-width: 600px) { 
+    .desktop { 
+        display: none;
+    }
+
+    .mobile { 
+        display:inline-block;
+    }
+}
+

@@ -101,9 +101,15 @@
                     if (publishedVideo) {
                         content = `
                             <td ${(isToday ? 'class="today"': '')}>
-                                <a target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                                <a class="mobile" target="_blank" 
+                                    title="${publishedVideo.title}"
+                                    href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                                        <img style="float: left" width="30" src="img/play.png"/>
+                                </a>
+                                <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
                                     ${publishedVideo.title}
                                 </a>
+                                
                             </td>
                         `;
                     } else {
