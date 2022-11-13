@@ -9,6 +9,9 @@
             var that = this; 
             that.videos = videos;
             
+            $(`span #videoCount`).append(videos.length);
+            $(`span #lastUpdatedDate`).append('Nov 12, 2022');
+
             $(document).on('change', '#yearSelection', function(value){
                 $(`section #a`).empty();
                 const selectedYear = $(this).find("option:selected").attr('value');

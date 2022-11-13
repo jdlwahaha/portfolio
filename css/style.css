@@ -101,6 +101,10 @@ ul > li{
     border-color: gold
 }
 
+.right { 
+	float: right;
+}
+
 
 @media (max-width: 600px) { 
     .desktop { 

@@ -5,6 +5,9 @@
             let thisMonth = (new Date()).getMonth();
             loadCalendar(videos, undefined);
 
+            $(`span #videoCount`).append(videos.length);
+            $(`span #lastUpdatedDate`).append('Nov 12, 2022');
+
             document.getElementById('prevMonthBtn').addEventListener('click', () => { 
                 var index = (thisMonth > 0) ? (thisMonth - 1) : 11;
 
