@@ -3,7 +3,7 @@
 
         $.getJSON('data/youtube2.json', function (videos) {
             let thisMonth = (new Date()).getMonth();
-            loadCalendar(videos, undefined);
+            loadCalendar(videos, thisMonth);
 
             $(`span #videoCount`).append(videos.length);
             $(`span #lastUpdatedDate`).append('Nov 12, 2022');
@@ -49,7 +49,7 @@
 
 
         // weekday of 1st of the month
-        const dayOfFirst = new Date(currentYear + "-" + (currentMonth+1) + "-01 00:00:00").getDay();
+        const dayOfFirst = new Date(currentYear + "/" + (currentMonth+1) + "/01").getDay();
         const lastDayOfMonth = new Date(currentYear, (currentMonth+1), 0).getDate();
         const maxWeeks = Math.ceil(lastDayOfMonth/7)+1;
 
@@ -77,7 +77,7 @@
                     content =`<td></td>`;
                 } else {
                     dayCounter++; 
-                    if (dayCounter === currentDate && selectedMonth === undefined) { 
+                    if (dayCounter === currentDate && selectedMonth === (now.getMonth())) { 
                         content = `<td class="today">${dayCounter}</td>`;
                     } else { 
                         content = `<td>${dayCounter}&nbsp;</td>`;
@@ -95,7 +95,7 @@
                     content = `<td></td>`;
                 } else {
                     dayCounterForData++; 
-                    const isToday = (dayCounterForData === currentDate && selectedMonth === undefined);
+                    const isToday = (dayCounterForData === currentDate && selectedMonth === (now.getMonth()));
                     const publishedVideo = videos.find(video => {
                         return (video.date.year === currentYear)
                             && (video.date.month === currentMonth-1)
