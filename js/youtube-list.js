@@ -16,12 +16,9 @@
                 $(`section #a`).empty();
                 const selectedYear = $(this).find("option:selected").attr('value');
                 loadYearData(selectedYear, that.videos);
-
             });
 
-
         });
-
         
     });
 
