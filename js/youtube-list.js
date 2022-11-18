@@ -10,7 +10,7 @@
             that.videos = videos;
             
             $(`span #videoCount`).append(videos.length);
-            $(`span #lastUpdatedDate`).append('Nov 12, 2022');
+            $(`span #lastUpdatedDate`).append('Nov 18, 2022');
 
             $(document).on('change', '#yearSelection', function(value){
                 $(`section #a`).empty();
@@ -35,7 +35,6 @@
 
         for (let month=11; month >= 0; month--) { 
             const videosThisMonth = videos.filter(v => v.date.year === year && v.date.month === month);
-            console.log(videosThisMonth);
             if (videosThisMonth.length > 0) { 
                 const htmlContent = getHtml(year, month, videosThisMonth, GOAL_FOR_EACH_MONTH);
                 $(`section #a`).append(htmlContent);

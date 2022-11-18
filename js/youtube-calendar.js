@@ -6,15 +6,13 @@
             loadCalendar(videos, thisMonth);
 
             $(`span #videoCount`).append(videos.length);
-            $(`span #lastUpdatedDate`).append('Nov 12, 2022');
+            $(`span #lastUpdatedDate`).append('Nov 18, 2022');
 
             document.getElementById('prevMonthBtn').addEventListener('click', () => { 
                 var index = (thisMonth > 0) ? (thisMonth - 1) : 11;
 
                 $('#youtube-calendar tbody').empty();
-                console.log({videos})
                 loadCalendar(videos,  index);
-                console.log('month:', index)
                 thisMonth = index;
             });
 
@@ -22,9 +20,7 @@
                 var index = (thisMonth < 11) ? (thisMonth + 1) : 0;
 
                 $('#youtube-calendar tbody').empty();
-                console.log({videos})
                 loadCalendar(videos,  index);
-                console.log('month:', index)
                 thisMonth = index;
             });
             
