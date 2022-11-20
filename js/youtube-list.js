@@ -10,7 +10,7 @@
             that.videos = videos;
             
             $(`span #videoCount`).append(videos.length);
-            $(`span #lastUpdatedDate`).append('Nov 18, 2022');
+            $(`span #lastUpdatedDate`).append('Nov 20, 2022');
 
             $(document).on('change', '#yearSelection', function(value){
                 $(`section #a`).empty();
