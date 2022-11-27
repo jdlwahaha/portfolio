@@ -63,9 +63,11 @@ nav a:hover {
 }
 
 .month-nav #selectedMonthName{ 
-	width: 200px;
+	width: 300px;
 	display: inline-block;
-	font-size: larger;
+    font-family: "Apple Chancery", sans-serif;
+	font-size: 1.5rem;
+
 }
 
 

@@ -90,15 +90,24 @@ ul > li{
     width: 100%;
 }
 
-#yearSelection { 
+section#yearSelection { 
     text-align: center;
-    font-size: 16px;
-    padding: 0.5rem;
+}
+
+section#yearSelection select { 
+    text-align: center;
+    padding: 0rem;
     margin-bottom: 1rem;
+    width: 100%;    
+    
     color: orange;
-    border-radius: 3rem;
+    font-family: "Apple Chancery", sans-serif;
+    font-size: 1.5rem;
     font-weight: bold;
-    border-color: gold
+    
+    border-color: gold;
+    border-radius: 8px;
+    
 }
 
 .right { 

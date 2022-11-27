@@ -10,10 +10,9 @@
             that.videos = videos;
             
             $(`span #videoCount`).append(videos.length);
-            $(`span #lastUpdatedDate`).append('Nov 20, 2022');
 
             $(document).on('change', '#yearSelection', function(value){
-                $(`section #a`).empty();
+                $(`section #videoList`).empty();
                 const selectedYear = $(this).find("option:selected").attr('value');
                 loadYearData(selectedYear, that.videos);
             });
@@ -29,30 +28,30 @@
         }
 
         const GOAL_FOR_EACH_MONTH = 10; 
+        const MONTH_JAN = 0; 
+        const MONTH_DEC = 11;
 
-        for (let month=11; month >= 0; month--) { 
+        for (let month = MONTH_DEC; month >= MONTH_JAN; month--) { 
             const videosThisMonth = videos.filter(v => v.date.year === year && v.date.month === month);
             if (videosThisMonth.length > 0) { 
                 const htmlContent = getHtml(year, month, videosThisMonth, GOAL_FOR_EACH_MONTH);
-                $(`section #a`).append(htmlContent);
+                $(`section #videoList`).append(htmlContent);
             }
- 
         }
-
     }
 
 
     function getHtml(year, month, videos, video_num_goal) { 
         const current_count = videos.length;
         let htmlContent = generalVideoLinks(videos);
-        let percent = Math.floor(1.0 * current_count / video_num_goal * 100);
+        let percent = getProgressBarValue(current_count, video_num_goal);
+
         const html = `
-            <div class="date-info">${getMonthName(month)} </div>
+        <div class="date-info">${getMonthName(month)}</div>
             <div class="meter">
                 <span class="progressbar" style="width: ${percent}%"></span>
                 <strong>
                     <span class="progress">${current_count}</span> ${(current_count > 1) ? 'videos' : 'video'}
-                    <!--<span class="goal">${video_num_goal}</span> -->
                 </strong>
             </div>
             <br>
@@ -61,8 +60,18 @@
             </div>
             <br>
             <br>
+            <br>
         `; 
         return html; 
+    }
+
+    function getProgressBarValue(current_count, video_num_goal) { 
+        const MAX_PERCENT = 100;
+
+        let percent = Math.floor(1.0 * current_count / video_num_goal * 100);
+        percent = (percent > MAX_PERCENT) ? MAX_PERCENT : percent;
+        
+        return percent;
     }
 
     function generalVideoLinks(videos) {
@@ -84,24 +93,10 @@
         return number; 
     }
 
-    function loadIframe(videos) {
-        let htmlContent = '';
-        videos.map(video => {
-            if (video.videoId) {
-                htmlContent += `<iframe src="https://www.youtube.com/embed/${video.videoId}"></iframe>`
-            }
-        });
-        return htmlContent;
-    }
-
-
-
     function getMonthName(monthNumber) {
         const date = new Date();
         date.setMonth(monthNumber);
         return date.toLocaleString('en-US', { month: 'long' });
     }
-  
-
 
 })(); 

@@ -13,6 +13,7 @@
 	<script src="lib/jquery-2.1.3.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/youtube-list.js"></script>
+	<script src="js/youtube-loadinfo.js"></script>
 </head>
 <body>
 	<header><!-- jQuery generated --></header>
@@ -27,19 +28,22 @@
 		<div class="last-updated">
 			<span>Total videos: <span id="videoCount"></span></span>
 			&nbsp;
-			<span class="right">Data last updated: <span id="lastUpdatedDate"></span></span>
+			<span class="right"><!--jQuery generated--></span>
 		</div>
 
 		<section class="box">
 			<div class="box-content">
-				<select id="yearSelection">
-					<option value="2022">2022</option>
-					<option value="2021">2021</option>
-					<option value="2020">2020</option>
-				</select>
+				<section id="yearSelection">
+					<select >
+						<option value="2022">2022</option>
+						<option value="2021">2021</option>
+						<option value="2020">2020</option>
+					</select>
+				</section>
+				
 
 
-				<section id="a">
+				<section id="videoList">
 					<!-- jQuery generated -->
 				</section>
 			</div>
