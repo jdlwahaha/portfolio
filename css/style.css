@@ -77,8 +77,8 @@ a.button.disabled {
 }
 
 ul { 
-    padding: 0 1rem; 
-    margin: 0;
+    /* padding: 0 1rem;  */
+    /* margin: 0; */
 }
 ul > li{ 
     list-style-type: square;
@@ -114,6 +114,12 @@ section#yearSelection select {
 	float: right;
 }
 
+
+
+.no-margin-bottom { 
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 @media (max-width: 600px) { 
     .desktop { 

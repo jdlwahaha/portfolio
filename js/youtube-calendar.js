@@ -1,70 +1,71 @@
 (function () {
+
     $(document).ready(function () {
 
         $.getJSON('data/youtube2.json', function (videos) {
-            let thisMonth = (new Date()).getMonth();
-            loadCalendar(videos, thisMonth);
+            const MONTH_DEC = 11; 
+            const today = (new Date());
+            let selectedMonth = today.getMonth();
+            let selectedYear = today.getFullYear(); 
+        
+            loadCalendar(videos, selectedMonth, selectedYear);
 
             $(`span #videoCount`).append(videos.length);
-
-            document.getElementById('prevMonthBtn').addEventListener('click', () => { 
-                var index = (thisMonth > 0) ? (thisMonth - 1) : 11;
-
-                $('#youtube-calendar tbody').empty();
-                loadCalendar(videos,  index);
-                thisMonth = index;
-            });
-
-            document.getElementById('nextMonthBtn').addEventListener('click', () => { 
-                var index = (thisMonth < 11) ? (thisMonth + 1) : 0;
-
-                $('#youtube-calendar tbody').empty();
-                loadCalendar(videos,  index);
-                thisMonth = index;
-            });
+        
             
+            document.getElementById('nextMonthBtn').addEventListener('click', () => {
+                selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
+                selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
+                setSelected(selectedMonth, selectedYear);
+    
+                loadCalendar(videos, selectedMonth, selectedYear);
+            });
+            document.getElementById('prevMonthBtn').addEventListener('click', () => {
+                selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
+                selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
+                setSelected(selectedMonth, selectedYear);
+    
+                loadCalendar(videos, selectedMonth, selectedYear);
+            });
         });
 
     });
 
+    
 
-
-    function getMonthName(monthNumber) {
-        const date = new Date();
-        date.setMonth(monthNumber);
-        return date.toLocaleString('en-US', { month: 'long' });
+    function setSelected(selectedMonth, selectedYear) { 
+        this.selectedMonth = selectedMonth; 
+        this.selectedYear = selectedYear
     }
 
-    function loadCalendar(videos, selectedMonth) {
+
+
+    function loadCalendar(videos, selectedMonth, selectedYear) {
+        $('#youtube-calendar tbody').empty();
+
+
         // get first day of this month 
         const now = new Date();
-        const currentYear = now.getFullYear();
-        let currentMonth = (selectedMonth===undefined) ? now.getMonth() :selectedMonth;
+        const currentYear = selectedYear;
+        let currentMonth = selectedMonth;
         const currentDate = now.getDate(); 
-
-
 
         // weekday of 1st of the month
         const dayOfFirst = new Date(currentYear + "/" + (currentMonth+1) + "/01").getDay();
         const lastDayOfMonth = new Date(currentYear, (currentMonth+1), 0).getDate();
-        const maxWeeks = Math.ceil(lastDayOfMonth/7)+1;
+        const maxWeeksOfMonth = Math.ceil(lastDayOfMonth/7)+1;
 
 
-        // Debug
-        // const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-        // let day = weekday[dayOfFirst];
-        // const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        // let name = month[currentMonth];
-        // console.log({uh:currentYear + "-" + (currentMonth+1) + "-01", lastDayOfMonth, dayOfFirst, currentYear, currentMonth, day, name})
-        
-        document.getElementById('selectedMonthName').innerHTML = (getMonthName(currentMonth)) + ' 2022';
+        document.getElementById('selectedMonthName').innerHTML = getMonthName(currentMonth) + ' ' + selectedYear;
+        $('#prevMonthBtn').attr("disabled", (selectedMonth === 0 && selectedYear === 2020));
+        $('#nextMonthBtn').attr("disabled", (selectedMonth === now.getMonth() && selectedYear === now.getFullYear()));
 
         let dayCounter = 0;
         let dayCounterForData = 0;
 
         currentMonth++;
 
-        for(let week=0; week<maxWeeks && dayCounter < lastDayOfMonth; week++) {
+        for(let week = 0; week < maxWeeksOfMonth && dayCounter < lastDayOfMonth; week++) {
             // display this month 
             $(`#youtube-calendar tbody`).append(`<tr class="number week${week}">`);
             for (let weekday = 0; weekday < 7; weekday++) {
@@ -96,26 +97,10 @@
                         return (video.date.year === currentYear)
                             && (video.date.month === currentMonth-1)
                             && (video.date.day === dayCounterForData)
-                    })
-                    if (publishedVideo) {
-                        content = `
-                            <td ${(isToday ? 'class="today"': '')}>
-                                <a class="mobile" target="_blank" 
-                                    title="${publishedVideo.title}"
-                                    href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
-                                        <img style="float: left" width="30" src="img/play.png"/>
-                                </a>
-                                <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
-                                    ${publishedVideo.title}
-                                </a>
-                                
-                            </td>
-                        `;
-                    } else {
-                        content = `<td ${(isToday ? 'class="today"': '')}></td>`;
-                    }
+                    });
+                    content = getRenderVideoTD(publishedVideo, isToday);
                 }
-                $(`#youtube-calendar tbody tr.data.week${week}`).append(content)
+                $(`#youtube-calendar tbody tr.data.week${week}`).append(content);
 
             }
             $(`#youtube-calendar tbody`).append(`</tr>`);
@@ -125,4 +110,40 @@
     }
 
 
+    function getRenderVideoTD(publishedVideo, isToday) { 
+        let content = '';
+        if (publishedVideo) {
+            content = `
+                <td ${(isToday ? 'class="today"': '')}>
+                    <a class="mobile" target="_blank" 
+                        title="${publishedVideo.title}"
+                        href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                            <img style="float: left" width="30" src="img/play.png"/>
+                    </a>
+                    <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                        ${publishedVideo.title}
+                    </a>
+                    
+                </td>
+            `;
+        } else {
+            content = `<td ${(isToday ? 'class="today"': '')}></td>`;
+        }
+        return content;
+    }
+
+
+
+
+
+    function getMonthName(monthNumber) {
+        const date = new Date();
+        date.setMonth(monthNumber);
+        return date.toLocaleString('en-US', { month: 'long' });
+    }
+
+
+
 })(); 
+
+
