@@ -113,13 +113,16 @@
     function getRenderVideoTD(publishedVideo, isToday) { 
         let content = '';
         if (publishedVideo) {
+            const png = (publishedVideo.type === 'short') ? 'img/s_play.png' : "img/play.png";
+
             content = `
                 <td ${(isToday ? 'class="today"': '')}>
                     <a class="mobile" target="_blank" 
                         title="${publishedVideo.title}"
                         href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
-                            <img style="float: left" width="30" src="img/play.png"/>
+                            <img style="float: left" width="30" src="${png}"/>
                     </a>
+                    <img src="${png}" width=20/>
                     <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
                         ${publishedVideo.title}
                     </a>

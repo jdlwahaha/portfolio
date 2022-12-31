@@ -79,8 +79,12 @@
         videos.map(video => {
             const videoDate = video.date.year + '-' + appendZero(video.date.month+1) + '-' + appendZero(video.date.day);
             if (video.videoId) {
-                const link = `https://youtu.be/${video.videoId}`
-                htmlContent += `<div class="list-item">${videoDate} <a href="${link}" target="_blank">${video.title}</a><div>`
+                const link = `https://youtu.be/${video.videoId}`; 
+                const png = (video.type === 'short') ? 'img/s_play.png' : "img/play.png";
+                htmlContent += `<div class="list-item">${videoDate} 
+                        <img src="${png}" width=25/>
+                        <a href="${link}" target="_blank">${video.title}</a>
+                    <div>`;
             }
         });
         return htmlContent;
