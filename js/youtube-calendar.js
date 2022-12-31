@@ -122,8 +122,8 @@
                         href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
                             <img style="float: left" width="30" src="${png}"/>
                     </a>
-                    <img src="${png}" width=20/>
                     <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                        <img src="${png}" width=20/>
                         ${publishedVideo.title}
                     </a>
                     

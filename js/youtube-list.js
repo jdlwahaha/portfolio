@@ -82,8 +82,10 @@
                 const link = `https://youtu.be/${video.videoId}`; 
                 const png = (video.type === 'short') ? 'img/s_play.png' : "img/play.png";
                 htmlContent += `<div class="list-item">${videoDate} 
-                        <img src="${png}" width=25/>
-                        <a href="${link}" target="_blank">${video.title}</a>
+                        <a href="${link}" target="_blank">
+                                <img src="${png}" width=25/>
+                            ${video.title}
+                        </a>
                     <div>`;
             }
         });
