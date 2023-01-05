@@ -5,7 +5,7 @@
             const YEAR_START = 2020; 
             const YEAR_END = 2022; 
 
-            loadYearData(2022, videos);
+            loadYearData(YEAR_END, videos);
             var that = this; 
             that.videos = videos;
             

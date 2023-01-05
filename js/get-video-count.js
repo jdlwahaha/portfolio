@@ -7,11 +7,25 @@
             // remove empty records
             videos = videos.filter((r) => {return r.title != ''})
     
-            $('#total2022').append(videos.filter(video => video.date.year === 2022).length);
-            $('#total2021').append(videos.filter(video => video.date.year === 2021).length);
-            $('#total2020').append(videos.filter(video => video.date.year === 2020).length);
+            $('#total2023').append(getVideosCount(videos, 2023));
+            $('#total2022').append(getVideosCount(videos, 2022));
+            $('#total2021').append(getVideosCount(videos, 2021));
+            $('#total2020').append(getVideosCount(videos, 2020));
+
+            // shorts
+            $('#total2023short').append(getShortsCount(videos, 2023));
+            $('#total2022short').append(getShortsCount(videos, 2022));
+
 
         });
+
+        function getVideosCount(videos, year) { 
+            return videos.filter(video => (video.date.year === year && video.type !== 'short')).length;
+        }
+
+        function getShortsCount(videos, year) { 
+            return videos.filter(video => (video.date.year === year && video.type === 'short')).length;
+        }
     });
     
  
