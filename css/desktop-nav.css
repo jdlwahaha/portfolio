@@ -1,0 +1,68 @@
+@media (min-width: 900px) { 
+
+	/**** Desktop view test **/
+	body { 
+		margin: 1rem auto; 
+		font-family: Candara, Arial, Sans-Serif;
+		max-width: none;
+		width: 100%;
+		vertical-align: top;
+	}
+
+	header { 
+		display: inline-block; 
+		width: 250px; 
+		margin: 1rem;
+		vertical-align: top;
+	}
+
+	header h1 { 
+		margin-top: 0;
+	}
+
+
+
+	section#mainContent { 
+		display: inline-block; 
+		width: calc(100% - 300px);
+		/* calc(100% - 10px); */
+		
+		
+	}
+
+	section#mainContent div.content { 
+		min-height: calc(90vh);;
+
+		/* min-height: calc(100% - 10px); */
+		/* div.main { 
+		} */
+	}
+
+	nav a {
+		/* structure */
+		display: block;
+		padding: .8rem 1rem;
+		font-size: 1.2rem;
+		
+		/* color & design */
+		color: white;
+		text-decoration: none;
+		background-color: rgb(102, 102, 102);
+		
+	}
+
+	nav a.first {
+		border-radius: 15px 15px 0px 0;
+	}
+
+	nav a.last { 
+		border-radius: 0 0 15px 15px;
+	}
+
+	nav a .nav-icon { 
+		display: inline-block;
+		width: 25px;
+	}
+
+	/*************************/
+}

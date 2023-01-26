@@ -11,8 +11,14 @@
             <a href="youtube.html"><h1>My Space</h1></a>
             <nav>
                 <!-- <a href="index.html" class="first">Home</a> -->
-                <a href="youtube.html" class="first">GO _</a>
-                <a href="jdreads.html">JDReads</a>
+                <a href="youtube.html" class="first">
+                    <span class="nav-icon">&#128249;</span> 
+                    _Tape
+                </a>
+                <a href="jdreads.html" class="last">
+                    <span class="nav-icon">&#128214;</span> 
+                    JDReads
+                </a>
 
 
                 <!-- <a href="quotes.html">Quotes</a> -->

@@ -13,7 +13,7 @@ $(document).ready(function() {
         // paging
         let pageNum = parseInt(getQueryParam('page'));
         pageNum = pageNum ? pageNum : 1; 
-        const PAGE_LIMIT = 10;
+        const PAGE_LIMIT = 8;
 
         let page = { 
             offset: (pageNum > 0) ? (pageNum - 1) * PAGE_LIMIT : 0,

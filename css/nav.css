@@ -1,3 +1,6 @@
+
+
+
 nav {
 	background-color: rgb(102, 102, 102);
 	border-radius: 15px;
@@ -84,6 +87,19 @@ div.last-updated {
 	font-size: 12px;
     
 }
+
+nav a .nav-icon { 
+	display: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
