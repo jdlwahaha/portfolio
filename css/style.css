@@ -83,6 +83,10 @@ ul {
     /* margin: 0; */
 }
 
+highlight { 
+    background: yellow; 
+}
+
 ul#quotes {
     padding: 0 1rem; 
 }
