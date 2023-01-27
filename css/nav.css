@@ -23,6 +23,15 @@ nav a {
 	
 }
 
+nav span.navSectionHeader-desktop { 
+	display: none;
+}
+
+nav span.navSectionHeader-mobile { 
+	color: #ddd;
+	display: inline;
+}
+
 nav a.first {
 	border-radius: 15px 0px 0px 15px;
 }

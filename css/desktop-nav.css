@@ -60,7 +60,20 @@
 	nav a .nav-icon { 
 		display: inline-block;
 		width: 25px;
+        margin-left: 10px;
 	}
+
+    nav span.navSectionHeader-desktop { 
+        display: block;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: .2rem;
+        color: #ddd;
+    }
+
+    nav span.navSectionHeader-mobile { 
+        display: none;
+    }
 
 	/*************************/
 }

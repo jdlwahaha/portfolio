@@ -82,6 +82,12 @@ ul {
     /* padding: 0 1rem;  */
     /* margin: 0; */
 }
+
+ul#quotes {
+    padding: 0 1rem; 
+}
+
+
 ul > li{ 
     list-style-type: square;
     padding: .5rem 0;

@@ -15,13 +15,17 @@
                     <span class="nav-icon">&#128249;</span> 
                     YouTuber
                 </a>
-                <a href="jdreads.html" class="last">
+                <a href="jdreads.html">
                     <span class="nav-icon">&#128214;</span> 
                     JDReads
                 </a>
 
-
-                <!-- <a href="quotes.html">Quotes</a> -->
+                <span class="navSectionHeader-desktop">PAGES</span>
+                <span class="navSectionHeader-mobile">|</span>
+                <a href="quotes.html" class="last">
+                    <span class="nav-icon">&#8220;</span> 
+                    Quotes
+                </a>
                 <!-- <a href="books.html">Books</a> -->
             </nav>
         `;
