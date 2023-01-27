@@ -5,6 +5,8 @@ nav {
 	background-color: rgb(102, 102, 102);
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px #888888;
+    font-family: Candara, Arial, Sans-Serif;
+
 }
 
 
@@ -12,8 +14,9 @@ nav a {
 	/* structure */
 	display: inline-block;
 	padding: .5rem .8rem;
-	font-size: 1.2rem;
-	
+	font-size: 18px;
+	font-weight: bold;
+
 	/* color & design */
 	color: white;
 	text-decoration: none;
@@ -40,6 +43,9 @@ nav a:hover {
 	padding-left: 1rem;
 	padding-bottom: 1rem;
 	font-weight: bold;
+	font-size: 16px;
+    font-family: Candara, Arial, Sans-Serif;
+
 }
 
 .submenu span, 

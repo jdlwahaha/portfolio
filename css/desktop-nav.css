@@ -3,7 +3,6 @@
 	/**** Desktop view test **/
 	body { 
 		margin: 1rem auto; 
-		font-family: Candara, Arial, Sans-Serif;
 		max-width: none;
 		width: 100%;
 		vertical-align: top;
@@ -42,7 +41,6 @@
 		/* structure */
 		display: block;
 		padding: .8rem 1rem;
-		font-size: 1.2rem;
 		
 		/* color & design */
 		color: white;

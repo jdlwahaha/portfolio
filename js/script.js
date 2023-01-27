@@ -13,7 +13,7 @@
                 <!-- <a href="index.html" class="first">Home</a> -->
                 <a href="youtube.html" class="first">
                     <span class="nav-icon">&#128249;</span> 
-                    _Tape
+                    YouTuber
                 </a>
                 <a href="jdreads.html" class="last">
                     <span class="nav-icon">&#128214;</span> 

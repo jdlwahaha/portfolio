@@ -1,16 +1,17 @@
 body { 
     margin: 1rem auto; 
-    font-family: Candara, Arial, Sans-Serif;
+    /* font-family: Candara, Arial, Sans-Serif; */
     max-width: 1080px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+
 }
 
 header h1 {
     color: orange;
     opacity: 0.65;
     font-weight: bold;
-    font-style: Verdana;
     text-shadow: 2px 2px grey;
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin: 1rem 0;
 }
 
@@ -22,6 +23,7 @@ footer {
     border-radius: 0 0 15px 15px;
     opacity: 0.6;
     color: white;
+    font-size: 12px;
 }
 
 .content {
