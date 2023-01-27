@@ -6,7 +6,6 @@ nav {
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px #888888;
     font-family: Candara, Arial, Sans-Serif;
-
 }
 
 
@@ -43,7 +42,7 @@ nav a:hover {
 	padding-left: 1rem;
 	padding-bottom: 1rem;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 15px;
     font-family: Candara, Arial, Sans-Serif;
 
 }
@@ -91,6 +90,7 @@ div.last-updated {
 	border-bottom: none;
 	color: #333;
 	font-size: 12px;
+    font-family: Candara, Arial, Sans-Serif;
     
 }
 
