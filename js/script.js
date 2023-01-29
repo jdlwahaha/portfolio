@@ -8,7 +8,7 @@
 
     function loadHeader() { 
         var headerHtml = `
-            <a href="../youtube.html"><h1>My Space</h1></a>
+            <a href="../youtube"><h1>My Space</h1></a>
             <nav>
                 <!-- <a href="index.html" class="first">Home</a> -->
                 <a href="../youtube" class="first">
@@ -41,7 +41,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['index', 'jdreads', 'quotes', 'typerace', 'youtube', 'people']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
