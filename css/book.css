@@ -25,3 +25,18 @@ div.book-container h4 {
     margin: 0;
     margin-bottom: .5rem; 
 }
+
+@media (max-width: 500px) { 
+    .thumbnail-container { 
+        border-right: none;
+        width: 100%;
+    }
+
+    div.book-container { 
+        width: 100%;
+    }
+
+    div.book-container h4 { 
+        margin-top: 1rem;
+    }
+}
