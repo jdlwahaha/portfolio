@@ -6,6 +6,10 @@ nav {
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px #888888;
     font-family: Candara, Arial, Sans-Serif;
+
+	overflow: auto;
+	/* overflow-x: hidden; */
+	white-space: nowrap;
 }
 
 
@@ -54,6 +58,9 @@ nav a:hover {
 	font-size: 15px;
     font-family: Candara, Arial, Sans-Serif;
 
+
+	overflow: auto hidden;
+	white-space: nowrap;
 }
 
 .submenu span, 

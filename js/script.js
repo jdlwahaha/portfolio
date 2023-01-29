@@ -22,7 +22,7 @@
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
-                <a href="../quotes" class="last" >
+                <a href="../quotes">
                     <span class="nav-icon">&#8220;</span> 
                     Quotes
                 </a>
@@ -30,10 +30,10 @@
                     <span class="nav-icon">&#8220;</span> 
                     People
                 </a> -->
-                <!-- <a href="../books">
+                <a href="../books" class="last">
                     <span class="nav-icon">&#128214;</span> 
                     Books
-                </a> -->
+                </a> 
             </nav>
         `;
         $('header').append(headerHtml); 
@@ -41,7 +41,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 

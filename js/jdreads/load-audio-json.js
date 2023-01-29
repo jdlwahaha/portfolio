@@ -4,7 +4,7 @@ let playSymbol = '&#9658;';
 let stopSymbol = '&#9724;'; 
 
 $(document).ready(function() { 
-    $.getJSON('../../data/audio.json', function(recordings) {         
+    $.getJSON('../../data/jdreads/audio.json', function(recordings) {         
 
         // remove empty records
         recordings = recordings.filter((r) => {return r.title != ''})
@@ -51,7 +51,7 @@ $(document).ready(function() {
                         <td>${record.id}</td>
                         <td>
                             ${sourceLink} <br>
-                            <audio src="../../data/${filename}" controls="controls"></audio>
+                            <audio src="../../data/jdreads/${filename}" controls="controls"></audio>
                         </td>			
                         <td class="desktop">${record.source}</td>
                         <td class="desktop">${record.type}</td> 

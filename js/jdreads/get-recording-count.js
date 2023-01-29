@@ -2,7 +2,7 @@
 
     
     $(document).ready(function() { 
-        $.getJSON('../../data/audio.json', function(recordings) {         
+        $.getJSON('../../data/jdreads/audio.json', function(recordings) {         
     
             // remove empty records
             recordings = recordings.filter((r) => {return r.title != ''})

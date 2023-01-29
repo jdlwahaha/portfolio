@@ -1,0 +1,27 @@
+.thumbnail-container img { 
+    height: 150px;
+}
+
+.thumbnail-container { 
+    width: 150px;
+    text-align: center;
+
+    display: inline-block;
+    margin-right: 1rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    border-right: 2px solid #eee;
+}
+
+
+div.book-container { 
+    display: inline-block; 
+    vertical-align: top;
+    width: calc(90% - 150px);
+}
+
+div.book-container h4 {
+    margin: 0;
+    margin-bottom: .5rem; 
+}

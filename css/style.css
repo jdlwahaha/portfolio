@@ -88,6 +88,7 @@ highlight {
 }
 
 ul#quotes {
+    margin: 0;
     padding: 0 1rem; 
 }
 
@@ -120,6 +121,10 @@ section#yearSelection select {
     border-color: gold;
     border-radius: 8px;
     
+}
+
+section.box h1 { 
+    font-size: 16px;
 }
 
 .right { 
