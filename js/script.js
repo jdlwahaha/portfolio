@@ -22,18 +22,19 @@
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
-                <a href="../quotes">
-                    <span class="nav-icon">&#8220;</span> 
-                    Quotes
-                </a>
+                
                 <!-- <a href="../people" class="last">
                     <span class="nav-icon">&#8220;</span> 
                     People
                 </a> -->
-                <a href="../books" class="last">
+                <a href="../books" >
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
+                <a href="../quotes" class="last">
+                    <span class="nav-icon">&#8220;</span> 
+                    Quotes
+                </a>
             </nav>
         `;
         $('header').append(headerHtml); 

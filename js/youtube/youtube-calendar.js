@@ -14,46 +14,18 @@
         
             
             document.getElementById('nextMonthBtn').addEventListener('click', () => {
-                if (selectedMonth === today.getMonth() && selectedYear === today.getFullYear()) {
-                    $('#nextMonthBtn').addClass('disabled')
-                } else { 
-                    $('#nextMonthBtn').removeClass('disabled')
+                selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
+                selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
+                setSelected(selectedMonth, selectedYear);
 
-                    selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
-                    selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
-                    setSelected(selectedMonth, selectedYear);
-        
-                    loadCalendar(videos, selectedMonth, selectedYear);
-                }
-
-                if (selectedMonth === 0 && selectedYear === 2020) {
-                    $('#prevMonthBtn').addClass("disabled"); 
-                } else { 
-                    $('#prevMonthBtn').removeClass('disabled')
-                }
-
+                loadCalendar(videos, selectedMonth, selectedYear);
             });
             document.getElementById('prevMonthBtn').addEventListener('click', () => {
+                selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
+                selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
+                setSelected(selectedMonth, selectedYear);
 
-                if (selectedMonth === 0 && selectedYear === 2020) { 
-                    $('#prevMonthBtn').addClass("disabled"); 
-                } else { 
-                    $('#prevMonthBtn').removeClass('disabled')
-
-                    selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
-                    selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
-                    setSelected(selectedMonth, selectedYear);
-        
-                    loadCalendar(videos, selectedMonth, selectedYear);
-                }
-
-                if (selectedMonth === today.getMonth() && selectedYear === today.getFullYear()) {
-                    $('#nextMonthBtn').addClass('disabled')
-                } else { 
-                    $('#nextMonthBtn').removeClass('disabled')
-                }
-    
-
+                loadCalendar(videos, selectedMonth, selectedYear);
             });
         });
 
@@ -85,12 +57,8 @@
 
 
         document.getElementById('selectedMonthName').innerHTML = getMonthName(currentMonth) + ' ' + selectedYear;
-        if (selectedMonth === 0 && selectedYear === 2020) { 
-            $('#prevMonthBtn').addClass("disabled"); 
-        }
-        if (selectedMonth === now.getMonth() && selectedYear === now.getFullYear()) {
-            $('#nextMonthBtn').addClass('disabled')
-        }
+        $('#prevMonthBtn').attr("disabled", (selectedMonth === 0 && selectedYear === 2020));
+        $('#nextMonthBtn').attr("disabled", (selectedMonth === now.getMonth() && selectedYear === now.getFullYear()));
 
         let dayCounter = 0;
         let dayCounterForData = 0;
@@ -106,7 +74,7 @@
                     content =`<td></td>`;
                 } else {
                     dayCounter++; 
-                    if (dayCounter === currentDate && selectedMonth === (now.getMonth())) { 
+                    if (dayCounter === currentDate && selectedMonth === (now.getMonth()) && selectedYear === (now.getFullYear())) { 
                         content = `<td class="today">${dayCounter}</td>`;
                     } else { 
                         content = `<td>${dayCounter}&nbsp;</td>`;
@@ -124,7 +92,7 @@
                     content = `<td></td>`;
                 } else {
                     dayCounterForData++; 
-                    const isToday = (dayCounterForData === currentDate && selectedMonth === (now.getMonth()));
+                    const isToday = (dayCounterForData === currentDate && selectedMonth === (now.getMonth()) && selectedYear === (now.getFullYear()));
                     const publishedVideo = videos.find(video => {
                         return (video.date.year === currentYear)
                             && (video.date.month === currentMonth-1)
