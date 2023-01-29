@@ -3,7 +3,7 @@
     $(document).ready(function () {
         $.getJSON('../../data/youtube2.json', function (videos) {
             const YEAR_START = 2020; 
-            const YEAR_END = 2022; 
+            const YEAR_END = 2023; 
 
             loadYearData(YEAR_END, videos);
             var that = this; 

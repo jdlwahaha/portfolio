@@ -14,18 +14,46 @@
         
             
             document.getElementById('nextMonthBtn').addEventListener('click', () => {
-                selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
-                selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
-                setSelected(selectedMonth, selectedYear);
-    
-                loadCalendar(videos, selectedMonth, selectedYear);
+                if (selectedMonth === today.getMonth() && selectedYear === today.getFullYear()) {
+                    $('#nextMonthBtn').addClass('disabled')
+                } else { 
+                    $('#nextMonthBtn').removeClass('disabled')
+
+                    selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
+                    selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
+                    setSelected(selectedMonth, selectedYear);
+        
+                    loadCalendar(videos, selectedMonth, selectedYear);
+                }
+
+                if (selectedMonth === 0 && selectedYear === 2020) {
+                    $('#prevMonthBtn').addClass("disabled"); 
+                } else { 
+                    $('#prevMonthBtn').removeClass('disabled')
+                }
+
             });
             document.getElementById('prevMonthBtn').addEventListener('click', () => {
-                selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
-                selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
-                setSelected(selectedMonth, selectedYear);
+
+                if (selectedMonth === 0 && selectedYear === 2020) { 
+                    $('#prevMonthBtn').addClass("disabled"); 
+                } else { 
+                    $('#prevMonthBtn').removeClass('disabled')
+
+                    selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
+                    selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
+                    setSelected(selectedMonth, selectedYear);
+        
+                    loadCalendar(videos, selectedMonth, selectedYear);
+                }
+
+                if (selectedMonth === today.getMonth() && selectedYear === today.getFullYear()) {
+                    $('#nextMonthBtn').addClass('disabled')
+                } else { 
+                    $('#nextMonthBtn').removeClass('disabled')
+                }
     
-                loadCalendar(videos, selectedMonth, selectedYear);
+
             });
         });
 
@@ -57,8 +85,12 @@
 
 
         document.getElementById('selectedMonthName').innerHTML = getMonthName(currentMonth) + ' ' + selectedYear;
-        $('#prevMonthBtn').attr("disabled", (selectedMonth === 0 && selectedYear === 2020));
-        $('#nextMonthBtn').attr("disabled", (selectedMonth === now.getMonth() && selectedYear === now.getFullYear()));
+        if (selectedMonth === 0 && selectedYear === 2020) { 
+            $('#prevMonthBtn').addClass("disabled"); 
+        }
+        if (selectedMonth === now.getMonth() && selectedYear === now.getFullYear()) {
+            $('#nextMonthBtn').addClass('disabled')
+        }
 
         let dayCounter = 0;
         let dayCounterForData = 0;
@@ -142,7 +174,21 @@
     function getMonthName(monthNumber) {
         const date = new Date();
         date.setMonth(monthNumber);
-        return date.toLocaleString('en-US', { month: 'long' });
+        const month = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ];
+        return month[monthNumber];
     }
 
 

@@ -54,19 +54,21 @@ a {
 }
 
 a.button { 
-    background: #aaa;
+    background: orange;
     padding: 1px 3px;
     border-radius: 2px;
     font-weight: bold;
     color: white;
+    cursor: pointer;
 }
 
 a.button.disabled { 
-    background: white;
+    background: grey;
     padding: 1px 3px;
     opacity: 5;
     font-weight: bold;
     color: white;
+    cursor:text;
 }
 
 
