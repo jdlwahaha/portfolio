@@ -19,8 +19,8 @@ function loadBooks(books) {
                                 </span>
                                 <div class="book-container">
                                     <h4>${book.title}</h4>
-                                    <div>by ${book.author}</div>
-                                    <p>
+                                    <div class="author">by ${book.author}</div>
+                                    <p class="review">
                                         ${book.review}
                                     </p>
                                 </div>

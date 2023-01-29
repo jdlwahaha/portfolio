@@ -1,5 +1,26 @@
 [
     {
+        "title": "", 
+        "author": "",
+        "thumbnail": "",
+        "quotes": [], 
+        "review": ""
+    },
+    {
+        "title": "", 
+        "author": "",
+        "thumbnail": "",
+        "quotes": [], 
+        "review": ""
+    },
+    {
+        "title": "The Missing README: A Guide for the New Software Engineer", 
+        "author": "Chris Riccomini and Dmitriy Ryaboy",
+        "thumbnail": "the-missing-readme",
+        "quotes": [], 
+        "review": "I borrowed this book from an eLibrary and read it from Overdrive. I bought a physical copy of this book afterwards for future quick reference. It was a good one. "
+    },
+    {
         "title": "Head First Design Patterns", 
         "author": "Eric Freeman",
         "thumbnail": "headfirst-design-patterns.png",

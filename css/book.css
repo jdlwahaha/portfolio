@@ -26,6 +26,15 @@ div.book-container h4 {
     margin-bottom: .5rem; 
 }
 
+div.author { 
+    /* font-style: italic; */
+    color: #666;
+}
+
+/* p.review { 
+    color: #666;
+} */
+
 @media (max-width: 500px) { 
     .thumbnail-container { 
         border-right: none;
