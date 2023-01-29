@@ -1,0 +1,29 @@
+table#agenda { 
+    width: 100%;
+}
+table#agenda th.weekday{ 
+    width: calc((100%)/7);
+    text-align: center;
+}
+
+table#agenda td.work { 
+    background-color: rgb(252, 150, 150);
+}
+table#agenda td.exercise { 
+    background-color: rgb(124, 253, 131);
+}
+table#agenda td.sleep { 
+    background-color: #ccc;
+}
+
+table#agenda td.shower { 
+    background-color: rgb(141, 193, 251);
+}
+
+table#agenda td.mine { 
+    background-color: rgb(255, 228, 74);
+}
+
+table#agenda td.time { 
+    width: 50px;
+}

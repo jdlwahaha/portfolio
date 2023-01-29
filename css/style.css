@@ -100,9 +100,19 @@ ul > li{
 }
 
 
-#audio_table { 
-    width: 100%;
+
+table td, table th { 
+    vertical-align: top; 
+    text-align: left;
+    border: 1px solid #eee;
 }
+
+table {
+    border: 1px solid #eee;
+
+}
+
+
 
 section#yearSelection { 
     text-align: center;
@@ -139,6 +149,29 @@ section.box h1 {
     margin-bottom: 0;
 }
 
+.well { 
+    border: solid 2px black; 
+    border-radius: 8px; 
+    box-shadow: 4px 4px #ddd;
+    padding: 1rem;
+    background: #eee;
+    font-size: 14px;
+}
+
+.well-info { 
+    background: rgb(255, 249, 213);
+    border-color: rgb(255, 236, 130); 
+}
+
+#dream-notice { 
+  display: inline-block;
+  animation: 500ms fadeIn;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  margin: 1rem;
+}
+
 @media (max-width: 720px) { 
     .desktop { 
         display: none;
@@ -148,3 +181,13 @@ section.box h1 {
         display: inline-block;
     }
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }

@@ -64,8 +64,10 @@
         display: block;
         padding-left: 1rem;
         padding-top: 1rem;
-        padding-bottom: .2rem;
+        padding-bottom: 0.1rem;
         color: #ddd;
+		font-size: 14px;
+
     }
 
     nav span.navSectionHeader-mobile { 

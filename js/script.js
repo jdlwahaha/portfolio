@@ -19,6 +19,15 @@
                     <span class="nav-icon">&#127897;</span> 
                     JDReads
                 </a>
+                
+                <span class="navSectionHeader-desktop">REVIEWS</span>
+                <span class="navSectionHeader-mobile">|</span>
+                
+
+                <a href="../books" >
+                    <span class="nav-icon">&#128214;</span> 
+                    Books
+                </a> 
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
@@ -27,13 +36,14 @@
                     <span class="nav-icon">&#8220;</span> 
                     People
                 </a> -->
-                <a href="../books" >
-                    <span class="nav-icon">&#128214;</span> 
-                    Books
-                </a> 
-                <a href="../quotes" class="last">
+             
+                <a href="../quotes" >
                     <span class="nav-icon">&#8220;</span> 
                     Quotes
+                </a>
+                <a href="../dreams" class="last">
+                    <span class="nav-icon">&#128173;</span> 
+                    Dreams
                 </a>
             </nav>
         `;
@@ -42,7 +52,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books', 'dreams']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 

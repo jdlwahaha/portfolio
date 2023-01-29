@@ -1,9 +1,9 @@
 .thumbnail-container img { 
-    height: 150px;
+    height: 100px;
 }
 
 .thumbnail-container { 
-    width: 150px;
+    width: 100px;
     text-align: center;
 
     display: inline-block;
@@ -18,7 +18,7 @@
 div.book-container { 
     display: inline-block; 
     vertical-align: top;
-    width: calc(90% - 150px);
+    width: calc(95% - 100px);
 }
 
 div.book-container h4 {
@@ -30,6 +30,10 @@ div.book-container h4 {
     .thumbnail-container { 
         border-right: none;
         width: 100%;
+    }
+
+    .thumbnail-container img { 
+        height: 150px;
     }
 
     div.book-container { 
