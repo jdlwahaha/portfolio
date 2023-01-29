@@ -2,7 +2,6 @@
 
 	/**** Desktop view test **/
 	body { 
-		margin: 1rem auto; 
 		max-width: none;
 		width: 100%;
 		vertical-align: top;

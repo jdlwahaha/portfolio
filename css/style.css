@@ -1,5 +1,4 @@
 body { 
-    margin: 1rem auto; 
     /* font-family: Candara, Arial, Sans-Serif; */
     max-width: 1080px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif !important;
@@ -140,7 +139,7 @@ section.box h1 {
     margin-bottom: 0;
 }
 
-@media (max-width: 600px) { 
+@media (max-width: 720px) { 
     .desktop { 
         display: none;
     }
