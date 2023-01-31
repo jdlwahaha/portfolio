@@ -12,17 +12,17 @@
 }
 
 .box-content p span.changeColorAnimation { 
-    animation: 2000ms changeColor;
+    animation: 3000ms changeColor;
     animation-delay: 700ms;
 }
 
 .box-content p span.moveAnimation { 
-    animation: 2000ms move;
-    animation-delay: 2700ms;
+    animation: 1000ms move;
+    animation-delay: 3700ms;
 }
 
 .box-content p span.spinAnimation { 
     display: block;
-    animation: 1000ms spin;
-    animation-delay: 3700ms;
+    animation: 500ms spin;
+    animation-delay: 4200ms;
 }
