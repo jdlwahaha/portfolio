@@ -113,7 +113,10 @@ nav a .nav-icon {
 }
 
 
-
+.center { 
+	text-align: center;
+	float: center;
+}
 
 
 

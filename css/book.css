@@ -11,7 +11,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
 
-    border-right: 2px solid #eee;
+    /* border-right: 2px solid #eee; */
 }
 
 
@@ -19,6 +19,7 @@ div.book-container {
     display: inline-block; 
     vertical-align: top;
     width: calc(95% - 100px);
+    /* border-top: 1px #eee solid; */
 }
 
 div.book-container h4 {

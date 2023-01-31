@@ -8,25 +8,26 @@ function loadBooks(books) {
     books = books.filter((r) => { return r.title != '' && r.review != '' });
     let content = '';
 
+
     books.map(function (book) {
         const bookThumbnail = `../../data/books/thumbnails/` + book.thumbnail;
 
         content += `
-                    <section class="box">
-                            <div class="box-content">
-                                <span class="thumbnail-container">
-                                    <img src="${bookThumbnail}" alt="${book.thumbnail}">
-                                </span>
-                                <div class="book-container">
-                                    <h4>${book.title}</h4>
-                                    <div class="author">by ${book.author}</div>
-                                    <p class="review">
-                                        ${book.review}
-                                    </p>
-                                </div>
-                            </div>
-                    </section>
-                `;
+            <section class="box">
+                <div class="box-content">
+                    <span class="thumbnail-container">
+                        <img src="${bookThumbnail}" alt="${book.thumbnail}">
+                    </span>
+                    <div class="book-container">
+                        <h4>${book.title}</h4>
+                        <div class="author">by ${book.author}</div>
+                        <p class="review">
+                            ${book.review}
+                        </p>
+                    </div>
+                </div>
+            </section>
+        `;
 
 
     });

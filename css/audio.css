@@ -6,7 +6,7 @@
 
 #audio_table {
     border: 1px solid #eee;
-
+    width: 100%;
 }
 
 #audio_table a.button { 
