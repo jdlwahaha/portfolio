@@ -20,6 +20,11 @@
     padding: 1rem;
     margin-top: -.5rem;
     font-size: 14px;
+
+    animation: 500ms fadeIn;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+    visibility: hidden;
 }
 
 
