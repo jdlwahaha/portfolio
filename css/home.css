@@ -4,7 +4,7 @@
     font-weight: bold;
     font-family: "Apple Chancery", cursive, sans-serif;
 
-    animation: 1000ms fadeIn;
+    animation: 500ms fadeIn;
     animation-delay: 200ms;
     animation-fill-mode: forwards;
     visibility: hidden;
@@ -12,17 +12,17 @@
 }
 
 .box-content p span.changeColorAnimation { 
-    animation: 5000ms changeColor;
-    animation-delay: 1000ms;
+    animation: 2000ms changeColor;
+    animation-delay: 700ms;
 }
 
 .box-content p span.moveAnimation { 
-    animation: 5000ms move;
-    animation-delay: 6000ms;
+    animation: 2000ms move;
+    animation-delay: 2700ms;
 }
 
 .box-content p span.spinAnimation { 
     display: block;
-    animation: 2500ms spin;
-    animation-delay: 8500ms;
+    animation: 1000ms spin;
+    animation-delay: 3700ms;
 }
