@@ -38,6 +38,7 @@ div#main {
     display: block;
 }
 
+
 .active-content { 
     display: block;
 }
@@ -161,6 +162,7 @@ section.box h1 {
 .well-info { 
     background: rgb(255, 249, 213);
     border-color: rgb(255, 236, 130); 
+    margin: 1rem;
 }
 
 #dream-notice { 
@@ -169,7 +171,6 @@ section.box h1 {
   animation-delay: 0;
   animation-fill-mode: forwards;
   visibility: hidden;
-  margin: 1rem;
 }
 
 @media (max-width: 720px) { 

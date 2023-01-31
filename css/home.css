@@ -1,0 +1,17 @@
+.box-content p { 
+    font-size: 10rem;
+    line-height: normal;
+    font-weight: bold;
+    font-family: "Apple Chancery", cursive, sans-serif;
+
+    animation: 1000ms fadeIn;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    text-align: center;
+}
+
+.box-content p span { 
+    animation: 5000ms changeColor;
+    animation-delay: 2000ms;
+}

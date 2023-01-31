@@ -13,7 +13,7 @@
                 <!-- <a href="index" class="first">Home</a> -->
                 <a href="../youtube" class="first">
                     <span class="nav-icon">&#128249;</span> 
-                    YouTuber
+                    GO
                 </a>
                 <a href="../jdreads">
                     <span class="nav-icon">&#127897;</span> 
@@ -52,7 +52,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books', 'dreams']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books', 'dreams', 'home']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
