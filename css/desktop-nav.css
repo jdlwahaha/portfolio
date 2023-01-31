@@ -21,17 +21,10 @@
 	section#mainContent { 
 		display: inline-block; 
 		width: calc(100% - 300px);
-		/* calc(100% - 10px); */
-		
-		
 	}
 
-	section#mainContent div.content { 
-		min-height: calc(90vh);;
-
-		/* min-height: calc(100% - 10px); */
-		/* div.main { 
-		} */
+	section#mainContent div#main { 
+		min-height: calc(90vh);
 	}
 
 	nav a {

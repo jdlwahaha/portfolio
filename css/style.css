@@ -25,7 +25,7 @@ footer {
     font-size: 12px;
 }
 
-.content {
+div#main {
     background-color: #efefef;
     border-radius: 15px 15px 0 0;
     
