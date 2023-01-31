@@ -1,0 +1,21 @@
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+
+
+}
+
+@keyframes changeColor {
+  0%   {color: black;}
+  20%   {color: red;}
+  40%  {color: gold;}
+  80%  {color: blue;}
+  100% {color: green;}
+}
+
