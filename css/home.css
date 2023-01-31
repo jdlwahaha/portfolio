@@ -5,13 +5,24 @@
     font-family: "Apple Chancery", cursive, sans-serif;
 
     animation: 1000ms fadeIn;
-    animation-delay: 500ms;
+    animation-delay: 200ms;
     animation-fill-mode: forwards;
     visibility: hidden;
     text-align: center;
 }
 
-.box-content p span { 
+.box-content p span.changeColorAnimation { 
     animation: 5000ms changeColor;
-    animation-delay: 2000ms;
+    animation-delay: 1000ms;
+}
+
+.box-content p span.moveAnimation { 
+    animation: 5000ms move;
+    animation-delay: 6000ms;
+}
+
+.box-content p span.spinAnimation { 
+    display: block;
+    animation: 2500ms spin;
+    animation-delay: 8500ms;
 }

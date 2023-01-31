@@ -11,11 +11,29 @@
 
 }
 
+
+
+
 @keyframes changeColor {
   0%   {color: black;}
-  20%   {color: red;}
-  40%  {color: gold;}
+  10%   {color: red;}
+  50%  {color: gold;}
   80%  {color: blue;}
   100% {color: green;}
 }
 
+@keyframes move {
+  0%   {margin-left:0px; margin-top:0px;}
+  25%  {margin-left:50%; top:0px;}
+  75%  {margin-left:0px; top:200px;}
+  50%  {margin-left:-50%; top:0;}
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
