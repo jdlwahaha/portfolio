@@ -10,7 +10,7 @@
         var headerHtml = `
             <a href="../youtube"><h1>My Space</h1></a>
             <nav>
-                <!-- <a href="index.html" class="first">Home</a> -->
+                <!-- <a href="index" class="first">Home</a> -->
                 <a href="../youtube" class="first">
                     <span class="nav-icon">&#128249;</span> 
                     YouTuber
