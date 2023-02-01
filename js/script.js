@@ -62,7 +62,7 @@
             $(`a[href*="${currentPage}"]`).addClass('current-tab');
         } else { 
             // redirect to home page
-            window.location.href = window.location.origin + '/portfolio/html/youtube'; 
+            window.location.href = window.location.origin + '/portfolio/html/home'; 
         }
     
     }
