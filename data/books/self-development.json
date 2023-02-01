@@ -3,6 +3,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -10,6 +11,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -17,6 +19,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -24,6 +27,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -31,6 +35,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -38,6 +43,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -45,6 +51,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -52,6 +59,7 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -59,12 +67,14 @@
         "title": "", 
         "author": "",
         "thumbnail": "",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
     {
         "title": "Unshakeable: Your Financial Freedom Playbook", 
         "author": "Tony Robbins",
+        "rating": 5,
         "thumbnail": "unshakeable-robbins",
         "quotes": [], 
         "review": ""
@@ -73,6 +83,7 @@
         "title": "Spark: The Revolutionary New Science of Exercise and the Brain", 
         "author": "Eric Hagerman",
         "thumbnail": "spark-hagerman.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -80,6 +91,7 @@
         "title": "Unlimited Power: The Next Science Of Personal Achievement", 
         "author": "Tony Robbins",
         "thumbnail": "unlimited-power.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -87,6 +99,7 @@
         "title": "High Performance Habits: How Extraordinary People Become That Way", 
         "author": "Brendon Burchard",
         "thumbnail": "high-performance-habits.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -94,6 +107,7 @@
         "title": "How to Win Friends and Influence People", 
         "author": "Dale Carnegie",
         "thumbnail": "how-to-win-friends.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -101,6 +115,7 @@
         "title": "The Millionaire Next Door: The Surprising Secrets of America's Wealthy", 
         "author": "Thomas Stanley",
         "thumbnail": "the-millionaire-next-door.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -108,6 +123,7 @@
         "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
         "author": "Dan Lok",
         "thumbnail": "fu-money.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -115,13 +131,15 @@
         "title": "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!", 
         "author": "Tony Robbins",
         "thumbnail": "awaken-the-giant-within.png",
+        "rating": 5,
         "quotes": [], 
-        "review": ""
+        "review": "I was going to read his first book 'Unlimited Power' first. However, this one was available in the library first, so this was the first book that I've read from Tony Robbins. 10 out of 10 recommend this. The major takeaway from this book for me was finding a role model. Someone, somwhere, must have done the things that you've been dreaming to achieve. You first need to know what it is that you want, know it is possible to achieve with inspiration from someone that's done it, and mirror and execute it!"
     },
     {
         "title": "Rich Dad, Poor Dad", 
         "author": "Robert Kiyosaki",
         "thumbnail": "rich-dad-poor-dad.png",
+        "rating": 5,
         "quotes": [], 
         "review": ""
     },
@@ -129,13 +147,15 @@
         "title": "What To Say When You Talk To Your Self", 
         "author": "Shad Helmstetter",
         "thumbnail": "what-to-say.png",
+        "rating": 5,
         "quotes": [], 
-        "review": "I thought it was gonna be like yea, it's another one that's gonna be boring. The content is actually more eye-opening for me and I didn't expect myself to learn so much from this book. It talks about the different levels show how you view yourself currently. "
+        "review": "I thought this was going to be another book with a catchy title. I mean, who doesn't know what to say to yourself? Apparently, this book talks more than that. The content is actually eye-opening for me. It talks about the different levels of self-talk. Base from what you say and it will show how you view yourself currently, which is amazing to me because I didn't think it matters."
     },
     {
         "title": "The 10X Rule: The Only Difference Between Success and Failure", 
         "author": "Grant Cardone",
         "thumbnail": "the-10x-rule.png",
+        "rating": 5,
         "quotes": [], 
         "review": "This book inspired me to \"Level UP\" myself. The book itself was valuable to me, but the author is not a great influencer in my opinion. He might be a great property saleman, but I don't agree with the way he took money from his followers. The book itself though, definitely brings value to me as a person."
     }
