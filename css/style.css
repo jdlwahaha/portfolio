@@ -173,6 +173,11 @@ section.box h1 {
   visibility: hidden;
 }
 
+
+
+
+
+
 @media (max-width: 720px) { 
     .desktop { 
         display: none;

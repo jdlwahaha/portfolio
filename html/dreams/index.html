@@ -1,65 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="icon" type="image/png" href="../../img/icon.png"/>
-    <title>Dreams | Car</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="../../img/icon.png" />
+    <title>Dreams | House</title>
     <link rel="stylesheet" href="../../css/animation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/box.css">
     <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/desktop-nav.css">
-    <link rel="stylesheet" href="../../css/audio.css">
-	<script src="../../lib/jquery-2.1.3.min.js"></script>
-	<script src="../../js/script.js"></script>
+    <link rel="stylesheet" href="../../css/house.css">
+    <script src="../../lib/jquery-2.1.3.min.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/house.js"></script>
 </head>
-<body>
-	<header><!-- jQuery generated --></header>
 
-	<section id="mainContent">
+<body>
+    <header><!-- jQuery generated --></header>
+
+    <section id="mainContent">
 
         <div id="main">
 
             <div class="submenu">
-                <span>Car</span> |
-                <a href="house">House</a> |
+                <span>House</span> |
+                <a href="car">Car</a> |
                 <a href="schedule">Schedule</a>
             </div>
-          
-
 
             <section class="box">
                 <div class="well well-info" id="dream-notice">
-                    These are the criteria for my dream car. I am very fortunate to have easy access
-                    to regular travelling sedans. However, those cars are a bit dated and
-                    I would like to own and upgrade for better safety when I'm driving alone. 
-                    <br />
-                    <br />
-                    I'm NOT looking for speed, 
-                    but I do want a car that carries ONLY me while rocking the look. The goal is 
-                    for me to work from car safely and comfortably.
-                </div> 
-                
+                    These are the criteria for my dream place. I am very grateful for where I
+                    live now, but I do want to catch my chance of a better one if any shows up.
+                </div>
+
                 <div class="box-content">
-                    Must have/be: 
-                    <ul>
-                        <li>Two doors only</li>
-                        <li>Dashcams</li>
-                        <li>Collision/Safety sensors</li>
-                        <li>Comfortable and ergonomic seats</li>
-                        <li>Automatic</li>
-                        <li>Sharp appearance</li>
+
+                    Ideal Layout:
+                    <div class="levelNav">
+                        <button id="nav-top" class="active">Top Floor</button>
+                        <button id="nav-main">Main Floor</button>
+                        <button id="nav-ground">Ground Floor</button>
+                        <button id="nav-notes">Other Notes</button>
+                    </div>
+
+                    <ul id="top-floor">
+                        <li>
+                            Office
+
+                            <ul class="note">
+                                <li>Room for deep thinking</li>
+                                <li>Must be silent</li>
+                                <li>Fit three 27" monitors for work and side projects</li>
+                                <li>Work station battleground</li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            Bedroom
+                            <ul class="note">
+                                <li>Space for deep sleep</li>
+                                <li>Must be completely dark and silent</li>
+                                <li>Fit a side table for secondary (gaming) laptop</li>
+                            </ul>
+
+
+                        </li>
+                        <li>Washroom (just 1 would be sufficient) </li>
                     </ul>
 
-                    Optional: 
-                    <ul>
-                        <li>No GPS</li>
-                        <li>Not using premium gas</li>
-                        <li>Heated front seat</li>
-                        <li>Success yellow (not taxi)</li>
+                    <ul id="main-floor" class="hide">
+                        <li>
+                            Living room
+                            <ul class="note">
+                                <li>A desk for primary (gaming) laptop</li>
+                                <li>5 seater sofa</li>
+                                <li>TV as monitor</li>
+                                <li>Shelf for Rokr, Lego and Keyboards</li>
+                            </ul>
+                        </li>
+                        <li>Toilet (1/2)</li>
+                        <li>
+                            Kitchen
+                            <ul class="note">
+                                <li>Must be on corner and not acting as a divider between living room and dining</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Dining
+                            <ul class="note">
+                                <li>Can be merged with an island if has one</li>
+                            </ul>
+                        </li>
                     </ul>
+
+                    <ul id="ground-floor" class="hide">
+                        <li>Garage</li>
+                        <li>Closet or extra storage from Garage</li>
+                        <li>
+                            Den (Gym* / Social room)
+                            <ul class="note">
+                                <li>
+                                    Gym was evaluated to be not worth it for the cost of space and ongoing maintanence
+                                    costs.
+                                    It would probably be eaiser to buy a place that has a gym or buy a membership pass.
+                                </li>
+                                <li>Equipments: treadmill, assisted pull up, elliptical (optional) </li>
+                            </ul>
+                        </li>
+                        <li>Washroom (Optional)</li>
+                    </ul>
+
+
+
+
+                    <ul id="notes-floor" class="hide">
+                        <li>24/7 Garbage collection</li>
+                        <li>Corner unit if it's a townhouse</li>
+                        <li>No basement</li>
+                        <li>No carpet</li>
+                        <li>No yard work</li>
+                        <li>Prefer not tandem garage, but will accept it and add extra shelf storage</li>
+                    </ul>
+
+
+
                 </div>
             </section>
         </div>
@@ -69,4 +137,5 @@
     </section>
 
 </body>
+
 </html>
