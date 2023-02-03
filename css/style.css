@@ -53,6 +53,8 @@ a {
     color: orange;
 }
 
+
+
 a.button { 
     background: orange;
     padding: 1px 3px;
@@ -134,6 +136,15 @@ section#yearSelection select {
     border-radius: 8px;
     
 }
+
+.keyword-project { 
+    color: orange;
+}
+.keyword-skill { 
+    color: rgb(74 103 251);
+    /* color: rgb(123, 123, 245); */
+}
+
 
 section.box h1 { 
     font-size: 16px;

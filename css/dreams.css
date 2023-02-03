@@ -3,7 +3,7 @@
 *********************************************/
 
 .note { 
-    color: rgb(123, 123, 245);
+    color: gray;
     padding-top: .5rem;
 }
 
@@ -11,7 +11,7 @@
 .levelNav { 
 	padding-top: .5rem;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 16px;
     font-family: Candara, Arial, Sans-Serif;
 
 
@@ -24,13 +24,13 @@
 	padding: .8rem;
     border-radius: 4px;
     background: white;
-	/* padding-bottom: .2rem;  */
+	font-size: 14px;
 }
 
 
 .levelNav button { 
     border: rgb(255, 196, 0) 1px solid;
-	color: #888;
+	color: #666;
 }
 .levelNav button:hover { 
     color: rgb(255, 196, 0);
