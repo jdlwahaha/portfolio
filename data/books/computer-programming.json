@@ -2,21 +2,21 @@
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "quotes": [], 
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "quotes": [], 
         "review": ""
     },
     {
         "title": "The Missing README: A Guide for the New Software Engineer", 
         "author": "Chris Riccomini and Dmitriy Ryaboy",
-        "thumbnail": "the-missing-readme.png",
+        "filename": "the-missing-readme",
         "rating": 5,
         "quotes": [], 
         "review": "I borrowed this book from an eLibrary and read it from Overdrive. I bought a physical copy of this book afterwards for future quick reference. It was a good one. "
@@ -24,7 +24,7 @@
     {
         "title": "Head First Design Patterns", 
         "author": "Eric Freeman",
-        "thumbnail": "headfirst-design-patterns.png",
+        "filename": "headfirst-design-patterns",
         "rating": 5,
         "quotes": [], 
         "review": "I was bored on the train when I encountered this book. I've learned many patterns from this book in an interesting way. Definitely recommend this one."
@@ -32,7 +32,7 @@
     {
         "title": "Soft Skills: The Software Developer's Life Manual", 
         "author": "John Sonmez",
-        "thumbnail": "soft-skills.png",
+        "filename": "soft-skills",
         "rating": 5,
         "quotes": [], 
         "review": "This is the first book that made me realized that software developer is a job. To be richer, the book teaches you how to use your programming skills to the fullest such as creating a blog or make instructing videos on how to program. Show the world what you know. Then it also briefly mention about investing on houses and stock."

@@ -2,161 +2,181 @@
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "", 
         "author": "",
-        "thumbnail": "",
+        "filename": "",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "Unshakeable: Your Financial Freedom Playbook", 
         "author": "Tony Robbins",
         "rating": 5,
-        "thumbnail": "unshakeable-robbins",
+        "filename": "unshakeable-robbins",
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "Spark: The Revolutionary New Science of Exercise and the Brain", 
         "author": "Eric Hagerman",
-        "thumbnail": "spark-hagerman.png",
+        "filename": "spark-hagerman",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "Unlimited Power: The Next Science Of Personal Achievement", 
         "author": "Tony Robbins",
-        "thumbnail": "unlimited-power.png",
+        "filename": "unlimited-power",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "High Performance Habits: How Extraordinary People Become That Way", 
         "author": "Brendon Burchard",
-        "thumbnail": "high-performance-habits.png",
+        "filename": "high-performance-habits",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "How to Win Friends and Influence People", 
         "author": "Dale Carnegie",
-        "thumbnail": "how-to-win-friends.png",
+        "filename": "how-to-win-friends",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "The Millionaire Next Door: The Surprising Secrets of America's Wealthy", 
         "author": "Thomas Stanley",
-        "thumbnail": "the-millionaire-next-door.png",
+        "filename": "the-millionaire-next-door",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
         "author": "Dan Lok",
-        "thumbnail": "fu-money.png",
+        "filename": "fu-money",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": true,
         "review": "The first time that I've read this book was when I was still spedning 3 hours per day on the transit commuting back and forth from work. This was the book that made me realized that time is the most precious and irreplaceable asset that I have. I was very much broke back then and got the ebook for free when Dan was basically giving it out. I would very much say that I wouldn't be where I am today without reading this book. I am able to afford and own a physical copy today. Gave it another read and will take more actions today."
     },
     {
         "title": "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!", 
         "author": "Tony Robbins",
-        "thumbnail": "awaken-the-giant-within.png",
+        "filename": "awaken-the-giant-within",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": "I was going to read his first book 'Unlimited Power' first. However, this one was available in the library first, so this was the first book that I've read from Tony Robbins. 10 out of 10 recommend this. The major takeaway from this book for me was finding a role model. Someone, somwhere, must have done the things that you've been dreaming to achieve. You first need to know what it is that you want, know it is possible to achieve with inspiration from someone that's done it, and mirror and execute it!"
     },
     {
         "title": "Rich Dad, Poor Dad", 
         "author": "Robert Kiyosaki",
-        "thumbnail": "rich-dad-poor-dad.png",
+        "filename": "rich-dad-poor-dad",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": ""
     },
     {
         "title": "What To Say When You Talk To Your Self", 
         "author": "Shad Helmstetter",
-        "thumbnail": "what-to-say.png",
+        "filename": "what-to-say",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": "I thought this was going to be another book with a catchy title. I mean, who doesn't know what to say to yourself? Apparently, this book talks more than that. The content is actually eye-opening for me. It talks about the different levels of self-talk. Base from what you say and it will show how you view yourself currently, which is amazing to me because I didn't think it matters."
     },
     {
         "title": "The 10X Rule: The Only Difference Between Success and Failure", 
         "author": "Grant Cardone",
-        "thumbnail": "the-10x-rule.png",
+        "filename": "the-10x-rule",
         "rating": 5,
         "quotes": [], 
+        "showFullReview": false,
         "review": "This book inspired me to \"Level UP\" myself. The book itself was valuable to me, but the author is not a great influencer in my opinion. He might be a great property saleman, but I don't agree with the way he took money from his followers. The book itself though, definitely brings value to me as a person."
     }
 ]

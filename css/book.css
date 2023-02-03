@@ -62,3 +62,38 @@ div.rating {
         margin-top: 1rem;
     }
 }
+
+div.question { 
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    line-height: 1.5rem;
+}
+
+div.answer { 
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(74 103 251);
+    line-height: 1.5rem;
+}
+
+div ol, 
+div ul { 
+    margin-top: .5rem;
+    margin-left: -1rem;
+    line-height: 1.5rem;
+}
+
+div ol li, 
+div ul li { 
+    margin: 0; 
+    padding: 0;
+}
+
+
+
+
+div.black { 
+    color: #666;
+}

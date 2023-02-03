@@ -6,6 +6,15 @@
     background-color: white;
 }
 
+section.box div.box-exercise { 
+    padding: 1rem 2rem; 
+    font-size: 14px;
+
+    animation: 1500ms fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
 .box h1 {
     background: #ddd;
     border-radius: 10px 10px 0 0 ;
@@ -21,8 +30,8 @@
     padding: 1rem;
     font-size: 14px;
 
-    animation: 500ms fadeIn;
-    animation-delay: 100ms;
+    animation: 1000ms fadeIn;
+    animation-delay: 0ms;
     animation-fill-mode: forwards;
     visibility: hidden;
 }
