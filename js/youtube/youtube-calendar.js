@@ -140,31 +140,6 @@
     }
 
 
-
-
-
-    function getMonthName(monthNumber) {
-        const date = new Date();
-        date.setMonth(monthNumber);
-        const month = [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"
-        ];
-        return month[monthNumber];
-    }
-
-
-
 })(); 
 
 
