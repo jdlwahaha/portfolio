@@ -1,23 +1,28 @@
 (function () {
         
     $(document).ready(function () {
-        $.getJSON('../../data/youtube2.json', function (videos) {
-            const YEAR_START = 2020; 
-            const YEAR_END = 2023; 
+        $.getJSON('../../data/videos/ya_deck.json', function(deckVideos) { 
+            $.getJSON('../../data/videos/go.json', function (goVideos) {
+                const YEAR_START = 2020; 
+                const YEAR_END = 2023; 
+    
+                const videos = [...goVideos, ...deckVideos];
 
-            loadYearData(YEAR_END, videos);
-            var that = this; 
-            that.videos = videos;
-            
-            $(`span #videoCount`).append(videos.length);
-
-            $(document).on('change', '#yearSelection', function(value){
-                $(`section #videoList`).empty();
-                const selectedYear = $(this).find("option:selected").attr('value');
-                loadYearData(selectedYear, that.videos);
+                loadYearData(YEAR_END, videos);
+                var that = this; 
+                that.videos = videos;
+                
+                $(`span #videoCount`).append(videos.length);
+    
+                $(document).on('change', '#yearSelection', function(value){
+                    $(`section #videoList`).empty();
+                    const selectedYear = $(this).find("option:selected").attr('value');
+                    loadYearData(selectedYear, that.videos);
+                });
+    
             });
-
         });
+        
         
     });
 
@@ -80,7 +85,7 @@
             const videoDate = video.date.year + '-' + appendZero(video.date.month+1) + '-' + appendZero(video.date.day);
             if (video.videoId) {
                 const link = `https://youtu.be/${video.videoId}`; 
-                const png = (video.type === 'short') ? 's_play.png' : "play.png";
+                const png = getImage(video);
                 htmlContent += `<div class="list-item">${videoDate} 
                         <a href="${link}" target="_blank">
                                 <img src="../../img/${png}" width=25/>

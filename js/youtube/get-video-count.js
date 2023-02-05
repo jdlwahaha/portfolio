@@ -2,7 +2,7 @@
 
     
     $(document).ready(function() { 
-        $.getJSON('../../data/youtube2.json', function(videos) {         
+        $.getJSON('../../data/videos/go.json', function(videos) {         
     
             // remove empty records
             videos = videos.filter((r) => {return r.title != ''})
