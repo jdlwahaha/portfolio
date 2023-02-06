@@ -47,6 +47,10 @@ section.box div.box-exercise {
     line-height: 24px;
 }
 
+.box-content p a:hover {
+    color: rgb(255, 123, 0);
+}
+
 .box > a {
     border-style: solid;
     border-color: #fc5;
