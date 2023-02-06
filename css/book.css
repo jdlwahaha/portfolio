@@ -96,7 +96,7 @@ div ul li {
     padding: 0;
 }
 
-ul#quotes > li{ 
+.review  li{ 
     list-style-type: square;
     padding: .5rem 0;
 }
