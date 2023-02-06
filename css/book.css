@@ -78,6 +78,11 @@ div.answer {
     line-height: 1.5rem;
 }
 
+div.review { 
+    color: #666;
+    padding-bottom: 1rem;
+}
+
 div ol, 
 div ul { 
     margin-top: .5rem;
@@ -91,9 +96,15 @@ div ul li {
     padding: 0;
 }
 
+ul#quotes > li{ 
+    list-style-type: square;
+    padding: .5rem 0;
+}
+
 
 
 
 div.black { 
     color: #666;
 }
+

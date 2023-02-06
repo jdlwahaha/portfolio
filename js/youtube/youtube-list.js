@@ -53,19 +53,19 @@
 
         const html = `
         <div class="date-info">${getMonthName(month)}</div>
-            <div class="meter">
-                <span class="progressbar" style="width: ${percent}%"></span>
-                <strong>
-                    <span class="progress">${current_count}</span> ${(current_count > 1) ? 'videos' : 'video'}
-                </strong>
-            </div>
-            <br>
-            <div class="youtube_embed_videos">
-                ${htmlContent}
-            </div>
-            <br>
-            <br>
-            <br>
+        <div class="meter">
+            <span class="progressbar" style="width: ${percent}%"></span>
+            <strong>
+                <span class="progress">${current_count}</span> ${(current_count > 1) ? 'videos' : 'video'}
+            </strong>
+        </div>
+        <br>
+        <div class="youtube_embed_videos">
+            ${htmlContent}
+        </div>
+        <br>
+        <br>
+        <br>
         `; 
         return html; 
     }

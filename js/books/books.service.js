@@ -10,43 +10,51 @@ function loadBooks(books) {
 
 
     books.map(function (book) {
-        const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
-
-        
-
-
-        content += `
-            <section class="box">
-                <div class="box-content">
-                    <span class="thumbnail-container">
-                        <img src="${bookThumbnail}" alt="${book.filename}.png">
-                    </span>
-                    <div class="book-container">
-                        <h4>${book.title}</h4>
-                        <div class="author">by ${book.author}</div>
-                        <div class="rating"> ${getRatingString(book.rating)}</div>
-                        ${getReivew(book)}
-                    </div>
-                </div>
-            </section>
-        `;
-
-
+        content += getBookHTML(book, true); 
     });
 
     $('#book_list').append(content);
 
 }
 
-function getReivew(book) { 
-    if (book.showFullReview === true) {
-        return `
+function getBookHTML(book, showLinks) { 
+    const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
+
+    return `
+        <section class="box">
+            <div class="box-content">
+                <span class="thumbnail-container">
+                    <img src="${bookThumbnail}" alt="${book.filename}.png">
+                </span>
+                <div class="book-container">
+                    <h4>${book.title}</h4>
+                    <div class="author">by ${book.author}</div>
+                    <div class="rating"> ${getRatingString(book.rating)}</div>
+                    ${getReivew(book, showLinks)}
+                </div>
+            </div>
+        </section>
+    `;
+}
+
+function getReivew(book, showLinks) { 
+
+
+    if (book.showFullReview === true && showLinks === true) {
+        let result = `
             <p>
                 ${book.review} 
-            </p><p>
-                <a href="./z_exercise-${book.filename}">See More >>></a>
-            </p>
-        `
+            </p>`;
+            
+        if (book.showFullReview || book.showExercise) { 
+            result += `
+                <p>
+                ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review</a>` : ''}
+                ${book.showExercise ? `| <a href="./z_exercise-${book.filename}">Exercise</a>` : ''}
+                    
+                </p>`;
+        }
+        return result; 
     } else { 
         return `
             <p class="review">

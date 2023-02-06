@@ -36,6 +36,13 @@ section.box div.box-exercise {
     visibility: hidden;
 }
 
+.box-content h3 { 
+    font-size: 14px; 
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
 .box-content p { 
     line-height: 24px;
 }
