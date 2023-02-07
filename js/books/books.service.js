@@ -49,8 +49,8 @@ function getReivew(book, showLinks) {
         if (book.showFullReview || book.showExercise) { 
             result += `
                 <p>
-                ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review</a>` : ''}
-                ${book.showExercise ? `| <a href="./z_exercise-${book.filename}">Exercise</a>` : ''}
+                ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review >>></a>` : ''}
+                ${book.showExercise ? `| <a href="./z_exercise-${book.filename}" title="exercise">ᕦ(ò_óˇ)ᕤ</a>` : ''}
                     
                 </p>`;
         }
