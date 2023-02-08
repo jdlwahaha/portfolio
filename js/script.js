@@ -28,6 +28,10 @@
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
+                <a href="../courses" >
+                    <span class="nav-icon">&#128211;</span> 
+                    Courses
+                </a> 
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
@@ -52,7 +56,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'people', 'books', 'dreams', 'home']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'courses', 'books', 'dreams', 'home']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 

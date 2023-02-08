@@ -10,14 +10,14 @@ function loadBooks(books) {
 
 
     books.map(function (book) {
-        content += getBookHTML(book, true); 
+        content += getCourseHTML(book, true); 
     });
 
     $('#book_list').append(content);
 
 }
 
-function getBookHTML(book, showLinks) { 
+function getCourseHTML(book, showLinks) { 
     const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
 
     return `
@@ -60,17 +60,17 @@ function getReivew(book, showLinks) {
             <p class="review">
                 ${book.review}
             </p>
-        `
+        `;
     }
 }
 
 function getRatingString(number) { 
     var result = ''; 
-    if (number) { 
+    if (number >= 0) { 
         var MAX_STARS_COUNT = 5;
         var SOLID_STAR_SYMBOL = '&#9733;';
         var EMPTY_STAR_SYMBOL = '&#9734;';
-        if (number >= 1 && number <= MAX_STARS_COUNT) { 
+        if (number >= 0 && number <= MAX_STARS_COUNT) { 
             for (var i=0; i<MAX_STARS_COUNT; i++) { 
                 if (number < i+1) { 
                     result += EMPTY_STAR_SYMBOL;

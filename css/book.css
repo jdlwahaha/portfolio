@@ -2,6 +2,7 @@
     height: 100px;
 }
 
+
 .thumbnail-container { 
     width: 100px;
     text-align: center;
@@ -15,12 +16,22 @@
 }
 
 
+
 div.book-container { 
     display: inline-block; 
     vertical-align: top;
     width: calc(95% - 100px);
     /* border-top: 1px #eee solid; */
 }
+
+.course-thumbnail-container { 
+    width: 200px;
+}
+div.course-container { 
+    width: calc(95% - 200px);
+
+}
+
 
 div.book-container h4 {
     margin: 0;

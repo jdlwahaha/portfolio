@@ -1,0 +1,56 @@
+[ 
+    { 
+        "courseName": "", 
+        "instructor": "", 
+        "rating": 0, 
+        "platform": "",
+        "completed": false
+    },
+    { 
+        "courseName": "", 
+        "instructor": "", 
+        "rating": 0, 
+        "platform": "udemy",
+        "completed": false
+    },
+    { 
+        "courseName": "Angular - The Complete Guide (2023 Edition)", 
+        "instructor": "Maximilian Schwarzmuller", 
+        "rating": 0, 
+        "thumbnail": "angular",
+        "platform": "udemy",
+        "completed": false
+    },
+    { 
+        "courseName": "Understanding TypesScript", 
+        "instructor": "Maximilian Schwarzmuller", 
+        "rating": 0, 
+        "thumbnail": "typescript",
+        "platform": "udemy",
+        "completed": false
+    },
+    { 
+        "courseName": "Qt 6 Core Beginners with C++", 
+        "instructor": "Bryan Cairns", 
+        "rating": 0, 
+        "thumbnail": "qt6",
+        "platform": "udemy",
+        "completed": false
+    },
+    { 
+        "courseName": "Raspberry Pi For Beginners - 2023 Complete Course", 
+        "instructor": "Edouard Renard", 
+        "rating": 0, 
+        "thumbnail": "raspberry",
+        "platform": "udemy",
+        "completed": false
+    },
+    { 
+        "courseName": "Understanding Jira for users, managers and admins", 
+        "instructor": "Dan LeFebvre", 
+        "rating": 0, 
+        "thumbnail": "jira",
+        "platform": "udemy",
+        "completed": false
+    }
+]
