@@ -6,7 +6,7 @@
                 const YEAR_START = 2020; 
                 const YEAR_END = 2023; 
     
-                const videos = [...goVideos, ...deckVideos];
+                const videos = [...goVideos, ...deckVideos].sort(sortByDate);
 
                 loadYearData(YEAR_END, videos);
                 var that = this; 
@@ -25,6 +25,18 @@
         
         
     });
+
+    function sortByDate(v1, v2) { 
+        const v1Date = new Date(v1.date.year, v1.date.month, v1.date.day);
+        const v2Date = new Date(v2.date.year, v2.date.month, v2.date.day);
+
+        if (v1Date < v2Date) { 
+            return 1; 
+        } else if (v1Date > v2Date) { 
+            return -1; 
+        }
+        return 0;
+    }
 
 
     function loadYearData(year, videos) { 
