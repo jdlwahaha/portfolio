@@ -34,13 +34,12 @@
         return `
             <section class="box">
                 <div class="box-content">
-                <span class="thumbnail-container course-thumbnail-container">
+                <span class="thumbnail-container keyboard-thumbnail-container">
                     <img src="${thumbnail}" alt="${thumbnail}">
                 </span>
-                    <div class="book-container course-container">
+                    <div class="book-container keyboard-container">
                         <h4>${keyboard.name} ${youtubeLink}</h4>
                         <div class="rating"> ${getRatingString(keyboard.rating)}</div>
-                     
                         <p class="review">${keyboard.review}</p>
                     </div>
                 </div>

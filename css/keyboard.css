@@ -13,6 +13,7 @@ div.row > div {
     border-radius: 4px;
     padding: 1rem;
     display: inline-block;
+    margin: .5rem 0;
 }
 
 .linear { 
@@ -39,4 +40,42 @@ div.row > div {
 .mecha-membrane { 
     background: #e3e3e3;
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
+}
+
+.input-layout img { 
+    width: 450px;
+}
+
+
+.keyboard-thumbnail-container { 
+    width: 200px;
+}
+div.keyboard-container { 
+    width: calc(95% - 200px);
+}
+
+
+@media (max-width: 600px) { 
+
+    .input-layout img { 
+        width: 100%;
+    }
+
+    div.row div { 
+        width: 100%;
+    }
+
+    .keyboard-thumbnail-container { 
+        width: 100%;
+        display: inline;
+    }
+
+    .keyboard-thumbnail-container img { 
+        width: 100%;
+        height: auto;
+    }
+    div.keyboard-container { 
+        width: 100%;
+    }
+    
 }
