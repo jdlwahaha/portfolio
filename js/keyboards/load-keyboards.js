@@ -48,9 +48,12 @@
                         `
                     : '';
 
+
+        const switchType = getSwitchHtml(keyboard);
+
         const price = (keyboard.msrp && keyboard.myPrice)
                 ? `<div>$${keyboard.msrp} &nbsp;<span class="myPrice" title="total price that I paid included tax">($${keyboard.myPrice})<span></div>`
-                : '';
+                : ``;
         return `
             <section class="box">
                 <div class="box-content">
@@ -59,6 +62,7 @@
                 </span>
                     <div class="book-container keyboard-container">
                         <h4>${keyboard.name} ${youtubeLink}</h4>
+                        ${switchType}
                         ${price}
                         <div class="rating"> ${getRatingString(keyboard.rating)}</div>
                         <p class="review">${keyboard.review}</p>
@@ -66,6 +70,32 @@
                 </div>
             </section>
         `;
+    }
+
+    function getSwitchHtml(keyboard) { 
+        let switchSymbol = ''; 
+
+        switch(keyboard.switchType) { 
+            case 'linear': 
+                switchSymbol = '&#128997;'; 
+                break;
+            case 'tactile': 
+                switchSymbol = '&#129003;'; 
+                break;
+            case 'clicky': 
+                switchSymbol = '&#128998;'; 
+                break;
+            case 'membrane': 
+                switchSymbol = '&#128999;';
+                keyboard.switchName = 'Membrane'; 
+                break;
+            case 'mecha': 
+                switchSymbol = '&#11036;'; 
+                keyboard.switchName = 'Mecha-Membrane'; 
+                break;
+        }
+
+        return `<div title="${keyboard.switchType} switch" class="${keyboard.switchType}">${switchSymbol} ${keyboard.switchName}</div>`;
     }
 
 

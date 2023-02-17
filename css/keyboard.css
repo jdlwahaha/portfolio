@@ -21,28 +21,28 @@ div.row > div {
 }
 
 .linear { 
-    background: rgb(255, 175, 175);
+    background: rgb(255, 234, 234);
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
 }
 
 .tactile { 
-    background: rgb(205, 180, 158);
+    background: rgb(237, 221, 207);
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
     
 }   
 
 .clicky { 
-    background: rgb(216, 228, 255);
+    background: rgb(231, 238, 255);
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
 }
 
 .membrane {
-    background: rgb(255, 237, 214);
+    background: rgb(255, 245, 232);
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
 }
 
-.mecha-membrane { 
-    background: #e3e3e3;
+.mecha { 
+    background: #ececec;
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
 }
 
@@ -56,6 +56,10 @@ div.row > div {
 }
 div.keyboard-container { 
     width: calc(95% - 200px);
+    
+}
+div.keyboard-container div { 
+    line-height: 1.5rem;
 }
 
 
