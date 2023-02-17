@@ -20,6 +20,25 @@
                     JDReads
                 </a>
                 
+
+                <span class="navSectionHeader-desktop">PAGES</span>
+                <span class="navSectionHeader-mobile">|</span>
+                
+                <!-- <a href="../people" class="last">
+                    <span class="nav-icon">&#8220;</span> 
+                    People
+                </a> -->
+                
+                <a href="../quotes" >
+                    <span class="nav-icon">&#8220;</span> 
+                    Quotes
+                </a>
+                <a href="../dreams" >
+                    <span class="nav-icon">&#128173;</span> 
+                    Dreams
+                </a>
+
+
                 <span class="navSectionHeader-desktop">REVIEWS</span>
                 <span class="navSectionHeader-mobile">|</span>
                 
@@ -32,23 +51,12 @@
                     <span class="nav-icon">&#128211;</span> 
                     Courses
                 </a> 
+                <a href="../keyboards" class="last" >
+                    <span class="nav-icon">&#128187;</span> 
+                    Keyboards
+                </a>
 
-                <span class="navSectionHeader-desktop">PAGES</span>
-                <span class="navSectionHeader-mobile">|</span>
-                
-                <!-- <a href="../people" class="last">
-                    <span class="nav-icon">&#8220;</span> 
-                    People
-                </a> -->
-             
-                <a href="../quotes" >
-                    <span class="nav-icon">&#8220;</span> 
-                    Quotes
-                </a>
-                <a href="../dreams" class="last">
-                    <span class="nav-icon">&#128173;</span> 
-                    Dreams
-                </a>
+               
             </nav>
         `;
         $('header').append(headerHtml); 
@@ -56,7 +64,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'courses', 'books', 'dreams', 'home']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'courses', 'books', 'dreams', 'home', 'keyboards']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
