@@ -54,24 +54,7 @@ div.rating {
     color: #666;
 } */
 
-@media (max-width: 500px) { 
-    .thumbnail-container { 
-        border-right: none;
-        width: 100%;
-    }
 
-    .thumbnail-container img { 
-        height: 150px;
-    }
-
-    div.book-container { 
-        width: 100%;
-    }
-
-    div.book-container h4 { 
-        margin-top: 1rem;
-    }
-}
 
 div.question { 
     padding-top: 1rem;
@@ -118,3 +101,39 @@ div.black {
     color: #666;
 }
 
+
+
+@media (max-width: 500px) { 
+    .thumbnail-container { 
+        border-right: none;
+        width: 100%;
+    }
+
+    .thumbnail-container img { 
+        height: 150px;
+    }
+
+    div.book-container { 
+        width: 100%;
+    }
+
+    div.book-container h4 { 
+        margin-top: 1rem;
+    }
+
+    div ol, 
+    div ul { 
+        margin-top: .5rem;
+        margin-left: 0;
+        line-height: 1.5rem;
+    }
+
+    div.question, 
+    div.answer { 
+        padding-left: 0; 
+        padding-right: 0; 
+        margin-left: 0; 
+        margin-right: 0;
+    }
+
+}

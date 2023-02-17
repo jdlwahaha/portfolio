@@ -82,16 +82,13 @@ a.button.disabled {
     display: none;
 }
 
-ul { 
-    /* padding: 0 1rem;  */
-    /* margin: 0; */
-}
 
 highlight { 
     background: yellow; 
 }
 
-ul#quotes {
+ul#quotes, 
+ul#notes {
     margin: 0;
     padding: 0 1rem; 
 }
@@ -190,7 +187,7 @@ section.box h1 {
 
 
 
-@media (max-width: 720px) { 
+@media (max-width: 600px) { 
     .desktop { 
         display: none;
     }

@@ -19,7 +19,7 @@
                         const quotes = review.quotes.map(quote => `<li>${quote}</li>`); 
                         $('#quotes').append(quotes);
 
-                        const notes = review.notes.map(quote => `<li>${quote}</li>`); 
+                        const notes = review.notes.map(note => `<li>${note}</li>`); 
                         $('#notes').append(notes);
                     });     
                 }
