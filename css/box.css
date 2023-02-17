@@ -70,3 +70,9 @@ section.box div.box-exercise {
     border-color: #fa5;
     opacity: .8;
 }
+
+@media (max-width: 500px) { 
+    section.box div.box-exercise { 
+        padding: 1rem;
+    }
+}
