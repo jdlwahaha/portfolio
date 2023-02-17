@@ -54,6 +54,23 @@ a {
 }
 
 
+#filter { 
+    margin: 1rem;
+}
+
+#filter input { 
+    width: calc(100% - 1rem);
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#filter input :focus {
+    border: 1px solid gold;
+}
+
 
 a.button { 
     background: orange;
@@ -195,5 +212,6 @@ section.box h1 {
     .mobile { 
         display: inline-block;
     }
+
 }
 

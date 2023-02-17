@@ -16,6 +16,10 @@ div.row > div {
     margin: .5rem 0;
 }
 
+.myPrice { 
+    font-size: x-small;
+}
+
 .linear { 
     background: rgb(255, 175, 175);
     box-shadow: 2px 2px 2px rgb(134, 134, 134);

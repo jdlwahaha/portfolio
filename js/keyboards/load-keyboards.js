@@ -4,7 +4,24 @@
 
 (function() { 
     $(document).ready(function() { 
-        $.getJSON('../../data/keyboards/keyboards.json', loadKeyboards);       
+        let keyboards = [];
+        $.getJSON('../../data/keyboards/keyboards.json', (k) => {
+            loadKeyboards(k); 
+            keyboards = k;
+            
+        });    
+        
+        $("#search").on("input", function(event) {
+            const matchSearch = keyboards.filter(k => { 
+                const original = k.name.toUpperCase(); 
+                const target = event.target.value.toUpperCase();
+                return original.includes(target);
+            });
+            $('#keyboard_list').empty();
+            loadKeyboards(matchSearch); 
+            
+        });
+        
     });
 
     function loadKeyboards(keyboards) {
@@ -30,15 +47,19 @@
                         </a>
                         `
                     : '';
-    
+
+        const price = (keyboard.msrp && keyboard.myPrice)
+                ? `<div>$${keyboard.msrp} &nbsp;<span class="myPrice" title="total price that I paid included tax">($${keyboard.myPrice})<span></div>`
+                : '';
         return `
             <section class="box">
                 <div class="box-content">
                 <span class="thumbnail-container keyboard-thumbnail-container">
-                    <img src="${thumbnail}" alt="${thumbnail}">
+                    <img src="${thumbnail}" alt="${keyboard.filename}.png">
                 </span>
                     <div class="book-container keyboard-container">
                         <h4>${keyboard.name} ${youtubeLink}</h4>
+                        ${price}
                         <div class="rating"> ${getRatingString(keyboard.rating)}</div>
                         <p class="review">${keyboard.review}</p>
                     </div>
