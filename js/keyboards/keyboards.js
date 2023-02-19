@@ -1,25 +1,21 @@
 class SwitchTypes {
-    static all = 'all';
-    static linear = 'linear';
-    static tactile = 'tactile';
-    static clicky = 'clicky';
-    static membrane = 'membrane';
-    static mecha = 'mecha';
+    static all() {return 'all'};
+    static linear() {return 'linear'};
+    static tactile() {return 'tactile'};
+    static clicky() {return 'clicky'};
+    static membrane() {return 'membrane'};
+    static mecha() {return 'mecha'};
+
+    constructor() { 
+    }
 }
 
 
 class Keyboards {
 
-    static SWITCH_TYPES = [
-        SwitchTypes.all, 
-        SwitchTypes.linear, 
-        SwitchTypes.tactile, 
-        SwitchTypes.clicky, 
-        SwitchTypes.membrane
-    ];
-
-    cachedFullKeyboards;
-    keyboards;
+    // hide these variable for safari...
+    // cachedFullKeyboards = [];
+    // keyboards = [];
 
     constructor(keyboards) {
         this.keyboards = keyboards.filter((r) => { return r.review });
@@ -54,5 +50,16 @@ class Keyboards {
     resetList() {
         this.keyboards = this.cachedFullKeyboards;
     }
+
+    static getSwitchTypes() {
+        return [
+            SwitchTypes.all(), 
+            SwitchTypes.linear(), 
+            SwitchTypes.tactile(), 
+            SwitchTypes.clicky(), 
+            SwitchTypes.membrane()
+        ];
+    } 
+
 }
 

@@ -36,20 +36,20 @@ class KeyboardHTML {
         let switchSymbol = ''; 
 
         switch(keyboard.switchType) { 
-            case SwitchTypes.linear: 
+            case SwitchTypes.linear(): 
                 switchSymbol = '&#128997;'; 
                 break;
-            case SwitchTypes.tactile: 
+            case SwitchTypes.tactile(): 
                 switchSymbol = '&#129003;'; 
                 break;
-            case SwitchTypes.clicky: 
+            case SwitchTypes.clicky(): 
                 switchSymbol = '&#128998;'; 
                 break;
-            case SwitchTypes.membrane: 
+            case SwitchTypes.membrane(): 
                 switchSymbol = '&#128999;';
                 keyboard.switchName = 'Membrane'; 
                 break;
-            case SwitchTypes.mecha: 
+            case SwitchTypes.mecha(): 
                 switchSymbol = '&#11036;'; 
                 keyboard.switchName = 'Mecha-Membrane'; 
                 break;

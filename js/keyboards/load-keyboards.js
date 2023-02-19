@@ -17,6 +17,7 @@
         $("#search").on("input", function(event) {
             searchTerm = event.target.value;
             let matchSearch = keyboardsClass.getByName(searchTerm);
+            keyboardsClass.set(matchSearch);
 
             if (selectedFilterSwitch) { 
                 matchSearch = keyboardsClass.getSwitchFilter(selectedFilterSwitch);
@@ -30,7 +31,7 @@
 
 
     function addFilterListeners() { 
-        const filterOptions = Keyboards.SWITCH_TYPES;
+        const filterOptions = Keyboards.getSwitchTypes();
 
         filterOptions.map(filterOption => { 
             document.getElementById(`${filterOption}Filter`).addEventListener('click', () => { 
@@ -48,7 +49,7 @@
             keyboardsClass.set(keyboardsClass.getByName(searchTerm));
         }
 
-        Keyboards.SWITCH_TYPES.map(type => { 
+        Keyboards.getSwitchTypes().map(type => { 
             const navSelector = `#${type}Filter`; 
 
             if (switchType === type) { 
