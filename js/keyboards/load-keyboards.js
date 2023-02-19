@@ -3,102 +3,78 @@
  */
 
 (function() { 
+    let keyboardsClass;
+    let searchTerm = '';
+    let selectedFilterSwitch = ''; 
+
     $(document).ready(function() { 
-        let keyboards = [];
         $.getJSON('../../data/keyboards/keyboards.json', (k) => {
-            loadKeyboards(k); 
-            keyboards = k;
-            
+            keyboardsClass = new Keyboards(k);
+            loadKeyboards(keyboardsClass.get()); 
+            addFilterListeners();
         });    
         
         $("#search").on("input", function(event) {
-            const matchSearch = keyboards.filter(k => { 
-                const original = k.name.toUpperCase(); 
-                const target = event.target.value.toUpperCase();
-                return original.includes(target);
-            });
+            searchTerm = event.target.value;
+            let matchSearch = keyboardsClass.getByName(searchTerm);
+
+            if (selectedFilterSwitch) { 
+                matchSearch = keyboardsClass.getSwitchFilter(selectedFilterSwitch);
+            }
+
             $('#keyboard_list').empty();
             loadKeyboards(matchSearch); 
-            
         });
         
     });
 
-    function loadKeyboards(keyboards) {
 
-        // remove empty records
-        keyboards = keyboards.filter((r) => { return  r.review });
-        let content = '';
-    
-    
-        keyboards.map(function (keyboard) {
-            content += getKeyboardHtml(keyboard); 
+    function addFilterListeners() { 
+        const filterOptions = Keyboards.SWITCH_TYPES;
+
+        filterOptions.map(filterOption => { 
+            document.getElementById(`${filterOption}Filter`).addEventListener('click', () => { 
+                clickFilter(filterOption);
+            });
         });
-    
-        $('#keyboard_list').append(content);
-    
-    }
-    
-    function getKeyboardHtml(keyboard) { 
-        const thumbnail = `../../data/keyboards/thumbnails/${keyboard.filename}.png`;
-        const youtubeLink = (keyboard.youtubeId)
-                    ? `&nbsp;<a href="https://youtu.be/${keyboard.youtubeId}" target="_blank" title="Watch on YouTube">
-                            <img src="../../img/play.png" width="20"/>
-                        </a>
-                        `
-                    : '';
-
-
-        const switchType = getSwitchHtml(keyboard);
-
-        const price = (keyboard.msrp && keyboard.myPrice)
-                ? `<div>$${keyboard.msrp} &nbsp;<span class="myPrice" title="total price that I paid included tax">($${keyboard.myPrice})<span></div>`
-                : ``;
-        return `
-            <section class="box">
-                <div class="box-content">
-                <span class="thumbnail-container keyboard-thumbnail-container">
-                    <img src="${thumbnail}" alt="${keyboard.filename}.png">
-                </span>
-                    <div class="book-container keyboard-container">
-                        <h4>${keyboard.name} ${youtubeLink}</h4>
-                        ${switchType}
-                        ${price}
-                        <div class="rating"> ${getRatingString(keyboard.rating)}</div>
-                        <p class="review">${keyboard.review}</p>
-                    </div>
-                </div>
-            </section>
-        `;
     }
 
-    function getSwitchHtml(keyboard) { 
-        let switchSymbol = ''; 
 
-        switch(keyboard.switchType) { 
-            case 'linear': 
-                switchSymbol = '&#128997;'; 
-                break;
-            case 'tactile': 
-                switchSymbol = '&#129003;'; 
-                break;
-            case 'clicky': 
-                switchSymbol = '&#128998;'; 
-                break;
-            case 'membrane': 
-                switchSymbol = '&#128999;';
-                keyboard.switchName = 'Membrane'; 
-                break;
-            case 'mecha': 
-                switchSymbol = '&#11036;'; 
-                keyboard.switchName = 'Mecha-Membrane'; 
-                break;
+    function clickFilter(switchType) { 
+        selectedFilterSwitch = switchType;
+        keyboardsClass.resetList();
+
+        if (searchTerm) { 
+            keyboardsClass.set(keyboardsClass.getByName(searchTerm));
         }
 
-        return `<div title="${keyboard.switchType} switch" class="${keyboard.switchType}">${switchSymbol} ${keyboard.switchName}</div>`;
+        Keyboards.SWITCH_TYPES.map(type => { 
+            const navSelector = `#${type}Filter`; 
+
+            if (switchType === type) { 
+                $(navSelector).addClass('active');
+            } else { 
+                $(navSelector).removeClass('active');
+            }
+        }); 
+        
+        $('#keyboard_list').empty();
+
+        const filteredKeyboards = keyboardsClass.getSwitchFilter(switchType);
+        loadKeyboards(filteredKeyboards);
+        keyboardsClass.set(filteredKeyboards);
     }
 
+    function loadKeyboards(keyboards) {
+        let content = '';    
 
+        keyboards.map(function (keyboard) {
+            content += KeyboardHTML.getKeyboardHtml(keyboard); 
+        });
+
+        $('#keyboard_list').append(content);
+    }
+    
 })(); 
 
 
