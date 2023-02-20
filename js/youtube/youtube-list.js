@@ -6,7 +6,7 @@
                 const YEAR_START = 2020; 
                 const YEAR_END = 2023; 
     
-                const videos = [...goVideos, ...deckVideos].sort(sortByDate);
+                const videos = [...removeEmptyRecords(goVideos), ...removeEmptyRecords(deckVideos)].sort(sortByDate);
 
                 loadYearData(YEAR_END, videos);
                 var that = this; 

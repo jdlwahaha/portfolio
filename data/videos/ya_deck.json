@@ -1,4 +1,39 @@
 [
+
+    {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
+
+    {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
+    {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
     {
         "title": "My first goofy kickflip on a couch", 
         "videoId": "IFIrZLlhKzs",
@@ -7,7 +42,7 @@
         "date": {
             "year": 2023,
             "month": 1,
-            "day": 15
+            "day": 19
         }
     },
     {

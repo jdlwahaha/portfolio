@@ -9,7 +9,7 @@
                 let selectedMonth = today.getMonth();
                 let selectedYear = today.getFullYear(); 
             
-                const videos = [...goVideos, ...deckVideos];
+                const videos = [...removeEmptyRecords(goVideos), ...removeEmptyRecords(deckVideos)];
 
                 loadCalendar(videos, selectedMonth, selectedYear);
 

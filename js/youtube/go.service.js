@@ -30,3 +30,6 @@ function getMonthName(monthNumber) {
     return month[monthNumber];
 }
 
+function removeEmptyRecords(videos) { 
+    return videos.filter(v => v.title); 
+}

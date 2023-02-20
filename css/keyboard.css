@@ -4,37 +4,45 @@ div.row > div {
 }
 
 
-#favourite-switch { 
-    text-align: center;
-}
 
 
 .myPrice { 
     font-size: x-small;
 }
 
-.linear { 
-    background: rgb(255, 234, 234);
+.switch-content-box { 
     box-shadow: 2px 2px 2px rgb(134, 134, 134);
     margin-bottom: .2rem;
+    width: 400px;
+}
+
+.linear { 
+    background-image: linear-gradient(to right, rgb(255, 234, 234), white);
+    background: rgb(255, 234, 234);
 }
 
 .tactile { 
+    background-image: linear-gradient(to right, rgb(237, 221, 207), white);
     background: rgb(237, 221, 207);
-    box-shadow: 2px 2px 2px rgb(134, 134, 134);
-    margin-bottom: .2rem;
 }   
 
 .clicky { 
+    background-image: linear-gradient(to right, rgb(231, 238, 255), white);
     background: rgb(231, 238, 255);
-    box-shadow: 2px 2px 2px rgb(134, 134, 134);
-    margin-bottom: .2rem;
 }
 
 .membrane {
+    background-image: linear-gradient(to right, rgb(255, 245, 232), white);
     background: rgb(255, 245, 232);
-    box-shadow: 2px 2px 2px rgb(134, 134, 134);
-    margin-bottom: .2rem;
+}
+
+.mecha { 
+    background: #ececec;
+}
+
+
+#favourite-switch { 
+    text-align: center;
 }
 
 #favourite-switch span { 
@@ -45,14 +53,16 @@ div.row > div {
     margin: .5rem 0;
 }
 
+#favourite-switch .switch { 
+    box-shadow: 2px 2px 2px rgb(134, 134, 134);
+
+}
+
 div.rating { 
     margin-top: .2rem;
 }
 
-.mecha { 
-    background: #ececec;
-    box-shadow: 2px 2px 2px rgb(134, 134, 134);
-}
+
 
 .input-layout img { 
     width: 450px;
@@ -70,6 +80,46 @@ div.keyboard-container div {
     line-height: 1.5rem;
 }
 
+
+
+/***************************************
+    Filters
+****************************************/
+.levelNav { 
+	padding-top: .5rem;
+    padding-left: .5rem;
+	font-size: 12px;
+
+	overflow: auto hidden;
+	white-space: nowrap;
+}
+
+.levelNav button, 
+.levelNav a { 
+	padding: .2rem .5rem;
+    border-radius: 4px;
+    background: white;
+	font-size: 14px;
+}
+
+
+.levelNav button { 
+    border: #666 1px solid;
+	color: #666;
+}
+.levelNav button:hover { 
+    color: rgb(255, 196, 0);
+    border: grey 1px solid;
+}
+
+.levelNav button.active, 
+.levelNav button.active:hover { 
+	/* border-bottom: 4px solid rgb(255, 196, 0); */
+    background: gray;
+     /* rgb(255, 196, 0); */
+    border: white 1px solid;
+	color: white;
+}
 
 @media (max-width: 600px) { 
 
@@ -94,4 +144,11 @@ div.keyboard-container div {
         width: 100%;
     }
     
+   
+}
+
+@media (max-width: 720px) {
+    .switch-content-box { 
+        width: 100%;
+    }
 }

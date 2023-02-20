@@ -55,6 +55,12 @@ class KeyboardHTML {
                 break;
         }
 
-        return `<div title="${keyboard.switchType} switch" class="${keyboard.switchType}">${switchSymbol} ${keyboard.switchName}</div>`;
+        return `
+            <div title="${keyboard.switchType} switch" class="${keyboard.switchType} switch-content-box">
+                <span class="switch-content">
+                    ${switchSymbol} ${keyboard.switchName}
+                </span>
+            </div>
+        `;
     }
 }
