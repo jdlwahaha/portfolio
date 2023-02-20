@@ -38,7 +38,7 @@ class Keyboards {
     }
 
     getSwitchFilter(type) {
-        return (type === SwitchTypes.all)
+        return (type === SwitchTypes.all())
             ? this.keyboards
             : this.keyboards.filter(k => k.switchType === type);
     }
