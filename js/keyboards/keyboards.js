@@ -43,6 +43,10 @@ class Keyboards {
             : this.keyboards.filter(k => k.switchType === type);
     }
 
+    getVideoReviews() { 
+        return this.keyboards.filter(k => k.youtubeId);
+    }
+
     set(keyboards) {
         this.keyboards = keyboards;
     }

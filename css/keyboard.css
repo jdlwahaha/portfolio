@@ -114,9 +114,7 @@ div.keyboard-container div {
 
 .levelNav button.active, 
 .levelNav button.active:hover { 
-	/* border-bottom: 4px solid rgb(255, 196, 0); */
     background: gray;
-     /* rgb(255, 196, 0); */
     border: white 1px solid;
 	color: white;
 }

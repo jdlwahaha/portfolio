@@ -19,7 +19,10 @@
             let matchSearch = keyboardsClass.getByName(searchTerm);
             keyboardsClass.set(matchSearch);
 
-            if (selectedFilterSwitch) { 
+            if (selectedFilterSwitch === 'hasVideoReview') { 
+                matchSearch = keyboardsClass.getVideoReviews();
+            }
+            else if (selectedFilterSwitch) { 
                 matchSearch = keyboardsClass.getSwitchFilter(selectedFilterSwitch);
             }
 
@@ -31,17 +34,30 @@
 
 
     function addFilterListeners() { 
-        const filterOptions = Keyboards.getSwitchTypes();
+        const allFilters = [
+            'all',
+            SwitchTypes.linear(),
+            SwitchTypes.tactile(),
+            SwitchTypes.clicky(),
+            SwitchTypes.membrane(),
+            'hasVideoReview'
+        ]
 
-        filterOptions.map(filterOption => { 
+        Keyboards.getSwitchTypes().map(filterOption => { 
             document.getElementById(`${filterOption}Filter`).addEventListener('click', () => { 
-                clickFilter(filterOption);
+                updateFilterSelection(filterOption, allFilters);
+                filterBySwitch(filterOption);
             });
+        });
+
+
+        document.getElementById(`hasVideoReviewFilter`).addEventListener('click', () => { 
+            updateFilterSelection('hasVideoReview', allFilters);
+            filterByVideo();
         });
     }
 
-
-    function clickFilter(switchType) { 
+    function updateFilterSelection(switchType, allFilters) { 
         selectedFilterSwitch = switchType;
         keyboardsClass.resetList();
 
@@ -49,7 +65,7 @@
             keyboardsClass.set(keyboardsClass.getByName(searchTerm));
         }
 
-        Keyboards.getSwitchTypes().map(type => { 
+        allFilters.map(type => { 
             const navSelector = `#${type}Filter`; 
 
             if (switchType === type) { 
@@ -60,7 +76,16 @@
         }); 
         
         $('#keyboard_list').empty();
+    }
 
+
+    function filterByVideo() { 
+        const filteredKeyboards = keyboardsClass.getVideoReviews();
+        loadKeyboards(filteredKeyboards);
+        keyboardsClass.set(filteredKeyboards);
+    }
+
+    function filterBySwitch(switchType) { 
         const filteredKeyboards = keyboardsClass.getSwitchFilter(switchType);
         loadKeyboards(filteredKeyboards);
         keyboardsClass.set(filteredKeyboards);
