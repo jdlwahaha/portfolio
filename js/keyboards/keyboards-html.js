@@ -3,7 +3,8 @@ class KeyboardHTML {
         const thumbnail = `../../data/keyboards/thumbnails/${keyboard.filename}.png`;
         const youtubeLink = (keyboard.youtubeId)
                     ? `&nbsp;<a href="https://youtu.be/${keyboard.youtubeId}" target="_blank" title="Watch on YouTube">
-                            <img src="../../img/play.png" width="20"/>
+                            <img src="../../img/play.png" width="25"/>
+                            <span>Watch video review</span>
                         </a>
                         `
                     : '';
@@ -11,7 +12,7 @@ class KeyboardHTML {
 
         const switchType = this.getSwitchHtml(keyboard);
 
-        const price = (keyboard.msrp && keyboard.myPrice)
+        const price = (keyboard.msrp)
                 ? `<div>$${keyboard.msrp} &nbsp;<span class="myPrice" title="total price that I paid included tax">($${keyboard.myPrice})<span></div>`
                 : ``;
         return `
@@ -19,9 +20,12 @@ class KeyboardHTML {
                 <div class="box-content">
                 <span class="thumbnail-container keyboard-thumbnail-container">
                     <img src="${thumbnail}" alt="${keyboard.filename}.png">
+                    <span class="youtube-link">
+                        ${youtubeLink}
+                    </span>
                 </span>
                     <div class="book-container keyboard-container">
-                        <h4>${keyboard.name} ${youtubeLink}</h4>
+                        <h4>${keyboard.name}</h4>
                         ${switchType}
                         ${price}
                         <div class="rating"> ${getRatingString(keyboard.rating)}</div>

@@ -79,7 +79,16 @@ div.keyboard-container {
 div.keyboard-container div { 
     line-height: 1.5rem;
 }
+.keyboard-thumbnail-container .youtube-link { 
+    float: left;
+    display: block;
+}
 
+.keyboard-thumbnail-container .youtube-link a, 
+.keyboard-thumbnail-container .youtube-link img, 
+.keyboard-thumbnail-container .youtube-link span { 
+    vertical-align: middle;
+}
 
 
 /***************************************
@@ -134,7 +143,7 @@ div.keyboard-container div {
         display: inline;
     }
 
-    .keyboard-thumbnail-container img { 
+    .keyboard-thumbnail-container>img { 
         width: 100%;
         height: auto;
     }

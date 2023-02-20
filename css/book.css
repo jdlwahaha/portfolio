@@ -1,4 +1,4 @@
-.thumbnail-container img { 
+.thumbnail-container>img { 
     height: 100px;
 }
 
@@ -105,7 +105,7 @@ div.black {
         width: 100%;
     }
 
-    .thumbnail-container img { 
+    .thumbnail-container>img { 
         height: 150px;
     }
 
