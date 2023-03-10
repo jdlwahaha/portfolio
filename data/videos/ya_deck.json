@@ -24,6 +24,51 @@
         }
     },
     {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
+
+    {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Disorder Chrome (Rare)", 
+        "videoId": "nflBylBwzb0",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 2,
+            "day": 8
+        }
+    },
+
+    {
+        "title": "Kick Lucky Flip?", 
+        "videoId": "PAVVgHKmHDM",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 28
+        }
+    },
+    {
         "title": "❮Tech Deck❯ Toy Machine - Myles Willard Baltimore (Common)", 
         "videoId": "uAKubvuAmeE",
         "source": "deck",

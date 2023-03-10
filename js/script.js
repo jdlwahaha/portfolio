@@ -47,10 +47,6 @@
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
-                <a href="../courses" >
-                    <span class="nav-icon">&#128211;</span> 
-                    Courses
-                </a> 
                 <a href="../keyboards" class="last" >
                     <span class="nav-icon">&#128187;</span> 
                     Keyboards
@@ -64,7 +60,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'courses', 'books', 'dreams', 'home', 'keyboards']; 
+        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
