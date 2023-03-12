@@ -40,17 +40,18 @@
         "review": ""
     },
     {
-        "name": "",
-        "brand": "",
-        "switchType": "",
-        "msrp": 0,
-        "myPrice": 0,
-        "switchName": "",
-        "size": "",
-        "filename": "",
+        "name": "Durgod Fusion Retro Keyboard (Navigator)",
+        "date": "2023/3/10",
+        "brand": "Durgod",
+        "switchType": "linear",
+        "msrp": 209.99,
+        "myPrice": 166.88,
+        "switchName": "Cherry Silent Red",
+        "size": "65%",
+        "filename": "durgod-fusion",
         "youtubeId": "",
-        "rating": 0,
-        "review": ""
+        "rating": 3,
+        "review": "I am not a fan. There are pings everywhere on the board and it just doesn't live up to the price tag."
     },
     {
         "name": "Ajazz AK816 Pro 75% Gasket Hot-Swappable Bluetooth",

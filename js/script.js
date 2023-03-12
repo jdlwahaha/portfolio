@@ -29,9 +29,9 @@
                     People
                 </a> -->
                 
-                <a href="../quotes" >
-                    <span class="nav-icon">&#8220;</span> 
-                    Quotes
+                <a href="../actions" >
+                    <span class="nav-icon">&#129470;</span> 
+                    Actions
                 </a>
                 <a href="../dreams" >
                     <span class="nav-icon">&#128173;</span> 
@@ -60,7 +60,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'quotes', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards']; 
+        var pages = ['jdreads', 'actions', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
