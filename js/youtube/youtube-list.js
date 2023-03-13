@@ -1,25 +1,30 @@
 (function () {
         
     $(document).ready(function () {
-        $.getJSON('../../data/videos/ya_deck.json', function(deckVideos) { 
-            $.getJSON('../../data/videos/go.json', function (goVideos) {
-                const YEAR_START = 2020; 
-                const YEAR_END = 2023; 
-    
-                const videos = [...removeEmptyRecords(goVideos), ...removeEmptyRecords(deckVideos)].sort(sortByDate);
+        $.getJSON('../../data/videos/deck.json', function (deckVideos) {
+            $.getJSON('../../data/videos/build.json', function (buildVideos) {
+                $.getJSON('../../data/videos/go.json', function (goVideos) {
+                    const YEAR_START = 2020;
+                    const YEAR_END = 2023;
 
-                loadYearData(YEAR_END, videos);
-                var that = this; 
-                that.videos = videos;
-                
-                $(`span #videoCount`).append(videos.length);
-    
-                $(document).on('change', '#yearSelection', function(value){
-                    $(`section #videoList`).empty();
-                    const selectedYear = $(this).find("option:selected").attr('value');
-                    loadYearData(selectedYear, that.videos);
+                    const videos = [
+                        ...removeEmptyRecords(goVideos),
+                        ...removeEmptyRecords(buildVideos), 
+                        ...removeEmptyRecords(deckVideos)].sort(sortByDate);
+
+                    loadYearData(YEAR_END, videos);
+                    var that = this;
+                    that.videos = videos;
+
+                    $(`span #videoCount`).append(videos.length);
+
+                    $(document).on('change', '#yearSelection', function (value) {
+                        $(`section #videoList`).empty();
+                        const selectedYear = $(this).find("option:selected").attr('value');
+                        loadYearData(selectedYear, that.videos);
+                    });
+
                 });
-    
             });
         });
         

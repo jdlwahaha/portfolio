@@ -1,34 +1,39 @@
 (function () {
 
     $(document).ready(function () {
-        $.getJSON('../../data/videos/ya_deck.json', function(deckVideos) { 
-
-            $.getJSON('../../data/videos/go.json', function (goVideos) {
-                const MONTH_DEC = 11; 
-                const today = (new Date());
-                let selectedMonth = today.getMonth();
-                let selectedYear = today.getFullYear(); 
-            
-                const videos = [...removeEmptyRecords(goVideos), ...removeEmptyRecords(deckVideos)];
-
-                loadCalendar(videos, selectedMonth, selectedYear);
-
-                $(`span #videoCount`).append(videos.length);
-            
+        $.getJSON('../../data/videos/deck.json', function(deckVideos) { 
+            $.getJSON('../../data/videos/build.json', function (buildVideos) {
+                $.getJSON('../../data/videos/go.json', function (goVideos) {
+                    const MONTH_DEC = 11; 
+                    const today = (new Date());
+                    let selectedMonth = today.getMonth();
+                    let selectedYear = today.getFullYear(); 
                 
-                document.getElementById('nextMonthBtn').addEventListener('click', () => {
-                    selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
-                    selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
-                    setSelected(selectedMonth, selectedYear);
+                    const videos = [
+                        ...removeEmptyRecords(goVideos), 
+                        ...removeEmptyRecords(buildVideos), 
+                        ...removeEmptyRecords(deckVideos)
+                    ];
 
                     loadCalendar(videos, selectedMonth, selectedYear);
-                });
-                document.getElementById('prevMonthBtn').addEventListener('click', () => {
-                    selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
-                    selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
-                    setSelected(selectedMonth, selectedYear);
 
-                    loadCalendar(videos, selectedMonth, selectedYear);
+                    $(`span #videoCount`).append(videos.length);
+                
+                    
+                    document.getElementById('nextMonthBtn').addEventListener('click', () => {
+                        selectedYear = (selectedMonth < MONTH_DEC) ? selectedYear : selectedYear + 1;
+                        selectedMonth = (selectedMonth < MONTH_DEC) ? (selectedMonth + 1) : 0;
+                        setSelected(selectedMonth, selectedYear);
+
+                        loadCalendar(videos, selectedMonth, selectedYear);
+                    });
+                    document.getElementById('prevMonthBtn').addEventListener('click', () => {
+                        selectedYear = (selectedMonth > 0) ? selectedYear : selectedYear - 1;
+                        selectedMonth = (selectedMonth > 0) ? (selectedMonth - 1) : MONTH_DEC;
+                        setSelected(selectedMonth, selectedYear);
+
+                        loadCalendar(videos, selectedMonth, selectedYear);
+                    });
                 });
             });
         });

@@ -11,3 +11,13 @@ th {
 td { 
     text-align: center;
 }
+
+#channel-list li { 
+  list-style-type: none;
+  margin-left: -1rem;
+}
+
+#channel-list a { 
+  padding: 0 .5rem;
+  white-space: nowrap;
+} 
