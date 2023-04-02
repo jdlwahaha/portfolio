@@ -102,12 +102,12 @@
                 } else {
                     dayCounterForData++; 
                     const isToday = (dayCounterForData === currentDate && selectedMonth === (now.getMonth()) && selectedYear === (now.getFullYear()));
-                    const publishedVideo = videos.find(video => {
+                    const publishedVideoes = videos.filter(video => {
                         return (video.date.year === currentYear)
                             && (video.date.month === currentMonth-1)
                             && (video.date.day === dayCounterForData)
                     });
-                    content = getRenderVideoTD(publishedVideo, isToday);
+                    content = getRenderVideoTD(publishedVideoes, isToday);
                 }
                 $(`#youtube-calendar tbody tr.data.week${week}`).append(content);
 
@@ -119,23 +119,15 @@
     }
 
 
-    function getRenderVideoTD(publishedVideo, isToday) { 
+    function getRenderVideoTD(publishedVideoes, isToday) { 
         let content = '';
-        if (publishedVideo) {
-            const png = getImage(publishedVideo);
+        if (publishedVideoes && publishedVideoes.length) {
+
+            const htmlArray = publishedVideoes.map(publishedVideo => getPublishVideoHtml(publishedVideo)); 
 
             content = `
                 <td ${(isToday ? 'class="today"': '')}>
-                    <a class="mobile" target="_blank" 
-                        title="${publishedVideo.title}"
-                        href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
-                            <img style="float: left" width="30" src="../../img/${png}"/>
-                    </a>
-                    <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
-                        <img src="../../img/${png}" width=20/>
-                        ${publishedVideo.title}
-                    </a>
-                    
+                    ${ htmlArray.join('') }
                 </td>
             `;
         } else {
@@ -144,6 +136,22 @@
         return content;
     }
 
+
+    function getPublishVideoHtml(publishedVideo) { 
+        const png = getImage(publishedVideo);
+        return `
+            <a class="mobile" target="_blank"
+                title="${publishedVideo.title}"
+                href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                    <img style="float: left" width="30" src="../../img/${png}"/>
+            </a>
+            <a class="desktop" target="_blank" href="https://www.youtube.com/watch?v=${publishedVideo.videoId}">
+                <img src="../../img/${png}" width=20/>
+                ${publishedVideo.title}
+            </a>
+            <br><br>
+        `;
+    }
 
 })(); 
 

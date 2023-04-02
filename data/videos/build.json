@@ -50,13 +50,23 @@
         }
     },
     {
-        "title": "",
-        "videoId": "",
+        "title": "LEGO 76917 - 2 Fast 2 Furious Nissan Skyline GT-R (R34) (Stop-Motion Build)",
+        "videoId": "WpxKTWlTSIU",
+        "source": "build",
+        "date": {
+            "year": 2023,
+            "month": 3,
+            "day": 1
+        }
+    },
+    {
+        "title": "LEGO 60386 - Recycling Truck (Stop-Motion Build)", 
+        "videoId": "mDhInQgWz6Y",
         "source": "build",
         "date": {
             "year": 2023,
             "month": 2,
-            "day": 12
+            "day": 28
         }
     },
     {
