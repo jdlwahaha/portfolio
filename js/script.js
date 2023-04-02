@@ -1,15 +1,8 @@
 (function() { 
-    jQuery.htmlPrefilter = function( html ) {
-        return html;
-    };
-
     $(document).ready(function() {
         loadHeader(); 
         loadFooter(); 
-        
     }); 
-    
-    
 
     function loadHeader() { 
         var headerHtml = `
