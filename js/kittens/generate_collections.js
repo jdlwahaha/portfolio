@@ -6,7 +6,7 @@
 
                 const link = (edition.completed) 
                     ? `
-                    <a href="${edition.filename}">
+                    <a href="detail?edition=${edition.filename}">
                                 ${edition.name} 
                             </a><br>` : `${edition.name}<br>`; 
 
@@ -14,7 +14,7 @@
                     <tr>
                         <td>
                             ${link}
-                            <!--  <a href="${edition.filename}">
+                            <!--  <a href="detail?edition=${edition.filename}">
                                 ${edition.name} 
                             </a><br> -->
                             <!-- <span class="mobile">(${edition.release_year})</span><br> -->
@@ -28,7 +28,7 @@
                         <td class="desktop">${displayType}</td>
                         <td>$${edition.price}</td>
                         <td>${edition.players}</td>   
-                        <td>${edition.cards}</td>                                                             
+                        <td>${edition.num_of_cards}</td>                                                             
                         <td class="desktop">${edition.release_year}</td>
                     </tr>
                 `; 

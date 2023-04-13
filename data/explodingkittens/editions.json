@@ -5,7 +5,7 @@
         "type": "full", 
         "price": 24.99, 
         "players": "2-5",
-        "cards": 56, 
+        "num_of_cards": 56, 
         "release_year": "2015", 
         "acquisition_date": ""
     },
@@ -15,7 +15,7 @@
         "type": "full", 
         "price": 24.99, 
         "players": "2-5",
-        "cards": 56, 
+        "num_of_cards": 56, 
         "release_year": "2015", 
         "acquisition_date": ""
     },
@@ -25,7 +25,7 @@
         "type": "full", 
         "price": 29.99, 
         "players": "2-10",
-        "cards": 122, 
+        "num_of_cards": 122, 
         "release_year": "2017", 
         "acquisition_date": ""
     },
@@ -35,7 +35,7 @@
         "type": "expansion", 
         "price": 19.99, 
         "players": "-",
-        "cards": 20, 
+        "num_of_cards": 20, 
         "release_year": "2016", 
         "acquisition_date": ""
     },
@@ -45,7 +45,7 @@
         "type": "expansion", 
         "price": 6.99, 
         "players": "-",
-        "cards": 15, 
+        "num_of_cards": 15, 
         "release_year": "2018", 
         "acquisition_date": ""
     },
@@ -55,7 +55,7 @@
         "type": "expansion", 
         "price": 19.99, 
         "players": "-",
-        "cards": 20, 
+        "num_of_cards": 20, 
         "release_year": "2020", 
         "acquisition_date": "", 
         "completed": true
@@ -66,7 +66,7 @@
         "type": "full", 
         "price": 34.99, 
         "players": "2-5",
-        "cards": 121, 
+        "num_of_cards": 121, 
         "release_year": "2021", 
         "acquisition_date": ""
     },
@@ -76,7 +76,7 @@
         "type": "full_no", 
         "price": 24.99, 
         "players": "2-5",
-        "cards": 72, 
+        "num_of_cards": 72, 
         "release_year": "2021", 
         "acquisition_date": ""
     },
@@ -86,7 +86,7 @@
         "type": "full", 
         "price": 25.99, 
         "players": "2-5",
-        "cards": 61, 
+        "num_of_cards": 61, 
         "release_year": "2022", 
         "acquisition_date": ""
     }
