@@ -45,11 +45,19 @@
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
-                <a href="../keyboards" class="last" >
+                <a href="../keyboards" >
                     <span class="nav-icon">&#128187;</span> 
                     Keyboards
                 </a>
+                
+                <span class="navSectionHeader-desktop">INFO</span>
+                <span class="navSectionHeader-mobile">|</span>
 
+                <a href="../explodingkittens" class="last" >
+                    <span class="nav-icon">&#128049;</span> 
+                    Exploding Kittens
+                </a>
+       
                
             </nav>
         `;
@@ -58,7 +66,7 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'actions', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards']; 
+        var pages = ['jdreads', 'actions', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards', 'explodingkittens']; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
