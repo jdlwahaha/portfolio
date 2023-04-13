@@ -1,0 +1,93 @@
+[
+    { 
+        "name": "Original Edition", 
+        "filename": "original",
+        "type": "full", 
+        "price": 24.99, 
+        "players": "2-5",
+        "cards": 56, 
+        "release_year": "2015", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "NSFW Edition", 
+        "filename": "nsfw",
+        "type": "full", 
+        "price": 24.99, 
+        "players": "2-5",
+        "cards": 56, 
+        "release_year": "2015", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Party Pack Edition", 
+        "filename": "party",
+        "type": "full", 
+        "price": 29.99, 
+        "players": "2-10",
+        "cards": 122, 
+        "release_year": "2017", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Imploding Kittens", 
+        "filename": "imploding",
+        "type": "expansion", 
+        "price": 19.99, 
+        "players": "-",
+        "cards": 20, 
+        "release_year": "2016", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Streaking Kittens", 
+        "filename": "streaking",
+        "type": "expansion", 
+        "price": 6.99, 
+        "players": "-",
+        "cards": 15, 
+        "release_year": "2018", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Barking Kittens", 
+        "filename": "barking",
+        "type": "expansion", 
+        "price": 19.99, 
+        "players": "-",
+        "cards": 20, 
+        "release_year": "2020", 
+        "acquisition_date": "", 
+        "completed": true
+    },
+    { 
+        "name": "Recipes for Disaster", 
+        "filename": "recipes",
+        "type": "full", 
+        "price": 34.99, 
+        "players": "2-5",
+        "cards": 121, 
+        "release_year": "2021", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Exploding Minions", 
+        "filename": "minions",
+        "type": "full_no", 
+        "price": 24.99, 
+        "players": "2-5",
+        "cards": 72, 
+        "release_year": "2021", 
+        "acquisition_date": ""
+    },
+    { 
+        "name": "Zombie Kittens", 
+        "filename": "zombie",
+        "type": "full", 
+        "price": 25.99, 
+        "players": "2-5",
+        "cards": 61, 
+        "release_year": "2022", 
+        "acquisition_date": ""
+    }
+]
