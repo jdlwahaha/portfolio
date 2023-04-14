@@ -104,5 +104,10 @@ table img {
     td, th { 
         padding: 1rem 0;
     }
+
+    ul { 
+        margin-top: .5rem;
+        margin-left: -1rem;
+    }
     
 }
