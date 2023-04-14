@@ -7,7 +7,8 @@
         "players": "2-5",
         "num_of_cards": 56, 
         "release_year": "2015", 
-        "acquisition_date": ""
+        "acquisition_date": "04-12-2023", 
+        "completed": true
     },
     { 
         "name": "NSFW Edition", 
@@ -27,7 +28,7 @@
         "players": "2-10",
         "num_of_cards": 122, 
         "release_year": "2017", 
-        "acquisition_date": ""
+        "acquisition_date": "04-10-2023"
     },
     { 
         "name": "Imploding Kittens", 
@@ -47,7 +48,7 @@
         "players": "-",
         "num_of_cards": 15, 
         "release_year": "2018", 
-        "acquisition_date": ""
+        "acquisition_date": "04-10-2023"
     },
     { 
         "name": "Barking Kittens", 
@@ -57,7 +58,7 @@
         "players": "-",
         "num_of_cards": 20, 
         "release_year": "2020", 
-        "acquisition_date": "", 
+        "acquisition_date": "04-12-2023", 
         "completed": true
     },
     { 
@@ -78,7 +79,8 @@
         "players": "2-5",
         "num_of_cards": 72, 
         "release_year": "2021", 
-        "acquisition_date": ""
+        "acquisition_date": "04-08-2023", 
+        "completed": true
     },
     { 
         "name": "Zombie Kittens", 

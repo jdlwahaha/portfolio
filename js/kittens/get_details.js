@@ -3,21 +3,20 @@
         $.getJSON('../../data/explodingkittens/editions.json', function (editions) {
 
             const editionName = $.urlParam('edition');
-            const available_editions_names = ['barking'];
+            const available_editions_names = ['barking', 'minions', 'original'];
             
             if (editionName && available_editions_names.indexOf(editionName) >= 0) {
 
-                $.getJSON(`../../data/explodingkittens/${editionName}/detail.json`, function (barkingKittens) {
+                $.getJSON(`../../data/explodingkittens/detail/${editionName}.json`, function (specificEditionDetail) {
 
-                    const editionDetail = editions.find(e => e.filename === barkingKittens.filename);
-                    const fullDetail = { ...editionDetail, ...barkingKittens };
+                    const editionDetail = editions.find(e => e.filename === specificEditionDetail.filename);
+                    const fullDetail = { ...editionDetail, ...specificEditionDetail };
 
-                    const expansionWarning = (fullDetail.type === 'expansion')
-                        ? `
+                    const isExpansion = (fullDetail.type === 'expansion'); 
+                    const expansionWarning = `
                         <div class="well well-info" >
                             This is an expansion pack. You will need one of the full game edition to play this game. 
-                        </div>`
-                        : '';
+                        </div>`;
 
                     const cardList = fullDetail.card_list.map(i => `<li>${i}</li>`).join('');
                     const contentList = fullDetail.contents.map(i => `<li>${i}</li>`).join('');
@@ -26,20 +25,20 @@
                         `
                 <h1>${fullDetail.name}</h1>
                     <div class="box-content">
-                        ${expansionWarning}
+                        ${ isExpansion ? expansionWarning : '<p></p>'}
     
                         <div class="info-block">
                             <span>
                                 <ul>
-                                    <li><strong>Expansion Number:</strong> ${fullDetail.expansion_no}</li>
-                                    <li><strong>Number of Cards:</strong> ${fullDetail.num_of_cards}</li>
+                                    ${ isExpansion ? `<li><strong>Expansion Number:</strong> ${fullDetail.expansion_no}</li>` : '' }
+                                    <li><strong>Price:</strong> CDN$${fullDetail.price}</li>
                                     <li>
-                                        <strong>Other Contents:</strong> 
+                                        <strong>Contents:</strong> 
                                         <ul class="ul-nopadding">
+                                            <li>${fullDetail.num_of_cards} Cards</li>
                                             ${contentList}
                                         </ul>
                                     </li>
-                                    <li><strong>MSRP:</strong> CDN$${fullDetail.price}</li>
                                     <li><strong>Card Label:</strong> ${fullDetail.card_label} </li>
                                     <li>
                                         <strong>Cards:</strong>
@@ -64,7 +63,8 @@
 
                     $('#detailBox').append(html);
 
-                    $('#iframe').append(`
+                    if (fullDetail.youtubeId) { 
+                        $('#iframe').append(`
                         <iframe 
                             src="https://www.youtube.com/embed/${fullDetail.youtubeId}" 
                             title="YouTube video player" 
@@ -73,12 +73,20 @@
                             allowfullscreen
                         ></iframe>
                     `);
+                    }
+                   
 
-                    const imageHtml = fullDetail.images.map(i => `
+                    let images = []; 
+                    for (let i = fullDetail.images.start; i <= fullDetail.images.end; i++) { 
+                        images.push(`${i}`); 
+                    }
+                    
+                    console.log('size:', images.length);
+                    const imageHtml = images.map(i => `
                         <span>
-                            <img src="../../data/explodingkittens/${fullDetail.filename}/${i}.jpeg" alt="${i}.jpeg">
+                            <img src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
                         </span>
-                    `);
+                    `).join('');
                     $('#cards').append(imageHtml);
                 });
             } else {

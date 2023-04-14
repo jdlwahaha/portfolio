@@ -1,0 +1,27 @@
+{ 
+    "filename": "minions", 
+    "contents": [ 
+        "Paper Instructions", 
+        "Oversize Minion Face-Changing Box"
+    ], 
+    "card_label": "MINIONS EDITION", 
+    "card_list": [ 
+        "Exploding Minions (4)",
+        "Defuse (7)",
+        "Clone (3)",
+        "See the Future 3X (7)",
+        "Nope (7)",
+        "Skip (6)",
+        "Attack 2X (5)",
+        "Draw from the Bottom (5)",
+        "Shuffle (4)",
+        "Bob (8)",
+        "Kevin & Otto (8)",
+        "Stuart (8)"
+    ], 
+    "youtubeId": "1CBGikGsOQo",
+    "images": {
+        "start": 8869, 
+        "end": 8941
+    }
+}

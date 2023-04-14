@@ -1,0 +1,27 @@
+{ 
+    "filename": "barking", 
+    "expansion_no": 3,
+    "contents": [ 
+        "Tower of Power Crown", 
+        "Paper Instructions", 
+        "Paper Ad", 
+        "Oversize Box"
+    ], 
+    "card_label": "THIRD EXPANSION", 
+    "card_list": [ 
+        "Tower of Power (1)",
+        "Barking Kittens (2)",
+        "Potluck (2)",
+        "Share the Future 3X (2)",
+        "Alter the Future 3X NOW (2)",
+        "Super Skip (1)",
+        "Bury (2)",
+        "I'll Take That (4)",
+        "Personal Attack 3X (2)"
+    ], 
+    "youtubeId": "r1l2H3iAUUI",
+    "images": {
+        "start": 68, 
+        "end": 87
+    }
+}

@@ -1,0 +1,54 @@
+{ 
+    "filename": "recipes", 
+    "contents": [ 
+        "Cone of Shame",
+        "Paper Instruction: The Rules", 
+        "Paper Instruction: Field Guide", 
+        "Paper Ad", 
+        "Oversize Card Sorting Box"
+    ], 
+    "card_label": "RFD EDITION", 
+    "card_list": [ 
+        "Exploding Kittens (6)",
+        "Imploding Kittens (4)",
+        "Streaking Kittens (1)",
+        "Barking Kittens (2)",
+        "Defuse (8)",
+
+        "Nope (8)",
+       
+        "See the Future 3X (6)",
+        "See the Future 5X (3)",
+        "Alter the Future 3X (3)",
+        "Alter the Future 3X NOW (2)",
+        "Share the Future 3X (4)",
+
+        "Skip (4)",
+        "Super Skip (2)",
+
+        "Attack (6)",
+        "Target Attack (4)",
+        "Personal Attack 3X (4)",
+
+        "Bury (4)",
+        "Mark (4)",
+        "Garbage Collection (2)",
+        "I'll Take That (4)",
+
+        "Shuffle (5)",
+        "Reverse (5)",
+        "Draw from the Bottom (3)",
+        "Swap Top and Bottom (3)", 
+
+        "Feral Cat (6)",
+        "Rainbow-Ralphing Cat (4)",
+        "Zombie Cat (4)",
+        "Beard Cat (4)",
+        "Taco Cat (4)"
+    ], 
+    "youtubeId": "kL4nao5JqOE",
+    "images": {
+        "start": 0, 
+        "end": 0
+    }
+}

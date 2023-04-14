@@ -1,0 +1,31 @@
+{ 
+    "filename": "original", 
+    "contents": [ 
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Double-the-card-size Box"
+    ], 
+    "card_label": "ORIGINAL EDITION", 
+    "card_list": [ 
+        "Exploding Kittens (4)",
+        "Defuse (6)",
+        "Attack 2X (4)",
+        "Shuffle (4)",
+        "Skip (4)",
+        "See the Future 3X (5)",
+        "Nope (5)",
+        "Favor (4)",
+
+        "Hairy Potato Cat (4)",
+        "Beard Cat (4)",
+        "Cattermelon Cat (4)",
+        "Taco Cat (4)",
+        "Rainbow-Ralphing Cat (4)"
+       
+    ], 
+    "youtubeId": "",
+    "images": {
+        "start": 8812, 
+        "end": 8868
+    }
+}

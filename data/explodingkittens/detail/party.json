@@ -1,0 +1,40 @@
+{ 
+    "filename": "party", 
+    "contents": [ 
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Singing Card Box"
+    ], 
+    "card_label": "RFD EDITION", 
+    "card_list": [ 
+        "Exploding Kittens (9)",
+        "Defuse (10)",
+
+        "Nope (9)",
+       
+        "See the Future 3X (6)",
+        "Alter the Future 3X (6)",
+
+        "Skip (10)",
+
+        "Attack (5)",
+        "Target Attack (5)",
+
+        "Favor (6)",
+
+        "Shuffle (6)",
+        "Draw from the Bottom (7)",
+
+        "Feral Cat (6)",
+        "Rainbow-Ralphing Cat (7)",
+        "Hairy Potato Cat (7)",
+        "Beard Cat (7)",
+        "Cattermelon Cat (7)",
+        "Taco Cat (7)"
+    ], 
+    "youtubeId": "",
+    "images": {
+        "start": 0, 
+        "end": 0
+    }
+}
