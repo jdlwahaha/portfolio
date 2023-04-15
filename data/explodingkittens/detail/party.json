@@ -34,7 +34,10 @@
     ], 
     "youtubeId": "",
     "images": {
-        "start": 0, 
-        "end": 0
+        "start": 8950, 
+        "end": 9071, 
+        "exclude": [ 
+            9000
+        ]
     }
 }

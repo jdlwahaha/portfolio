@@ -3,7 +3,7 @@
         $.getJSON('../../data/explodingkittens/editions.json', function (editions) {
 
             const editionName = $.urlParam('edition');
-            const available_editions_names = ['barking', 'minions', 'original'];
+            const available_editions_names = ['barking', 'minions', 'original', 'recipes', 'party'];
             
             if (editionName && available_editions_names.indexOf(editionName) >= 0) {
 
@@ -78,7 +78,13 @@
 
                     let images = []; 
                     for (let i = fullDetail.images.start; i <= fullDetail.images.end; i++) { 
-                        images.push(`${i}`); 
+                        if (fullDetail.images.exclude) { 
+                            if (!fullDetail.images.exclude.includes(i)) {
+                                images.push(`${i}`); 
+                            }
+                        } else { 
+                            images.push(`${i}`); 
+                        }
                     }
                     
                     console.log('size:', images.length);

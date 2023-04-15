@@ -30,6 +30,7 @@
                         <td>${edition.players}</td>   
                         <td>${edition.num_of_cards}</td>                                                             
                         <td class="desktop">${edition.release_year}</td>
+                        <td class="desktop">${edition.acquisition_date}</td>
                     </tr>
                 `; 
             }); 

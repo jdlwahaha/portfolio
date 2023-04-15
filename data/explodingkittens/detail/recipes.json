@@ -26,8 +26,8 @@
         "Skip (4)",
         "Super Skip (2)",
 
-        "Attack (6)",
-        "Target Attack (4)",
+        "Attack 2X (6)",
+        "Target Attack 2X (4)",
         "Personal Attack 3X (4)",
 
         "Bury (4)",
@@ -48,7 +48,7 @@
     ], 
     "youtubeId": "kL4nao5JqOE",
     "images": {
-        "start": 0, 
-        "end": 0
+        "start": 9072, 
+        "end": 9193
     }
 }

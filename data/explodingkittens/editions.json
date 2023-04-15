@@ -7,7 +7,7 @@
         "players": "2-5",
         "num_of_cards": 56, 
         "release_year": "2015", 
-        "acquisition_date": "04-12-2023", 
+        "acquisition_date": "2023-04-12", 
         "completed": true
     },
     { 
@@ -26,9 +26,10 @@
         "type": "full", 
         "price": 29.99, 
         "players": "2-10",
-        "num_of_cards": 122, 
+        "num_of_cards": 120, 
         "release_year": "2017", 
-        "acquisition_date": "04-10-2023"
+        "acquisition_date": "2023-04-10", 
+        "completed": true
     },
     { 
         "name": "Imploding Kittens", 
@@ -48,7 +49,7 @@
         "players": "-",
         "num_of_cards": 15, 
         "release_year": "2018", 
-        "acquisition_date": "04-10-2023"
+        "acquisition_date": "2023-04-10"
     },
     { 
         "name": "Barking Kittens", 
@@ -58,7 +59,7 @@
         "players": "-",
         "num_of_cards": 20, 
         "release_year": "2020", 
-        "acquisition_date": "04-12-2023", 
+        "acquisition_date": "2023-04-12", 
         "completed": true
     },
     { 
@@ -69,7 +70,8 @@
         "players": "2-5",
         "num_of_cards": 121, 
         "release_year": "2021", 
-        "acquisition_date": ""
+        "acquisition_date": "2023-03-10", 
+        "completed": true
     },
     { 
         "name": "Exploding Minions", 
@@ -79,7 +81,7 @@
         "players": "2-5",
         "num_of_cards": 72, 
         "release_year": "2021", 
-        "acquisition_date": "04-08-2023", 
+        "acquisition_date": "2023-04-08", 
         "completed": true
     },
     { 
