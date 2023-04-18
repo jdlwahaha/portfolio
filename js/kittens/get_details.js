@@ -56,7 +56,7 @@
                                 </ul>
                             </span>
                             <span>
-                                <img src="../../data/explodingkittens/${fullDetail.filename}/all.png" alt="all.png">
+                                <img src="../../data/explodingkittens/${fullDetail.filename}/all.jpeg" alt="all.jpeg">
                             </span>
                         </div>
                         
