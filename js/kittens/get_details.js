@@ -31,7 +31,14 @@
                             <span>
                                 <ul>
                                     ${ isExpansion ? `<li><strong>Expansion Number:</strong> ${fullDetail.expansion_no}</li>` : '' }
-                                    <li><strong>Price:</strong> CDN$${fullDetail.price}</li>
+                                    <li>
+                                        <strong>Price:</strong> CDN$${fullDetail.price} <br>    
+                                        <a target="_blank" href="${fullDetail.amazon}">
+                                            Buy from Amazon.ca 
+                                            <img class="icon" src="../../data/links/amazon.png" />
+                                            <img class="icon" src="../../data/links/canada.png" /> 
+                                        </a>
+                                    </li>
                                     <li>
                                         <strong>Contents:</strong> 
                                         <ul class="ul-nopadding">

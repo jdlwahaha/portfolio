@@ -25,8 +25,8 @@
                         <td class="price">
                             <span>$${edition.price}<span>
                             <a target="_blank" href="${edition.amazon}">
-                                <img class="icon" src="../../data/links/canada.png" /> 
-                                <img class="icon" src="../../data/links/amazon.png" /> 
+                                <img class="icon right" src="../../data/links/canada.png" /> 
+                                <img class="icon right" src="../../data/links/amazon.png" /> 
                             </a>
                         </td>
                         <td>${edition.players}</td>   

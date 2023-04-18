@@ -67,11 +67,11 @@ td, th {
 } */
 
 img.icon { 
-    width: auto;
+    width: auto !important;
     height: 20px;
     margin: 0; 
     padding: 0;
-    float: right;
+
     vertical-align: bottom;
 }
 
