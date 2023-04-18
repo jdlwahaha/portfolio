@@ -96,7 +96,14 @@ div ul li {
 div.black { 
     color: #666;
 }
+img.icon { 
+    width: auto !important;
+    height: 20px;
+    margin: 0; 
+    padding: 0;
 
+    vertical-align: bottom;
+}
 
 
 @media (max-width: 500px) { 

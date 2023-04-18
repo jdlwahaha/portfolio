@@ -20,17 +20,38 @@ function loadBooks(books) {
 function getCourseHTML(book, showLinks) { 
     const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
 
+
+    const amazonLink = `
+                    <a target="_blank" href="${book.amazon}" style="float: left">
+                        Buy from Amazon.ca
+                        <img class="icon" src="../../data/links/amazon.png" />
+                        <img class="icon" src="../../data/links/canada.png" /> 
+                    </a>
+    `;
+
     return `
         <section class="box">
             <div class="box-content">
                 <span class="thumbnail-container">
-                    <img src="${bookThumbnail}" alt="${book.filename}.png">
+                    <img src="${bookThumbnail}" alt="${book.filename}.png"><br><br>
+                    ${ book.amazon ? amazonLink : ''}
                 </span>
                 <div class="book-container">
-                    <h4>${book.title}</h4>
+                    <h4>
+                        ${book.title}
+                        
+                    </h4>
+                    
                     <div class="author">by ${book.author}</div>
-                    <div class="rating"> ${getRatingString(book.rating)}</div>
+                    
+                    <div class="rating"> 
+                        ${getRatingString(book.rating)} &nbsp;&nbsp;&nbsp;
+                        
+                    </div>
                     ${getReivew(book, showLinks)}
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
