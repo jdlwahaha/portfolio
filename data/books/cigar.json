@@ -1,0 +1,72 @@
+[
+    {
+        "title": "", 
+        "author": "",
+        "filename": "",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "",
+        "showFullReview": false,
+        "review": "interesting"
+    },
+    {
+        "title": "", 
+        "author": "",
+        "filename": "",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "",
+        "showFullReview": false,
+        "review": "interesting"
+    },
+    {
+        "title": "Smoke A Cigar: A Gentleman's Quick & Easy Guide To Cigars, Cigar Smoking & Cigar Accessories (Tips for Beginners) ", 
+        "author": "",
+        "filename": "smoke-a-cigar",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/3MR79Ss",
+        "showFullReview": false,
+        "review": "to-read-list"
+    },
+    {
+        "title": "CIGAR: The Smoker Book For Connoisseurs who love Smoke Cigars ", 
+        "author": "Ris Editions",
+        "filename": "the-smoker-book",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/41Tmd6r",
+        "showFullReview": false,
+        "review": "interesting"
+    },
+    {
+        "title": "The Cuban Cigar Handbook: The Discerning Aficionado's Guide to the Best Cuban Cigars in the World", 
+        "author": "Matteo Speranza",
+        "filename": "the-cuban-cigar-handbook",
+        "rating": 3,
+        "quotes": [], 
+        "amazon": "https://amzn.to/41Fwp2h",
+        "showFullReview": false,
+        "review": "booklist"
+    },
+    {
+        "title": "The Ultimate Cigar Book", 
+        "author": "Richard Carleton Hacker",
+        "filename": "the-ultimate-cigar-book",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/43GXLXj",
+        "showFullReview": false,
+        "review": "booklist"
+    },
+    {
+        "title": "The Cigar Companion: Third Edition: The Connoisseur's Guide", 
+        "author": "Anwer Bati, Simon Chase",
+        "filename": "the-cigar-companion",
+        "rating": 3,
+        "quotes": [], 
+        "amazon": "https://amzn.to/3A3Ua8e",
+        "showFullReview": false,
+        "review": "booklist"
+    }
+]
