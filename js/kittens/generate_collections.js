@@ -14,19 +14,21 @@
                     <tr>
                         <td>
                             ${link}
-                            <!--  <a href="detail?edition=${edition.filename}">
-                                ${edition.name} 
-                            </a><br> -->
-                            <!-- <span class="mobile">(${edition.release_year})</span><br> -->
                             
                             <span class="mobile">${displayType}</span><br>
 
-                            <div>
+                            <!--<div>
                                 <img src="../../data/explodingkittens/${edition.filename}.png" alt="${edition.filename}">
-                            </div>
+                            </div>-->
                         </td> 
                         <td class="desktop">${displayType}</td>
-                        <td>$${edition.price}</td>
+                        <td class="price">
+                            <span>$${edition.price}<span>
+                            <a target="_blank" href="${edition.amazon}">
+                                <img class="icon" src="../../data/links/canada.png" /> 
+                                <img class="icon" src="../../data/links/amazon.png" /> 
+                            </a>
+                        </td>
                         <td>${edition.players}</td>   
                         <td>${edition.num_of_cards}</td>                                                             
                         <td class="desktop">${edition.release_year}</td>

@@ -62,8 +62,22 @@ td, th {
     padding: 1rem;
 }
 
-table img { 
+/* table img { 
     display: none;
+} */
+
+img.icon { 
+    width: auto;
+    height: 20px;
+    margin: 0; 
+    padding: 0;
+    float: right;
+    vertical-align: bottom;
+}
+
+td.price a { 
+    display: inline-block;
+    float: right;
 }
 
 .ul-nopadding { 
