@@ -8,8 +8,8 @@
         "num_of_cards": 56, 
         "release_year": "2015", 
         "amazon": "https://amzn.to/3ohEbkp",
-        "acquisition_date": "2023-04-12", 
-        "completed": true
+        "acquisition_date": "2023-04-12",
+        "printed_year": 2021
     },
     { 
         "name": "NSFW Edition", 
@@ -20,7 +20,8 @@
         "num_of_cards": 56, 
         "amazon": "https://amzn.to/419FnEW",
         "release_year": "2015", 
-        "acquisition_date": ""
+        "acquisition_date": "2022-04-19",
+        "printed_year": 2021
     },
     { 
         "name": "Party Pack Edition", 
@@ -32,7 +33,7 @@
         "release_year": "2017", 
         "acquisition_date": "2023-04-10", 
         "amazon": "https://amzn.to/3L4T5Dj",
-        "completed": true
+        "printed_year": 2021
     },
     { 
         "name": "Imploding Kittens", 
@@ -43,7 +44,8 @@
         "num_of_cards": 20, 
         "amazon": "https://amzn.to/41Ah6Ia",
         "release_year": "2016", 
-        "acquisition_date": ""
+        "acquisition_date": "2022-04-19",
+        "printed_year": 2021
     },
     { 
         "name": "Streaking Kittens", 
@@ -54,7 +56,8 @@
         "num_of_cards": 15, 
         "release_year": "2018",
         "amazon": "https://amzn.to/43FD5Po", 
-        "acquisition_date": "2023-04-10"
+        "acquisition_date": "2023-04-10", 
+        "printed_year": 2022
     },
     { 
         "name": "Barking Kittens", 
@@ -66,7 +69,7 @@
         "release_year": "2020", 
         "acquisition_date": "2023-04-12", 
         "amazon": "https://amzn.to/3okHUha",
-        "completed": true
+        "printed_year": 2020
     },
     { 
         "name": "Recipes for Disaster", 
@@ -75,10 +78,10 @@
         "price": 34.99, 
         "players": "2-5",
         "num_of_cards": 121, 
-        "release_year": "2021", 
+        "release_year": "2022", 
         "acquisition_date": "2023-03-10", 
         "amazon": "https://amzn.to/3KHWHtF", 
-        "completed": true
+        "printed_year": 2022
     },
     { 
         "name": "Exploding Minions", 
@@ -90,7 +93,7 @@
         "release_year": "2021", 
         "acquisition_date": "2023-04-08", 
         "amazon": "https://amzn.to/41v2rxI",
-        "completed": true
+        "printed_year": 2021
     },
     { 
         "name": "Zombie Kittens", 
@@ -101,6 +104,7 @@
         "num_of_cards": 61, 
         "amazon": "https://amzn.to/3A3IvGt",
         "release_year": "2022", 
-        "acquisition_date": ""
+        "acquisition_date": "2022-04-19",
+        "printed_year": 2022
     }
 ]

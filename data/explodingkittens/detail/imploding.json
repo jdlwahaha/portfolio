@@ -1,0 +1,24 @@
+{ 
+    "filename": "imploding", 
+    "expansion_no": 1,
+    "contents": [ 
+        "Cone of Shame (White Doctor)",
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Oversize Box"
+    ], 
+    "card_label": "FIRST EXPANSION", 
+    "card_list": [ 
+        "Imploding Kittens (1)",
+        "Target Attack 2X (3)",
+        "Alter the Future 3X (4)",
+        "Reverse (4)",
+        "Draw from the Bottom (4)",
+        "Feral Cat (4)"
+    ], 
+    "youtubeId": "W5GtDc7mxJs",
+    "images": {
+        "start": 9439, 
+        "end": 9459
+    }
+}

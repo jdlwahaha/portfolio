@@ -3,7 +3,10 @@
         $.getJSON('../../data/explodingkittens/editions.json', function (editions) {
 
             const editionName = $.urlParam('edition');
-            const available_editions_names = ['barking', 'minions', 'original', 'recipes', 'party'];
+            const available_editions_names = editions.map(edition => { 
+                return edition.filename;
+            }); 
+            
             
             if (editionName && available_editions_names.indexOf(editionName) >= 0) {
 

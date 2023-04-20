@@ -1,0 +1,27 @@
+{ 
+    "filename": "streaking", 
+    "expansion_no": 2,
+    "contents": [ 
+        "Paper Instructions", 
+        "Paper Ad (Recipes for Disaster)", 
+        "Plastic Sleeve"
+    ], 
+    "card_label": "SECOND EXPANSION", 
+    "card_list": [ 
+        "Streaking Kitten (1)",
+        "Exploding Kittens (1)",
+        "Catomic Bomb (1)",
+        "Curse of the Cat Butt (2)",
+        "See the Future 3X (1)",
+        "Alter the Future 5X (1)",
+        "Swap Top and Bottom (3)",
+        "Mark (3)",
+        "Garbage Collection (1)",
+        "Super Skip (1)"
+    ], 
+    "youtubeId": "I2RE4mKgCl8",
+    "images": {
+        "start": 9525, 
+        "end": 9540
+    }
+}

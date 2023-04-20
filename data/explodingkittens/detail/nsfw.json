@@ -1,0 +1,30 @@
+{ 
+    "filename": "nsfw", 
+    "contents": [ 
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Double-the-card-size Box"
+    ], 
+    "card_label": "NSFW EDITION", 
+    "card_list": [ 
+        "Exploding Kittens (4)",
+        "Defuse (6)",
+        "Nope (5)",
+        "See the Future 3X (5)",
+        "Attack 2X (4)",
+        "Skip (4)",
+        "Shuffle (4)",
+        "Favor (4)",
+
+        "Shy Bladder Cat (4)",
+        "Bikini Cat (4)",
+        "Momma Cat (4)",
+        "Cat's Schrodinger (4)",
+        "Zombie Cat (4)"
+    ], 
+    "youtubeId": "9xrN1Z9fYsA",
+    "images": {
+        "start": 9382, 
+        "end": 9438
+    }
+}

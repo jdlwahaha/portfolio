@@ -4,22 +4,19 @@
             const html = editions.map(edition => { 
                 const displayType = getType(edition.type);
 
-                const link = (edition.completed) 
-                    ? `
+                const link = `
                     <a href="detail?edition=${edition.filename}">
                                 ${edition.name} 
-                            </a><br>` : `${edition.name}<br>`; 
+                    </a><br>`; 
 
                 return `
                     <tr>
                         <td>
                             ${link}
-                            
-                            <span class="mobile">${displayType}</span><br>
-
-                            <!--<div>
-                                <img src="../../data/explodingkittens/${edition.filename}.png" alt="${edition.filename}">
-                            </div>-->
+                            <span class="mobile">${displayType}</span>
+                            <!--
+                            <img src="../../data/explodingkittens/${edition.filename}/package.jpeg" alt="${edition.filename}.jpeg">
+                            -->
                         </td> 
                         <td class="desktop">${displayType}</td>
                         <td class="price">

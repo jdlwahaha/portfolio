@@ -1,0 +1,35 @@
+{ 
+    "filename": "zombie", 
+    "contents": [ 
+        "Paper Instructions", 
+        "Paper Ad (Recipes for Disaster)", 
+        "Double-the-card-size Box"
+    ], 
+    "card_label": "ZOMBIE KITTENS", 
+    "card_list": [ 
+        "Exploding Kittens (4)",
+        "Zombie Kitten (5)",
+        "Grave Robber (1)",
+        "Clairvoyance NOW (2)",
+        "Feed the Dead NOW (2)",
+        "Shuffle NOW (2)",
+        "Attack of the Dead (3)",
+        "Attack 2X (2)",
+        "Dig Dipper (4)",
+        "Clone (3)",
+        "Super Skip (2)",
+        "Skip (3)",
+        "Favor (3)",
+        "Nope (5)",
+        "See the Future 3X (4)",
+        "Vampire Cat (4)",
+        "Electrocat (4)",
+        "Cat-o-Lantern (4)",
+        "De-cat-ipated (4)"
+    ], 
+    "youtubeId": "3rXj9arTtGM",
+    "images": {
+        "start": 9460, 
+        "end": 9521
+    }
+}
