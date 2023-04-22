@@ -60,6 +60,13 @@
                                             <li>
                                                 <strong>Price:</strong> CDN$${fullDetail.price}    
                                                 ${getAmazonLink(fullDetail.amazon)}
+                                            </li>
+                                            <li >
+                                                <strong>Printed Year:</strong> ${fullDetail.printed_year}
+                                                <span class="triggerHover">
+                                                    &#9432;
+                                                    <span class="showOnHover">Printed year of my copy and the info on this page</span>
+                                                </span>
                                                 
                                             </li>
                                             <li>

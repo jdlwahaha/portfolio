@@ -17,9 +17,9 @@
                             <a href="detail?edition=${edition.filename}">
                                 ${edition.name} 
                             </a><br>
-                            <div class="mobile">
+                            <div class="mobile-800">
                                 <div class="addMarginTop">Type: ${displayType}</div>
-                                <div class="addMarginTop">
+                                <div class="addMarginTop mobile">
                                     CDN$${edition.price}
                                     ${amazonLink}
                                 </div>
@@ -34,11 +34,11 @@
                             <div>$${edition.price}</div>
                             ${amazonLink}
                         </td>
-                        <td class="desktop">${displayType}</td>
+                        <td class="desktop-800">${displayType}</td>
                         <td class="center">${edition.players}</td>   
                         <td class="center">${edition.num_of_cards}</td>                                                             
                         <td class="desktop center">${edition.release_year}</td>
-                        <td class="desktop center">${edition.acquisition_date}</td>
+                        <td class="desktop-700 center">${edition.acquisition_date}</td>
                     </tr>
                 `; 
             }); 
