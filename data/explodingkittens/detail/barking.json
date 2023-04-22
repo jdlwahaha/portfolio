@@ -8,20 +8,73 @@
         "Oversize Box"
     ], 
     "card_label": "THIRD EXPANSION", 
-    "card_list": [ 
-        "Tower of Power (1)",
-        "Barking Kittens (2)",
-        "Potluck (2)",
-        "Share the Future 3X (2)",
-        "Alter the Future 3X NOW (2)",
-        "Super Skip (1)",
-        "Bury (2)",
-        "I'll Take That (4)",
-        "Personal Attack 3X (2)"
-    ], 
     "youtubeId": "r1l2H3iAUUI",
-    "images": {
-        "start": 68, 
-        "end": 87
+    "back": 0,
+    "cards": {
+        "Tower of Power": {
+            "description": "", 
+            "images": [
+                68
+            ]
+        },
+        "Barking Kittens": {
+            "description": "", 
+            "images": [
+                69,
+                70
+            ]
+        },
+        "Potluck": {
+            "description": "", 
+            "images": [
+                71,
+                72
+            ]
+        },
+        "Share the Future 3X": {
+            "description": "", 
+            "images": [
+                73, 
+                74
+            ]
+        },
+        "Alter the Future 3X NOW": {
+            "description": "", 
+            "images": [
+                75, 
+                76
+            ]
+        },
+        "Super Skip": {
+            "description": "", 
+            "images": [
+                77
+            ]
+        },
+        "Bury": {
+            "description": "", 
+            "images": [
+                78, 
+                79
+            ]
+        },
+        "I'll Take That": {
+            "description": "", 
+            "images": [
+                80, 
+                81, 
+                82, 
+                83
+            ]
+        },
+        "Personal Attack 3X": {
+            "description": "", 
+            "images": [
+                84,
+                85, 
+                86, 
+                87
+            ]
+        }
     }
 }

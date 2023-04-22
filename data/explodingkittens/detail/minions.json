@@ -1,27 +1,144 @@
-{ 
-    "filename": "minions", 
-    "contents": [ 
-        "Paper Instructions", 
+{
+    "filename": "minions",
+    "contents": [
+        "Paper Instructions",
         "Oversize Minion Face-Changing Box"
-    ], 
-    "card_label": "MINIONS EDITION", 
-    "card_list": [ 
-        "Exploding Minions (4)",
-        "Defuse (7)",
-        "Clone (3)",
-        "See the Future 3X (7)",
-        "Nope (7)",
-        "Skip (6)",
-        "Attack 2X (5)",
-        "Draw from the Bottom (5)",
-        "Shuffle (4)",
-        "Bob (8)",
-        "Kevin & Otto (8)",
-        "Stuart (8)"
-    ], 
+    ],
+    "card_label": "MINIONS EDITION",
     "youtubeId": "1CBGikGsOQo",
-    "images": {
-        "start": 8869, 
-        "end": 8941
+    "back": 8869,
+    "cards": {
+        "Exploding Minions": {
+            "description": "You must show this card immediately. Unless you have a Defuse Card, you're out of the game. Put this card and the rest of your unused hand face up in front of you.",
+            "images": [
+                8870,
+                8871,
+                8872,
+                8873
+            ]
+        },
+        "Defuse": {
+            "description": "If you drew an Exploding Minion, you can play this card instead of dying. Place your Defuse Card in the Discard Pile. <br> Then take the Exploding Minion and, without reordering or viewing the other cards, secretly put it back in the Draw Pile anywhere you'd like. <br> Your turn is over after playing this card.",
+            "images": [
+                8874,
+                8875,
+                8876,
+                8877,
+                8878,
+                8879,
+                8880
+            ]
+        },
+        "Clone": {
+            "description": "Do not draw any cards. Instead, immediately force the next palyer to take 2 turns in a row. Play then continues from that player. The victim of this card takes a turn as normal (pass or play then draw). Then, when their first turn is over, it's their turn again. <br> If the victim of an Attack Card plays an Attack Card on any of their turns, the new target must take any remaining turns plus 2 more (e.g. 4 turns, then 6, and so on).",
+            "images": [
+                8881,
+                8882,
+                8883
+            ]
+        },
+        "See the Future 3X": {
+            "description": "",
+            "images": [
+                8884,
+                8885,
+                8886,
+                8887,
+                8888,
+                8889,
+                8890
+            ]
+        },
+        "Nope": {
+            "description": "",
+            "images": [
+                8891,
+                8892,
+                8893,
+                8894,
+                8895,
+                8896,
+                8897
+            ]
+        },
+        "Skip": {
+            "description": "",
+            "images": [
+                8898,
+                8899,
+                8900,
+                8901,
+                8902,
+                8903
+            ]
+        },
+        "Attack 2X": {
+            "description": "",
+            "images": [
+                8904,
+                8905,
+                8906,
+                8907,
+                8908
+            ]
+        },
+        "Draw from the Bottom": {
+            "description": "",
+            "images": [
+                8909,
+                8910,
+                8911,
+                8912,
+                8913
+            ]
+        },
+        "Shuffle": {
+            "description": "",
+            "images": [
+                8914,
+                8915,
+                8916,
+                8917
+            ]
+        },
+        "Bob": {
+            "description": "",
+            "images": [
+                8918,
+                8919,
+                8920,
+                8921,
+                8922,
+                8923,
+                8924,
+                8925
+            ]
+        },
+        "Kevin & Otto": {
+            "description": "",
+            "images": [
+                8926,
+                8927,
+                8928,
+                8929,
+                8930,
+                8931,
+                8932,
+                8933
+            ]
+        },
+        "Stuart": {
+            "description": "",
+            "images": [
+                8934,
+                8935,
+                8936,
+                8937,
+                8938,
+                8939,
+                8940,
+                8941
+            ]
+        }
     }
 }

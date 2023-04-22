@@ -6,30 +6,169 @@
         "Double-the-card-size Box"
     ], 
     "card_label": "ZOMBIE KITTENS", 
-    "card_list": [ 
-        "Exploding Kittens (4)",
-        "Zombie Kitten (5)",
-        "Grave Robber (1)",
-        "Clairvoyance NOW (2)",
-        "Feed the Dead NOW (2)",
-        "Shuffle NOW (2)",
-        "Attack of the Dead (3)",
-        "Attack 2X (2)",
-        "Dig Dipper (4)",
-        "Clone (3)",
-        "Super Skip (2)",
-        "Skip (3)",
-        "Favor (3)",
-        "Nope (5)",
-        "See the Future 3X (4)",
-        "Vampire Cat (4)",
-        "Electrocat (4)",
-        "Cat-o-Lantern (4)",
-        "De-cat-ipated (4)"
-    ], 
     "youtubeId": "3rXj9arTtGM",
-    "images": {
-        "start": 9460, 
-        "end": 9521
+    "back": 9460,
+    "cards": {
+        "Exploding Kittens": {
+            "description": "", 
+            "images": [
+                9461, 
+                9462, 
+                9463, 
+                9464
+            ]
+        },
+        "Zombie Kitten": {
+            "description": "", 
+            "images": [
+                9465, 
+                9466, 
+                9467, 
+                9468, 
+                9469
+            ]
+        },
+        "Grave Robber": {
+            "description": "", 
+            "images": [
+                9470 
+            ]
+        },
+        "Clairvoyance NOW": {
+            "description": "", 
+            "images": [
+                9471, 
+                9472 
+            ]
+        },
+        "Feed the Dead NOW": {
+            "description": "", 
+            "images": [
+                9473, 
+                9474 
+            ]
+        },
+        "Shuffle NOW": {
+            "description": "", 
+            "images": [
+                9475, 
+                9476
+
+            ]
+        },
+        "Attack of the Dead": {
+            "description": "", 
+            "images": [
+                9477, 
+                9478, 
+                9479
+
+            ]
+        },
+        "Attack 2X": {
+            "description": "", 
+            "images": [
+                9480, 
+                9481 
+            ]
+        },
+        "Dig Dipper": {
+            "description": "", 
+            "images": [
+                9482, 
+                9483, 
+                9484, 
+                9485 
+
+            ]
+        },
+        "Clone": {
+            "description": "", 
+            "images": [
+                9486, 
+                9487, 
+                9488 
+            ]
+        },
+        "Super Skip": {
+            "description": "", 
+            "images": [
+                9489, 
+                9490 
+            ]
+        },
+        "Skip": {
+            "description": "", 
+            "images": [
+                9491,
+                9492,
+                9493 
+
+            ]
+        },
+        "Favor": {
+            "description": "", 
+            "images": [
+                9494,
+                9495,
+                9496
+
+            ]
+        },
+        "Nope": {
+            "description": "", 
+            "images": [
+                9497,
+                9498,
+                9499,
+                9500,
+                9501
+            ]
+        },
+        "See the Future 3X": {
+            "description": "", 
+            "images": [
+                9502,
+                9503,
+                9504,
+                9505
+            ]
+        },
+        "Vampire Cat": {
+            "description": "", 
+            "images": [
+                9506,
+                9507,
+                9508,
+                9509
+            ]
+        },
+        "Electrocat": {
+            "description": "", 
+            "images": [
+                9510,
+                9511,
+                9512,
+                9513
+            ]
+        },
+        "Cat-o-Lantern": {
+            "description": "", 
+            "images": [
+                9514,
+                9515,
+                9516,
+                9517
+            ]
+        },
+        "De-cat-ipated": {
+            "description": "", 
+            "images": [
+                9518,
+                9519,
+                9520,
+                9521
+            ]
+        }
     }
 }

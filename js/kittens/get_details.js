@@ -7,7 +7,6 @@
                 return edition.filename;
             }); 
             
-            
             if (editionName && available_editions_names.indexOf(editionName) >= 0) {
 
                 $.getJSON(`../../data/explodingkittens/detail/${editionName}.json`, function (specificEditionDetail) {
@@ -21,8 +20,33 @@
                             This is an expansion pack. You will need one of the full game edition to play this game. 
                         </div>`;
 
-                    const cardList = fullDetail.card_list.map(i => `<li>${i}</li>`).join('');
+
+                    // get a list of card names 
+                    const cardNames = Object.keys(fullDetail.cards);
+                    let displayCardNames = []; 
+                    let cardGroupImages = '';
+                    cardNames.map(name => {
+                        const images = fullDetail.cards[name].images;
+                        const description = fullDetail.cards[name].description;
+                        cardGroupImages += `<h4>${name} (${images.length})</h4><p>${description}</p>`;
+                        displayCardNames.push(name + ` (${images.length})`)
+                        
+                        images.map(i => { 
+                            cardGroupImages += `
+                            <span>
+                                <img  src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
+                            </span>
+                            `;
+                        });
+                        cardGroupImages += '<br><br>';
+
+                    });
+
+                    $('#cards').append(cardGroupImages);
+
+
                     const contentList = fullDetail.contents.map(i => `<li>${i}</li>`).join('');
+                    const cardList = '<li>' + displayCardNames.join('</li><li>') + '</li>';
 
                     const html = `
                         <h1>${fullDetail.name}</h1>
@@ -67,37 +91,8 @@
 
                     $('#detailBox').append(html);
 
-                    if (fullDetail.youtubeId) { 
-                        $('#iframe').append(`
-                        <iframe 
-                            src="https://www.youtube.com/embed/${fullDetail.youtubeId}" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="encrypted-media; gyroscope; picture-in-picture;" 
-                            allowfullscreen
-                        ></iframe>
-                    `);
-                    }
-                   
-
-                    let images = []; 
-                    for (let i = fullDetail.images.start; i <= fullDetail.images.end; i++) { 
-                        if (fullDetail.images.exclude) { 
-                            if (!fullDetail.images.exclude.includes(i)) {
-                                images.push(`${i}`); 
-                            }
-                        } else { 
-                            images.push(`${i}`); 
-                        }
-                    }
+                    appendYouTube(fullDetail.youtubeId);
                     
-                    console.log('size:', images.length);
-                    const imageHtml = images.map(i => `
-                        <span>
-                            <img  src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
-                        </span>
-                    `).join('');
-                    $('#cards').append(imageHtml);
                 });
             } else {
                 window.location.href = window.location.origin + '/portfolio/html/explodingkittens';
@@ -105,6 +100,20 @@
 
         })
 
-    })
+    }); 
+
+    function appendYouTube(id) { 
+        if (id) { 
+            $('#iframe').append(`
+            <iframe 
+                src="https://www.youtube.com/embed/${id}" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="encrypted-media; gyroscope; picture-in-picture;" 
+                allowfullscreen
+            ></iframe>
+        `);
+        }
+    }
 
 })();

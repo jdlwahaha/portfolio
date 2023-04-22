@@ -8,17 +8,60 @@
         "Oversize Box"
     ], 
     "card_label": "FIRST EXPANSION", 
-    "card_list": [ 
-        "Imploding Kittens (1)",
-        "Target Attack 2X (3)",
-        "Alter the Future 3X (4)",
-        "Reverse (4)",
-        "Draw from the Bottom (4)",
-        "Feral Cat (4)"
-    ], 
     "youtubeId": "W5GtDc7mxJs",
-    "images": {
-        "start": 9439, 
-        "end": 9459
+    "back": 9439,
+    "cards": {
+        "Imploding Kittens": {
+            "description": "", 
+            "images": [
+                9440
+            ]
+        },
+        "Target Attack 2X": {
+            "description": "", 
+            "images": [
+                9441,
+                9442,
+                9443
+            ]
+        },
+        "Alter the Future 3X": {
+            "description": "", 
+            "images": [
+                9444,
+                9445,
+                9446,
+                9447
+            ]
+        },
+        "Reverse": {
+            "description": "", 
+            "images": [
+                9448,
+                9449,
+                9450,
+                9451
+            ]
+        },
+        "Draw from the Bottom": {
+            "description": "", 
+            "images": [
+                9452,
+                9453,
+                9454,
+                9455
+
+            ]
+        },
+        "Feral Cat": {
+            "description": "", 
+            "images": [
+                9456,
+                9457,
+                9458,
+                9459
+
+            ]
+        }
     }
 }

@@ -40,6 +40,21 @@ iframe {
 }
 
 
+span.showOnHover { 
+    display: none;
+}
+.triggerHover:hover span.showOnHover { 
+    display: inline-block;
+    background: #888; 
+    color: white;
+    padding: .5rem;
+    position: absolute;
+    border-radius: 4px;
+    font-size: smaller;
+}
+
+
+
 .red { 
     color: rgba(255, 0, 0, 0.599);
 }
