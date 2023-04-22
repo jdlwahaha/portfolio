@@ -22,7 +22,8 @@
         <div id="main">
             <div class="submenu">
                 <a href="index">Exploding Kittens Collections</a> |
-                <span>About My Experience</span>
+                <span>About My Experience</span> |
+                <a href="storage">Card Storage</a> 
 
             </div>
 
@@ -43,7 +44,7 @@
                         I purchased my first set (<span class="blue">Exploding Kittens: Recipes for Disaster</span>) recently in 2023 because
                         my close friends from high school started playing too. I need a copy too to understand the game fully to win. 
                         <span class="blue">Recipes for Disaster</span> claims to be the deluxe version and seem to have it all. 
-                        However, does it really have it all? 
+                        <i><highlight>However, does it really have it all? </highlight></i>
                     </p>
                 </div>
             </section>
@@ -52,8 +53,9 @@
                 <div class="box-content">
                     <p>
                         That was basically the trap question for me to start giving my money to <span class="hollow">Exploding Kittens</span>. 
-                        It probably just take a few dollars, if not cents, to make those paper cards. And I've spent hundreds on it already! 
-                        I have to admit that the game is pretty fun though. 
+                        It probably just take a few dollars, if not cents, to make those paper cards. 
+                        And I've <span class="green"> spent about <span id="cost"></span></span> on it already! 
+                         I have to admit that the game is pretty fun though. 
                         The cards by themselves might not worth much, but what makes it worthy is the good time that it brings to your circle.
                     </p>
                     <p>
@@ -74,20 +76,6 @@
                 </div>
             </section>
 
-            <section class="box">
-                <h1>Other Links</h1>
-                <div class="box-content">
-                    <p>Here are some boxes that I like to hold these cards.</p>
-                    <ul>
-                        <li>
-                            <a href="https://amzn.to/3oBGFud" target="_blank">Pink Card storage</a>
-                        </li>
-                        <li>
-                            <a href="https://amzn.to/41RylF0" target="_blank">Red Card storage</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </div>
 
         <footer><!-- jQuery generated --></footer>
@@ -96,3 +84,18 @@
 
 </body>
 </html>
+
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../../data/explodingkittens/editions.json', function (editions) {
+            const tax = 1.12; 
+
+            let sum = 0; 
+            editions.map(i => {sum += i.price}); 
+
+            const cost = (sum * tax).toFixed(2);
+            $('#cost').append(`$${cost}`);
+        })
+    });
+</script>

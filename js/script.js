@@ -92,4 +92,5 @@
     
         return (results !== null) ? results[1] || 0 : false;
     }
+
 })(); 

@@ -10,24 +10,17 @@ function loadBooks(books) {
 
 
     books.map(function (book) {
-        content += getCourseHTML(book, true); 
+        content += getBookHtml(book, true); 
     });
 
     $('#book_list').append(content);
 
 }
 
-function getCourseHTML(book, showLinks) { 
+function getBookHtml(book, showLinks) { 
     const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
 
-
-    const amazonLink = `
-                    <a target="_blank" href="${book.amazon}" style="float: left">
-                        Buy from Amazon.ca
-                        <img class="icon" src="../../data/links/amazon.png" />
-                        <img class="icon" src="../../data/links/canada.png" /> 
-                    </a>
-    `;
+    const amazonLink = getAmazonLink(book.amazon);
 
     return `
         <section class="box">
@@ -103,4 +96,17 @@ function getRatingString(number) {
     }
 
     return result; 
+}
+
+
+function getAmazonLink(link) { 
+    return `
+        <a target="_blank" class="amazon" href="${link}" >
+            <img class="icon" src="../../data/links/amazon.png" /> 
+            <img class="icon" src="../../data/links/canada.png" /> 
+            <span class="showOnHover">
+                Buy from Amazon.ca
+            </span>
+        </a>
+    `;
 }

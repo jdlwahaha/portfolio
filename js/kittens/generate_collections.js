@@ -9,16 +9,7 @@
                             ? `<img src="../../data/explodingkittens/${edition.filename}/package.gif" alt="${edition.filename}.gif">`
                             : `<img src="../../data/explodingkittens/${edition.filename}/package.jpeg" alt="${edition.filename}.jpeg">`;
                             
-                const amazonLink = `
-                        <a target="_blank" class="amazon" href="${edition.amazon}" >
-                            <img class="icon" src="../../data/links/amazon.png" /> 
-                            <img class="icon" src="../../data/links/canada.png" /> 
-                            <span class="showOnHover">
-                                Buy from Amazon.ca
-                                
-                            </span>
-                        </a>
-                    `;
+                const amazonLink = getAmazonLink(edition.amazon);
 
                 return `
                     <tr>

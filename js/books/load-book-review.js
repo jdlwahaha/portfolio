@@ -8,7 +8,7 @@
             $.getJSON('../../data/books/self-development.json', function(books)  { 
                 const currentBook = books.find(book => book.filename === bookName); 
                 if (currentBook) {
-                    $('#book_info').append(getCourseHTML(currentBook, false));
+                    $('#book_info').append(getBookHtml(currentBook, false));
     
                     $.getJSON(`../../data/books/reviews/${bookName}.json`, function(review) { 
         

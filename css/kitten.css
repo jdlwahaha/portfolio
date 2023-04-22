@@ -46,6 +46,9 @@ iframe {
 .blue { 
     color: rgba(0, 0, 255, 0.56);
 }
+.green { 
+    color: rgb(59, 194, 59);
+}
 .hollow { 
     color: white; 
     text-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
