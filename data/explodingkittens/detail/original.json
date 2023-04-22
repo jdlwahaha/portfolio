@@ -9,7 +9,7 @@
     "youtubeId": "HAuwtPgJaX0",
     "back": 8812,
     "cards": { 
-        "Exploding Kittens (4)": {
+        "Exploding Kittens": {
             "description": "", 
             "images": [
                 8813,
@@ -18,7 +18,7 @@
                 8816
             ]
         },
-        "Defuse (6)": {
+        "Defuse": {
             "description": "", 
             "images": [
                 8817,
@@ -29,7 +29,7 @@
                 8822
             ]
         },
-        "Attack 2X (4)": {
+        "Attack 2X": {
             "description": "", 
             "images": [
                 8823,
@@ -38,7 +38,7 @@
                 8826
             ]
         },
-        "Shuffle (4)": {
+        "Shuffle": {
             "description": "", 
             "images": [
                 8827,
@@ -47,7 +47,7 @@
                 8830
             ]
         },
-        "Skip (4)": {
+        "Skip": {
             "description": "", 
             "images": [
                 8831,
@@ -56,7 +56,7 @@
                 8834
             ]
         },
-        "See the Future 3X (5)": {
+        "See the Future 3X": {
             "description": "", 
             "images": [
                 8835,
@@ -66,7 +66,7 @@
                 8839
             ]
         },
-        "Nope (5)": {
+        "Nope": {
             "description": "", 
             "images": [
                 8840,
@@ -76,7 +76,7 @@
                 8844
             ]
         },
-        "Favor (4)": {
+        "Favor": {
             "description": "", 
             "images": [
                 8845,
@@ -86,7 +86,7 @@
             ]
         },
 
-        "Hairy Potato Cat (4)": {
+        "Hairy Potato Cat": {
             "description": "", 
             "images": [
                 8849,
@@ -95,7 +95,7 @@
                 8852
             ]
         },
-        "Beard Cat (4)": {
+        "Beard Cat": {
             "description": "", 
             "images": [
                 8853,
@@ -104,7 +104,7 @@
                 8856
             ]
         },
-        "Cattermelon Cat (4)": {
+        "Cattermelon Cat": {
             "description": "", 
             "images": [
                 8857,
@@ -113,7 +113,7 @@
                 8860
             ]
         },
-        "Taco Cat (4)": {
+        "Taco Cat": {
             "description": "", 
             "images": [
                 8861,
@@ -122,7 +122,7 @@
                 8864
             ]
         },
-        "Rainbow-Ralphing Cat (4)": {
+        "Rainbow-Ralphing Cat": {
             "description": "", 
             "images": [
                 8865,
