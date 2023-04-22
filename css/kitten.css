@@ -7,8 +7,12 @@ img.full {
     width: 100%;
 }
 
-#cards img:hover {
-    transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.zoom img:hover {
+    transform: scale(3); 
+}
+
+#cards img:hover { 
+    transform: scale(2.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */   
 }
 
 iframe { 
@@ -64,12 +68,18 @@ table {
     width: 100%;
 }
 td, th { 
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
-/* table img { 
-    display: none;
-} */
+tr:hover { 
+    background-color: #fffbdf;
+}
+
+
+table img { 
+    height: 60px;
+    width: auto;
+}
 
 img.icon { 
     width: auto !important;
@@ -80,6 +90,9 @@ img.icon {
     vertical-align: bottom;
 }
 
+td.price { 
+    width: 100px;
+}
 td.price a { 
     display: inline-block;
     float: right;
@@ -98,6 +111,12 @@ td.price a {
     #cards img:hover {
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
+
+    table img { 
+        width: 150px; 
+        height: auto;
+    }
+    
 
     iframe { 
         width: 100%;

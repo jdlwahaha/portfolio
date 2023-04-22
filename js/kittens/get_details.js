@@ -100,7 +100,7 @@
                     console.log('size:', images.length);
                     const imageHtml = images.map(i => `
                         <span>
-                            <img src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
+                            <img  src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
                         </span>
                     `).join('');
                     $('#cards').append(imageHtml);
