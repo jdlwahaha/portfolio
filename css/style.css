@@ -90,6 +90,24 @@ a.button.disabled {
     cursor:text;
 }
 
+a.amazon span.showOnHover { 
+    display: none;
+}
+a.amazon:hover .showOnHover { 
+    display: inline-block;
+    background: #888; 
+    color: white;
+    padding: .5rem;
+    position: absolute;
+    border-radius: 4px;
+    font-size: smaller;
+}
+a.amazon span.note { 
+    font-size: smaller; 
+}
+
+
+
 
 .hide { 
     display: none;
@@ -217,5 +235,12 @@ section.box h1 {
         margin-left: -1rem;
         line-height: 1.5rem;
     }
+
+    .well.well-info { 
+        margin-left: 0; 
+        margin-right: 0;
+        margin-top: 0;
+    }
+
 }
 
