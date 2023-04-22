@@ -1,0 +1,44 @@
+[
+    {
+        "title": "", 
+        "author": "",
+        "filename": "",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "",
+        "showFullReview": false,
+        "review": "interesting"
+    },
+    {
+        "title": "Tech Deck: Shred It!", 
+        "author": "Rebecca Shapiro",
+        "filename": "tech-deck-1",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/3H5VGe0",
+        "showFullReview": false,
+        "review": "The content is pretty much the same as the first official guidebook. Makes them a pair of good collectibles."
+    },
+    {
+        "title": "Tech Deck: Official Guide", 
+        "author": "Rebecca Shapiro",
+        "filename": "tech-deck-2",
+        "rating": 5,
+        "quotes": [], 
+        "amazon": "https://amzn.to/3N5qJu3",
+        "youtubeId": "",
+        "showFullReview": false,
+        "review": "It comes with a tech deck fingerboard, a small book about some skate basics and techniques, and a buildable hard paper ramp."
+    },     
+    {
+        "title": "The Ultimate Cigar Book", 
+        "author": "Richard Carleton Hacker",
+        "filename": "the-ultimate-cigar-book",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/43GXLXj",
+        "showFullReview": false,
+        "review": "Interesting book that talks about cigars."
+    }
+
+]

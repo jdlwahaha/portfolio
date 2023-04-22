@@ -10,14 +10,14 @@
         "review": "interesting"
     },
     {
-        "title": "", 
-        "author": "",
-        "filename": "",
+        "title": "Radical Candor", 
+        "author": "Kim Scott",
+        "filename": "radical-candor",
         "rating": 4,
         "quotes": [], 
-        "amazon": "",
+        "amazon": "https://amzn.to/3LiCzzP",
         "showFullReview": false,
-        "review": "interesting"
+        "review": "to-read-list"
     },
     {
         "title": "Smoke A Cigar: A Gentleman's Quick & Easy Guide To Cigars, Cigar Smoking & Cigar Accessories (Tips for Beginners) ", 
@@ -46,16 +46,6 @@
         "rating": 3,
         "quotes": [], 
         "amazon": "https://amzn.to/41Fwp2h",
-        "showFullReview": false,
-        "review": "booklist"
-    },
-    {
-        "title": "The Ultimate Cigar Book", 
-        "author": "Richard Carleton Hacker",
-        "filename": "the-ultimate-cigar-book",
-        "rating": 4,
-        "quotes": [], 
-        "amazon": "https://amzn.to/43GXLXj",
         "showFullReview": false,
         "review": "booklist"
     },
