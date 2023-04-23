@@ -214,6 +214,10 @@ div.image-container>img {
         text-align: center;
     }
 
+    #cards p, #cards h4 { 
+        text-align: left;
+    }
+
     .info-block>span { 
         display: block;
         width: 100%;

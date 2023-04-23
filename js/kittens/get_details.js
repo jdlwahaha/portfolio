@@ -34,7 +34,7 @@
                         images.map(i => { 
                             cardGroupImages += `
                             <span>
-                                <img  src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
+                                <img src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
                             </span>
                             `;
                         });
