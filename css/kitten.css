@@ -144,6 +144,11 @@ div.image-container>img {
     height: 300px;
 }
 
+.caption { 
+    color: gray; 
+    font-style: italic;
+}
+
 
 @media (max-width: 850px) { 
     div.image-container>img { 
