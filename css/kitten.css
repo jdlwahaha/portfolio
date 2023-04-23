@@ -141,12 +141,31 @@ table td {
 
 div.image-container>img { 
     width: auto; 
-    height: 300px;
+    height: 60vh;
 }
 
 .caption { 
     color: gray; 
     font-style: italic;
+}
+
+@media (max-width: 1600px) { 
+    div.image-container>img { 
+        width: auto; 
+        height: 50vh;
+    }
+}
+@media (max-width: 1400px) { 
+    div.image-container>img { 
+        width: auto; 
+        height: 40vh;
+    }
+}
+@media (max-width: 1200px) { 
+    div.image-container>img { 
+        width: auto; 
+        height: 30vh;
+    }
 }
 
 
