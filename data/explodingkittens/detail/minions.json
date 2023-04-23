@@ -30,7 +30,7 @@
             ]
         },
         "Clone": {
-            "description": "Do not draw any cards. Instead, immediately force the next palyer to take 2 turns in a row. Play then continues from that player. The victim of this card takes a turn as normal (pass or play then draw). Then, when their first turn is over, it's their turn again. <br> If the victim of an Attack Card plays an Attack Card on any of their turns, the new target must take any remaining turns plus 2 more (e.g. 4 turns, then 6, and so on).",
+            "description": "Play this card onto the Discard Pile and it becomes whatever card is beneath it and adopts the rules of that card. <br>You cannot play a Clone on top of another Clone. <br>If you draw an Exploding Minion and there is a Defuse Card on top of the Discard Pile, you can play a Clone Card as a Defuse Card to avoid exploding. (You can play a Clone with a Minion Character Card to form a pair and steal a card, but you cannot play a Clone on top of another player. Because to use a pair of Minion Character Cards, you must play both of them.)",
             "images": [
                 8881,
                 8882,
@@ -38,7 +38,7 @@
             ]
         },
         "See the Future 3X": {
-            "description": "",
+            "description": "Privately view the top 3 cards from the Draw Pile and put them back in the same order. Don't show the cards to the other players.",
             "images": [
                 8884,
                 8885,
@@ -50,7 +50,7 @@
             ]
         },
         "Nope": {
-            "description": "",
+            "description": "Stop any action execpt for an Exploding Minion or a Defuse Card. It's as if any card beneath a Nope Card never existed. A Nope can be played at any time before an action has begun, even if it's not your turn. Any cards that have been Noped are lost. Leave them in the Discard Pile. (A Noped can also be played on another Noped to cancel it and create a Yup, and so on.)",
             "images": [
                 8891,
                 8892,
@@ -62,7 +62,7 @@
             ]
         },
         "Skip": {
-            "description": "",
+            "description": "Immediately end your turn without drawing a card. If you play a Skip Card as a defense to an Attack Card, it only ends 1 of the 2 turns. 2 Skip Cards would end both turns.",
             "images": [
                 8898,
                 8899,
@@ -73,7 +73,7 @@
             ]
         },
         "Attack 2X": {
-            "description": "",
+            "description": "Do not draw any cards. Instead, immediately force the next palyer to take 2 turns in a row. Play then continues from that player. The victim of this card takes a turn as normal (pass-or-play then draw). Then, when their first turn is over, it's their turn again. <br> If the victim of an Attack Card plays an Attack Card on any of their turns, the new target must take any remaining turns plus 2 more (e.g. 4 turns, then 6, and so on).",
             "images": [
                 8904,
                 8905,
@@ -83,7 +83,7 @@
             ]
         },
         "Draw from the Bottom": {
-            "description": "",
+            "description": "End your turn by drawing the bottom card fron the Draw Pile.",
             "images": [
                 8909,
                 8910,
@@ -93,7 +93,7 @@
             ]
         },
         "Shuffle": {
-            "description": "",
+            "description": "Shuffle the Draw Pile thoroughly. (Useful when you know there's an Exploding Minion coming.)",
             "images": [
                 8914,
                 8915,
@@ -102,7 +102,7 @@
             ]
         },
         "Bob": {
-            "description": "",
+            "description": "Minion Character Cards are powerless on their own, but if you collect any 2 matching Minion Character Cards, you can play them as a Pair to steal a random card from any player.",
             "images": [
                 8918,
                 8919,
@@ -115,7 +115,7 @@
             ]
         },
         "Kevin & Otto": {
-            "description": "",
+            "description": "Minion Character Cards are powerless on their own, but if you collect any 2 matching Minion Character Cards, you can play them as a Pair to steal a random card from any player.",
             "images": [
                 8926,
                 8927,
@@ -128,7 +128,7 @@
             ]
         },
         "Stuart": {
-            "description": "",
+            "description": "Minion Character Cards are powerless on their own, but if you collect any 2 matching Minion Character Cards, you can play them as a Pair to steal a random card from any player.",
             "images": [
                 8934,
                 8935,
