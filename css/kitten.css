@@ -174,9 +174,9 @@ div.image-container-oomomo>img {
         width: auto; 
         height: 400px;
     }
-
-    .desktop-1600 { 
-        display: none;
+    div.image-container-oomomo>img { 
+        width: auto; 
+        height: 320px;
     }
 }
 @media (max-width: 1400px) { 
@@ -184,11 +184,22 @@ div.image-container-oomomo>img {
         width: auto; 
         height: 300px;
     }
+    div.image-container-oomomo>img { 
+        width: auto; 
+        height: 230px;
+    }
 }
 @media (max-width: 1150px) { 
     div.image-container>img { 
         width: auto; 
         height: 250px;
+    }
+    div.image-container-oomomo>img { 
+        width: auto; 
+        height: 300px;
+    }
+    .desktop-1150 { 
+        display: none;
     }
 }
 
