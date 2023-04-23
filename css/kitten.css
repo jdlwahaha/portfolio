@@ -141,7 +141,7 @@ table td {
 
 div.image-container>img { 
     width: auto; 
-    height: 60vh;
+    height: 480px;
 }
 
 .caption { 
@@ -152,29 +152,24 @@ div.image-container>img {
 @media (max-width: 1600px) { 
     div.image-container>img { 
         width: auto; 
-        height: 50vh;
+        height: 400px;
     }
 }
 @media (max-width: 1400px) { 
     div.image-container>img { 
         width: auto; 
-        height: 40vh;
+        height: 300px;
     }
 }
-@media (max-width: 1200px) { 
+@media (max-width: 1150px) { 
     div.image-container>img { 
         width: auto; 
-        height: 30vh;
+        height: 250px;
     }
 }
 
 
-@media (max-width: 850px) { 
-    div.image-container>img { 
-        width: auto; 
-        height: 200px;
-    }
-}
+
 @media (max-width: 800px) { 
     .desktop-800 { 
         display: none;
@@ -183,7 +178,10 @@ div.image-container>img {
     .mobile-800 { 
         display: inline-block;
     }
-
+    div.image-container>img { 
+        width: auto; 
+        height: 200px;
+    }
    
 }
 
@@ -216,15 +214,15 @@ div.image-container>img {
         text-align: center;
     }
 
-    .info-block span { 
+    .info-block>span { 
         display: block;
         width: 100%;
     }
 
-    .info-block span:nth-child(1) { 
+    .info-block>span:nth-child(1) { 
         width: 100%;
     }
-    .info-block span:nth-child(2) { 
+    .info-block>span:nth-child(2) { 
         width: 100%;
     }
 
@@ -242,4 +240,5 @@ div.image-container>img {
         margin-right: 0;
         margin-top: .5rem;
     }
+
 }

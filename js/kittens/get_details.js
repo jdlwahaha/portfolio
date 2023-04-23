@@ -61,7 +61,7 @@
                                                 <strong>Price:</strong> CDN$${fullDetail.price}    
                                                 ${getAmazonLink(fullDetail.amazon)}
                                             </li>
-                                            <li >
+                                            <li>
                                                 <strong>Printed Year:</strong> ${fullDetail.printed_year}
                                                 <span class="triggerHover">
                                                     &#9432;
