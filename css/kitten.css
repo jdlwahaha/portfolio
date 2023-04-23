@@ -68,6 +68,11 @@ span.showOnHover {
     color: white; 
     text-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
 }
+.minions { 
+    color: rgb(255, 242, 0); 
+    font-weight: bold;
+    text-shadow: -2px 0 rgb(150, 150, 240), 0 2px rgb(142, 142, 255), 2px 0 rgb(116, 116, 235), 0 -2px blue;
+}
 
 .info-block span img { 
     width: 100%;
@@ -112,7 +117,18 @@ img.icon {
     vertical-align: bottom;
 }
 
+div.answer { 
+    visibility: hidden;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
 
+}
+
+div.question:hover div.answer{ 
+    animation: 500ms fadeIn;
+    visibility: visible;
+}
 
 td.price { 
     width: 100px;
