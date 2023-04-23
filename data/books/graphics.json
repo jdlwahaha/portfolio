@@ -10,6 +10,16 @@
         "review": "interesting"
     },
     {
+        "title": "The Ultimate Cigar Book", 
+        "author": "Richard Carleton Hacker",
+        "filename": "the-ultimate-cigar-book",
+        "rating": 4,
+        "quotes": [], 
+        "amazon": "https://amzn.to/43GXLXj",
+        "showFullReview": false,
+        "review": "It is a very premium book! It kinda reminds me a high school textbook. The paper used in the pages feels like glossy paper. The hardcover version feels really nice and I enjoy reading this one."
+    },
+    {
         "title": "Tech Deck: Shred It!", 
         "author": "Rebecca Shapiro",
         "filename": "tech-deck-1",
@@ -29,16 +39,7 @@
         "youtubeId": "",
         "showFullReview": false,
         "review": "It comes with a tech deck fingerboard, a small book about some skate basics and techniques, and a buildable hard paper ramp."
-    },     
-    {
-        "title": "The Ultimate Cigar Book", 
-        "author": "Richard Carleton Hacker",
-        "filename": "the-ultimate-cigar-book",
-        "rating": 4,
-        "quotes": [], 
-        "amazon": "https://amzn.to/43GXLXj",
-        "showFullReview": false,
-        "review": "It is a very premium book! It kinda reminds me a high school textbook. The paper used in the pages feels like glossy paper. The hardcover version feels really nice and I enjoy reading this one."
-    }
+    }     
+    
 
 ]
