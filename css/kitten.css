@@ -159,6 +159,10 @@ div.image-container>img {
     width: auto; 
     height: 480px;
 }
+div.image-container-oomomo>img { 
+    width: auto; 
+    height: 380px;
+}
 
 .caption { 
     color: gray; 
@@ -169,6 +173,10 @@ div.image-container>img {
     div.image-container>img { 
         width: auto; 
         height: 400px;
+    }
+
+    .desktop-1600 { 
+        display: none;
     }
 }
 @media (max-width: 1400px) { 
@@ -201,6 +209,13 @@ div.image-container>img {
    
 }
 
+@media (max-width: 750px) { 
+    div.image-container-oomomo>img { 
+        width: auto; 
+        height: 280px;
+    }
+}
+
 @media (max-width: 700px) { 
     .desktop-700 { 
         display: none;
@@ -216,7 +231,8 @@ div.image-container>img {
         transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     }
 
-    div.image-container>img { 
+    div.image-container>img,
+    div.image-container-oomomo>img { 
         width: 100%; 
         height: auto;
     }
