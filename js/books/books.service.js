@@ -20,14 +20,12 @@ function loadBooks(books) {
 function getBookHtml(book, showLinks) { 
     const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
 
-    const amazonLink = getAmazonLink(book.amazon);
 
     return `
         <section class="box">
             <div class="box-content">
                 <span class="thumbnail-container">
                     <img src="${bookThumbnail}" alt="${book.filename}.png"><br><br>
-                    ${ book.amazon ? amazonLink : ''}
                 </span>
                 <div class="book-container">
                     <h4>
@@ -99,14 +97,3 @@ function getRatingString(number) {
 }
 
 
-function getAmazonLink(link) { 
-    return `
-        <a target="_blank" class="amazon" href="${link}" >
-            <img class="icon" src="../../data/links/amazon.png" /> 
-            <img class="icon" src="../../data/links/canada.png" /> 
-            <span class="showOnHover">
-                Buy from Amazon.ca
-            </span>
-        </a>
-    `;
-}

@@ -9,8 +9,6 @@
                             ? `<img src="../../data/explodingkittens/${edition.filename}/package.gif" alt="${edition.filename}.gif">`
                             : `<img src="../../data/explodingkittens/${edition.filename}/package.jpeg" alt="${edition.filename}.jpeg">`;
                             
-                const amazonLink = getAmazonLink(edition.amazon);
-
                 return `
                     <tr>
                         <td>
@@ -21,7 +19,6 @@
                                 <div class="addMarginTop">Type: ${displayType}</div>
                                 <div class="addMarginTop mobile">
                                     CDN$${edition.price}
-                                    ${amazonLink}
                                 </div>
                                 
                             </div>
@@ -30,9 +27,8 @@
                         <td class=" center zoom">
                             ${image} 
                         </td>
-                        <td class="price desktop">
-                            <div>$${edition.price}</div>
-                            ${amazonLink}
+                        <td class="price desktop center">
+                            $${edition.price}
                         </td>
                         <td class="desktop-800">${displayType}</td>
                         <td class="center">${edition.players}</td>   
@@ -52,7 +48,7 @@
             case 'full': 
                 return 'Full Game'; 
             case 'full_no': 
-                return 'Full Game (Not compatible with other editions)'; 
+                return 'Full Game (Not compatible with other editions or expansions)'; 
             case 'expansion': 
                 return 'Expansion'; 
             default: 

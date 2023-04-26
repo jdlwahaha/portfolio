@@ -76,7 +76,6 @@
                                 ${isExpansion ? `<li><strong>Expansion Number:</strong> ${fullDetail.expansion_no}</li>` : ''}
                                 <li>
                                     <strong>Price:</strong> CDN$${fullDetail.price}    
-                                    ${getAmazonLink(fullDetail.amazon)}
                                 </li>
                                 <li>
                                     <strong>Printed Year:</strong> ${fullDetail.printed_year}

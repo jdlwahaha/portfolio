@@ -6,7 +6,6 @@
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,
-        "amazon": "",
         "review": ""
     },
     {
@@ -15,7 +14,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -25,7 +23,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -35,7 +32,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -45,7 +41,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -55,7 +50,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -65,7 +59,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -75,7 +68,6 @@
         "filename": "",
         "rating": 5,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": ""
     },
@@ -84,7 +76,6 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "amazon": "",
         "quotes": [], 
         "showFullReview": false,
         "review": ""
@@ -93,7 +84,6 @@
         "title": "Unshakeable: Your Financial Freedom Playbook", 
         "author": "Tony Robbins",
         "rating": 5,
-        "amazon": "",
         "filename": "unshakeable-robbins",
         "quotes": [], 
         "showFullReview": false,
@@ -102,7 +92,6 @@
     {
         "title": "Spark: The Revolutionary New Science of Exercise and the Brain", 
         "author": "Eric Hagerman",
-        "amazon": "",
         "filename": "spark-hagerman",
         "rating": 5,
         "quotes": [], 
@@ -114,7 +103,6 @@
         "author": "Tony Robbins",
         "filename": "unlimited-power",
         "rating": 5,
-        "amazon": "",
         "quotes": [], 
         "showFullReview": false,
         "review": ""
@@ -123,7 +111,6 @@
         "title": "High Performance Habits: How Extraordinary People Become That Way", 
         "author": "Brendon Burchard",
         "filename": "high-performance-habits",
-        "amazon": "https://amzn.to/40gDN2T",
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,
@@ -133,7 +120,6 @@
         "title": "How to Win Friends and Influence People", 
         "author": "Dale Carnegie",
         "filename": "how-to-win-friends",
-        "amazon": "",
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,
@@ -144,7 +130,6 @@
         "author": "Thomas Stanley",
         "filename": "the-millionaire-next-door",
         "rating": 5,
-        "amazon": "",
         "quotes": [], 
         "showFullReview": false,
         "review": ""
@@ -155,7 +140,6 @@
         "filename": "fu-money",
         "rating": 5,
         "quotes": [], 
-        "amazon": "https://amzn.to/3mAEy9j",
         "showFullReview": true,
         "showExercise": true,
         "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
@@ -166,7 +150,6 @@
         "filename": "awaken-the-giant-within",
         "rating": 5,
         "quotes": [], 
-        "amazon": "https://amzn.to/3MS70OG",
         "showFullReview": false,
         "review": "I was going to read his first book 'Unlimited Power' first. However, this one was available in the library first, so this was the first book that I've read from Tony Robbins. 10 out of 10 recommend this. The major takeaway from this book for me was finding a role model. Someone, somwhere, must have done the things that you've been dreaming to achieve. You first need to know what it is that you want, know it is possible to achieve with inspiration from someone that's done it, and mirror and execute it!"
     },
@@ -175,7 +158,6 @@
         "author": "Robert Kiyosaki",
         "filename": "rich-dad-poor-dad",
         "rating": 5,
-        "amazon": "",
         "quotes": [], 
         "showFullReview": false,
         "review": ""
@@ -184,7 +166,6 @@
         "title": "What To Say When You Talk To Your Self", 
         "author": "Shad Helmstetter",
         "filename": "what-to-say",
-        "amazon": "https://amzn.to/41D0j7k",
         "rating": 3,
         "quotes": [], 
         "showFullReview": true,
@@ -194,7 +175,6 @@
         "title": "The 10X Rule: The Only Difference Between Success and Failure", 
         "author": "Grant Cardone",
         "filename": "the-10x-rule",
-        "amazon": "https://amzn.to/41x9plS",
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,

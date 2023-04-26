@@ -90,8 +90,11 @@ ul li {
 table { 
     width: 100%;
 }
-td, th { 
+th { 
     padding: 0.5rem;
+}
+td { 
+    padding: .5rem;
 }
 
 tr:hover { 

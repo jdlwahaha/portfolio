@@ -5,7 +5,6 @@
         "filename": "",
         "rating": 4,
         "quotes": [], 
-        "amazon": "",
         "showFullReview": false,
         "review": "interesting"
     },
@@ -15,7 +14,6 @@
         "filename": "radical-candor",
         "rating": 4,
         "quotes": [], 
-        "amazon": "https://amzn.to/3LiCzzP",
         "showFullReview": false,
         "review": "to-read-list"
     },
@@ -25,7 +23,6 @@
         "filename": "smoke-a-cigar",
         "rating": 4,
         "quotes": [], 
-        "amazon": "https://amzn.to/3MR79Ss",
         "showFullReview": false,
         "review": "to-read-list"
     },
@@ -35,7 +32,6 @@
         "filename": "the-smoker-book",
         "rating": 4,
         "quotes": [], 
-        "amazon": "https://amzn.to/41Tmd6r",
         "showFullReview": false,
         "review": "interesting"
     },
@@ -45,7 +41,6 @@
         "filename": "the-cuban-cigar-handbook",
         "rating": 3,
         "quotes": [], 
-        "amazon": "https://amzn.to/41Fwp2h",
         "showFullReview": false,
         "review": "booklist"
     },
@@ -55,7 +50,6 @@
         "filename": "the-cigar-companion",
         "rating": 3,
         "quotes": [], 
-        "amazon": "https://amzn.to/3A3Ua8e",
         "showFullReview": false,
         "review": "booklist"
     }
