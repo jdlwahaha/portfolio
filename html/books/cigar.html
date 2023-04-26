@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="../../img/icon.png"/>
-    <title>Books | Self-Development</title>
+    <title>Books | Cigar</title>
     <link rel="stylesheet" href="../../css/animation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/box.css">
     <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/desktop-nav.css">
+    <link rel="stylesheet" href="../../css/audio.css">
     <link rel="stylesheet" href="../../css/book.css">
 	<script src="../../lib/jquery-3.5.1.min.js"></script>
 	<script src="../../js/script.js"></script>
 	<script src="../../js/books/books.service.js"></script>
-	<script src="../../js/books/load-selfdev-books.js"></script>
+
+    <script>
+        $(document).ready(function() { 
+            $.getJSON('../../data/books/cigar.json', (books) => {loadBooks(books, 'cigar')});       
+        });
+    </script>
 </head>
 <body>
 	<header><!-- jQuery generated --></header>
@@ -25,15 +31,15 @@
         <div id="main">
 
 			<div class="submenu">
-                <span>Self-Development</span> |
-                <a href="computer">Computer Programming</a> |
-                <a href="fiction">Fiction</a> |
-                <a href="graphics">Graphics</a> |
-                <a href="cigar">Cigar</a> 
+                <a href="index">Self-Development</a> |
+                <a href="computer">Computer Programming</a> | 
+                <a href="fiction">Fiction</a> | 
+                <a href="graphics">Graphics</a> | 
+                <span>Cigar</span> 
+
             </div>
-
-
-				<div id="book_list"></div>
+			
+			<div id="book_list"></div>
 
 		</div>
 

@@ -8,15 +8,7 @@
         "showFullReview": false,
         "review": "interesting"
     },
-    {
-        "title": "The Ultimate Cigar Book", 
-        "author": "Richard Carleton Hacker",
-        "filename": "the-ultimate-cigar-book",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": false,
-        "review": "It is a very premium book! It kinda reminds me a high school textbook. The paper used in the pages feels like glossy paper. The hardcover version feels really nice and I enjoy reading this one."
-    },
+
     {
         "title": "Tech Deck: Shred It!", 
         "author": "Rebecca Shapiro",

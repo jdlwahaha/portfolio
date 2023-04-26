@@ -2,7 +2,7 @@
  * List of functions that will be shared across book pages
  */
 
-function loadBooks(books) {
+function loadBooks(books, section) {
 
     // remove empty records
     books = books.filter((r) => { return r.title != '' && r.review != '' });
@@ -10,15 +10,19 @@ function loadBooks(books) {
 
 
     books.map(function (book) {
-        content += getBookHtml(book, true); 
+        content += getBookHtml(book, true, section); 
     });
 
     $('#book_list').append(content);
 
 }
 
-function getBookHtml(book, showLinks) { 
-    const bookThumbnail = `../../data/books/thumbnails/${book.filename}.png`;
+function getBookHtml(book, showLinks, section) {
+    
+    
+    const bookThumbnail = (section === 'cigar')  
+        ? `../../data/books/thumbnails/${section}/${book.filename}.png`
+        : `../../data/books/thumbnails/${book.filename}.png`;
 
 
     return `
