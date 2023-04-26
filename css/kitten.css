@@ -138,6 +138,11 @@ td.price a {
     display: inline-block;
 }
 
+.keyword { 
+    color: rgb(185, 171, 70);
+    /* background: #fffbdf; */
+}
+
 table td { 
     vertical-align: middle;
 }

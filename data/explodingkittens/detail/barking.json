@@ -12,13 +12,22 @@
     "back": 0,
     "cards": {
         "Tower of Power": {
-            "description": "", 
+            "description": [
+                "To play this card, wear the <span class='keyword'>Tower of Power Crown</span>. Then take the <span class='keyword'>Stash Cards</span>, and without looking, put them inside on top of your head.",
+                "The <span class='keyword'>Crown</span> protects you against all forms of stealing. If anyone steals cars from you, they blindly take a random card from the <span class='keyword'>Tower of Power Crown</span> instead of your hand (until there are no more <span class='keyword'>Stash Cards</span> left). This applies to <span class='keyword'>Favor Cards</span>, playing pairs, playing 3 of a kind, or any other form of stealing.",
+                "You may never move <span class='keyword'>Stash Cards</span> from the <span class='keyword'>Tower of Power Crown</span> into your own hand. It only protects you from stealing stealers who want to steal cards from you. Continue wearing the <span class='keyword'>Tower of Power</span> for the rest of the game."
+            ],
             "images": [
                 68
             ]
         },
         "Barking Kittens": {
-            "description": "", 
+            "description": [
+                "Place this card face up in front of you and ask for the other <span class='keyword'>Barking Kitten</span>. If any player has it, they are your target and must give you half their cards (rounding up). Combine them with your hand, then choose and return the same number of cards back to them (it's fine if any/all of the cards were originally theirs), then discard both <span class='keyword'>Barking Kittens</span>.", 
+                "If no one has the other <span class='keyword'>Barking Kitten</span>, leave the card face up in front of you. (You cannot play it again, and it is not part of your hand.) When someone plays the other <span class='keyword'>Barking Kitten</span>, you are their target.", 
+                "If you get both <span class='keyword'>Barking Kittens</span> (even if you've already played one), play them together and pick any player as your target.", 
+                "Like all Kittens, <span class='keyword'>Barking Kittens</span> cannot be <span class='keyword'>Noped</span>."
+            ], 
             "images": [
                 69,
                 70
