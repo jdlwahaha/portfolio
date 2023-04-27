@@ -188,6 +188,13 @@ section.box h1 {
     margin: 1rem;
 }
 
+.well-error { 
+    background: rgb(255, 236, 230);
+    border-color: rgb(255, 157, 157); 
+    margin: 1rem;
+    margin-top: 0;
+}
+
 #dream-notice { 
   display: inline-block;
   animation: 500ms fadeIn;
