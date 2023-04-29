@@ -31,7 +31,6 @@
         "author": "",
         "filename": "",
         "rating": 4,
-        "price": 5.88,
         "quotes": [], 
         "showFullReview": false,
         "review": ""
@@ -45,6 +44,7 @@
         "showFullReview": false,
         "review": "It is a very premium book! It kinda reminds me a high school textbook. The paper used in the pages feels like glossy paper. The hardcover version feels really nice in hands and I enjoy spending time this one."
     },    
+    
     {
         "title": "The Tobacconist Handbook: An Essential Guide to Cigars & Pipes", 
         "author": "Jorge Armenteros, CMT",
@@ -63,7 +63,15 @@
         "showFullReview": false,
         "review": "It's a small hardcover book with glossy paper. It starts with a brief history and intro to cigars. Then it has a picture collection of cigars from many different brands, which I quite enjoy going through. The book, however, ends rather abruptly with storing cigars and no parting words. "
     },
-
+    {
+        "title": "Cigars: From Growing to Smoking", 
+        "author": "JBC Online",
+        "filename": "cigars-from-growing-to-smoking",
+        "rating": 3,
+        "quotes": [], 
+        "showFullReview": false,
+        "review": "It started with an interesting back story about cigars and cigarettes. (This book totally trash my view for cigarettes &#128517;). Then it brings you to the steps to growing different parts of cigars. It does take a lot of work and care from prepping soil to seeding. This book has the opposite idea to <i>Discover Cigars</i> that the humidor should not be sealed completely as cigars need a bit of air flow to prevent mold from growing. It did suggested heavy lid as most other books do. I think the author referenced some other books for the etiquette and the cigar basics, but he added his style and overall it's a fun read. It would be nice to include more pictures though."
+    },
     {
         "title": "Discover Cigars - Everything You Ever Wanted To Know About Choosing A Fine Cigar!", 
         "author": "Martin Keen",
@@ -72,6 +80,27 @@
         "quotes": [], 
         "showFullReview": false,
         "review": "I like how this book is oragnized. It's another short read. It starts with a brief history, then surprisingly, it moved to glossary. The transition of between chapters feels smooth, but I wish they include more pics to help understanding the topics. Nonetheless, it gives some helpful tips for starter. Some notes for the Humidor: <ul><li>Recommended brand by the book: Daniel Marshall</li><li>Big humidor is better than small </li><li>Conduct the \"dollar bill test\" to ensure the lid can close tightly</li><li>Best to have temperature gauge and hydrometer</li>"
+    },
+
+    {
+        "title": "The Beginners Guide to Cigar Smoking", 
+        "author": "David Sabot",
+        "filename": "",
+        "rating": 4,
+        "quotes": [
+            "Cigar smoking is a hobby, cigarette smoking is an addiction."
+        ], 
+        "showFullReview": false,
+        "review": ""
+    },
+    {
+        "title": "Starting Your Cigar Shop", 
+        "author": "J. Michael Smith",
+        "filename": "cigar-shop-smith",
+        "rating": 3,
+        "quotes": [], 
+        "showFullReview": false,
+        "review": "This book is a bit dry, but I feel that the author is trying to give his best advice to opening a cigar shop. He started with location. (Whether it is in a high traffic area, or if there's a coffee shop nearby for customers to enjoy their cigar, etc.) Then he talked about things like what the pros and cons for room design to preserve cigars. Some other costs for you to consider when opening a shop. General marketing tips on selling cigars. The book also included some cigar suppliers info and his opinions on how difficult to get approved. "
     },
     {
         "title": "Cigars: The Ultimate Guide to Cigar Smoking", 
