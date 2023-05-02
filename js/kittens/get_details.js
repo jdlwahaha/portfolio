@@ -20,7 +20,7 @@
                     const cardNames = Object.keys(fullDetail.cards);
 
                     // load detail box first
-                    const detailBoxHtml = getDetailBoxHtml(cardNames, fullDetail, isExpansion);
+                    const detailBoxHtml = getDetailBoxHtml(fullDetail, isExpansion);
                     $('#detailBox').append(detailBoxHtml);
 
                     // load card image list
@@ -28,6 +28,9 @@
                     $('#cards').append(cardGroupImageHtml);
 
                     appendYouTubeIframe(fullDetail.youtubeId);
+                    appendPdf(fullDetail.filename);
+
+
                     
                 });
             } else {
@@ -52,17 +55,24 @@
         }
     }
 
+    function appendPdf(id) { 
+        if (id) { 
+            $('#iframepdf').append(`
+            <iframe 
+                src="../../data/explodingkittens/${id}/rules.pdf" 
+            ></iframe>
+        `);
+        }
+    }
 
 
-    function getDetailBoxHtml(cardNames, fullDetail, isExpansion) {
+    function getDetailBoxHtml(fullDetail, isExpansion) {
 
         const expansionWarning = `
             <div class="well well-info" >
                 This is an expansion pack. You will need one of the full game edition to play this game. 
             </div>`;
     
-        const displayCardNames = cardNames.map(name => `${name} (${fullDetail.cards[name].images.length})`);
-        const cardList = '<li>' + displayCardNames.join('</li><li>') + '</li>';
         const contentList = fullDetail.contents.map(i => `<li>${i}</li>`).join('');
     
         const html = `
@@ -93,10 +103,27 @@
                                     </ul>
                                 </li>
                                 <li><strong>Card Label:</strong> ${fullDetail.card_label} </li>
+
+                                <li></li>
+
                                 <li>
-                                    <strong>Cards:</strong>
+                                    <strong>Table of Contents:</strong>
                                     <ul class="ul-nopadding">
-                                        ${cardList}
+                                        <li>
+                                            <a href="#unbox">
+                                                Unbox with me
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#cardList">
+                                                Card list
+                                            </a> 
+                                        </li>
+                                        <li>
+                                            <a href="#instructions">
+                                                Instruction boolet
+                                            </a> 
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -109,25 +136,27 @@
         return html;
     }
 
+   
+
 
     function getCardGroupImageHtml(cardNames, fullDetail) {
         let cardGroupImages = '';
         cardNames.map(name => {
             const images = fullDetail.cards[name].images;
-            const description = fullDetail.cards[name].description;
-            const descriptionHtml = Array.isArray(description)
-                ? `<p>${description.join('<p></p>')}</p>`
-                : `<p>${description}</p>`;
+            // const description = fullDetail.cards[name].description;
+            // const descriptionHtml = Array.isArray(description)
+            //     ? `<p>${description.join('<p></p>')}</p>`
+            //     : `<p>${description}</p>`;
             cardGroupImages += `<h4>${name} (${images.length})</h4>`;
 
             images.map(i => {
                 cardGroupImages += `
                                 <span>
-                                    <img src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
+                                    <img class="hide card" src="../../data/explodingkittens/${fullDetail.filename}/IMG_${i}.jpeg" alt="${i}.jpeg">
                                 </span>
                                 `;
             });
-            cardGroupImages += '<br><br>';
+            cardGroupImages += '';
 
         });
         return cardGroupImages;

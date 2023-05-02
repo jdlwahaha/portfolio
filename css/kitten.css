@@ -105,6 +105,11 @@ td .addMarginTop {
     margin-top: .5rem;
 }
 
+button { 
+    padding: 1rem;
+    background: gold;
+}
+
 
 table img { 
     height: 60px;
