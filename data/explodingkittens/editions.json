@@ -88,6 +88,17 @@
         "printed_year": 2021
     },
     { 
+        "name": "Exploding Kittens 2 Players", 
+        "filename": "two",
+        "type": "full", 
+        "price": 12.97, 
+        "players": "2",
+        "num_of_cards": 32, 
+        "release_year": "2021", 
+        "acquisition_date": "2022-05-04",
+        "printed_year": 2021
+    },
+    { 
         "name": "Zombie Kittens", 
         "filename": "zombie",
         "type": "full", 
