@@ -121,7 +121,7 @@
                                         </li>
                                         <li>
                                             <a href="#instructions">
-                                                Instruction boolet
+                                                Instruction booklet
                                             </a> 
                                         </li>
                                     </ul>
