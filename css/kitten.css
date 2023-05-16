@@ -128,13 +128,17 @@ img.icon {
 div.answer { 
     visibility: hidden;
     margin: 1rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 0rem;
+    padding-bottom: 1.2rem;
     line-height: 1.5rem;
 
 }
 
-div.question:hover div.answer{ 
+div.question:hover div.answer, 
+div.question:active div.answer{ 
     animation: 500ms fadeIn;
+    color: black;
     visibility: visible;
 }
 
