@@ -17,11 +17,7 @@
 	<script src="../../js/script.js"></script>
 	<script src="../../js/books/books.service.js"></script>
 
-    <script>
-        $(document).ready(function() { 
-            $.getJSON('../../data/books/cigar.json', (books) => {loadBooks(books, 'cigar')});       
-        });
-    </script>
+
 </head>
 <body>
 	<header><!-- jQuery generated --></header>
@@ -96,3 +92,10 @@
 
 </body>
 </html>
+
+
+<script>
+    $(document).ready(function() { 
+        $.getJSON('../../data/books/cigar.json', (books) => {loadBooks(books, 'cigar')});       
+    });
+</script>

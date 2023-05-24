@@ -22,10 +22,6 @@
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
                 
-                <!-- <a href="../people" class="last">
-                    <span class="nav-icon">&#8220;</span> 
-                    People
-                </a> -->
                 
                 <a href="../actions" >
                     <span class="nav-icon">&#129470;</span> 
@@ -45,19 +41,8 @@
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
-                <a href="../keyboards" >
-                    <span class="nav-icon">&#128187;</span> 
-                    Keyboards
-                </a>
-                
-                <span class="navSectionHeader-desktop">INFO</span>
-                <span class="navSectionHeader-mobile">|</span>
-
-                <a href="../explodingkittens" class="last" >
-                    <span class="nav-icon">&#128049;</span> 
-                    Exploding Kittens
-                </a>
-       
+            
+ 
                
             </nav>
         `;
@@ -66,7 +51,15 @@
 
     
         // read url and highlight tab 
-        var pages = ['jdreads', 'actions', 'typerace', 'youtube', 'books', 'dreams', 'home', 'keyboards', 'explodingkittens']; 
+        var pages = [
+            'jdreads', 
+            'actions', 
+            'typerace', 
+            'youtube', 
+            'books', 
+            'dreams', 
+            'home', 
+        ]; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
