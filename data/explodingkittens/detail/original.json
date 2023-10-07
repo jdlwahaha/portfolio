@@ -1,0 +1,138 @@
+{ 
+    "filename": "original", 
+    "contents": [ 
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Double-the-card-size Box"
+    ], 
+    "card_label": "ORIGINAL EDITION", 
+    "youtubeId": "HAuwtPgJaX0",
+    "back": 8812,
+    "cards": { 
+        "Exploding Kittens": {
+            "description": "", 
+            "images": [
+                8813,
+                8814,
+                8815,
+                8816
+            ]
+        },
+        "Defuse": {
+            "description": "", 
+            "images": [
+                8817,
+                8818,
+                8819,
+                8820,
+                8821,
+                8822
+            ]
+        },
+        "Nope": {
+            "description": "", 
+            "images": [
+                8840,
+                8841,
+                8842,
+                8843,
+                8844
+            ]
+        },
+        "See the Future 3X": {
+            "description": "", 
+            "images": [
+                8835,
+                8836,
+                8837,
+                8838,
+                8839
+            ]
+        },
+        "Attack 2X": {
+            "description": "", 
+            "images": [
+                8823,
+                8824,
+                8825,
+                8826
+            ]
+        },
+       
+        "Skip": {
+            "description": "", 
+            "images": [
+                8831,
+                8832,
+                8833,
+                8834
+            ]
+        },
+        
+        "Shuffle": {
+            "description": "", 
+            "images": [
+                8827,
+                8828,
+                8829,
+                8830
+            ]
+        },
+        "Favor": {
+            "description": "", 
+            "images": [
+                8845,
+                8846,
+                8847,
+                8848
+            ]
+        },
+
+        "Hairy Potato Cat": {
+            "description": "", 
+            "images": [
+                8849,
+                8850,
+                8851,
+                8852
+            ]
+        },
+        "Beard Cat": {
+            "description": "", 
+            "images": [
+                8853,
+                8854,
+                8855,
+                8856
+            ]
+        },
+        "Cattermelon Cat": {
+            "description": "", 
+            "images": [
+                8857,
+                8858,
+                8859,
+                8860
+            ]
+        },
+        "Taco Cat": {
+            "description": "", 
+            "images": [
+                8861,
+                8862,
+                8863,
+                8864
+            ]
+        },
+        "Rainbow-Ralphing Cat": {
+            "description": "", 
+            "images": [
+                8865,
+                8866,
+                8867,
+                8868
+            ]
+        }
+       
+    }
+}

@@ -34,7 +34,6 @@ div.course-container {
 
 div.book-container h4 {
     margin: 0;
-    margin-bottom: .5rem; 
 }
 
 div.author { 
@@ -44,7 +43,7 @@ div.author {
 }
 
 div.rating { 
-    margin-top: .7rem;
+    margin-top: .5rem;
     margin-bottom: -.5rem;
     color: rgb(255, 196, 0);
 }

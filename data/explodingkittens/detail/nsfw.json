@@ -1,0 +1,137 @@
+{ 
+    "filename": "nsfw", 
+    "contents": [ 
+        "Paper Instruction", 
+        "Paper Ad", 
+        "Double-the-card-size Box"
+    ], 
+    "card_label": "NSFW EDITION", 
+    "youtubeId": "9xrN1Z9fYsA",
+    "back": 9382,
+    "cards": {
+        "Exploding Kittens": {
+            "description": "", 
+            "images": [
+                9383, 
+                9384, 
+                9385, 
+                9386 
+            ]
+        },
+        "Defuse": {
+            "description": "", 
+            "images": [
+                9387, 
+                9388, 
+                9389, 
+                9390, 
+                9391, 
+                9392 
+            ]
+        },
+        "Nope": {
+            "description": "", 
+            "images": [
+                9393, 
+                9394, 
+                9395, 
+                9396, 
+                9397 
+            ]
+        },
+        "See the Future 3X": {
+            "description": "", 
+            "images": [
+                9398, 
+                9399, 
+                9400, 
+                9401, 
+                9402
+            ]
+        },
+        "Attack 2X": {
+            "description": "", 
+            "images": [
+                9403, 
+                9404, 
+                9405, 
+                9406 
+            ]
+        },
+        "Skip": {
+            "description": "", 
+            "images": [
+                9407, 
+                9408, 
+                9409, 
+                9410 
+
+            ]
+        },
+        "Shuffle": {
+            "description": "", 
+            "images": [
+                9411, 
+                9412, 
+                9413, 
+                9414 
+            ]
+        },
+        "Favor": {
+            "description": "", 
+            "images": [
+                9415, 
+                9416, 
+                9417, 
+                9418 
+            ]
+        },
+
+        "Shy Bladder Cat": {
+            "description": "", 
+            "images": [
+                9419, 
+                9420, 
+                9421, 
+                9422 
+
+            ]
+        },
+        "Bikini Cat": {
+            "description": "", 
+            "images": [
+                9423, 
+                9424, 
+                9425, 
+                9426 
+            ]
+        },
+        "Momma Cat": {
+            "description": "", 
+            "images": [
+                9427, 
+                9428, 
+                9429, 
+                9430 
+            ]
+        },
+        "Cat's Schrodinger": {
+            "description": "", 
+            "images": [
+                9431, 
+                9432, 
+                9433, 
+                9434
+            ]
+        },
+        "Zombie Cat": {
+            "description": "", 
+            "images": [
+                9435, 
+                9436, 
+                9437, 
+                9438 
+            ]
+        }
+    }
+}

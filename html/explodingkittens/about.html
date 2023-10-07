@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Exploding Kittens | About</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+    <link rel="stylesheet" href="../../css/kitten.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+<body>
+	<header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+            <div class="submenu">
+                <a href="index">Exploding Kittens Collections</a> |
+                <span>About My Experience</span> |
+                <a href="storage">Card Storage</a> |
+                <a href="faq">FAQ</a> 
+
+            </div>
+
+
+            <section class="box">
+                <h1>First impression</h1>
+                <div class="box-content">
+                    <p>
+                        I didn't think that I would collect cards. I played <a class="red" href="detail?edition=original">Exploding Kittens Original Edition</a> with my coworkers 
+                        somewhere back in 2019 slightly before the pandemic happened. It wasn't a game that would catch my attention 
+                        because I normally don't enjoy playing table top games and the art is not exactly the cutest.
+                    </p>
+                </div>
+            </section>
+            <section class="box">
+                <h1>Second encounter</h1>
+                <div class="box-content">
+                    <p>
+                        I purchased my first set (<a class="blue" href="detail?edition=recipes">Exploding Kittens: Recipes for Disaster</a>) recently in 2023 because
+                        my close friends from high school started playing too. I need a copy too to understand the game fully to win. 
+                        <a class="blue" href="detail?edition=original">Recipes for Disaster</a> claims to be the deluxe version and seem to have it all. 
+                        <i><highlight>However, does it really have it all? </highlight></i>
+                    </p>
+                </div>
+            </section>
+            <section class="box">
+                <h1>Collector today</h1>
+                <div class="box-content">
+                    <p>
+                        That was basically the trap question for me to start giving my money to <span class="hollow">Exploding Kittens</span>. 
+                        It probably just take a few dollars, if not cents, to make those paper cards. 
+                        And I've <span class="green"> spent about <span id="cost"></span></span> on it already! 
+                         I have to admit that the game is pretty fun though. 
+                        The cards by themselves might not worth much, but what makes it worthy is the good time that it brings to your circle.
+                    </p>
+                    <p>
+                    </p>
+                  
+                </div>
+            </section>
+
+            <section class="box">
+                <h1>Group Photo</h1>
+                <div class="box-content">
+                    <p>
+                        <img class="full" src="../../data/explodingkittens/all.jpeg" alt="all.jpeg">
+                        <span class="caption">Photo Taken on April 19, 2023 </span>
+
+                    </p>
+                    <p>
+                    </p>
+                  
+                </div>
+            </section>
+
+        </div>
+
+        <footer><!-- jQuery generated --></footer>
+
+    </section>
+
+</body>
+</html>
+
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('../../data/explodingkittens/editions.json', function (editions) {
+            const tax = 1.12; 
+
+            let sum = 0; 
+            editions.map(i => {sum += i.price}); 
+
+            const cost = (sum * tax).toFixed(2);
+            $('#cost').append(`$${cost}`);
+        })
+    });
+</script>

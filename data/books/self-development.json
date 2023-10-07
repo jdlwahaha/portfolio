@@ -134,16 +134,7 @@
         "showFullReview": false,
         "review": ""
     },
-    {
-        "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
-        "author": "Dan Lok",
-        "filename": "fu-money",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": true,
-        "showExercise": true,
-        "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
-    },
+  
     {
         "title": "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!", 
         "author": "Tony Robbins",
@@ -179,5 +170,15 @@
         "quotes": [], 
         "showFullReview": false,
         "review": "This book inspired me to \"Level UP\" myself. The book itself was valuable to me, but the author is not a great influencer in my opinion. He might be a great property saleman, but I don't agree with the way he took money from his followers. The book itself though, definitely brings value to me as a person."
+    }, 
+    {
+        "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
+        "author": "Dan Lok",
+        "filename": "fu-money",
+        "rating": 5,
+        "quotes": [], 
+        "showFullReview": true,
+        "showExercise": true,
+        "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
     }
 ]

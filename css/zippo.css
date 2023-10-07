@@ -1,0 +1,174 @@
+
+
+
+table { 
+    width: 100%;
+}
+th { 
+    padding: 0.5rem;
+}
+
+tr:hover { 
+    background-color: #fffbdf;
+}
+
+td { 
+    padding: .5rem;
+}
+table td { 
+    vertical-align: middle;
+}
+
+table img.zoom { 
+    width: 50px;
+}
+th.icon, td.icon { 
+    padding-left: 0; 
+    padding-right: 0;
+    border-right: none;
+}
+
+td:nth-child(2) { 
+    border-left: none transparent;
+    
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+img.zoom:hover {
+    transform: scale(3); 
+}
+
+a.img { 
+    margin-top: 0.5rem;
+}
+
+ol { 
+    margin-left: -1rem;
+    line-height: 1.5rem;
+}
+
+
+
+.modelno { 
+    color: darkgray; 
+    font-size: smaller;
+}
+
+td div.name { 
+    line-height: 1.5rem;
+}
+
+img.icon { 
+    width: auto !important;
+    height: 20px;
+    margin: 0; 
+    padding: 0;
+
+    vertical-align: bottom;
+}
+
+
+/****************************************
+    Image View
+****************************************/
+span.zippo { 
+    margin: 0rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height: 250px;
+
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+}
+
+span.zippo span.imageblock { 
+    display: inline-grid;
+}
+
+span.zippo span.imageblock img { 
+    margin-bottom: .5rem;
+}
+
+span.zippo span.description { 
+    vertical-align: top;
+    margin-top: .5rem;
+
+    margin-right: 1rem;
+    margin-left: .2rem;
+
+    display: inline-block;
+    line-height: 1.5rem;
+    width: 200px;
+    white-space: normal;
+}
+
+span.zippo span.description span.infoblock { 
+    background: rgba(40, 40, 40, 0.596);
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+    padding:  .5rem;
+    width: 200px;
+    margin-bottom: 1rem;
+
+}
+
+span.zippo span.description span.infoblock:hover { 
+    background: rgba(0, 0, 0, 0.782);
+    transition: background .5s;
+}
+
+span.zippo span.description .modelno{ 
+    color: rgb(255, 249, 206);
+}
+
+.box .well { 
+    margin: 0;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    span.zippo { 
+        margin-bottom: 2.5rem;
+        height: auto;;
+    }
+
+    span.zippo span.imageblock img { 
+        width: 100px;
+        margin-right: 0;
+    }
+
+    span.zippo span.imageblock span { 
+        display: inline;
+        width: 100px;
+        margin-right: 0;
+    }
+
+    span.zippo span.description { 
+        width: calc(100% - 100px);
+        margin-right: 0;
+    }
+    span.zippo span.description span.infoblock { 
+        display: inline-block;
+        width: 100%;
+    }
+
+
+    span.zippo span.imageblock span.showOnHover { 
+        display: none;
+    }
+    span.zippo span.imageblock .triggerHover:hover span.showOnHover { 
+        display: inline-block;
+        background: #888; 
+        color: white;
+        padding: .5rem;
+        position: absolute;
+        border-radius: 4px;
+        font-size: smaller;
+    }
+}
+

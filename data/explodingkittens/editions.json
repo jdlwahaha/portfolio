@@ -1,0 +1,121 @@
+[
+    { 
+        "name": "Original Edition", 
+        "filename": "original",
+        "type": "full", 
+        "price": 24.99, 
+        "players": "2-5",
+        "num_of_cards": 56, 
+        "release_year": "2015", 
+        "acquisition_date": "2023-04-12",
+        "printed_year": 2021, 
+        "amazon": "https://amzn.to/43XnZEe"
+    },
+    { 
+        "name": "NSFW Edition", 
+        "filename": "nsfw",
+        "type": "full", 
+        "price": 24.99, 
+        "players": "2-5",
+        "num_of_cards": 56, 
+        "release_year": "2015", 
+        "acquisition_date": "2023-04-19",
+        "printed_year": 2021, 
+        "amazon": "https://amzn.to/43SGo5h"
+    },
+    { 
+        "name": "Party Pack Edition", 
+        "filename": "party",
+        "type": "full", 
+        "price": 29.99, 
+        "players": "2-10",
+        "num_of_cards": 120, 
+        "release_year": "2017", 
+        "acquisition_date": "2023-04-10", 
+        "printed_year": 2021, 
+        "amazon": "https://amzn.to/42yLOBj"
+    },
+    { 
+        "name": "Imploding Kittens", 
+        "filename": "imploding",
+        "type": "expansion", 
+        "price": 19.99, 
+        "players": "-",
+        "num_of_cards": 20, 
+        "release_year": "2016", 
+        "acquisition_date": "2023-04-19",
+        "printed_year": 2021, 
+        "amazon": "https://amzn.to/3NoezfO"
+    },
+    { 
+        "name": "Streaking Kittens", 
+        "filename": "streaking",
+        "type": "expansion", 
+        "price": 6.99, 
+        "players": "-",
+        "num_of_cards": 15, 
+        "release_year": "2018",
+        "acquisition_date": "2023-04-10", 
+        "printed_year": 2022, 
+        "amazon": "https://amzn.to/3qC6Sts"
+    },
+    { 
+        "name": "Barking Kittens", 
+        "filename": "barking",
+        "type": "expansion", 
+        "price": 19.99, 
+        "players": "-",
+        "num_of_cards": 20, 
+        "release_year": "2020", 
+        "acquisition_date": "2023-04-12", 
+        "printed_year": 2020, 
+        "amazon": "https://amzn.to/42xhGpT"
+    },
+    { 
+        "name": "Recipes for Disaster", 
+        "filename": "recipes",
+        "type": "full", 
+        "price": 34.99, 
+        "players": "2-5",
+        "num_of_cards": 121, 
+        "release_year": "2022", 
+        "acquisition_date": "2023-03-10", 
+        "printed_year": 2022, 
+        "amazon": "https://amzn.to/43ZXuyh"
+    },
+    { 
+        "name": "Exploding Minions", 
+        "filename": "minions",
+        "type": "full_no", 
+        "price": 24.99, 
+        "players": "2-5",
+        "num_of_cards": 72, 
+        "release_year": "2021", 
+        "acquisition_date": "2023-04-08", 
+        "printed_year": 2021, 
+        "amazon": "https://amzn.to/45Yg1Nb"
+    },
+    { 
+        "name": "Two Player Edition", 
+        "filename": "two",
+        "type": "full", 
+        "price": 12.97, 
+        "players": "2",
+        "num_of_cards": 32, 
+        "release_year": "2021", 
+        "acquisition_date": "2023-05-04",
+        "printed_year": 2021
+    },
+    { 
+        "name": "Zombie Kittens", 
+        "filename": "zombie",
+        "type": "full", 
+        "price": 25.99, 
+        "players": "2-5",
+        "num_of_cards": 61, 
+        "release_year": "2022", 
+        "acquisition_date": "2023-04-19",
+        "printed_year": 2022, 
+        "amazon": "https://amzn.to/3CqnYNr"
+    }
+]

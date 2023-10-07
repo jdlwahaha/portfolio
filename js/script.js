@@ -8,8 +8,9 @@
         var headerHtml = `
             <a href="../home"><h1>My Space</h1></a>
             <nav>
-                <!-- <a href="index" class="first">Home</a> -->
-                <a href="../youtube" class="first">
+
+                <span class="navSectionHeader-desktop">RECORDINGS</span>
+                <a href="../youtube">
                     <span class="nav-icon">&#128249;</span> 
                     GO
                 </a>
@@ -17,7 +18,7 @@
                     <span class="nav-icon">&#127897;</span> 
                     JDReads
                 </a>
-                
+
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
@@ -31,18 +32,34 @@
                     <span class="nav-icon">&#128173;</span> 
                     Dreams
                 </a>
-
-
-                <span class="navSectionHeader-desktop">REVIEWS</span>
-                <span class="navSectionHeader-mobile">|</span>
-                
-
                 <a href="../books" >
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
+                
+
+                <span class="navSectionHeader-desktop">COLLECTIONS</span>
+                <span class="navSectionHeader-mobile">|</span>
+
+                <a href="../explodingkittens"  >
+                    <span class="nav-icon">&#128049;</span> 
+                    Exploding Kittens
+                </a>
             
- 
+                <a href="../keyboards" >
+                    <span class="nav-icon">&#128187;</span> 
+                    Keyboards
+                </a>
+            
+                <a href="../zippo"> 
+                    <span class="nav-icon">&#128293;</span>
+                    Zippo
+                </a> 
+
+              
+
+
+               
                
             </nav>
         `;
@@ -52,13 +69,19 @@
     
         // read url and highlight tab 
         var pages = [
-            'jdreads', 
-            'actions', 
-            'typerace', 
-            'youtube', 
+            'home',
+            'youtube',
+            'jdreads',
+
+            'actions',
+            'dreams',
             'books', 
-            'dreams', 
-            'home', 
+
+            'zippo',
+            'keyboards', 
+            'explodingkittens', 
+
+            'typerace'
         ]; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
@@ -66,7 +89,7 @@
     
         let currentPage = pages.find(x => currentPageStr.includes(x.toLowerCase()));
         if (currentPage) { 
-            $(`a[href*="${currentPage}"]`).addClass('current-tab');
+            $(`a[href*="./${currentPage}"]`).addClass('current-tab');
         } else { 
             // redirect to home page
             window.location.href = window.location.origin + '/portfolio/html/home'; 
@@ -86,4 +109,20 @@
         return (results !== null) ? results[1] || 0 : false;
     }
 
+
+
 })(); 
+
+function getAmazonLink(title, link, showHover) { 
+    return '';
+    return `
+        <a target="_blank" class="amazon  ${(showHover===false) ? '' : 'triggerHover'}" href="${link}" >
+            ${title}
+            <img class="icon" src="../../data/link/amazon.png" /> 
+            <img class="icon" src="../../data/link/canada.png" /> 
+            <span class="showOnHover">
+                Shop on Amazon.ca
+            </span>
+        </a>
+    `;
+}

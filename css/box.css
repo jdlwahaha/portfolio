@@ -4,6 +4,7 @@
     box-shadow: 3px 3px 3px #888888;
     border-radius: 10px 10px 0 0 ;
     background-color: white;
+    line-height: 1.5rem;
 }
 
 section.box div.box-exercise { 
@@ -14,6 +15,8 @@ section.box div.box-exercise {
     animation-fill-mode: forwards;
     visibility: hidden;
 }
+
+
 
 .box h1 {
     background: #ddd;

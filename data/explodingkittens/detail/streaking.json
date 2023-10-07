@@ -1,0 +1,83 @@
+{ 
+    "filename": "streaking", 
+    "expansion_no": 2,
+    "contents": [ 
+        "Paper Instructions", 
+        "Paper Ad (Recipes for Disaster)", 
+        "Plastic Sleeve"
+    ], 
+    "card_label": "SECOND EXPANSION", 
+    "youtubeId": "I2RE4mKgCl8",
+    "back": 9525,
+    "cards": {
+        "Streaking Kitten": {
+            "description": "", 
+            "images": [
+                9526
+            ]
+        },
+        "Exploding Kittens": {
+            "description": "", 
+            "images": [
+                9527
+            ]
+        },
+        "Catomic Bomb": {
+            "description": "", 
+            "images": [
+                9528
+            ]
+        },
+        "Curse of the Cat Butt": {
+            "description": "", 
+            "images": [
+                9529,
+                9530
+            ]
+        },
+        "See the Future 3X": {
+            "description": "", 
+            "images": [
+                9531
+            ]
+        },
+        "Alter the Future 5X": {
+            "description": "", 
+            "images": [
+                9532
+            ]
+        },
+        "Swap Top and Bottom": {
+            "description": "", 
+            "images": [
+                9533,
+                9534,
+                9535
+            ]
+        },
+        "Mark": {
+            "description": "", 
+            "images": [
+                9536,
+                9537,
+                9538
+            ]
+        },
+        "Garbage Collection": {
+            "description": "", 
+            "images": [
+                9539
+            ]
+        },
+        "Super Skip": {
+            "description": "", 
+            "images": [
+                9540
+            ]
+        }
+    }, 
+    "images": {
+        "start": 9525, 
+        "end": 9540
+    }
+}

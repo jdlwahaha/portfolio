@@ -1,4 +1,4 @@
-@media (min-width: 1040px) { 
+@media (min-width: 1200px) { 
 
 	/**** Desktop view test **/
 	body { 
@@ -30,13 +30,13 @@
 	nav a {
 		/* structure */
 		display: block;
-		padding: .8rem 1rem;
+		padding: .7rem 1rem;
 		
 		/* color & design */
 		color: white;
 		text-decoration: none;
 		background-color: rgb(102, 102, 102);
-		
+
 	}
 
 	nav a.first {

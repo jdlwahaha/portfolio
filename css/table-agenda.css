@@ -5,6 +5,8 @@ table#agenda {
     animation-delay: 100ms;
     animation-fill-mode: forwards;
     visibility: hidden;
+
+    line-height: 1rem;
 }
 table#agenda th.weekday{ 
     width: calc((100%)/7);

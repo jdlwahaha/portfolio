@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Zippo</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+    <link rel="stylesheet" href="../../css/zippo.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+<body>
+	<header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+			<div class="submenu">
+				<a href="index">Zippo</a> |
+				<a href="list">List</a> |
+				<a href="about">About</a> |
+				<span>Watching</span> 
+			</div>
+	
+
+	
+			<section class="box">
+                <div class="box-content" >
+                    <div class="well well-info">
+                        These are the Zippos that I will maybe one day own. MSRP on this page should only be used as a reference. 
+                        Please look up Zippo's official site to get the latest price.
+                    </div>
+                    <div id="list"></div>
+                </div>
+            </section>
+
+		</div>
+	
+		<footer><!-- jQuery generated --></footer>
+	</section>
+
+	
+</body>
+</html>
+
+<script>
+(function () {
+    $.getJSON('../../data/zippo/watching.json', function (zippos) {
+        zippos = zippos.filter(z => z.name);
+
+        let html = ``;
+
+
+        zippos.map(zippo => { 
+            html += `<span class="zippo">`;
+
+            const amazonLink = zippo.amazon 
+                    ? getAmazonLink('Shop on Amazon', zippo.amazon, false)
+                    : `
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    `;
+
+            html += `
+                <span class="imageblock">
+                    <image src="../../data/zippo/${zippo.code}.jpeg" width="150"/>
+                    
+                </span> 
+                <span class="description"> 
+                    <span class="infoblock">
+                        <span>
+                            <strong>${zippo.name}</strong>
+                            <span class="modelno">(${zippo.code})</span>
+                        </span>
+                        <br>
+                        <span>
+                            <span>MSRP: $${zippo.listPrice}</span>
+                        </span>
+                    
+                        <br>
+                        
+                    </span>
+                    <span style="display: inline-block; ">
+                            <span>
+                                ${amazonLink}
+                            </span>
+                        </span>
+                </span> 
+                  
+            `
+
+            html += `</span>`;
+
+        })
+
+
+
+
+
+
+
+        $('#list').append(html);
+
+
+    });
+
+})();
+</script>

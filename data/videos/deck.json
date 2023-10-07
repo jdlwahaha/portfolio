@@ -23,14 +23,23 @@
         }
     },
     {
-        "title": "", 
-        "videoId": "",
-        "type": "short",
+        "title": "❮Tech Deck❯ DGK - Blabac Photo Series (Ultra Rare)", 
+        "videoId": "g3gFcNMjqP8",
         "source": "deck",
         "date": {
             "year": 2023,
-            "month": 1,
-            "day": 19
+            "month": 4,
+            "day": 27
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Krooked - Yellow (Ultra Rare)", 
+        "videoId": "JndvDIe9z4Q",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 4,
+            "day": 27
         }
     },
     {
