@@ -5,8 +5,130 @@
         "source": "go",
         "date": {
             "year": 2023,
-            "month": 3,
+            "month": 11,
             "day": 1
+        }
+    },
+    { 
+        "title": "", 
+        "videoId": "",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 1
+        }
+    },
+    { 
+        "title": "Oomomo Shopping", 
+        "videoId": "https://youtu.be/WDqZX368RN4",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 23
+        }
+    },
+    { 
+        "title": "Casio MQ24-1E Review", 
+        "videoId": "https://youtu.be/9ud8YPRJf3w",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 17
+        }
+    },
+    { 
+        "title": "LINE FRIENDS meets MX – Radio Mooncake Giftbox", 
+        "videoId": "https://youtu.be/nIpSeYKGlqM",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 16
+        }
+    },
+    { 
+        "title": "【HELLO! GOOD SMILE】 - 033 Nia Teppelin", 
+        "videoId": "https://youtu.be/O3EYlyDTt1o",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 15
+        }
+    },
+    { 
+        "title": "【HELLO! GOOD SMILE】 - 032 Yoko Littner", 
+        "videoId": "https://youtu.be/g-mNEJidVY0",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 14
+        }
+    },
+    { 
+        "title": "【HELLO! GOOD SMILE】 - 003 Kagamine Ren", 
+        "videoId": "https://youtu.be/mshF3kdKhKo",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 13
+        }
+    },
+    { 
+        "title": "【HELLO! GOOD SMILE】 - 002 Kagamine Rin", 
+        "videoId": "https://youtu.be/kOYq52UMpMw",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 12
+        }
+    },
+    { 
+        "title": "【HELLO! GOOD SMILE】 - 001 Hastune Miku", 
+        "videoId": "https://youtu.be/mrZyU8vQ18g",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 11
+        }
+    },
+    { 
+        "title": "【Unbox】DeskQ - Party on Desk - Hatsune Miku", 
+        "videoId": "https://youtu.be/jeUGFHGiSGs",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 10
+        }
+    },
+    { 
+        "title": "Peppa Pig - Milk Cookie with Tin Box", 
+        "videoId": "https://youtu.be/qrywol6YPRQ",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 9
+        }
+    },
+
+
+    { 
+        "title": "Spy x Family Magnets", 
+        "videoId": "VX8yN9czFMc",
+        "source": "go",
+        "date": {
+            "year": 2023,
+            "month": 11,
+            "day": 8
         }
     },
     { 
@@ -18,17 +140,6 @@
             "year": 2023,
             "month": 11,
             "day": 7
-        }
-    },
-
-    { 
-        "title": "Spy x Family Magnets", 
-        "videoId": "VX8yN9czFMc",
-        "source": "go",
-        "date": {
-            "year": 2023,
-            "month": 11,
-            "day": 8
         }
     },
     { 
