@@ -11,6 +11,7 @@
             "day": 19
         }
     },
+
     {
         "title": "", 
         "videoId": "",
@@ -20,6 +21,97 @@
             "year": 2023,
             "month": 1,
             "day": 19
+        }
+    },
+    {
+        "title": "", 
+        "videoId": "",
+        "type": "short",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 1,
+            "day": 19
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Girl Skateboards - Brophy GSSC (Common)", 
+        "videoId": "oMYIZaZXsqo",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 26
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ DLX Pro 10 Pack", 
+        "videoId": "iRGs5-VIez0",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 24
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ The Cheapest Storage (DIY)", 
+        "videoId": "gmOQw8J-YeA",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 22
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Enjoi - Ladybug Big Dreams (Common)", 
+        "videoId": "vgJwewHC9W4",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 19
+        }
+    },
+    {
+        "title": "❮Tech Deck❯  Shred Pyramid Set", 
+        "videoId": "n3gVTgbhRcc",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 15
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Blind Nine Lives Deck (Rare)", 
+        "videoId": "_nIK9FA2FBQ",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 12
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Bendy Boards", 
+        "videoId": "WqmqkgwevZQ",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 8,
+            "day": 4
+        }
+    },
+    {
+        "title": "❮Tech Deck❯ Pro Series Daily Grind Pack", 
+        "videoId": "nEygCnU65NI",
+        "source": "deck",
+        "date": {
+            "year": 2023,
+            "month": 6,
+            "day": 16
         }
     },
     {
