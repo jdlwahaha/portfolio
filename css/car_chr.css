@@ -1,0 +1,32 @@
+#car span.description { 
+    width: 340px;
+    padding-right: 30px;
+}
+
+#car span.slideshow { 
+    width: calc(100% - 380px) ;
+}
+
+button { 
+    float: right;
+}
+div.note { 
+    margin-bottom: 1rem;
+}
+
+ul li { 
+    list-style-type: none;
+    margin-left: -1.5rem;
+}
+
+#car span.slideshow  p { 
+    padding-top: 0;
+    margin-top: 0;
+}
+
+@media (max-width: 800px) { 
+    #car span.description,
+    #car span.slideshow { 
+        width: 100%;
+    }
+}

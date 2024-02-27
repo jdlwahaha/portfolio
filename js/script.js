@@ -56,10 +56,6 @@
                     Zippo
                 </a> 
 
-              
-
-
-               
                
             </nav>
         `;
@@ -99,7 +95,7 @@
     
     
     function loadFooter() {
-        $('footer').append('Copyrighted &copy; 2018-2023');
+        $('footer').append('Copyrighted &copy; 2018-2024');
     }
     
     $.urlParam = function (name) {

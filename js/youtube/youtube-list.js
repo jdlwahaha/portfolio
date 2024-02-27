@@ -5,7 +5,7 @@
             $.getJSON('../../data/videos/build.json', function (buildVideos) {
                 $.getJSON('../../data/videos/go.json', function (goVideos) {
                     const YEAR_START = 2020;
-                    const YEAR_END = 2023;
+                    const YEAR_END = 2024;
 
                     const videos = [
                         ...removeEmptyRecords(goVideos),

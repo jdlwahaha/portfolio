@@ -62,10 +62,23 @@ nav a:hover {
 	white-space: nowrap;
 }
 
+.secondary-menu { 
+	padding-top: 1rem;
+	padding-left: .5rem;
+	padding-bottom: .5rem;
+	font-weight: bold;
+	font-size: 14px;
+    font-family: Candara, Arial, Sans-Serif;
 
+
+	overflow: auto hidden;
+	white-space: nowrap;
+}
 
 .submenu span, 
-.submenu a { 
+.submenu a, 
+.secondary-menu span,
+.secondary-menu a { 
 	padding: 1rem;
 	padding-bottom: .2rem; 
 }
@@ -75,10 +88,19 @@ nav a:hover {
 	color: #888;
 }
 
-.submenu a { 
+.secondary-menu span { 
+	/* border-bottom: 2px solid rgb(255, 196, 0); */
+	color: #222;
+	/* color: white; */
+	/* text-shadow: -2px 0 rgb(255, 196, 0), 0 2px rgb(255, 196, 0), 2px 0 rgb(255, 196, 0), 0 -2px rgb(255, 196, 0);  */
+}
+
+.submenu a, 
+.secondary-menu a  { 
 	color: #888;
 }
-.submenu a:hover { 
+.submenu a:hover, 
+.secondary-menu a:hover { 
     color: rgb(255, 196, 0);
 }
 

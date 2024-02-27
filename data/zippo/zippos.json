@@ -1,4 +1,6 @@
 [
+
+
     {
         "name": "Zippo Car 75th Anniversary Collectible", 
         "material": "", 
@@ -26,6 +28,22 @@
 
 
 
+   {
+        "name": "Zippo Game Design", 
+        "material": "Matte", 
+        "code": "49114",
+        "listPrice": 69.96, 
+        "purchasedPrice": 41.31, 
+        "acquisition_date": "2023-02-26"
+    },
+    {
+        "name": "Zippo Pop Art", 
+        "material": "Matte", 
+        "code": "49533",
+        "listPrice": 69.96, 
+        "purchasedPrice": 69.96, 
+        "acquisition_date": "2023-02-03"
+    },
     {
         "name": "Regular Tumbled Brass", 
         "material": "Brass", 
