@@ -24,6 +24,15 @@ ul li {
     margin-top: 0;
 }
 
+.green, .red { 
+    width: 12px;
+    display: inline-block;
+}
+
+.green { 
+    font-weight: bold;
+}
+
 @media (max-width: 800px) { 
     #car span.description,
     #car span.slideshow { 
