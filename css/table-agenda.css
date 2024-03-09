@@ -27,8 +27,12 @@ table#agenda td.shower {
     background-color: rgb(141, 193, 251);
 }
 
-table#agenda td.mine { 
+table#agenda td.trade { 
     background-color: rgb(255, 228, 74);
+}
+
+table#agenda td.mine { 
+    /* background-color: orange; */
 }
 
 table#agenda td.time { 
