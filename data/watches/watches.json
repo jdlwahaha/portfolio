@@ -112,7 +112,7 @@
     },
     {
         "name": "Fitbit Ace 3", 
-        "model": "fitbit-ace-3", 
+        "filename": "fitbit-ace-3", 
         "brand": "Fitbit", 
         "type": "smart",
         "purchasedPrice": 78.36, 
@@ -121,7 +121,7 @@
     },
     {
         "name": "Fibit Ionic", 
-        "model": "fitbit-ionic", 
+        "filename": "fitbit-ionic", 
         "brand": "Fitbit", 
         "type": "smart",
         "purchasedPrice": 291.19, 
@@ -130,11 +130,11 @@
     },
     {
         "name": "Pebble White",
-        "model": "pebble-white", 
+        "filename": "pebble-white", 
         "brand": "Pebble", 
         "type": "smart",
         "listPrice": 0, 
-        "purchasedPrice": 0, 
+        "purchasedPrice": 99, 
         "acquisition_date": "-", 
         "note": "It's been too long that I forgot the price of this. This is my first smart watch! I built my custom watch face and received about 27 hearts from Pebble store. Also landed my first job with this watch project."
     }
