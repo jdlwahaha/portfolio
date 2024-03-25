@@ -1,0 +1,141 @@
+[
+
+    {
+        "name": "Casio Illuminator Metal Bezel Heavy Duty Resin Band", 
+        "model": "MWA100H-7AV", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 43.51, 
+        "acquisition_date": "2024-03-08"
+    },
+    {
+        "name": "Casio Men's Retrograde Analog Display Quartz Black", 
+        "model": "MCW-200H-1AVCF", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 65.49, 
+        "acquisition_date": "2024-03-08"
+    },
+    {
+        "name": "Casio Duro Black and Silver", 
+        "filename": "casio-duro-black",
+        "model": "MDV106-1A", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 70.90, 
+        "acquisition_date": "2024-02-27"
+    },
+ 
+    {
+        "name": "Timex Peanut Charle Brown", 
+        "filename": "timex-charlie-brown",
+        "model": "", 
+        "brand": "timex", 
+        "type": "",
+        "purchasedPrice": 61.52, 
+        "acquisition_date": "2024-01-26"
+    },
+    {
+        "name": "G-Shock Square", 
+        "model": "DW-5600HR-1CR", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 114.24, 
+        "acquisition_date": "2024-01-13"
+    },
+    {
+        "name": "Casio Square LED Illuminator", 
+        "model": "MWD-110H-3AV", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 54.34, 
+        "acquisition_date": "2024-01-13"
+    },
+    {
+        "name": "Casio MQ24-1E", 
+        "model": "MQ24-1E", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 19.26, 
+        "acquisition_date": "2023-12-30"
+    },
+    {
+        "name": "Casio AQ-800E-7A White", 
+        "model": "AQ-800E-7A", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 54.38, 
+        "acquisition_date": "2023-12-23"
+    },
+    
+    {
+        "name": "Casioak (Caution Yellow)", 
+        "filename": "Casioak-yellow",
+        "model": "GAB2100CY-1A", 
+        "brand": "Casio", 
+        "type": "analog",
+        "purchasedPrice": 140, 
+        "acquisition_date": "2023-11-23"
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "Casio MQ-24S-8B", 
+        "model": "MQ-24S-8B", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 16, 
+        "acquisition_date": "2023-11-13"
+    },
+    {
+        "name": "Casio MQ24-1E Analog Watch", 
+        "model": "MQ24-1E", 
+        "brand": "Casio", 
+        "type": "analog",
+        "purchasedPrice": 0, 
+        "acquisition_date": "2023-05-10"
+    },
+    {
+        "name": "LAVAREDO Kid's Watches Boys Analog Digital Quartz Sport Electronic", 
+        "filename": "lavaredo-yellow",
+        "model": "", 
+        "brand": "LAVAREDO", 
+        "type": "",
+        "purchasedPrice": 26.87, 
+        "acquisition_date": "2020-11-17"
+    },
+    {
+        "name": "Fitbit Ace 3", 
+        "model": "fitbit-ace-3", 
+        "brand": "Fitbit", 
+        "type": "smart",
+        "purchasedPrice": 78.36, 
+        "acquisition_date": "2021-12-09", 
+        "note": "The problem with Pebble and Ionic was that they are all too big. I thought if I get a smart watch designed for kids, it would fit my wrist better and I would assume it would be built more comfy too. However, there's a lot of limitation such as no heart rate sensor and I just didn't have time to see if it support custom watch face design here. "
+    },
+    {
+        "name": "Fibit Ionic", 
+        "model": "fitbit-ionic", 
+        "brand": "Fitbit", 
+        "type": "smart",
+        "purchasedPrice": 291.19, 
+        "acquisition_date": "2019-12-26", 
+        "note": "I also wrote a custom watch face on this. I did not published this to the store because the fitbit market seems to be involving more steps. Fitbit recalled this watch because of some overheat issue and I got some cash back to buy my next one."
+    },
+    {
+        "name": "Pebble White",
+        "model": "pebble-white", 
+        "brand": "Pebble", 
+        "type": "smart",
+        "listPrice": 0, 
+        "purchasedPrice": 0, 
+        "acquisition_date": "-", 
+        "note": "It's been too long that I forgot the price of this. This is my first smart watch! I built my custom watch face and received about 27 hearts from Pebble store. Also landed my first job with this watch project."
+    }
+]

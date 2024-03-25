@@ -38,3 +38,8 @@ table#agenda td.mine {
 table#agenda td.time { 
     width: 50px;
 }
+
+
+td.dinner { 
+    background-color: #afb6df;
+}

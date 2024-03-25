@@ -41,20 +41,30 @@
                 <span class="navSectionHeader-desktop">COLLECTIONS</span>
                 <span class="navSectionHeader-mobile">|</span>
 
-                <a href="../explodingkittens"  >
-                    <span class="nav-icon">&#128049;</span> 
-                    Exploding Kittens
-                </a>
+               
             
                 <a href="../keyboards" >
                     <span class="nav-icon">&#128187;</span> 
                     Keyboards
                 </a>
+
+                <a href="../watches"> 
+                    <span class="nav-icon">&#8986;</span>
+                    Watches
+                </a> 
             
                 <a href="../zippo"> 
                     <span class="nav-icon">&#128293;</span>
                     Zippo
                 </a> 
+
+                <span class="navSectionHeader-desktop">COMPLETE</span>
+                <span class="navSectionHeader-mobile">|</span>
+
+                <a href="../explodingkittens">
+                    <span class="nav-icon">&#128049;</span> 
+                    Exploding Kittens
+                </a>
 
                
             </nav>
@@ -77,7 +87,8 @@
             'keyboards', 
             'explodingkittens', 
 
-            'typerace'
+            'typerace', 
+            'watches'
         ]; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
