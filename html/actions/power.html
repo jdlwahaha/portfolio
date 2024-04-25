@@ -372,29 +372,17 @@
         return array.sort((a, b) => b.id - a.id);
     }
 
-    function fff(start, end) { 
-        const filteredLaws = ascending(laws).filter(i => (i.id-1) >= start && (i.id-1) < end);
-        const lawHtml = getLawsHtml(filteredLaws);
-
-        
-        document.getElementById('law-content').innerHTML = sort + lawHtml;
+    function setLawContent(laws) { 
+        const lawHtml = getLawsHtml(laws);
+        document.getElementById('law-content').innerHTML = getFilters(true) + lawHtml + getFilters(false);
     }
 
-    const sort = `
-        <section id='sort'>
-            <button onclick="sorting('asc')">asc</button>
-            <button onclick="sorting('desc')">desc</button> |
-            <button onclick="fff(0, 9)">1</button>
-            <button onclick="fff(10, 19)">11</button>
-            <button onclick="fff(20, 29)">21</button>
-            <button onclick="fff(30, 39)">31</button>
-            <button onclick="fff(40, 48)">41</button>
-        </section>
-    `;
-
+    function fff(start, end) { 
+        const filteredLaws = ascending(laws).filter(i => (i.id-1) >= start && (i.id-1) <= end);
+        setLawContent(filteredLaws);
+    }
 
     function sorting(order) { 
-        // let selectedOrder = laws; 
         switch (order) { 
             case 'asc': 
                 console.log('as')
@@ -407,11 +395,44 @@
                 shuffle(laws);
                 break;
         }
-        const lawHtml = getLawsHtml(laws);
+        setLawContent(laws);
+    }
+
+
+
+    function getFilters(showSort) {
+        const sort = `
+                <button onclick="sorting('asc')">asc</button>
+                <button onclick="sorting('desc')">desc</button> |
+            `;
+
+        const paging = `<button onclick="fff(0, 9)">1</button>
+            <button onclick="fff(10, 19)">11</button>
+            <button onclick="fff(20, 29)">21</button>
+            <button onclick="fff(30, 39)">31</button>
+            <button onclick="fff(40, 48)">41</button>
+        `;
+
+        if (showSort) { 
+            return `
+                <section id='sort'>
+                    ${sort}
+                    ${paging}
+                </section>
+            `;
+        } else { 
+            return `
+                <section id='sort'>
+                    ${paging}
+                </section>
+            `;
+        }
 
         
-        document.getElementById('law-content').innerHTML = sort + lawHtml;
     }
+
+
+
 
 
     sorting();
