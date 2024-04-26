@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Programming | Decorator Pattern</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+
+    <style>
+        p.question span, p.answer span { 
+            display: inline-block;
+            vertical-align: top;
+        }
+        p.question span:first-child,
+        p.answer span:first-child { 
+            font-size: 2rem;
+            font-weight: bold;
+            width: 50px; 
+            text-align: center;
+            vertical-align: text-top;
+            color: #aaa;
+        }
+        p.question span:last-child,
+        p.answer span:last-child { 
+            width: calc(100% - 80px);
+        }
+    </style>
+</head>
+<body>
+
+    <header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+            <div class="submenu">
+                <a href="index">Design Patterns</a>  
+            </div>
+
+
+            <section class="box">
+                <h1>Definition</h1>
+                <div class="box-content">
+                    <p>
+                        <strong>The Decorator Pattern</strong> attaches additional responsibilities to
+                        an object dynamically. Decorators provide a flexible alternative to subclassing
+                        for extending functionality.
+                    </p>
+                    
+                    <p>
+                        <img src="../../data/design-patterns/decorator_01.png" alt="" style="max-width:1200px; width:100%">
+                    </p>
+                </div>
+            </section>
+
+
+
+            <section class="box">
+                <h1>Implementation of Decorator class</h1>
+
+                <div class="box-content">
+                    <pre>
+    public abstract class Beverage { 
+        String description = "Unknown Beverage";
+
+        public String getDescription() { 
+            return description; 
+        }
+
+        public abstract double cost();
+    }
+
+    // Decorator class
+    public abstract class CondimentDecorator extends Beverage { 
+        public abstract String getDescription(); 
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+ 
+            <section class="box">
+                <h1>Implementation of Concrete Beverage</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class Expresso extends Beverage { 
+        public Espresso() { 
+            description = "Espresso";
+        }
+
+        public double cost() { 
+            return 1.99;
+        }
+    }
+
+    public class HouseBlend extends Beverage { 
+        public HouseBlend() { 
+            description = "House Blend Coffee"; 
+        }
+
+        public double cost() { 
+            return 0.89;
+        }
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+
+
+
+
+            <section class="box">
+                <h1>Implementation of Condiment instance</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class Mocha extends CondimentDecorator { 
+        Beverage beverage; 
+
+        public Mocha (Beverage beverage) { 
+            this.beverage = beverage;
+        }
+
+        public String getDescription() { 
+            return beverage.getDescription() + ", Mocha"; 
+        }
+
+        public double cost() { 
+            return 0.20 + beverage.cost();
+        }
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+
+
+
+            <section class="box">
+                <h1>Putting it together</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class StarbuzzCoffee { 
+        public static void main (String[] args) { 
+            Beverage espresso = new Espresso(); 
+            System.out.println(beverage.getDescription() + " $" + beverage.cost()); 
+
+            Beverage darkRoast = new DarkRoast(); 
+            darkRoast = new Mocha(darkRoast);  // wrap it with a mocha
+            darkRoast = new Mocha(darkRoast);  // wrap it with a second mocha
+            System.out.println(darkRoast.getDescription() + " $" + darkRoast.cost());
+
+            Beverage houseBlend = new HouseBlend(); 
+            houseBlend = new Mocha(houseBlend);  
+            System.out.println(houseBlend.getDescription() + " $" + houseBlend.cost());
+        }
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+            <section class="box">
+                <h1>Starbuzz UML Diagram</h1>
+                <div class="box-content">
+                    <p>
+                        <img src="../../data/design-patterns/decorator_02.png" alt="" style="max-width:1200px; width:100%">
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="box">
+                <h1>Other notes</h1>
+                <div class="box-content">
+                    <p>
+                        <ul>
+                            <li>Decorators have the same supertype as the objects they decorate</li>
+                            <li>You can use one or more decorators to wrap an object.</li>
+                            <li>Given that the decorator has the same supertype as the object it decorates, we can pass around a decorated object in place of the original (wrapped) object.</li>
+                            <li class="highlight">The decorate adds its own behaviour either before and/or after delegating to the object it decorates to do the rest of the job.</li>
+                            <li>Objects can be decorated at any time, so we can decorate objects dynamically at runtime with as many decorators as we like.</li>
+                            <li>Decorator are typically created by using other patterns like Factory and Builder.</li>
+                        </ul>
+                    </p>
+
+                </div>
+            </section>
+
+
+            <section class="box">
+                <h1>Q&A</h1>
+                <div class="box-content">
+                    <p class="question">
+                        <span>Q:</span>
+                        <span>
+                        I'm a little worried about the code that might test for a specific concrete component - say HouseBlend - and do something, like issue a discount. 
+                        Once I've wrapped the HouseBlend with decorators, this isn't going to work anymore.
+                        </span>
+                    </p>
+                    <p class="answer">
+                        <span>A:</span>
+                        <span>
+                        That is exactly right. If you have code that relies on the concrete component's
+                        type, decorators will break that code. As long as you only write code against
+                        the abstract component type, the use of decorators will remain transparent to
+                        your code. However, once you start writing code against concrete components,
+                        you'll want to rethink your application design and your use of decorators.
+                        </span>
+                    </p>
+                    <hr>
+                    <p class="question">
+                        <span>Q:</span>
+                        <span>
+                        Wouldn't it be easy for some client of a beverage to end up with a decorator
+                        that isn't the outermost decorator? Like if I had a DarkRoast with Mocha, Soy,
+                        and Whip, it would be easy to write code that somehow ended up with a reference
+                        to Soy instead of Whip, which means it would not include Whip in the order.
+                        </span>
+                    </p>
+                    <p class="answer">
+                        <span>A:</span>
+                        <span>
+                        You could certainly argue that you have to manage more objects with the
+                        Decorator Pattern and so there is an increased chance that coding errors will
+                        introduce the kinds of problmes you suggest. However, decorators are typically
+                        created by using other patterns like Factory and Builder. Once we've covered
+                        these patterns, you'll see that the creation of the concrete component with its
+                        decorator is "well encapsulated" and doesn't lead to these kinds of problems.
+                        </span>
+                    </p>
+                    <hr>
+                    <p class="question">
+                        <span>Q:</span>
+                        <span>
+                            Can decorators know about the other decorations in the chain? Say, I wanted my
+                            getDescription() method to print "Whip, Double Mocha" instead of "Mocha, Whip,
+                            Mocha"? That would require that my outermost decorator know all the decorators
+                            it is wrapping.
+                        </span>
+                    </p>
+                    <p class="answer">
+                        <span>A:</span>
+                        <span>
+                        Decorators are meant to add behaviour to the object they wrap. When you need to
+                        peek at multiple layers into the decorator chain, you are starting to push the
+                        decorator beyond its true intent. Nevertheless, such things are possible.
+                        Imagine a CondimentPrettyPrint decorator that parses the final description and
+                        can print "Mocha, Whip, Mocha" as "Whip, Double Mocha." Nothe that
+                        getDescription() could return an ArrayList of descriptions to make this easier.
+                        </span>
+                    </p>
+
+                </div>
+            </section>
+
+
+        </div>
+
+        <footer><!-- jQuery generated --></footer>
+       
+
+
+
+    </section>
+
+
+</body>
+</html>

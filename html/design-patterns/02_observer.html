@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Programming | Observer Pattern</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+<body>
+
+    <header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+            <div class="submenu">
+                <a href="index">Design Patterns</a>  
+            </div>
+
+
+            <section class="box">
+                <h1>Definition</h1>
+                <div class="box-content">
+                    <p>
+                        <strong>The Obeserver Pattern</strong> defines a one-to-many depedency
+                        between objects so when one object changes state, all 
+                        of its dependent are notified and updated automatically.
+                    </p>
+                    <p>
+                        The Observer Pattern provides an object design where subjects and 
+                        observer are <strong>loosely coupled</strong>. The two objects 
+                        can interact, but have very little knowledge of each other.
+                    </p>
+                    <p>
+                        <img src="../../data/design-patterns/observer_01.png" alt="" style="max-width:600px; width:100%">
+                    </p>
+                </div>
+            </section>
+
+
+
+            <section class="box">
+                <h1>Class Diagram</h1>
+                <div class="box-content">
+                    <p>
+                        <img src="../../data/design-patterns/observer_02.png" alt="" style="max-width:1200px; width:100%">
+                    </p>
+                </div>
+            </section>
+
+
+            <section class="box">
+                <h1>Implementation Weather Station</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class WeatherStation { 
+        public static void main (String[] args) { 
+            WeatherData weatherData = new WeatherData(); 
+
+            CurrentConditionsDisplay currentDisplay = 
+                new CurrentConditionsDisplay(weatherData);
+            
+            weatherData.setMeasurements(80, 60, 30.4);
+            weatherData.setMeasurements(78, 70, 27.4);
+        }
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+            <section class="box">
+                <h1>Implementation Interfaces</h1>
+                <div class="box-content">
+                    <pre class="code">
+    public interface Subject { 
+        public void registerObserver(Observer o); 
+        public void removeObserver(Observer o); 
+        public void notifyObservers();
+    }
+
+    public interface Observer { 
+        public void update(float temperature, float humidity, float pressure); 
+    }
+
+    public interface DisplayElement { 
+        public void display(); 
+    }
+                    </pre>
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="box">
+                <h1>Implementation Subject</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class WeatherData implements Subject { 
+        private ArrayList observers; 
+        private float temperature; 
+        private float humidity; 
+        private float pressure; 
+
+        public WeatherData() { 
+            observers = new ArrayList(); 
+        }
+
+        public void registerObserver(Observer o) {
+            observers.add(o);
+        }
+
+        public void removeObserver(Observer o) { 
+            int i = observers.indexOf(o); 
+            if (i >= 0) { 
+                observers.remove(i);
+            }
+        }
+
+        public void notifyObservers() { 
+            for (int i = 0; i < observers.size(); i++) {
+                Observer observer = (Observer)observers.get(i); 
+                observer.update(temperature, humidity, pressure);
+            }
+        }
+
+        public void measurementsChanged() { 
+            notifyObservers(); 
+        }
+
+        public void setMeasurements(float temperature, float humidity, float pressure) { 
+            this.temperature = temperature; 
+            this.humidity = humidity; 
+            this.pressure = pressure; 
+            measurementsChanged();
+        }
+    }
+                    </pre>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="box">
+                <h1>Implementation Display Elements (Observer)</h1>
+
+                <div class="box-content">
+                    <pre>
+    public class CurrentConditionsDisplay implements Observer, DisplayElement { 
+        private float temperature; 
+        private float humidity; 
+        private Subject weatherData;
+
+        public CurrentConditionsDisplay(Subject weatherData) { 
+            this.weatherDats = weatherData;
+            weatherData.registerObserver(this);
+        }
+
+        public void update(float temperature, float humidity, float pressure) { 
+            this.temperature = temperature; 
+            this.humidity = humidity;
+            display();
+        }
+
+        public void display() { 
+            System.out.println("Current conditions: " 
+                + temperature + " degrees and " + humidity + "% humidity");
+        }
+    }
+                    </pre>
+
+                </div>
+            </section>
+
+
+
+ 
+
+
+
+            <section class="box">
+                <h1>UML Diagram</h1>
+                <div class="box-content">
+                    <p>Sample design for a weather station updates in diagram.</p>
+                    <p>
+                        <img src="../../data/design-patterns/observer_03.png" alt="" style="max-width:1200px; width:100%">
+                    </p>
+                </div>
+            </section>
+
+        </div>
+
+        <footer><!-- jQuery generated --></footer>
+       
+
+
+
+    </section>
+
+
+</body>
+</html>

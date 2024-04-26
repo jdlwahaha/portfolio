@@ -38,13 +38,21 @@
                 </a> 
                 
 
+
+                <a href="../design-patterns" >
+                    <span class="nav-icon">&#128190;</span> 
+                    Programming
+                </a>
+        
+
+
                 <span class="navSectionHeader-desktop">COLLECTIONS</span>
                 <span class="navSectionHeader-mobile">|</span>
 
                
             
                 <a href="../keyboards" >
-                    <span class="nav-icon">&#128187;</span> 
+                    <span class="nav-icon">&#128224;</span> 
                     Keyboards
                 </a>
 
@@ -86,6 +94,8 @@
             'zippo',
             'keyboards', 
             'explodingkittens', 
+
+            'design-patterns',
 
             'typerace', 
             'watches'
