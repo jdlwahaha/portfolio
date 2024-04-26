@@ -74,6 +74,8 @@ section.box div.box-exercise {
     opacity: .8;
 }
 
+
+
 @media (max-width: 500px) { 
     section.box div.box-exercise { 
         padding: 1rem;

@@ -203,6 +203,15 @@ section.box h1 {
     color: rgb(74 103 251);
 }
 
+.code {
+    font-family: Monaco, monospace;
+    word-break: normal;
+}
+pre {
+    overflow: auto;
+    font-family: 'Monaco', monospace;
+  }
+
 
 
 @media (max-width: 600px) { 
