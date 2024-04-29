@@ -13,12 +13,17 @@
                             ? getAmazonLink('', edition.amazon) 
                             : '';
                             
+                const editionLink = (edition.show_link === false) 
+                    ? edition.name
+                    : `<a href="detail?edition=${edition.filename}">
+                            ${edition.name} 
+                        </a>`;
+
                 return `
                     <tr>
                         <td>
-                            <a href="detail?edition=${edition.filename}">
-                                ${edition.name} 
-                            </a><br>
+                            ${editionLink}
+                            <br>
                             <div class="mobile-800">
                                 <div class="addMarginTop">${displayType}</div>
                                 <div class="addMarginTop mobile">
