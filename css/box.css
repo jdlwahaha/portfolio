@@ -9,7 +9,7 @@
 
 section.box div.box-exercise { 
     padding: 1rem 2rem; 
-    font-size: 14px;
+    font-size: .9rem;
 
     animation: 1500ms fadeIn;
     animation-fill-mode: forwards;
