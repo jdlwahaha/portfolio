@@ -1,3 +1,7 @@
+html { 
+    font-size: 16px;
+
+}
 body { 
     /* font-family: Candara, Arial, Sans-Serif; */
     max-width: 1080px;
@@ -153,9 +157,6 @@ section#yearSelection select {
 }
 
 
-section.box h1 { 
-    font-size: 16px;
-}
 
 .right { 
 	float: right;

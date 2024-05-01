@@ -16,6 +16,9 @@ section.box div.box-exercise {
     visibility: hidden;
 }
 
+section.box h1 { 
+    font-size: 1rem;
+}
 
 
 .box h1 {
