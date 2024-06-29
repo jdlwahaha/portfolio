@@ -5,6 +5,12 @@
     }); 
 
     function loadHeader() { 
+        var isLocal = window.location.href.indexOf('localhost/') >= 0; 
+        var stockLink = `  <a href="../stock" >
+                        <span class="nav-icon">&#128200;</span> 
+                        Stock
+                    </a> `
+
         var headerHtml = `
             <a href="../home"><h1>My Space</h1></a>
             <nav>
@@ -37,12 +43,12 @@
                     Books
                 </a> 
                 
+                ${isLocal ? stockLink : ''}
 
-
-                <a href="../design-patterns" >
+                <!--<a href="../design-patterns" >
                     <span class="nav-icon">&#128190;</span> 
                     Programming
-                </a>
+                </a>-->
         
 
 
@@ -96,7 +102,7 @@
             'explodingkittens', 
 
             'design-patterns',
-
+            'stock',
             'typerace', 
             'watches'
         ]; 
@@ -104,7 +110,7 @@
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 
         let currentPageStr = window.location.href.substring(index); 
     
-        let currentPage = pages.find(x => currentPageStr.includes(x.toLowerCase()));
+        let currentPage = pages.find(x => currentPageStr.includes(x.toLowerCase() +'/'));
         if (currentPage) { 
             $(`a[href*="./${currentPage}"]`).addClass('current-tab');
         } else { 
