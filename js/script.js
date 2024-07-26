@@ -26,8 +26,12 @@
                 </a>
 
 
+
+
+
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
+                ${isLocal ? stockLink : ''}
                 
                 
                 <a href="../actions" >
@@ -43,7 +47,6 @@
                     Books
                 </a> 
                 
-                ${isLocal ? stockLink : ''}
 
                 <!--<a href="../design-patterns" >
                     <span class="nav-icon">&#128190;</span> 

@@ -34,3 +34,6 @@ highlight, .highlight {
     text-decoration-style: wavy;
 }
 
+.bg-grey, .bg-grey:hover { 
+    background-color: #ddd;
+}

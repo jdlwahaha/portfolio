@@ -40,7 +40,7 @@ nav a.first {
 }
 
 nav a.current-tab, 
-nav a.current-tab:hover  {
+nav a.current-tab:hover {
 	background-color: rgb(255, 187, 64);
 }
 
@@ -88,7 +88,9 @@ nav a:hover {
 	color: #888;
 }
 
-.secondary-menu span { 
+.secondary-menu span,
+.secondary-menu a.current-tab, 
+.secondary-menu a.current-tab:hover { 
 	/* border-bottom: 2px solid rgb(255, 196, 0); */
 	color: #222;
 	/* color: white; */
@@ -103,6 +105,7 @@ nav a:hover {
 .secondary-menu a:hover { 
     color: rgb(255, 196, 0);
 }
+
 
 .month-nav { 
 	text-align: center;
