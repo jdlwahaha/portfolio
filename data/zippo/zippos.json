@@ -28,6 +28,22 @@
     
 
     {
+        "name": "Assassin's Creed Valhalla Design", 
+        "material": "Brass", 
+        "code": "49530-000003",
+        "listPrice": 54.03, 
+        "purchasedPrice": 44.75, 
+        "acquisition_date": "2024-08-23"
+    },
+    {
+        "name": "FarCry 6 Design", 
+        "material": "Matte", 
+        "code": "49549",
+        "listPrice": 49.47, 
+        "purchasedPrice": 34.19, 
+        "acquisition_date": "2024-08-23"
+    },
+    {
         "name": "Sapphire with Zippo logo", 
         "material": "Brass", 
         "code": "20446ZL",
