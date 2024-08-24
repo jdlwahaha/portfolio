@@ -37,14 +37,14 @@
                             <tr>
                                 <th colspan="2">Name</th>
 								<th>Image</th>
-                                <th>Material</th>
+                                <th class="desktop">Material</th>
                                 <th>
                                     <span class="triggerHover">
                                         Price &#9432;
                                         <span class="showOnHover">The price that I purchased before tax in Canadian dollar</span>
                                     </span>
                                 </th>
-                                <th>Acquisition Date</th>
+                                <th class="desktop">Acquisition Date</th>
                             </tr>
                         </thead>
                         <tbody id="tableData">
@@ -92,11 +92,11 @@
                             </div>
                         </td>
                         <td><img class="zoom" src="../../data/zippo/${zippo.code}.jpeg" alt="${zippo.name}.jpeg"/></td>
-                        <td class="center">${zippo.material}</td>   
+                        <td class="center desktop">${zippo.material}</td>   
                         <td class="price center">
                             $${zippo.purchasedPrice}
                         </td>
-                        <td class="center">${zippo.acquisition_date}</td>
+                        <td class="center desktop">${zippo.acquisition_date}</td>
                         
                     </tr>
                 `; 
