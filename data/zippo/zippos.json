@@ -27,6 +27,25 @@
     },
     
 
+
+    {
+        "name": "Full Moon Design", 
+        "material": "matte", 
+        "code": "49809",
+        "listPrice": 69.96, 
+        "purchasedPrice": 37.57, 
+        "acquisition_date": "2024-09-17"
+    },
+    {
+        "name": "Sunset Black Light Design", 
+        "material": "matte", 
+        "code": "49810",
+        "listPrice": 54.96, 
+        "purchasedPrice": 37.04, 
+        "acquisition_date": "2024-09-17"
+    },
+
+
     {
         "name": "Assassin's Creed Valhalla Design", 
         "material": "Brass", 
