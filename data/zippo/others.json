@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Bit Safe Lighter Insert ", 
+        "code": "65701",
+        "listPrice": "14.95 USD ", 
+        "purchasedPrice": 16.30,
+        "acquisition_date": "2024-09-17"
+    }, 
+   
+    {
+        "name": "Zippo Magnetic Lighter Display Stand", 
+        "code": "142226",
+        "listPrice": "6.95 USD ", 
+        "purchasedPrice": 13.53,
+        "acquisition_date": "2024-04-23"
+    }, 
+    {
+        "name": "Zippo Spirit Candle - Whiskey and Tobacco - 5 oz.", 
+        "code": "70008",
+        "listPrice": "14.95 USD ", 
+        "purchasedPrice": 23.13,
+        "acquisition_date": "2024-03-16"
+    }
+]

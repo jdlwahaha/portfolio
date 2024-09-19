@@ -1,5 +1,20 @@
 [
-
+    {
+        "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Gold)", 
+        "filename": "timex-easy-reader-gold", 
+        "brand": "Timex", 
+        "type": "",
+        "purchasedPrice": 11.12, 
+        "acquisition_date": "2024-09-16"
+    },
+    {
+        "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Silver)", 
+        "filename": "timex-easy-reader-silver", 
+        "brand": "Timex", 
+        "type": "",
+        "purchasedPrice": 11.12, 
+        "acquisition_date": "2024-09-02"
+    },
     {
         "name": "Casio Illuminator Metal Bezel Heavy Duty Resin Band", 
         "model": "MWA100H-7AV", 
