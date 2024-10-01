@@ -50,11 +50,12 @@
 
     {
         "name": "Assassin's Creed Valhalla Design", 
-        "material": "Brass", 
+        "material": "High Polish Teal", 
         "code": "49530-000003",
         "listPrice": 54.03, 
         "purchasedPrice": 44.75, 
-        "acquisition_date": "2024-08-23"
+        "acquisition_date": "2024-08-23", 
+        "youtubeId": "6kGoKxjiWDY"
     },
     {
         "name": "FarCry 6 Design", 
@@ -62,7 +63,8 @@
         "code": "49549",
         "listPrice": 49.47, 
         "purchasedPrice": 34.19, 
-        "acquisition_date": "2024-08-23"
+        "acquisition_date": "2024-08-23", 
+        "youtubeId": "OUVmCEpH8H8"
     },
     {
         "name": "Sapphire with Zippo logo", 
@@ -168,7 +170,8 @@
         "code": "49796",
         "listPrice": 49.96, 
         "purchasedPrice": 44.33, 
-        "acquisition_date": "2023-05-27"
+        "acquisition_date": "2023-05-27", 
+        "youtubeId": "oEpWG11-1s0"
     },
     {
         "name": "Vintage High Polish Chrome with Slashes", 
@@ -176,8 +179,7 @@
         "code": "260",
         "listPrice": 44.96, 
         "purchasedPrice": 32.99, 
-        "acquisition_date": "2023-05-27",
-        "amazon": ""
+        "acquisition_date": "2023-05-27"
     },
     {
         "name": "Vintage High Polish Brass with Slashes", 
@@ -186,7 +188,7 @@
         "listPrice": 49.96, 
         "purchasedPrice": 35.99, 
         "acquisition_date": "2023-05-27",
-        "amazon": ""
+        "youtubeId": "lIeJY0ASQDk"
     },
 
 
@@ -253,7 +255,8 @@
         "listPrice": 89.96, 
         "purchasedPrice": 64.98, 
         "acquisition_date": "2023-05-20", 
-        "amazon": "https://amzn.to/3Moy3za"
+        "amazon": "https://amzn.to/3Moy3za", 
+        "youtubeId": "X4QXPev80pA"
     },
     {
         "name": "8-Ball Design", 
