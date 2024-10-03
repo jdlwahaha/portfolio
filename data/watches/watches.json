@@ -48,7 +48,8 @@
         "brand": "timex", 
         "type": "",
         "purchasedPrice": 61.52, 
-        "acquisition_date": "2024-01-26"
+        "acquisition_date": "2024-01-26", 
+        "youtubeId": "TEY48HaCIkc"
     },
     {
         "name": "G-Shock Square", 
@@ -72,7 +73,8 @@
         "brand": "", 
         "type": "",
         "purchasedPrice": 19.26, 
-        "acquisition_date": "2023-12-30"
+        "acquisition_date": "2023-12-30", 
+        "youtubeId": "9ud8YPRJf3w"
     },
     {
         "name": "Casio AQ-800E-7A White", 
@@ -80,7 +82,8 @@
         "brand": "", 
         "type": "",
         "purchasedPrice": 54.38, 
-        "acquisition_date": "2023-12-23"
+        "acquisition_date": "2023-12-23", 
+        "youtubeId": "mLouqSC0Eno"
     },
     
     {
@@ -114,7 +117,8 @@
         "brand": "Casio", 
         "type": "analog",
         "purchasedPrice": 0, 
-        "acquisition_date": "2023-05-10"
+        "acquisition_date": "2023-05-10", 
+        "youtubeId": "9ud8YPRJf3w"
     },
     {
         "name": "LAVAREDO Kid's Watches Boys Analog Digital Quartz Sport Electronic", 
@@ -123,7 +127,8 @@
         "brand": "LAVAREDO", 
         "type": "",
         "purchasedPrice": 26.87, 
-        "acquisition_date": "2020-11-17"
+        "acquisition_date": "2020-11-17",
+        "youtubeId": "g3HTvUj31xg"
     },
     {
         "name": "Fitbit Ace 3", 
