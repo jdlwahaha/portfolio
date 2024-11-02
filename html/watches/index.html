@@ -59,8 +59,21 @@
         let html = ``;
         let totalPrice = 0;
 
-        const smartWatches = watches.filter(w => w.type === 'smart')
-        const regularWatches = watches.filter(w => w.type !== 'smart')
+        const featureWatches = watches.filter(w => w.type === 'feature');
+        const smartWatches = watches.filter(w => w.type === 'smart');
+        const regularWatches = watches.filter(w => w.type !== 'smart' && w.type !== 'feature');
+
+        // Featured Watches
+        html += `<p>`;
+        featureWatches.map(watch => { 
+            html += getWatchBlockHTML(watch);
+            totalPrice += watch.purchasedPrice;
+        });
+        html += `</p]>`;
+
+
+        html += `<p><hr></p>`;
+
 
         // Regular watches
         html += `<p>`;

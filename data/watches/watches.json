@@ -1,5 +1,66 @@
 [
     {
+        "name": "Seiko Open Heart Automatic", 
+        "filename": "seiko-ssde009",
+        "model": "SSDE009", 
+        "brand": "Seiko", 
+        "type": "feature",
+        "purchasedPrice": 203, 
+        "acquisition_date": "2024-10-23"
+    },
+    {
+        "name": "Casioak (Caution Yellow)", 
+        "filename": "Casioak-yellow",
+        "model": "GAB2100CY-1A", 
+        "brand": "Casio", 
+        "type": "feature",
+        "purchasedPrice": 140, 
+        "acquisition_date": "2023-11-23"
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "Casio F-91WM", 
+        "filename": "casio-f91w",
+        "model": "f91w", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 22, 
+        "acquisition_date": "2024-10-26"
+    },
+    {
+        "name": "Casio F-94WA", 
+        "filename": "casio-f94w",
+        "model": "f94w", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 22, 
+        "acquisition_date": "2024-10-26"
+    },
+    {
+        "name": "Winnie the Pooh ", 
+        "filename": "disney-winnie-pooh",
+        "model": "V06A-511VK", 
+        "brand": "Q&Q", 
+        "type": "",
+        "purchasedPrice": 33, 
+        "acquisition_date": "2024-10-24"
+    },
+    {
+        "name": "Chiikawa Watch", 
+        "filename": "nagano-chiikawa", 
+        "brand": "nagano", 
+        "type": "",
+        "purchasedPrice": 29, 
+        "acquisition_date": "2024-10-24"
+    },
+    {
         "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Gold)", 
         "filename": "timex-easy-reader-gold", 
         "brand": "Timex", 
@@ -55,7 +116,7 @@
         "name": "G-Shock Square", 
         "model": "DW-5600HR-1CR", 
         "brand": "", 
-        "type": "",
+        "type": "feature",
         "purchasedPrice": 114.24, 
         "acquisition_date": "2024-01-13"
     },
@@ -67,6 +128,26 @@
         "purchasedPrice": 54.34, 
         "acquisition_date": "2024-01-13"
     },
+   
+    {
+        "name": "Casio AQ-800E-7A White", 
+        "model": "AQ-800E-7A", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 54.38, 
+        "acquisition_date": "2023-12-23", 
+        "youtubeId": "mLouqSC0Eno"
+    },
+
+    {
+        "name": "Casio MQ24-1E Analog Watch", 
+        "model": "MQ24-1E", 
+        "brand": "Casio", 
+        "type": "analog",
+        "purchasedPrice": 0, 
+        "acquisition_date": "2023-05-10", 
+        "youtubeId": "9ud8YPRJf3w"
+    },
     {
         "name": "Casio MQ24-1E", 
         "model": "MQ24-1E", 
@@ -77,33 +158,6 @@
         "youtubeId": "9ud8YPRJf3w"
     },
     {
-        "name": "Casio AQ-800E-7A White", 
-        "model": "AQ-800E-7A", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 54.38, 
-        "acquisition_date": "2023-12-23", 
-        "youtubeId": "mLouqSC0Eno"
-    },
-    
-    {
-        "name": "Casioak (Caution Yellow)", 
-        "filename": "Casioak-yellow",
-        "model": "GAB2100CY-1A", 
-        "brand": "Casio", 
-        "type": "analog",
-        "purchasedPrice": 140, 
-        "acquisition_date": "2023-11-23"
-    },
-    {
-        "name": "", 
-        "model": "", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 0, 
-        "acquisition_date": ""
-    },
-    {
         "name": "Casio MQ-24S-8B", 
         "model": "MQ-24S-8B", 
         "brand": "Casio", 
@@ -111,15 +165,7 @@
         "purchasedPrice": 16, 
         "acquisition_date": "2023-11-13"
     },
-    {
-        "name": "Casio MQ24-1E Analog Watch", 
-        "model": "MQ24-1E", 
-        "brand": "Casio", 
-        "type": "analog",
-        "purchasedPrice": 0, 
-        "acquisition_date": "2023-05-10", 
-        "youtubeId": "9ud8YPRJf3w"
-    },
+
     {
         "name": "LAVAREDO Kid's Watches Boys Analog Digital Quartz Sport Electronic", 
         "filename": "lavaredo-yellow",
