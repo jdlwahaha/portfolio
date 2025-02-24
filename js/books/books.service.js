@@ -61,15 +61,20 @@ function getReivew(book, showLinks) {
             <p>
                 ${book.review} 
             </p>`;
+
+        let isLocalhost = window.location.host === 'localhost';
             
-        if (book.showFullReview || book.showExercise) { 
-            result += `
-                <p>
-                ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review >>></a>` : ''}
-                ${book.showExercise ? `| <a href="./z_exercise-${book.filename}" title="exercise">ᕦ(ò_óˇ)ᕤ</a>` : ''}
-                    
-                </p>`;
+        if (isLocalhost) { 
+            if (book.showFullReview || book.showExercise) { 
+                result += `
+                    <p>
+                    ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review >>></a>` : ''}
+                    ${book.showExercise ? `| <a href="./z_exercise-${book.filename}" title="exercise">ᕦ(ò_óˇ)ᕤ</a>` : ''}
+                        
+                    </p>`;
+            }
         }
+       
         return result; 
     } else { 
         return `
