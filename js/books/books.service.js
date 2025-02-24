@@ -21,15 +21,15 @@ function getBookHtml(book, showLinks, section) {
     
     
     const bookThumbnail = (section === 'cigar')  
-        ? `../../data/books/thumbnails/${section}/${book.filename}.png`
-        : `../../data/books/thumbnails/${book.filename}.png`;
+        ? `../../data/books/thumbnails/${section}/${book.filename}.jpeg`
+        : `../../data/books/thumbnails/${book.filename}.jpeg`;
 
 
     return `
         <section class="box">
             <div class="box-content">
                 <span class="thumbnail-container">
-                    <img src="${bookThumbnail}" alt="${book.filename}.png"><br><br>
+                    <img src="${bookThumbnail}" alt="${book.filename}.jpeg"><br><br>
                 </span>
                 <div class="book-container">
                     <h4>
