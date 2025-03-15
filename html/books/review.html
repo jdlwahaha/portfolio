@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="../../img/icon.png"/>
-    <title>Books | Self-Development</title>
+    <title>Books</title>
     <link rel="stylesheet" href="../../css/animation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/box.css">
@@ -20,17 +20,11 @@
 <body>
 	<header><!-- jQuery generated --></header>
 
-	<section id="mainContent">
+	<section id="mainContent" >
 
         <div id="main">
 
-			<div class="submenu">
-                <a href="index">Self-Development</a> |
-                <a href="computer">Computer Programming</a> |
-                <a href="fiction">Fiction</a> |
-                <a href="graphics">Graphics</a> |
-                <a href="cigar">Cigar</a> 
-            </div>
+            <div class="submenu" id="submenu"><!-- books service generated --></div>
 
 
             <div id="book_info"></div>
@@ -39,17 +33,25 @@
             <section class="box">
                 <h1>Full Review</h1>
                 <div class="box-content">
-                    <h3>What I like:</h3>
-                    <div id="likes" class="answer review"></div>
+                    <div id="review-section">
+                        <h3></h3>
+                        <div id="fullReview" class="answer review"></div>
+                    </div>
+                    <div id="like-section">
+                        <h3>What I like:</h3>
+                        <div id="likes" class="answer review"></div>
+                    </div>
 
-                    <h3>What I dislike:</h3>
-                    <div id="dislikes" class="answer review"></div>
+                    <div id="dislike-section">
+                        <h3>What I dislike:</h3>
+                        <div id="dislikes" class="answer review"></div>
+                    </div>
 
                 </div>
             </section>
 
 
-            <section class="box">
+            <section class="box" id="quote-section">
                 <h1>Quotes</h1>
                 <div class="box-content">
                     <div class="answer review">
@@ -59,7 +61,7 @@
             </section>
 
 
-            <section class="box">
+            <section class="box" id="note-section">
                 <h1>Notes</h1>
                 <div class="box-content">
                     <div class="answer review">
@@ -76,3 +78,14 @@
 
 </body>
 </html>
+
+
+
+<script>
+    (function() { 
+        $(document).ready(async function() {             
+            const section = $.urlParam('section');
+            loadSubmenu(section);    
+        });
+    })();
+</script>

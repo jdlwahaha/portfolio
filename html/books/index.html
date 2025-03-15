@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="icon" type="image/png" href="../../img/icon.png"/>
-    <title>Books | Self-Development</title>
+    <title>Books</title>
     <link rel="stylesheet" href="../../css/animation.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/box.css">
@@ -23,16 +23,56 @@
 
         <div id="main">
 
-			<div class="submenu">
-                <span>Self-Development</span> |
-                <a href="computer">Computer Programming</a> |
-                <a href="fiction">Fiction</a> |
-                <a href="graphics">Graphics</a> |
-                <a href="cigar">Cigar</a> 
-            </div>
+            <div class="submenu" id="submenu"><!-- books service generated --></div>
+
+			<div id="book_list"><!-- books service generated --></div>
+
+            <!-- extra Cigar book section -->
+            <section class="box hide" id="cigar-extra-note">
+                <div class="box-content">
+                    <p class="well well-error">
+                        The following books have almost the same content as <i>Cigars: The Ultimate Guide to Cigar Smoking
+                        by Clarice Stevenson</i>
+                    </p>
 
 
-				<div id="book_list"></div>
+                    <span class="thumbnail-container">
+                        <img src="../../data/books/thumbnails/cigar/cigars-tizianam.jpeg" /><br><br>
+                    </span>
+                    <div class="book-container">
+                        <h4>
+                            Cigars
+                        </h4>
+                        
+                        <div class="author">by Tiziana M.</div>
+                        
+                        <p class="review">
+                            This one feels like a straight out copy of the Cigar book by Clarice Stevenson. It was slightly restructured and paraphrased, but the ideas are basically the same.
+                        </p>
+                    
+                    </div>
+
+                    <p></p>
+                    <span class="thumbnail-container">
+                        <img src="../../data/books/thumbnails/cigar/cigar-perez.jpeg" /><br><br>
+                    </span>
+                    <div class="book-container">
+                        <h4>
+                            Cigars: The Complete Guide from Novice to Expert
+                            
+                        </h4>
+                        
+                        <div class="author">written by Renee Perez, narrated by Matt Montanez</div>
+                        
+                        <p class="review">
+                            This is an audiobook. The content is slightly restructured and paraphrased from the book by Clarice Stevenson, but the narrator did a great job reading out this book.
+                        </p>
+                 
+                    </div>
+
+                </div>
+            </section>
+
 
 		</div>
 
@@ -45,8 +85,14 @@
 
 <script>
 (function() { 
-    $(document).ready(function() { 
-        $.getJSON('../../data/books/self-development.json', loadBooks);       
+    $(document).ready(async function() { 
+        
+        let section = $.urlParam('section');
+        section = pageExists(section) ? section : 'self-development';
+        loadSubmenu(section);    
+
+        const books = await $.getJSON(`../../data/books/${section}.json`);   
+        loadBooks(books, section);
     });
-})(); 
+})();
 </script>

@@ -1,11 +1,57 @@
 /**
  * List of functions that will be shared across book pages
- */
+*/
+
+
+const nav = [ 
+    { 
+        filename: 'self-development', 
+        display: 'Self-Development'
+    }, 
+    { 
+        filename: 'investing', 
+        display: 'Investing'
+    }, 
+    { 
+        filename: 'computer-programming', 
+        display: 'Computer Programming'
+    }, 
+    { 
+        filename: 'fiction', 
+        display: 'Fiction'
+    }, 
+    { 
+        filename: 'graphics', 
+        display: 'Graphics'
+    }, 
+    { 
+        filename: 'cigar', 
+        display: 'Cigar'
+    }, 
+];
+
+function pageExists(section) { 
+    return (nav.find(n => n.filename === section))
+}
+
+
+
+function loadSubmenu(currentSectionName) { 
+    const htmlPages = nav.map(page => { 
+        if (currentSectionName && currentSectionName === page.filename) { 
+            return `<span>${page.display}</span>`;
+        }
+        return `<a href=index?section=${page.filename}>${page.display}</a>`;
+    })
+
+    $('#submenu').append(htmlPages.join(' | ')); 
+}
+
 
 function loadBooks(books, section) {
 
     // remove empty records
-    books = books.filter((r) => { return r.title != '' && r.review != '' });
+    books = books.filter((r) => { return r.title != '' && (r.review != '' || r.showFullReview) });
     let content = '';
 
 
@@ -25,6 +71,11 @@ function getBookHtml(book, showLinks, section) {
         : `../../data/books/thumbnails/${book.filename}.jpeg`;
 
 
+
+    if (section === 'cigar') { 
+        $('#cigar-extra-note').removeClass('hide');
+    }
+
     return `
         <section class="box">
             <div class="box-content">
@@ -43,7 +94,7 @@ function getBookHtml(book, showLinks, section) {
                         ${getRatingString(book.rating)} &nbsp;&nbsp;&nbsp;
                         
                     </div>
-                    ${getReivew(book, showLinks)}
+                    ${getReivew(book, section, showLinks)}
                     <div>
                         
                     </div>
@@ -53,7 +104,7 @@ function getBookHtml(book, showLinks, section) {
     `;
 }
 
-function getReivew(book, showLinks) { 
+function getReivew(book, section, showLinks) { 
 
 
     if (book.showFullReview === true && showLinks === true) {
@@ -68,7 +119,7 @@ function getReivew(book, showLinks) {
             if (book.showFullReview || book.showExercise) { 
                 result += `
                     <p>
-                    ${book.showFullReview ? `<a href="./review?name=${book.filename}">Full Review >>></a>` : ''}
+                    ${book.showFullReview ? `<a href="./review?section=${section}&name=${book.filename}">Full Review >>></a>` : ''}
                     ${book.showExercise ? `| <a href="./z_exercise-${book.filename}" title="exercise">ᕦ(ò_óˇ)ᕤ</a>` : ''}
                         
                     </p>`;

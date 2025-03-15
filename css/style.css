@@ -110,7 +110,7 @@ ul#notes {
 }
 
 
-ul > li{ 
+ul>li{ 
     list-style-type: square;
     padding: .2rem 0;
 }
@@ -191,6 +191,13 @@ section#yearSelection select {
     margin-top: 0;
 }
 
+.well-greyscale { 
+    background: white;
+    border-color: #ccc; 
+    margin: 1rem;
+    margin-top: 0;
+}
+
 #dream-notice { 
   display: inline-block;
   animation: 500ms fadeIn;
@@ -213,6 +220,9 @@ pre {
     font-family: 'Monaco', monospace;
   }
 
+.bold { 
+    font-weight: bold;
+}
 
 
 @media (max-width: 600px) { 

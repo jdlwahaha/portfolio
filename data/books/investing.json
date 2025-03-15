@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Rich Dad's Guide to Investing", 
+        "author": "Robert Kiyosaki",
+        "filename": "rich-dad-guide-investing",
+        "rating": 5,
+        "quotes": [], 
+        "showFullReview": false,
+        "review": ""
+    },
+    {
+        "title": "How Rich People Think", 
+        "author": "Steve Stebold",
+        "filename": "siebold-how-rich-people-think",
+        "rating": 3,
+        "quotes": [], 
+        "showFullReview": true,
+        "review": "It's a pretty thin book. The observations align to what I see, but this feels like another one of those blog post converted books. It recommends one book per chapter that is quite disrupting and almost feel like this is not a book by the author. The content is still decent and I would recommend checking it out from your local library."
+    }, 
+    {
+        "title": "Rich Dad's Guide to Becoming Rich - Without Cutting Up Your Credit Cards", 
+        "author": "Robert Kiyosaki",
+        "filename": "rich-dad-guide-no-cc-cut",
+        "rating": 4,
+        "quotes": [], 
+        "showFullReview": true,
+        "reviewDate": "2024-12-28",
+        "review": "It was a pretty short read. It surprising how this book that was published almost 10+ years ago still somewhat apply to this modern day. A lot of the good saying today from those financial gurus were probably taken from this book."
+    },
+
+    {
+        "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
+        "author": "Dan Lok",
+        "filename": "fu-money",
+        "rating": 5,
+        "quotes": [], 
+        "showFullReview": true,
+        "showExercise": true,
+        "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
+    }
+]

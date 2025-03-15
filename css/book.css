@@ -67,7 +67,7 @@ div.answer {
 }
 
 div.review { 
-    color: #666;
+    color: #000000;
     padding-bottom: 1rem;
 }
 
@@ -84,11 +84,14 @@ div ul li {
     padding: 0;
 }
 
-.review  li{ 
-    list-style-type: square;
+
+.review li { 
     padding: .5rem 0;
 }
 
+.review  ul>li{ 
+    list-style-type: square;
+}
 
 
 
