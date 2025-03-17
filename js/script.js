@@ -42,11 +42,23 @@
                     <span class="nav-icon">&#128173;</span> 
                     Dreams
                 </a>
+
+
+                <span class="navSectionHeader-desktop">INVESTING</span>
+                <span class="navSectionHeader-mobile">|</span>
+
+
                 <a href="../books" >
                     <span class="nav-icon">&#128214;</span> 
                     Books
                 </a> 
-                
+
+                <a href="../gold"> 
+                    <span class="nav-icon">&#127855;</span>
+                    Gold
+                </a> 
+            
+
 
                 <!--<a href="../design-patterns" >
                     <span class="nav-icon">&#128190;</span> 
@@ -75,6 +87,7 @@
                     Zippo
                 </a> 
 
+  
                 <span class="navSectionHeader-desktop">COMPLETE</span>
                 <span class="navSectionHeader-mobile">|</span>
 
@@ -103,6 +116,7 @@
             'zippo',
             'keyboards', 
             'explodingkittens', 
+            'gold',
 
             'design-patterns',
             'stock',

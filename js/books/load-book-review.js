@@ -57,7 +57,7 @@
     });
 
     function showSection(list, sectionName) { 
-        if (list.length) { 
+        if (list && list.length) { 
             return true;
         } else { 
             $(sectionName).addClass('hide');

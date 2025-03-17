@@ -86,11 +86,12 @@ div ul li {
 
 
 .review li { 
-    padding: .5rem 0;
+    padding: .1rem 0;
 }
 
-.review  ul>li{ 
+.review>ul>li{ 
     list-style-type: square;
+    padding: .5rem 0;
 }
 
 

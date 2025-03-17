@@ -1,0 +1,17 @@
+[
+    {
+        "price": 4199.99,
+        "date": "2025-02-05",
+        "filename": "pamp-swiss.png"
+    },
+    {
+        "price": 4079.99,
+        "date": "2025-01-24",
+        "filename": "pamp-koi.png"
+    },
+    {
+        "price": 3319.99,
+        "date": "2024-07-05", 
+        "filename": "mint.png"
+    }
+]
