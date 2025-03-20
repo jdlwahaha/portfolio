@@ -1,13 +1,6 @@
 [
-    {
-        "title": "Rich Dad's Guide to Investing", 
-        "author": "Robert Kiyosaki",
-        "filename": "rich-dad-guide-investing",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": false,
-        "review": ""
-    },
+ 
+
     {
         "title": "How Rich People Think", 
         "author": "Steve Stebold",
@@ -15,6 +8,7 @@
         "rating": 3,
         "quotes": [], 
         "showFullReview": true,
+        "reviewDate": "2025-02-23",
         "review": "It's a pretty thin book. The observations align to what I see, but this feels like another one of those blog post converted books. It recommends one book per chapter that is quite disrupting and almost feel like this is not a book by the author. The content is still decent and I would recommend checking it out from your local library."
     }, 
     {
@@ -27,7 +21,16 @@
         "reviewDate": "2024-12-28",
         "review": "It was a pretty short read. It surprising how this book that was published almost 10+ years ago still somewhat apply to this modern day. A lot of the good saying today from those financial gurus were probably taken from this book."
     },
-
+    {
+        "title": "I Will Teach You to Be Rich: The Journal", 
+        "author": "Ramit Sethi",
+        "filename": "ramit-sethi-journal",
+        "rating": 2,
+        "quotes": [], 
+        "showFullReview": true,
+        "reviewDate": "2024-12-22",
+        "review": "Not as useful as the original book."
+    },
     {
         "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
         "author": "Dan Lok",

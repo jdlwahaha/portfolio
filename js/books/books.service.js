@@ -66,6 +66,9 @@ function getBookHtml(book, showLinks, section) {
         ? `../../data/books/thumbnails/${section}/${book.filename}.jpeg`
         : `../../data/books/thumbnails/${book.filename}.jpeg`;
 
+    const reviewDateHtml = book.reviewDate  
+        ? `<span class="grey">-</span> &nbsp;  <span class="reviewDate">${book.reviewDate}</span>`
+        : '';
 
 
     if (section === 'cigar') { 
@@ -87,8 +90,8 @@ function getBookHtml(book, showLinks, section) {
                     <div class="author">by ${book.author}</div>
                     
                     <div class="rating"> 
-                        ${getRatingString(book.rating)} &nbsp;&nbsp;&nbsp;
-                        
+                        ${getRatingString(book.rating)} &nbsp;
+                        ${reviewDateHtml}
                     </div>
                     ${getReivew(book, section, showLinks)}
                     <div>
@@ -99,6 +102,10 @@ function getBookHtml(book, showLinks, section) {
         </section>
     `;
 }
+
+
+
+
 
 function getReivew(book, section, showLinks) { 
 

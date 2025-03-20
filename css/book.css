@@ -42,6 +42,11 @@ div.author {
     
 }
 
+span.reviewDate { 
+    font-size: smaller; 
+    color: #979595;
+}
+
 div.rating { 
     margin-top: .5rem;
     margin-bottom: -.5rem;
