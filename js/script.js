@@ -21,7 +21,6 @@
 
                 <span class="navSectionHeader-desktop">PAGES</span>
                 <span class="navSectionHeader-mobile">|</span>
-                ${isLocal ? stockLink : ''}
                 
                 
                 <a href="../actions" >
@@ -48,6 +47,7 @@
                     Gold
                 </a> 
             
+                ${isLocal ? stockLink : ''}
 
 
                 <!--<a href="../design-patterns" >
