@@ -15,21 +15,16 @@
             <a href="../home"><h1>My Space</h1></a>
             <nav>
 
-
-
-
-
                 <span class="navSectionHeader-desktop">PAGES</span>
-                <span class="navSectionHeader-mobile">|</span>
                 
                 
                 <a href="../actions" >
                     <span class="nav-icon">&#129470;</span> 
-                    Actions
+                    <span class="nav-text">Actions</span>
                 </a>
                 <a href="../dreams" >
                     <span class="nav-icon">&#128173;</span> 
-                    Dreams
+                    <span class="nav-text">Dreams</span>
                 </a>
 
 
@@ -39,12 +34,12 @@
 
                 <a href="../books" >
                     <span class="nav-icon">&#128214;</span> 
-                    Books
+                    <span class="nav-text">Books</span>
                 </a> 
 
                 <a href="../gold"> 
                     <span class="nav-icon">&#127855;</span>
-                    Gold
+                    <span class="nav-text">Gold</span>
                 </a> 
             
                 ${isLocal ? stockLink : ''}
@@ -52,9 +47,8 @@
 
                 <!--<a href="../design-patterns" >
                     <span class="nav-icon">&#128190;</span> 
-                    Programming
+                    <span class="nav-text">Programming</span>
                 </a>-->
-        
 
 
                 <span class="navSectionHeader-desktop">COLLECTIONS</span>
@@ -64,17 +58,17 @@
             
                 <a href="../keyboards" >
                     <span class="nav-icon">&#128224;</span> 
-                    Keyboards
+                    <span class="nav-text">Keyboards</span>
                 </a>
 
                 <a href="../watches"> 
                     <span class="nav-icon">&#8986;</span>
-                    Watches
+                    <span class="nav-text">Watches</span>
                 </a> 
             
                 <a href="../zippo"> 
                     <span class="nav-icon">&#128293;</span>
-                    Zippo
+                    <span class="nav-text">Zippo</span>
                 </a> 
 
   
@@ -83,20 +77,19 @@
 
                 <a href="../explodingkittens">
                     <span class="nav-icon">&#128049;</span> 
-                    Exploding Kittens
+                    <span class="nav-text">Exploding Kittens</span>
                 </a>
-
-               
 
 
                 <span class="navSectionHeader-desktop">RECORDINGS</span>
+                <span class="navSectionHeader-mobile">|</span>
                 <a href="../youtube">
                     <span class="nav-icon">&#128249;</span> 
-                    GO
+                    <span class="nav-text">GO</span>
                 </a>
                 <a href="../jdreads">
                     <span class="nav-icon">&#127897;</span> 
-                    JDReads
+                    <span class="nav-text">JDReads</span>
                 </a>
 
 

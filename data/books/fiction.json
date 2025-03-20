@@ -30,5 +30,16 @@
         "rating": 5,
         "quotes": [], 
         "review": "This was highly recommended audiobook from my library. The author did a great job on expressing the struggles behind how a seemingly perfect woman's life. While I can't related to most of her story being popular and all, the part where she stay with Mother Mary definitely brought some peace in me too. It was a book that I've read a few years ago. I just remember that it was somewhat good."
-    }
+    }, 
+    {
+        "title": "Tech Deck: Official Guide", 
+        "author": "Rebecca Shapiro",
+        "filename": "tech-deck-2",
+        "rating": 5,
+        "quotes": [], 
+        "youtubeId": "",
+        "showFullReview": false,
+        "review": "It comes with a tech deck fingerboard with cool graphic (Revive: Pizza vs Nacho), a small book about some skate basics and techniques, and a buildable hard paper ramp. I like the graphic design for each page of the thin book and had fun reading it. The ramp is flimsy and not very collectable. I like the board and the book much more than the ramp."
+    }     
+    
 ]

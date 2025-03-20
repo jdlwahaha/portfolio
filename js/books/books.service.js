@@ -21,10 +21,6 @@ const nav = [
         display: 'Fiction'
     }, 
     { 
-        filename: 'graphics', 
-        display: 'Graphics'
-    }, 
-    { 
         filename: 'cigar', 
         display: 'Cigar'
     }, 
