@@ -15,16 +15,6 @@
             <a href="../home"><h1>My Space</h1></a>
             <nav>
 
-                <span class="navSectionHeader-desktop">RECORDINGS</span>
-                <a href="../youtube">
-                    <span class="nav-icon">&#128249;</span> 
-                    GO
-                </a>
-                <a href="../jdreads">
-                    <span class="nav-icon">&#127897;</span> 
-                    JDReads
-                </a>
-
 
 
 
@@ -97,6 +87,19 @@
                 </a>
 
                
+
+
+                <span class="navSectionHeader-desktop">RECORDINGS</span>
+                <a href="../youtube">
+                    <span class="nav-icon">&#128249;</span> 
+                    GO
+                </a>
+                <a href="../jdreads">
+                    <span class="nav-icon">&#127897;</span> 
+                    JDReads
+                </a>
+
+
             </nav>
         `;
         $('header').append(headerHtml); 
