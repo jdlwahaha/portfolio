@@ -3,20 +3,15 @@
 
         const cars = [ 
             { 
-                filename: 'toyota86', 
-                displayName: 'Toyota 86 - Premium AT',
-                cost: '50,000'
-            },
-            { 
-                filename: 'lexusrc', 
-                displayName: 'Lexus RC',
+                filename: 'toyota-supra', 
+                displayName: 'Toyota Supra 3.0L Premium AT',
                 cost: '85,000'
             },
             { 
-                filename: 'benz-c300', 
-                displayName: 'Benz C300',
-                cost: '65,000'
-            }, 
+                filename: 'miata', 
+                displayName: 'Mazda MX-5',
+                cost: '52,000'
+            },
         ]; 
         let i = 0;
 
@@ -55,7 +50,7 @@
             let selectedCar = cars[i]; 
             $('#carName').text(selectedCar.displayName); 
             $('#carCost').text(selectedCar.cost); 
-            $('.slideshow img').attr('src', `../../img/car/${selectedCar.filename}.png`);
+            $('.slideshow img').attr('src', `../../img/car/${selectedCar.filename}.jpeg`);
             $('.slideshow img').attr('alt', `${selectedCar.filename}`);
     
         }

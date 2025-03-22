@@ -51,14 +51,15 @@
 *********************************************/
 #car span.description { 
     display: inline-block;
-    width: 270px;
+    width: 340px;
     vertical-align: top;
+    padding-right: 30px;
 }
 
 #car span.slideshow { 
     display: inline-block;
     background: grey; 
-    width: calc(100% - 280px) ;
+    width: calc(100% - 380px);
     vertical-align: top;
 }
 
