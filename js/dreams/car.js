@@ -5,18 +5,18 @@
             { 
                 filename: 'toyota86', 
                 displayName: 'Toyota 86 - Premium AT',
-                cost: '500,000'
+                cost: '50,000'
             },
             { 
                 filename: 'lexusrc', 
                 displayName: 'Lexus RC',
-                cost: '850,000'
+                cost: '85,000'
             },
             { 
                 filename: 'benz-c300', 
                 displayName: 'Benz C300',
-                cost: '650,000'
-            }
+                cost: '65,000'
+            }, 
         ]; 
         let i = 0;
 
