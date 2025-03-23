@@ -24,19 +24,20 @@
 			<div class="submenu">
 				<span>Zippo</span> |
 				<a href="list">List</a> |
-				<a href="about">About</a> |
-				<a href="watch">Watching</a> 
+				<a href="about">About</a> 
 			</div>
 	
 	
 			<section class="box">
                 <div class="box-content">
                     <div class="well well-info">
-                        These are the Zippos that I currently own! MSRP on this page should only be used as a reference. 
+                        These are the Zippos that I currently own! 
+
+                        MSRP on this page should only be used as a reference. 
                         Please look up Zippo's official site to get the latest price. 
+                        <br>
                         The prices in brackets are my purchased price before tax. 
-                        Dates in this section are my 
-                        acquisition date.
+                        Dates in this section are my acquisition date.
                     </div>
                     <div id="list"></div>
                     <hr>
@@ -56,121 +57,21 @@
 <script>
 (function () {
 
-
-   
-
     $.getJSON('../../data/zippo/zippos.json', function (zippos) {
         zippos = zippos.filter(z => z.name && z.purchasedPrice);
 
-        let html = ``;
-
-
+        let html = '';
         zippos.map(zippo => { 
-            html += `<span class="zippo">`;
-
-            const youtubeLink = zippo.youtubeId ? getYouTubeLink(zippo.youtubeId) : ``;
-            const amazonLink = zippo.amazon ? getAmazonLink("", zippo.amazon) : '';
-
-            html += `
-                <span class="imageblock">
-                    <image src="../../data/zippo/${zippo.code}.jpeg" width="150"/>
-                    <!--<div class="center">
-                        ${amazonLink}
-                    </div>-->
-                </span> 
-                <span class="description"> 
-                    <span class="infoblock">
-                        <span>
-                            <strong>${zippo.name}</strong>
-                            <span class="modelno">(${zippo.code})</span>
-                        </span>
-                        <br>
-                        <span>
-                            Material: ${zippo.material}
-                        </span>
-                        <br>
-                        <span>
-                            <span>MSRP: $${zippo.listPrice}</span>
-                            <span class="modelno">($${zippo.purchasedPrice})</span>
-                        </span>
-                        <br>
-                        <span>
-                            <span>Date: ${zippo.acquisition_date}</span>
-                        </span>
-                        
-                        <br>
-                        <span>
-                        </span>
-                    </span>
-                    ${youtubeLink}
-                    <span class="center" style="display: inline-block; margin-top: .5rem; ">
-                        ${amazonLink}
-                    </span>
-                </span> 
-                  
-            `
-
-            html += `</span>`;
-
-        })
-
-
-
-
-
-
+            html += getZippoHtml(zippo);
+        });
 
         $('#list').append(html);
-
-
     });
 
-
     $.getJSON('../../data/zippo/others.json', function (zippoItems) {
-
-        let html = ``;
-
+        let html = '';
         zippoItems.map(zippo => { 
-            html += `<span class="zippo">`;
-
-            const youtubeLink = zippo.youtubeId ? getYouTubeLink(zippo.youtubeId) : ``;
-            const amazonLink = zippo.amazon ? getAmazonLink("", zippo.amazon) : '';
-
-            html += `
-                <span class="imageblock">
-                    <image src="../../data/zippo/${zippo.code}.jpeg" width="150"/>
-                    <!--<div class="center">
-                        ${amazonLink}
-                    </div>-->
-                </span> 
-                <span class="description"> 
-                    <span class="infoblock">
-                        <span>
-                            <strong>${zippo.name}</strong>
-                            <span class="modelno">(${zippo.code})</span>
-                        </span>
-                        <br>
-                        <span>
-                            <span>MSRP: $${zippo.listPrice}</span>
-                            <span class="modelno">($${zippo.purchasedPrice})</span>
-                        </span>
-                        <br>
-                        <span>
-                            <span>Date: ${zippo.acquisition_date}</span>
-                        </span>
-                        
-                        <br>
-                        <span>
-                        </span>
-                    </span>
-                    ${youtubeLink}
-                    <span class="center" style="display: inline-block; margin-top: .5rem; ">
-                        ${amazonLink}
-                    </span>
-                </span> 
-            `;
-
-            html += `</span>`;
+            html += getZippoHtml(zippo);
         });
         $('#nonlighters').append(html);
     });
@@ -187,6 +88,54 @@
             <br>
         `;
     }
+
+    function getZippoHtml(zippo) { 
+
+        const youtubeLink = zippo.youtubeId ? getYouTubeLink(zippo.youtubeId) : ``;
+        const amazonLink = zippo.amazon ? getAmazonLink("", zippo.amazon) : '';
+
+        const materialHtml = zippo.material
+            ? `<span>Material: ${zippo.material}</span><br>`
+            : '';
+
+        html = `
+            <span class="zippo">
+                <span class="imageblock">
+                    <image src="../../data/zippo/${zippo.code}.jpeg" width="150"/>
+                    <!--<div class="center">
+                        ${amazonLink}
+                    </div>-->
+                </span> 
+                <span class="description"> 
+                    <span class="infoblock">
+                        <span>
+                            <strong>${zippo.name}</strong>
+                            <span class="modelno">(${zippo.code})</span>
+                        </span>
+                        <br>
+                        ${materialHtml}
+                        <span>
+                            <span>MSRP: $${zippo.listPrice}</span>
+                            <span class="modelno">($${zippo.purchasedPrice})</span>
+                        </span>
+                        <br>
+                        <span>
+                            <span>Date: ${zippo.acquisition_date}</span>
+                        </span>
+                        
+                        <br>
+                        <span>
+                        </span>
+                    </span>
+                    ${youtubeLink}
+                    <span class="center" style="display: inline-block; margin-top: .5rem; ">
+                        ${amazonLink}
+                    </span>
+                </span>  
+            </span>`;
+        return html;
+    }
+
 
 })();
 </script>

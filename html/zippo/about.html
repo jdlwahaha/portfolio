@@ -24,8 +24,7 @@
             <div class="submenu">
 				<a href="index">Zippo</a> |
 				<a href="list">List</a> |
-                <span>About</span> |
-				<a href="watch">Watching</a> 
+                <span>About</span> 
             </div>
 
 
@@ -53,7 +52,10 @@
                         The flicking mechanism is fun. I am not a huge fan over 
                         the <span class="squiggly">"distinctive <span class="blue">Zippo</span> click"</span>.
                         Regardless, it's an added bonus and a fun gadget to fiddle with. 
-                        Since then, I have <span class="green"> spent about <span id="cost"></span></span> &#128184; on this collection. 
+                        Since then, I have <span class="green">spent about <span id="cost"></span></span> on this collection. &#128184;
+
+                         
+
                     </p>
                     
                     
@@ -111,15 +113,26 @@
 
 
 <script>
-    $(document).ready(function () {
-        $.getJSON('../../data/zippo/zippos.json', function (zippos) {
-            const tax = 1.12; 
 
-            let sum = 0; 
-            zippos.map(i => {sum += i.purchasedPrice}); 
+    $.getJSON('../../data/zippo/zippos.json', function (zippos) {
+        zippos = zippos.filter(z => z.name && z.purchasedPrice);
+    
+    
+        const cost = getTotalZippoCost(zippos);
+        $('#cost').append(`$${cost}`);
 
-            const cost = (sum * tax).toFixed(2);
-            $('#cost').append(`$${cost}`);
-        })
     });
+
+    /**
+     * Get Total Zippo price after tax
+     */
+    function getTotalZippoCost(zippos) { 
+        const TAX = 1.12; 
+
+        let sum = 0; 
+        zippos.map(i => {sum += i.purchasedPrice}); 
+
+        return (sum * TAX).toFixed(2);
+    }
 </script>
+
