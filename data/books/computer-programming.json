@@ -3,14 +3,14 @@
         "title": "", 
         "author": "",
         "filename": "",
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "review": ""
     },
     {
         "title": "", 
         "author": "",
         "filename": "",
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "review": ""
     },
     {
@@ -18,7 +18,8 @@
         "author": "Chris Riccomini and Dmitriy Ryaboy",
         "filename": "the-missing-readme",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": true, 
+        "reviewDate": "2022-04-04",
         "review": "I borrowed this book from an eLibrary and read it from Overdrive. I bought a physical copy of this book afterwards for future quick reference. It was a good one. "
     },
     {
@@ -26,7 +27,8 @@
         "author": "Eric Freeman",
         "filename": "headfirst-design-patterns",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
+        "reviewDate": "2017-09-17",
         "review": "I was bored on the train when I encountered this book. I've learned many patterns from this book in an interesting way. Definitely recommend this one. <br><a href='../design-patterns'>See my notes</a>"
     },
     {
@@ -34,7 +36,8 @@
         "author": "John Sonmez",
         "filename": "soft-skills",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
+        "reviewDate": "2017-04-19",
         "review": "This is the first book that made me realized that software developer is a job. To be richer, the book teaches you how to use your programming skills to the fullest such as creating a blog or make instructing videos on how to program. Show the world what you know. Then it also briefly mention about investing on houses and stock."
     }
 ]

@@ -42,6 +42,7 @@
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,
+        "hasPhysicalCopy": true,
         "review": "It is a very premium book! It kinda reminds me a high school textbook. The paper used in the pages feels like glossy paper. The hardcover version feels really nice in hands and I enjoy spending time this one."
     },    
     
@@ -52,6 +53,7 @@
         "rating": 5,
         "quotes": [], 
         "showFullReview": false,
+        "hasPhysicalCopy": true,
         "review": "Probably the best book that explains cigars in detail. When describing the types of cigar or part of cigar in general, most, if not all other books only describe it in words. This book explains it with pictures with makes it 100% easier to understand. Other interesting notes, it covers the myth and has a section for tasting."
     },
     {
@@ -61,6 +63,7 @@
         "rating": 4,
         "quotes": [], 
         "showFullReview": false,
+        "hasPhysicalCopy": true,
         "review": "It's a small hardcover book with glossy paper. It starts with a brief history and intro to cigars. Then it has a picture collection of cigars from many different brands, which I quite enjoy going through. The book, however, ends rather abruptly with storing cigars and no parting words. "
     },
     {

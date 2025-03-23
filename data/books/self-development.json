@@ -4,7 +4,7 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
@@ -13,7 +13,7 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
@@ -22,7 +22,7 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
@@ -31,7 +31,7 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
@@ -40,7 +40,7 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
@@ -49,27 +49,19 @@
         "author": "",
         "filename": "",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
  
  
-    {
-        "title": "Unshakeable: Your Financial Freedom Playbook", 
-        "author": "Tony Robbins",
-        "rating": 5,
-        "filename": "unshakeable-robbins",
-        "quotes": [], 
-        "showFullReview": false,
-        "review": ""
-    },
+
     {
         "title": "Spark: The Revolutionary New Science of Exercise and the Brain", 
         "author": "Eric Hagerman",
         "filename": "spark-hagerman",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": true, 
         "showFullReview": false,
         "review": ""
     },
@@ -78,72 +70,80 @@
         "author": "Tony Robbins",
         "filename": "unlimited-power",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": true, 
         "showFullReview": false,
-        "review": ""
+        "reviewDate": "2018-06-17",
+        "review": "I borrowed this book from the library and finished reading it within 3 weeks. It's really good! I picked up a physical copy after. Not only he teaches you by the concept, he also gave out real-life examples to guide the ideas. Some of the examples are a bit dated and slightly harder to follow, but it does provide more insight. Definitely check it out when you have a chance. It's another thick book, definitely give yourself a big round of applause when you finish reading it.<ul><li>If you ask for a quarter, you'll get a quarter. If you ask for success and joy, you get success and joy</li><li>Find your role model, mirror their behaviour, breathing patterns, speed / tonality of talk, etc</li><li>Take note of your positive and negative anchors. Try to trigger the positive one while in a negative state.</li></ul>"
+    },
+    {
+        "title": "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!", 
+        "author": "Tony Robbins",
+        "filename": "awaken-the-giant-within",
+        "rating": 5,
+        "hasPhysicalCopy": true, 
+        "showFullReview": false,
+        "reviewDate": "2017-10-22",
+        "review": "This was the first book that I've read from Tony Robbins. 10 out of 10 recommend this. The major takeaway for me was finding a role model. Someone, somwhere, must have done the things that you've been dreaming to achieve. You first need to know what it is that you want, know it is possible to achieve with inspiration from someone that's done it, and mirror and execute it!"
+    },
+    {
+        "title": "Unshakeable: Your Financial Freedom Playbook", 
+        "author": "Tony Robbins",
+        "rating": 5,
+        "filename": "unshakeable-robbins",
+        "hasPhysicalCopy": true, 
+        "showFullReview": false,
+        "reviewDate":"2018-12-25",
+        "review": "It's my first hand-on financial book. I learn basic terms like correction, bear market, and different types of bonds. The book also brought up 4 cores when in the game of investing:<ol><li>never lose</li><li>asymmetric risk/reward</li><li>tax efficiency </li><li>diversifications</li></ol> Instead of focusing only on how to make you rich financially, he also ensures to cover the topic on being rich mentally. Like his other books, the content is structured very well with a good flow. I had a lot of fun and gain a little finance knowledge reading it. Recommend it!"
     },
     {
         "title": "High Performance Habits: How Extraordinary People Become That Way", 
         "author": "Brendon Burchard",
         "filename": "high-performance-habits",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": true, 
         "showFullReview": false,
+        "reviewDate": "2018-04-29",
         "review": ""
     },       
     {
         "title": "How to Win Friends and Influence People", 
         "author": "Dale Carnegie",
         "filename": "how-to-win-friends",
-        "rating": 5,
-        "quotes": [], 
+        "rating": 4,
+        "hasPhysicalCopy": true, 
         "showFullReview": false,
-        "review": ""
+        "reviewDate": "2018-02-15",
+        "review": "I listened to the audio version of this book and picked up a copy after. The principles of this book are really practical. Definitely worth checking out. However, the stories that he provided are sometimes dry, but generally speaking, it's a good one that teaches you the basics to win friends."
     },
     {
         "title": "The Millionaire Next Door: The Surprising Secrets of America's Wealthy", 
         "author": "Thomas Stanley",
         "filename": "the-millionaire-next-door",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": false, 
         "showFullReview": false,
         "review": ""
     },
+
   
-    {
-        "title": "Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional, Physical and Financial Destiny!", 
-        "author": "Tony Robbins",
-        "filename": "awaken-the-giant-within",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": false,
-        "review": "I was going to read his first book 'Unlimited Power' first. However, this one was available in the library first, so this was the first book that I've read from Tony Robbins. 10 out of 10 recommend this. The major takeaway from this book for me was finding a role model. Someone, somwhere, must have done the things that you've been dreaming to achieve. You first need to know what it is that you want, know it is possible to achieve with inspiration from someone that's done it, and mirror and execute it!"
-    },
-    {
-        "title": "Rich Dad, Poor Dad", 
-        "author": "Robert Kiyosaki",
-        "filename": "rich-dad-poor-dad",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": false,
-        "review": ""
-    },
     {
         "title": "What To Say When You Talk To Your Self", 
         "author": "Shad Helmstetter",
         "filename": "what-to-say",
         "rating": 3,
-        "quotes": [], 
+        "hasPhysicalCopy": true,
         "showFullReview": true,
-        "review": "I thought this was going to be another book with a catchy title. I mean, who doesn't know what to say to yourself? The content is surprisingly eye-opening for me. It talks about the five levels of self-talk and how self-talk can help you become your only long-term motivator. Two stars deducted because some of his negative self-talk examples don't make sense and I don't like his overuse of computer analogy in the book. "
+        "reviewDate": "2017-09-21",
+        "review": "The content is surprisingly eye-opening for me. It talks about the five levels of self-talk and how self-talk can help you become your only long-term motivator. Two stars deducted because some of his negative self-talk examples don't make sense and I don't like his overuse of computer analogy in the book. "
     },
     {
         "title": "The 10X Rule: The Only Difference Between Success and Failure", 
         "author": "Grant Cardone",
         "filename": "the-10x-rule",
         "rating": 5,
-        "quotes": [], 
+        "hasPhysicalCopy": true,
         "showFullReview": false,
-        "review": "This book inspired me to \"Level UP\" myself. The book itself was valuable to me, but the author is not a great influencer in my opinion. He might be a great property saleman, but I don't agree with the way he took money from his followers. The book itself though, definitely brings value to me as a person."
+        "reviewDate": "2017-08-21",
+        "review": "This book inspired me to \"Level UP\" myself. The book itself was valuable to me, but the author is not a great influencer in my opinion. He might be a great property saleman, but I don't agree with the way he took money from his followers. However, if we just look at the content of this book alone, I would say that I was greatly benefited from this reading and would recommend it."
     }
 ]

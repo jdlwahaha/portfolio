@@ -70,6 +70,14 @@ function getBookHtml(book, showLinks, section) {
         ? `<span class="grey">-</span> &nbsp;  <span class="reviewDate">${book.reviewDate}</span>`
         : '';
 
+    const hasPhysicalCopyIndicator = book?.hasPhysicalCopy
+        ? `<span class="triggerHover">&#128217;
+            <span class="showOnHover">
+                Got a copy
+            </span>
+        </span>
+            `
+        : ''
 
     if (section === 'cigar') { 
         $('#cigar-extra-note').removeClass('hide');
@@ -84,7 +92,7 @@ function getBookHtml(book, showLinks, section) {
                 <div class="book-container">
                     <h4>
                         ${book.title}
-                        
+                        ${hasPhysicalCopyIndicator}
                     </h4>
                     
                     <div class="author">by ${book.author}</div>

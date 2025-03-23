@@ -1,12 +1,31 @@
 [
- 
-
+    {
+        "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
+        "author": "Dan Lok",
+        "filename": "fu-money",
+        "rating": 5,
+        "hasPhysicalCopy": true,
+        "showFullReview": true,
+        "showExercise": true,
+        "reviewDate": "2017-11-03",
+        "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
+    },
+    {
+        "title": "Rich Dad, Poor Dad", 
+        "author": "Robert Kiyosaki",
+        "filename": "rich-dad-poor-dad",
+        "rating": 5,
+        "hasPhysicalCopy": true,
+        "showFullReview": true,
+        "reviewDate": "2017-09-26",
+        "review": "It's a really good book that totally changed my perspective on money! This is the book that made me realized businesses are never going to be hurt with any sort of tax or tariffs. Consumers are the ones that pay for those sales taxes or any forms of the production cost. We are literally being taxed for everything we own! It also made me realized that a 9-5 job cannot make me rich; it will only be enough to keep me alive, but not rich. I would highly recommend giving this book a read if you can. "
+    },
     {
         "title": "How Rich People Think", 
         "author": "Steve Stebold",
         "filename": "siebold-how-rich-people-think",
         "rating": 3,
-        "quotes": [], 
+        "hasPhysicalCopy": false,
         "showFullReview": true,
         "reviewDate": "2025-02-23",
         "review": "It's a pretty thin book. The observations align to what I see, but this feels like another one of those blog post converted books. It recommends one book per chapter that is quite disrupting and almost feel like this is not a book by the author. The content is still decent and I would recommend checking it out from your local library."
@@ -16,29 +35,20 @@
         "author": "Robert Kiyosaki",
         "filename": "rich-dad-guide-no-cc-cut",
         "rating": 4,
-        "quotes": [], 
+        "hasPhysicalCopy": false,
         "showFullReview": true,
         "reviewDate": "2024-12-28",
         "review": "It was a pretty short read. It surprising how this book that was published almost 10+ years ago still somewhat apply to this modern day. A lot of the good saying today from those financial gurus were probably taken from this book."
     },
+
     {
         "title": "I Will Teach You to Be Rich: The Journal", 
         "author": "Ramit Sethi",
         "filename": "ramit-sethi-journal",
         "rating": 2,
-        "quotes": [], 
+        "hasPhysicalCopy": false,
         "showFullReview": true,
         "reviewDate": "2024-12-22",
         "review": "Not as useful as the original book."
-    },
-    {
-        "title": "F.U. Money: Make As Much Money As You Want And Live Your Life As You Damn Well Please!", 
-        "author": "Dan Lok",
-        "filename": "fu-money",
-        "rating": 5,
-        "quotes": [], 
-        "showFullReview": true,
-        "showExercise": true,
-        "review": "This is the book that made me realized that time is the most precious and irreplaceable asset that I have. I would very much say that I wouldn't be where I am today without reading this book. The author is a bit controversial, but I personally think the content of this particular book is good. I would highly recommend this book if you can excuse his use of profanity and harsh words."
     }
 ]
