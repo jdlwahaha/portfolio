@@ -25,18 +25,30 @@
         "rating": 0,
         "review": ""
     },
-
     {
-        "name": "",
-        "brand": "",
-        "switchType": "",
+        "name": "Redragon K614 Anivia 60% Ultra Thin Wired Mechanical Keyboard",
+        "brand": "Redragon",
+        "switchType": "linear",
         "msrp": 0,
-        "myPrice": 0,
-        "switchName": "",
+        "myPrice": 60,
+        "switchName": "Redragon low-profile red",
         "size": "",
         "filename": "",
         "youtubeId": "",
-        "rating": 0,
+        "rating": 2,
+        "review": ""
+    },
+    {
+        "name": "Logitech G915 TKL Tenkeyless LIGHTSPEED Keyboard",
+        "brand": "Logitech",
+        "switchType": "tactile",
+        "msrp": 0,
+        "myPrice": 199,
+        "switchName": "",
+        "size": "tkl",
+        "filename": "logitech-g915-tkl",
+        "youtubeId": "",
+        "rating": 3,
         "review": ""
     },
     {
