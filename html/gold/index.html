@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/desktop-nav.css">
 	<script src="../../lib/jquery-3.5.1.min.js"></script>
 	<script src="../../js/script.js"></script>
+	<script src="../../js/gold/gold.js"></script>
 </head>
 
 
@@ -40,7 +41,7 @@
                     <p class="">
                         <strong><a class="blue" target="_blank" href="https://www.vbce.ca/_next/data/-E4tF-3RVMiNrxWHzr6ah/gold-silver/1-1-oz-gold-bar.json?id=1-1-oz-gold-bar">Total: </a> </strong>
 
-                        <span class="" id="cost"></span> &#128184; 
+                        <span class="" id="cost"></span> &#128184;
                     </p>
                     <hr>
                    
@@ -59,65 +60,3 @@
 </body>
 </html>
 
-<script>
-(function () {
-
-
-    $.getJSON('../../data/gold/gold.json', function (golds) {
-
-        let html = ``;
-
-        const cost = readablePrice(getTotalCost(golds));
-        $('#cost').append(`${cost}`);
-
-        golds.map((gold, i) => { 
-            let cssClass = "description"; 
-
-            if (i==0) { 
-                cssClass += ' first';
-            } else if (i=== golds.length-1) { 
-                cssClass += ' last';
-            }
-
-            html += `
-             
-                <div class="${cssClass}">
-                    <div>
-                        <strong>${gold.date}</strong>
-                    </div>
-                    <div>
-                        Price: <strong class="green">${readablePrice(gold.price)}</strong>
-                    </div>
-                    <div class="imageblock">
-                        <image src="../../data/gold/${gold.filename}" width="300"/>
-                    </div>
-
-                </div> 
-                    
-            `;
-
-
-        })
-        $('#list').append(html);
-
-    });
-
-
-     function getTotalCost(golds) { 
-        const TAX = 1; 
-
-        let sum = 0; 
-        golds.map(i => {sum += i.price}); 
-
-        return (sum * TAX);
-    }
-
-    function readablePrice(number) { 
-        return number.toLocaleString('en-US', {
-            style: 'currency',
-            currency: 'USD',
-        });
-    }
-
-})();
-</script>
