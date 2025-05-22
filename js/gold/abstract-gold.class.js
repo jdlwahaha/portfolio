@@ -27,6 +27,26 @@ class AbstractGoldClass {
         golds.map(i => {sum += i.price}); 
         return sum;
     }
+
+    loadWantHtml() { 
+        const wants = [
+            'pamp-buffalo',
+            'pamp-liberty-bell',
+            'pamp-statue-of-liberty'
+        ]; 
+
+        const htmls = wants.map(want => { 
+            return `
+                <div class="imageblock description">
+                    <image src="../../data/gold/${want}" width="300"/>
+                </div>
+            `;
+        });
+
+        const html = htmls.join();
+        $('#want').append(html);
+
+    }
     
     readablePrice(number) { 
         if (number) { 

@@ -48,6 +48,9 @@
                     <hr>
                    
                     <div id="list"><!-- jQuery generated --></div>
+                    <hr>
+                    Looking:
+                    <div id="want"><!-- jQuery generated --></div>
 
                   
                 </div>
@@ -67,5 +70,7 @@
 <script>
     const isLocalhost = window.location.host === 'localhost';
     const gold = (isLocalhost) ? new LocalGoldClass() : new GoldClass();
+
     gold.init();
+    gold.loadWantHtml();
 </script>
