@@ -3,18 +3,18 @@
         "id": "pamp-swiss-1",
         "price": 4199.99,
         "date": "2025-02-05",
-        "filename": "pamp-swiss.png"
+        "filename": "pamp-swiss.jpeg"
     },
     {
         "id": "pamp-koi",
         "price": 4079.99,
         "date": "2025-01-24",
-        "filename": "pamp-koi.png"
+        "filename": "pamp-koi.jpeg"
     },
     {
         "id": "mint-1",
         "price": 3319.99,
         "date": "2024-07-05", 
-        "filename": "mint.png"
+        "filename": "mint.jpeg"
     }
 ]
