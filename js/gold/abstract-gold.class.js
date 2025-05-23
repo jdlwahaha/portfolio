@@ -38,7 +38,7 @@ class AbstractGoldClass {
         const htmls = wants.map(want => { 
             return `
                 <div class="imageblock description">
-                    <image src="../../data/gold/${want}" width="300"/>
+                    <image src="../../data/gold/${want}.jpeg" width="300"/>
                 </div>
             `;
         });
