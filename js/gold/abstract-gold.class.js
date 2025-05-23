@@ -43,7 +43,7 @@ class AbstractGoldClass {
             `;
         });
 
-        const html = htmls.join();
+        const html = htmls.join('');
         $('#want').append(html);
 
     }
