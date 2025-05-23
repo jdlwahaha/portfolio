@@ -27,6 +27,14 @@
     },
     {
         "name": "Casio F-91WM", 
+        "model": "casio-f91w-dark-grey", 
+        "brand": "Casio", 
+        "type": "",
+        "purchasedPrice": 31.71, 
+        "acquisition_date": "2025-04-05"
+    },
+    {
+        "name": "Casio F-91WM", 
         "filename": "casio-f91w-gold",
         "model": "f91w", 
         "brand": "Casio", 
