@@ -1,5 +1,11 @@
 [
     {
+        "id": "mint-proudly-canadian",
+        "price": 4709.99,
+        "date": "2025-07-28", 
+        "filename": "mint-canadian.jpeg"
+    },
+    {
         "id": "pamp-swiss-1",
         "price": 4199.99,
         "date": "2025-02-05",
