@@ -24,7 +24,7 @@ class AbstractGoldClass {
 
     getTotalCost(golds) { 
         let sum = 0; 
-        golds.map(i => {sum += i.price}); 
+        golds.map(i => {sum += i.buy.price}); 
         return sum;
     }
 

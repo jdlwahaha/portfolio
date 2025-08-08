@@ -1,7 +1,7 @@
 class GoldClass extends AbstractGoldClass {
 
     async init() { 
-        const golds = await $.getJSON('../../data/gold/gold.json');
+        let golds = await $.getJSON('../../data/gold/gold.json');
 
         let html = '';
 
@@ -20,10 +20,10 @@ class GoldClass extends AbstractGoldClass {
         return `
             <div class="${cssClass}">
                 <div>
-                    <strong>${gold.date}</strong>
+                    <strong>${gold.buy.date}</strong>
                 </div>
                 <div>
-                    Price: <strong class="green">${super.readablePrice(gold.price)}</strong>
+                    Price: <strong class="green">${super.readablePrice(gold.buy.price)}</strong>
                 </div>
                 <div class="imageblock">
                     <image src="../../data/gold/${gold.filename}" width="300"/>

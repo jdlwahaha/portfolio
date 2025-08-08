@@ -1,26 +1,35 @@
 [
     {
-        "id": "mint-proudly-canadian",
-        "price": 4709.99,
-        "date": "2025-07-28", 
-        "filename": "mint-canadian.jpeg"
+        "id": "pamp-dragon-1",
+        "filename": "pamp-dragon.jpeg", 
+        "buy": { 
+            "date": "2025-08-07",
+            "price": 4759.99
+        }
     },
     {
-        "id": "pamp-swiss-1",
-        "price": 4199.99,
-        "date": "2025-02-05",
-        "filename": "pamp-swiss.jpeg"
+        "id": "mint-proudly-canadian",
+        "filename": "mint-canadian.jpeg", 
+        "buy": { 
+            "date": "2025-07-28",
+            "price": 4709.99
+        }
     },
+
     {
         "id": "pamp-koi",
-        "price": 4079.99,
-        "date": "2025-01-24",
-        "filename": "pamp-koi.jpeg"
+        "filename": "pamp-koi.jpeg", 
+        "buy": { 
+            "date": "2025-01-24",
+            "price": 4079.99
+        }
     },
     {
         "id": "mint-1",
-        "price": 3319.99,
-        "date": "2024-07-05", 
-        "filename": "mint.jpeg"
+        "filename": "mint.jpeg",  
+        "buy": { 
+            "date": "2024-07-05", 
+            "price": 3319.99
+        }
     }
 ]
