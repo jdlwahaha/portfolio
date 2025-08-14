@@ -59,46 +59,33 @@
         let html = ``;
         let totalPrice = 0;
 
-        const featureWatches = watches.filter(w => w.type === 'feature');
-        const smartWatches = watches.filter(w => w.type === 'smart');
-        const regularWatches = watches.filter(w => w.type !== 'smart' && w.type !== 'feature');
-
-        // Featured Watches
-        html += `<p>`;
-        featureWatches.map(watch => { 
-            html += getWatchBlockHTML(watch);
-            totalPrice += watch.purchasedPrice;
+        const watchTypes = []; 
+        watches.map(watch => {
+            const type = watch.type; 
+            if (!watchTypes.includes(type)) { 
+                watchTypes.push(type); 
+            }
         });
-        html += `</p]>`;
 
 
-        html += `<p><hr></p>`;
+        watchTypes.map((type, i) => { 
+            html += `<p>`;
+            
+            const filteredWatches = watches.filter(w => w.type === type); 
+            filteredWatches.map(watch => { 
+                html += getWatchBlockHTML(watch);
+                totalPrice += watch.purchasedPrice;
+            });
+            html += `</p>`;
 
-
-        // Regular watches
-        html += `<p>`;
-        regularWatches.map(watch => { 
-            html += getWatchBlockHTML(watch);
-            totalPrice += watch.purchasedPrice;
-        });
-        html += `</p]>`;
-
-
-        html += `<p><hr></p>`;
-
-        // Smart watches
-        html += `<p>`;
-        smartWatches.map(watch => { 
-            html += getWatchBlockHTML(watch);
-            totalPrice += watch.purchasedPrice;
-        });
-        html += `</p>`;
-
-
+            if (i < watchTypes.length) { 
+                html += `<p><hr></p>`;
+            }
+        }); 
 
         $('#list').append(html);
 
-        $('#totalPrice').append(totalPrice);
+        $('#totalPrice').append(totalPrice.toFixed(2));
 
     });
 

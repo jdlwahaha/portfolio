@@ -1,10 +1,44 @@
 [
     {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+
+    {
+        "name": "Tissot PRX 35mm", 
+        "filename": "",
+        "model": "tissot-prx-black", 
+        "brand": "Tissot", 
+        "type": "automatic",
+        "purchasedPrice": 841.05, 
+        "acquisition_date": "2025-08-14"
+    },
+    {
         "name": "Seiko Open Heart Automatic", 
         "filename": "seiko-ssde009",
         "model": "SSDE009", 
         "brand": "Seiko", 
-        "type": "feature",
+        "type": "automatic",
         "purchasedPrice": 203, 
         "acquisition_date": "2024-10-23"
     },
@@ -17,19 +51,12 @@
         "purchasedPrice": 140, 
         "acquisition_date": "2023-11-23"
     },
-    {
-        "name": "", 
-        "model": "", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 0, 
-        "acquisition_date": ""
-    },
+
     {
         "name": "Casio F-91WM", 
         "model": "casio-f91w-dark-grey", 
         "brand": "Casio", 
-        "type": "",
+        "type": "casio-f9",
         "purchasedPrice": 31.71, 
         "acquisition_date": "2025-04-05"
     },
@@ -38,7 +65,7 @@
         "filename": "casio-f91w-gold",
         "model": "f91w", 
         "brand": "Casio", 
-        "type": "",
+        "type": "casio-f9",
         "purchasedPrice": 23.51, 
         "acquisition_date": "2024-11-30"
     },
@@ -47,7 +74,7 @@
         "filename": "casio-f91w-green",
         "model": "f91w", 
         "brand": "Casio", 
-        "type": "",
+        "type": "casio-f9",
         "purchasedPrice": 20.45, 
         "acquisition_date": "2024-11-30"
     },
@@ -56,7 +83,7 @@
         "filename": "casio-f91w-blue",
         "model": "f91w", 
         "brand": "Casio", 
-        "type": "",
+        "type": "casio-f9",
         "purchasedPrice": 22, 
         "acquisition_date": "2024-10-26"
     },
@@ -65,7 +92,7 @@
         "filename": "casio-f94w",
         "model": "f94w", 
         "brand": "Casio", 
-        "type": "",
+        "type": "casio-f9",
         "purchasedPrice": 22, 
         "acquisition_date": "2024-10-26"
     },
@@ -74,7 +101,7 @@
         "filename": "disney-winnie-pooh",
         "model": "V06A-511VK", 
         "brand": "Q&Q", 
-        "type": "",
+        "type": "toy",
         "purchasedPrice": 33, 
         "acquisition_date": "2024-10-24"
     },
@@ -82,7 +109,7 @@
         "name": "Chiikawa Watch", 
         "filename": "nagano-chiikawa", 
         "brand": "nagano", 
-        "type": "",
+        "type": "toy",
         "purchasedPrice": 29, 
         "acquisition_date": "2024-10-24"
     },
@@ -90,7 +117,7 @@
         "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Gold)", 
         "filename": "timex-easy-reader-gold", 
         "brand": "Timex", 
-        "type": "",
+        "type": "timex",
         "purchasedPrice": 11.12, 
         "acquisition_date": "2024-09-16"
     },
@@ -98,7 +125,7 @@
         "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Silver)", 
         "filename": "timex-easy-reader-silver", 
         "brand": "Timex", 
-        "type": "",
+        "type": "timex",
         "purchasedPrice": 11.12, 
         "acquisition_date": "2024-09-02"
     },
@@ -106,7 +133,7 @@
         "name": "Casio Illuminator Metal Bezel Heavy Duty Resin Band", 
         "model": "MWA100H-7AV", 
         "brand": "Casio", 
-        "type": "",
+        "type": "oversize",
         "purchasedPrice": 43.51, 
         "acquisition_date": "2024-03-08"
     },
@@ -114,7 +141,7 @@
         "name": "Casio Men's Retrograde Analog Display Quartz Black", 
         "model": "MCW-200H-1AVCF", 
         "brand": "Casio", 
-        "type": "",
+        "type": "oversize",
         "purchasedPrice": 65.49, 
         "acquisition_date": "2024-03-08"
     },
@@ -123,7 +150,7 @@
         "filename": "casio-duro-black",
         "model": "MDV106-1A", 
         "brand": "Casio", 
-        "type": "",
+        "type": "duro",
         "purchasedPrice": 70.90, 
         "acquisition_date": "2024-02-27"
     },
@@ -133,7 +160,7 @@
         "filename": "timex-charlie-brown",
         "model": "", 
         "brand": "timex", 
-        "type": "",
+        "type": "timex",
         "purchasedPrice": 61.52, 
         "acquisition_date": "2024-01-26", 
         "youtubeId": "TEY48HaCIkc"
@@ -150,7 +177,7 @@
         "name": "Casio Square LED Illuminator", 
         "model": "MWD-110H-3AV", 
         "brand": "", 
-        "type": "",
+        "type": "oversize",
         "purchasedPrice": 54.34, 
         "acquisition_date": "2024-01-13"
     },
@@ -197,7 +224,7 @@
         "filename": "lavaredo-yellow",
         "model": "", 
         "brand": "LAVAREDO", 
-        "type": "",
+        "type": "toy",
         "purchasedPrice": 26.87, 
         "acquisition_date": "2020-11-17",
         "youtubeId": "g3HTvUj31xg"
