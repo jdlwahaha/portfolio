@@ -1,4 +1,12 @@
-[
+[    
+    {
+        "id": "pamp-dragon-2",
+        "filename": "pamp-dragon.jpeg", 
+        "buy": { 
+            "date": "2025-08-19",
+            "price": 4719.99
+        }
+    },
     {
         "id": "pamp-dragon-1",
         "filename": "pamp-dragon.jpeg", 
