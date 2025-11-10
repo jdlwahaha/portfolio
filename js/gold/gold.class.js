@@ -5,8 +5,6 @@ class GoldClass extends AbstractGoldClass {
 
         let html = '';
 
-        const cost = super.readablePrice(super.getTotalCost(golds));
-        $('#cost').append(`${cost}`);
 
         golds.map((gold, i) => { 
             let cssClass = super.getCssClass(i, golds);
