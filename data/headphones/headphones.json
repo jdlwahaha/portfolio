@@ -1,0 +1,52 @@
+[
+    
+    {
+        "filename": "eksa-gaming-headset", 
+        "name": "EKSA USB Gaming Headset - PC Headset with Detachable Noise Cancelling Microphone (Yellow)", 
+        "purchasedPrice": 70.55,
+        "purchaseDate": "2024-04-08",
+        "priceNote": "$62.99 + 7.56 tax",
+        "rating": 4,
+        "reviewTitle": "My favourite yellow! Good value for the price",
+        "review": "This is a birthday that I got for myself. I just love this yellow and wasn't expecting much for this price. This headphone turned out better than what I anticipated. It is wired, but the audio and mic quality is acceptable and quite comfy to wear. I don't have high standards for audio playback and I'm not using it as a daily driver, but it is undeniably a great-looking yellow that works farily well. For this headphone, I was looking to add it to my yellow collection, rather than actually using it as a one."
+    },
+    {
+        "filename": "razer-barracuda-x", 
+        "name": "Razer Barracuda X", 
+        "purchasedPrice": 110,
+        "purchaseDate": "2022-11-12", 
+        "rating": 5,
+        "reviewTitle": "Best value wireless headphone for any USB-C devices! No Bluetooth",
+        "review": "This is a USB-C wireless headphone and is the first generation that does not have Bluetooth feature. I really like this one because it works well with my Mac, iPhone, and Nintendo switch. Bluetooth just never work reliably for me and I much prefer this secure connection from the dongle. One major issue is the wider-sized of USB-C dongle. Once I plugged the dongle in my Macbook Air, it blocks all ports and hence I can't charge or connect other USB-C devices. An potential easy workaround would get a hub that has USB-C support. Otherwise, the headphone is comfy to wear, the battery is amazing, and wireless feature is just above and beyond."
+    },
+    {
+        "filename": "sennheiser-hd-599", 
+        "name": "Sennheiser HD 599 (Ivory)", 
+        "purchasedPrice": 224.68,
+        "purchaseDate": "2022-08-28",
+        "priceNote": "$199.96 + 23.99 tax + 0.73 env fee",
+        "rating": 3,
+        "reviewTitle": "Too expensive for an age-old model",
+        "review": "This is an open back headphone. I like to wear this one at home in my room so I can hear the audio from my computer and my family that tries to call me for dinner at the same time. If you're not familiar with open-back headphones, you can think of it like mini-speakers but placed on your head. It doesn't block out surrounding noise and I enjoy a little bit of that airflow. It's not a bad headphone, but I think it's too overpriced."
+    },
+    {
+        "filename": "jbl-120tws", 
+        "name": "JBL Tune 120TWS True Wireless In-Ear Bluetooth Headphones", 
+        "purchasedPrice": 89.97,
+        "purchaseDate": "2020-11-04", 
+        "priceNote": "$79.99 + 9.6 tax + 0.39 env fee",
+        "rating": 2,
+        "reviewTitle": "Looks nice! Bluetooth works, but not great",
+        "review": "Since there is no more headphone jack, I was looking for a wireless headset. This one is bluetooth only and works perfectly for gym if you're listening to podcast or music. However, there's a very slight audio delay when watching videos from my iPhone. The battery life is so short that whenever I want to use it, it's almost always out of juice. I love the colour though. The case is not pale white, but more of a grey-ish white. The yellow is my amazing yellow that it just looks like an egg when I first opened it up and hold it in hand in person."
+    },
+    {
+        "filename": "bose-quiet-comfort-25", 
+        "name": "Bose QuietComfort 25", 
+        "purchasedPrice": 150,
+        "purchaseDate": "2018-07-17", 
+        "priceNote": "$137.63 USD",
+        "rating": 5,
+        "reviewTitle": "Comfy and perfect for my use case!",
+        "review": "I got it from amazon.com on Black Friday sale in 2018. I was living in an apartment with noisy neighbours and constant loud false fire alarms. I wanted a noise cancelling headphone to help me focus on work and block out sounds when I sleep. I like this one because the wire is removable and it's comfy to wear. It's not as comfortable to sleep with any headphone and same for this one, however, it does allow me to walk around anywhere and have it on my head all the time to protect my ears from those random loud alarms."
+    }
+]

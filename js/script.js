@@ -50,16 +50,26 @@
                     <span class="nav-text">Programming</span>
                 </a>-->
 
+                <span class="navSectionHeader-desktop">ELECTRONICS</span>
+                <span class="navSectionHeader-mobile">|</span>
+
+                <a href="../keyboards" >
+                    <span class="nav-icon">&#128224;</span> 
+                    <span class="nav-text">Keyboards</span>
+                </a>
+
+                <a href="../headphones" >
+                    <span class="nav-icon">&#127911;</span> 
+                    <span class="nav-text">Headphones</span>
+                </a>
+
 
                 <span class="navSectionHeader-desktop">COLLECTIONS</span>
                 <span class="navSectionHeader-mobile">|</span>
 
                
             
-                <a href="../keyboards" >
-                    <span class="nav-icon">&#128224;</span> 
-                    <span class="nav-text">Keyboards</span>
-                </a>
+
 
                 <a href="../watches"> 
                     <span class="nav-icon">&#8986;</span>
@@ -110,7 +120,8 @@
             'books', 
 
             'zippo',
-            'keyboards', 
+            'keyboards',
+            'headphones', 
             'explodingkittens', 
             'gold',
 

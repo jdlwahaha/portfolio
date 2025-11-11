@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Headphones</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+    <link rel="stylesheet" href="../../css/keyboard.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+
+
+<style>
+    div.book-container { 
+        width: calc(95% - 200px);
+    }
+    .thumbnail-container { 
+        width: 200px;
+    }
+    .thumbnail-container>img {
+        height: 200px;
+    }
+</style>
+
+<body>
+	<header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+	
+			<section class="box">
+                <div class="box-content">
+                    <div class="">
+
+                        These are the headphones that I own.
+                        The prices are my purchased price after tax. 
+                        
+                        Dates in this section are my acquisition date. <br>
+                        I am not a headphone collector, but I noticed that I've collected a few over the years.
+                        I've spent about <strong class="green">$<span id="totalPrice"></span> </strong> 
+                        on this collection.
+                    </div>
+                    
+                </div>
+            </section>
+            <div id="list"></div>
+
+		</div>
+	
+		<footer><!-- jQuery generated --></footer>
+	</section>
+
+	
+</body>
+</html>
+
+<script>
+(function () {
+
+
+
+    $.getJSON('../../data/headphones/headphones.json', function (headphones) {
+        
+
+        let html = ``;
+        let totalPrice = 0;
+
+ 
+
+        headphones
+        .filter(headphone => headphone.name)
+        .map(headphone => { 
+            totalPrice += headphone.purchasedPrice;
+
+            html += getHtml(headphone)
+        });
+
+
+       
+        $('#list').append(html);
+
+        $('#totalPrice').append(totalPrice.toFixed(2));
+
+    });
+
+
+
+
+
+    function getHtml(headphone) { 
+        let html = ``;
+        let priceNote = headphone.priceNote
+            ? `<span class="myPrice">(${headphone.priceNote})</span>`
+            : '';
+
+
+
+        html = `
+            <section class="box">
+                <div class="box-content">
+                <span class="thumbnail-container">
+                    <img src="../../data/headphones/${headphone.filename}.jpeg" alt="${headphone.filename}.jpeg">
+                </span>
+                    <div class="book-container">
+                        <h4>${headphone.name}</h4>
+                        I paid: <span class="green">$${headphone.purchasedPrice}</span>
+                        ${priceNote}<br>
+                        Bought it on: ${headphone.purchaseDate}<br>
+                        <div class="rating"> 
+                            ${getRatingString(headphone.rating)} &nbsp;
+                        </div>
+                        <p class="review">
+                        <div class="bold grey">
+                            ${headphone.reviewTitle}
+                        </div>
+                        
+                            ${headphone.review}
+                        </p>
+                    </div>
+                </div>
+            </section>  
+        `;
+
+        return html;
+    }
+
+  
+    function getRatingString(number) { 
+        var result = ''; 
+        if (number >= 0) { 
+            var MAX_STARS_COUNT = 5;
+            var SOLID_STAR_SYMBOL = '&#9733;';
+            var EMPTY_STAR_SYMBOL = '&#9734;';
+            if (number >= 0 && number <= MAX_STARS_COUNT) { 
+                for (var i=0; i<MAX_STARS_COUNT; i++) { 
+                    if (number < i+1) { 
+                        result += EMPTY_STAR_SYMBOL;
+                    } else { 
+                        result += SOLID_STAR_SYMBOL; 
+                    }
+                }
+            }
+        } else { 
+            // Not rated
+            result += '<span class="no-rating">';
+            var EMPTY_STAR_SYMBOL = '&#9734;';
+            result += EMPTY_STAR_SYMBOL + EMPTY_STAR_SYMBOL + EMPTY_STAR_SYMBOL + EMPTY_STAR_SYMBOL + EMPTY_STAR_SYMBOL;
+            result += '</span>';
+        }
+
+        return result; 
+    }
+
+})();
+</script>
