@@ -30,6 +30,10 @@
         .thumbnail-container>img {
             height: 200px;
         }
+
+    }
+    #note-1.hide  { 
+        display: none;
     }
 </style>
 
@@ -48,14 +52,24 @@
                         on this collection.
 
                         <button id="show-note-1">&#9997;</button>
-                        <p class="note hide" id="note-1">
-                            In my opinion, the best headphones are those clip-on earphones that hang around your ears. 
-                            Those are not as intrusive as earbuds that stink after sweaty workouts. 
-                            They are also not as bulky over on your head that mess up your hairstyle from time to time. 
-                            The drawback is that they are wired and often create those difficult knots.
-                            All my wired earbuds and earphones are gone, but the earbuds were usually free
-                            with music player and the cost is trivial, so I will only track the ones that are still with me. 
-                        </p>
+                        <div class="note hide" id="note-1">
+                            <p>
+                                <div class="book-container">
+                                    In my opinion, the best headphones are those clip-on earphones that hang around your ears. 
+                                    Those are not as intrusive as earbuds that stink after sweaty workouts. 
+                                    They are also not as bulky over on your head that mess up your hairstyle from time to time. 
+                                    The drawback is that they are wired and often create those difficult knots.
+                                    All my wired earbuds and earphones are gone, but the earbuds were usually free
+                                    with music player and the cost is trivial, so I will only track the ones that are still with me. 
+                                </div>
+                                <span class="thumbnail-container" style="float: center;">
+                                    <img src="../../data/headphones/clip-on-sample.jpeg" alt="clip-on-sample.jpeg"/>
+                                </span>
+                            </p>
+                            
+                            
+                            
+                        </div>
                     </div>
                     
                 </div>
@@ -131,9 +145,9 @@
         html = `
             <section class="box">
                 <div class="box-content">
-                <span class="thumbnail-container">
-                    <img src="../../data/headphones/${headphone.filename}.jpeg" alt="${headphone.filename}.jpeg">
-                </span>
+                    <span class="thumbnail-container">
+                        <img src="../../data/headphones/${headphone.filename}.jpeg" alt="${headphone.filename}.jpeg">
+                    </span>
                     <div class="book-container">
                         <h4>${headphone.name}</h4>
                         I paid: <span class="green">$${headphone.purchasedPrice}</span>
