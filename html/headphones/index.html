@@ -47,7 +47,8 @@
                         I have spent about <strong class="green">$<span id="totalPrice"></span> </strong> 
                         on this collection.
 
-                        <p>
+                        <button id="show-note-1">&#128394;</button>
+                        <p class="note hide" id="note-1">
                             In my opinion, the best headphones are those clip-on earphones that hang around your ears. 
                             Those are not as intrusive as earbuds that stink after sweaty workouts. 
                             They are also not as bulky over on your head that mess up your hairstyle from time to time. 
@@ -96,6 +97,22 @@
         $('#list').append(html);
 
         $('#totalPrice').append(totalPrice.toFixed(2));
+
+
+
+        for (let i=1; i<2; i++) { 
+            
+
+            document.getElementById(`show-note-${i}`).addEventListener('click', () => { 
+                for (let i=1; i<2; i++) { 
+
+                    document.getElementById(`note-${i}`).classList.add('hide');
+                }
+                document.getElementById(`note-${i}`).classList.remove('hide');
+
+
+            });
+        }
 
     });
 
@@ -166,6 +183,8 @@
 
         return result; 
     }
+
+
 
 })();
 </script>
