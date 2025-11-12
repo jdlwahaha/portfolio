@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Fitbit Ace 3", 
+        "filename": "fitbit-ace-3", 
+        "brand": "Fitbit", 
+        "type": "smart",
+        "purchasedPrice": 78.36, 
+        "acquisition_date": "2021-12-09", 
+        "note": "The problem with Pebble and Ionic was that they are all too big. I thought if I get a smart watch designed for kids, it would fit my wrist better and I would assume it would be built more comfy too. However, there's a lot of limitation such as no heart rate sensor and I just didn't have time to see if it support custom watch face design here. "
+    },
+    {
+        "name": "Fibit Ionic", 
+        "filename": "fitbit-ionic", 
+        "brand": "Fitbit", 
+        "type": "smart",
+        "purchasedPrice": 291.19, 
+        "acquisition_date": "2019-12-26", 
+        "note": "I also wrote a custom watch face on this. I did not published this to the store because the fitbit market seems to be involving more steps. Fitbit recalled this watch because of some overheat issue and I got some cash back to buy my next one."
+    },
+    {
+        "name": "Pebble White",
+        "filename": "pebble-white", 
+        "brand": "Pebble", 
+        "type": "smart",
+        "listPrice": 0, 
+        "purchasedPrice": 99, 
+        "acquisition_date": "-", 
+        "note": "It's been too long that I forgot the price of this. This is my first smart watch! I built my custom watch face and received about 27 hearts from Pebble store. Also landed my first job with this watch project."
+    }
+]

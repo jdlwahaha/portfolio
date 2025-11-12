@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../../img/icon.png"/>
+    <title>Watches</title>
+    <link rel="stylesheet" href="../../css/animation.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font-color.css">
+    <link rel="stylesheet" href="../../css/box.css">
+    <link rel="stylesheet" href="../../css/nav.css">
+    <link rel="stylesheet" href="../../css/desktop-nav.css">
+	<script src="../../lib/jquery-3.5.1.min.js"></script>
+	<script src="../../js/script.js"></script>
+	<script src="../../js/watches/watch.service.js"></script>
+</head>
+<body>
+	<header><!-- jQuery generated --></header>
+
+	<section id="mainContent">
+        <div id="main">
+            <div class="submenu" id="submenu"><!-- books service generated --></div>
+	
+			<section class="box">
+                <div class="box-content">
+                    <p>
+                        The prices are my purchased price after tax. 
+                        
+                        Dates in this section are my acquisition date. <br>
+                        I've spent about <strong class="green">
+                            <span id="totalPrice"></span> 
+                        </strong>on this collection.
+                    </p>
+                    <table id="costSummary"></table>
+               
+                </div>
+            </section>
+
+		</div>
+	
+		<footer><!-- jQuery generated --></footer>
+	</section>
+
+	
+</body>
+</html>
+
+<script>
+(function () {
+
+
+    $(document).ready(async function() { 
+
+
+        let section = $.urlParam('section');
+        section = 'about';
+        let submenuHtml = getSubmenuHtml(section, nav);    
+        $('#submenu').append(submenuHtml); 
+
+
+        let grandTotal = 0;
+        let dataRows = '';
+        
+        let categories = await getWatches(); 
+
+        await categories.map(async (watches, i) => {
+            let total = 0;
+            watches.map(watch => {
+                total += watch.purchasedPrice;
+            });
+            grandTotal += total;
+            dataRows += `<tr><td>${nav[i].display}</td><td>${readablePrice(total)}</td></tr>`
+            console.log(dataRows, grandTotal);
+            return watches;
+        });
+
+
+        let headerRow = `<tr><th>Total</th><th>${readablePrice(grandTotal)}</th></tr>`; 
+        let html = headerRow + dataRows;
+        $('#costSummary').append(html);
+        $('#totalPrice').append(readablePrice(grandTotal));
+        
+    });
+    
+    async function getWatches() {
+        let promises = nav.map(item =>  $.getJSON(`../../data/watches/_${item.filename}.json`));
+        return Promise.all(promises);
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+})();
+</script>

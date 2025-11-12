@@ -141,5 +141,17 @@
         "acquisition_date": "2025-02-04",
         "printed_year": 2024, 
         "show_link": false
+    },
+    {
+        "name": "The Board Game", 
+        "filename": "theboardgame", 
+        "price": 24.99,
+        "type": "full", 
+        "players": "2-6",
+        "num_of_cards": 91, 
+        "release_year": "2025", 
+        "acquisition_date": "2025-11-05",
+        "show_link": false
+
     }
 ]

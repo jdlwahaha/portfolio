@@ -15,25 +15,26 @@
     <link rel="stylesheet" href="../../css/zippo.css">
 	<script src="../../lib/jquery-3.5.1.min.js"></script>
 	<script src="../../js/script.js"></script>
+	<script src="../../js/watches/watch.service.js"></script>
 </head>
 <body>
 	<header><!-- jQuery generated --></header>
 
 	<section id="mainContent">
         <div id="main">
+            <div class="submenu" id="submenu"><!-- books service generated --></div>
 	
 			<section class="box">
                 <div class="box-content">
-                    <div class="well well-info">
+                    <!-- <div class="well well-info">
                         These are the watches that I own.
                         The prices are my purchased price after tax. 
                         
                         Dates in this section are my acquisition date. <br>
-                        I need to watch my spending.
                         I've spent about <strong class="green">
                             $<span id="totalPrice"></span> 
-                        </strong>for this collection.
-                    </div>
+                        </strong>on this collection.
+                    </div> -->
                     <div id="list"></div>
                
                 </div>
@@ -52,43 +53,66 @@
 (function () {
 
 
+    $(document).ready(async function() { 
+        let section = $.urlParam('section');
+        section = pageExists(section, nav) ? section : 'automatic';
+        let submenuHtml = getSubmenuHtml(section, nav);    
+        $('#submenu').append(submenuHtml); 
 
-    $.getJSON('../../data/watches/watches.json', function (watches) {
-        watches = watches.filter(z => z.name && z.purchasedPrice);
 
-        let html = ``;
-        let totalPrice = 0;
 
-        const watchTypes = []; 
-        watches.map(watch => {
-            const type = watch.type; 
-            if (!watchTypes.includes(type)) { 
-                watchTypes.push(type); 
-            }
+        $.getJSON(`../../data/watches/_${section}.json`, function (watches) {
+            watches = watches.filter(z => z.name && z.purchasedPrice);
+
+            let html = ``;
+            let totalPrice = 0;
+
+            const watchTypes = []; 
+            watches.map(watch => {
+                const type = watch.type; 
+                if (!watchTypes.includes(type)) { 
+                    watchTypes.push(type); 
+                }
+            });
+
+
+            watchTypes.map((type, i) => { 
+                html += `<p>`;
+                
+                const filteredWatches = watches.filter(w => w.type === type); 
+                filteredWatches.map(watch => { 
+                    html += getWatchBlockHTML(watch);
+                    totalPrice += watch.purchasedPrice;
+                });
+                html += `</p>`;
+
+                if (i < watchTypes.length-1) { 
+                    html += `<p><hr></p>`;
+                }
+            }); 
+
+            $('#list').append(html);
+
+            // $('#totalPrice').append(totalPrice.toFixed(2));
+
         });
 
 
-        watchTypes.map((type, i) => { 
-            html += `<p>`;
-            
-            const filteredWatches = watches.filter(w => w.type === type); 
-            filteredWatches.map(watch => { 
-                html += getWatchBlockHTML(watch);
-                totalPrice += watch.purchasedPrice;
-            });
-            html += `</p>`;
-
-            if (i < watchTypes.length) { 
-                html += `<p><hr></p>`;
-            }
-        }); 
-
-        $('#list').append(html);
-
-        $('#totalPrice').append(totalPrice.toFixed(2));
-
     });
+    
 
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 

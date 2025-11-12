@@ -1,0 +1,46 @@
+[
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+
+    {
+        "name": "Tissot PRX 35mm", 
+        "filename": "",
+        "model": "tissot-prx-black", 
+        "brand": "Tissot", 
+        "type": "automatic",
+        "purchasedPrice": 841.05, 
+        "acquisition_date": "2025-08-14"
+    },
+    {
+        "name": "Seiko Open Heart Automatic", 
+        "filename": "seiko-ssde009",
+        "model": "SSDE009", 
+        "brand": "Seiko", 
+        "type": "automatic",
+        "purchasedPrice": 203, 
+        "acquisition_date": "2024-10-23"
+    }
+    
+]

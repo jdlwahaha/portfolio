@@ -1,0 +1,75 @@
+[
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    {
+        "name": "", 
+        "model": "", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 0, 
+        "acquisition_date": ""
+    },
+    
+    {
+        "name": "Winnie the Pooh ", 
+        "filename": "disney-winnie-pooh",
+        "model": "V06A-511VK", 
+        "brand": "Q&Q", 
+        "type": "toy",
+        "purchasedPrice": 33, 
+        "acquisition_date": "2024-10-24"
+    },
+    {
+        "name": "Chiikawa Watch", 
+        "filename": "nagano-chiikawa", 
+        "brand": "nagano", 
+        "type": "toy",
+        "purchasedPrice": 29, 
+        "acquisition_date": "2024-10-24"
+    },
+    {
+        "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Gold)", 
+        "filename": "timex-easy-reader-gold", 
+        "brand": "Timex", 
+        "type": "timex",
+        "purchasedPrice": 11.12, 
+        "acquisition_date": "2024-09-16"
+    },
+    {
+        "name": "Easy Reader® 38mm One-Time Adjustable Leather Strap Watch (Silver)", 
+        "filename": "timex-easy-reader-silver", 
+        "brand": "Timex", 
+        "type": "timex",
+        "purchasedPrice": 11.12, 
+        "acquisition_date": "2024-09-02"
+    },
+ 
+    {
+        "name": "Timex Peanut Charle Brown", 
+        "filename": "timex-charlie-brown",
+        "model": "", 
+        "brand": "timex", 
+        "type": "timex",
+        "purchasedPrice": 61.52, 
+        "acquisition_date": "2024-01-26", 
+        "youtubeId": "TEY48HaCIkc"
+    },
+    
+
+    {
+        "name": "LAVAREDO Kid's Watches Boys Analog Digital Quartz Sport Electronic", 
+        "filename": "lavaredo-yellow",
+        "model": "", 
+        "brand": "LAVAREDO", 
+        "type": "toy",
+        "purchasedPrice": 26.87, 
+        "acquisition_date": "2020-11-17",
+        "youtubeId": "g3HTvUj31xg"
+    }
+]
