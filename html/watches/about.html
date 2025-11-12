@@ -85,7 +85,7 @@
     });
     
     async function getWatches() {
-        let promises = nav.map(item =>  $.getJSON(`../../data/watches/_${item.filename}.json`));
+        let promises = nav.map(item =>  $.getJSON(`../../data/watches/0${item.filename}.json`));
         return Promise.all(promises);
     }
  
