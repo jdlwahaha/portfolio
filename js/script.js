@@ -160,6 +160,16 @@
 
 })(); 
 
+function readablePrice(number) { 
+    if (number) { 
+        return number.toLocaleString('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        });
+    }
+    return 0;
+}
+
 function getAmazonLink(title, link, showHover) { 
     return '';
     return `

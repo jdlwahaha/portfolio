@@ -60,15 +60,7 @@ function getSubmenuHtml(currentSectionName) {
     return allPages;
 }
 
-function readablePrice(number) { 
-    if (number) { 
-        return number.toLocaleString('en-US', {
-            style: 'currency',
-            currency: 'USD',
-        });
-    }
-    return 0;
-}
+
 
 
 

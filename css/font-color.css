@@ -33,6 +33,10 @@ highlight, .highlight {
     background: yellow; 
 }
 
+.gold { 
+	color: rgb(255, 187, 64);
+}
+
 .squiggly {
     text-decoration: underline;
     text-decoration-style: wavy;

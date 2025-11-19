@@ -1,6 +1,5 @@
 [
 
-
     {
         "name": "Zippo Car 75th Anniversary Collectible", 
         "material": "", 
@@ -30,6 +29,14 @@
 
 
 
+    {
+        "name": "65th Anniversary Design", 
+        "code": "65000",
+        "material": "High Polish Chrome",
+        "listPrice": 65.96, 
+        "purchasedPrice": 0.00001, 
+        "acquisition_date": "2025-11-19"
+    },
     {
         "name": "Full Moon Design", 
         "material": "matte", 
