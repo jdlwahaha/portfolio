@@ -18,7 +18,7 @@ class GoldClass extends AbstractGoldClass {
         return `
             <div class="${cssClass}">
                 <div>
-                    <strong>${gold.buy.date}</strong>
+                    <strong>${gold.buy.date}</strong> 
                 </div>
                 <div>
                     Price: <strong class="green">${super.readablePrice(gold.buy.price)}</strong>
