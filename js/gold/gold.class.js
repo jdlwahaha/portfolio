@@ -4,8 +4,7 @@ class GoldClass extends AbstractGoldClass {
         let golds = await $.getJSON('../../data/gold/gold.json');
 
         let html = '';
-
-
+       
         golds.map((gold, i) => { 
             let cssClass = super.getCssClass(i, golds);
             html += this.getGoldItemHtml(cssClass, gold); 
