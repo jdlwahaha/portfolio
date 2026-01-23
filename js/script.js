@@ -146,7 +146,7 @@
     
     
     function loadFooter() {
-        $('footer').append('Copyrighted &copy; 2018-2025');
+        $('footer').append('Copyrighted &copy; 2018-2026');
     }
     
     $.urlParam = function (name) {

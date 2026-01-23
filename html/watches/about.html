@@ -16,22 +16,40 @@
 	<script src="../../js/script.js"></script>
 	<script src="../../js/watches/watch.service.js"></script>
 </head>
+
+<style>
+    #costSummary { 
+        th, td { 
+            text-align: center;
+            padding: .5rem 3rem;
+        }
+    }
+</style>
+
 <body>
 	<header><!-- jQuery generated --></header>
 
 	<section id="mainContent">
         <div id="main">
-            <div class="submenu" id="submenu"><!-- books service generated --></div>
+            <div class="submenu" id="submenu"><!-- watch service generated --></div>
 	
+
+
 			<section class="box">
+
                 <div class="box-content">
+
+                    <div class="well well-info no-margin">
+                        To keep my spending in control and hobby collected, 
+                        I need to watch my spending.
+                    </div>
+
+
                     <p>
-                        The prices are my purchased price after tax. 
+
+                        The prices in this section are my purchased price after tax. 
                         
-                        Dates in this section are my acquisition date. <br>
-                        I've spent about <strong class="green">
-                            <span id="totalPrice"></span> 
-                        </strong>on this collection.
+                        Dates are my acquisition date. <br>
                     </p>
                     <table id="costSummary"></table>
                
@@ -61,23 +79,37 @@
 
 
         let grandTotal = 0;
+        let numOfWatches = 0;
         let dataRows = '';
         
         let categories = await getWatches(); 
 
         await categories.map(async (watches, i) => {
             let total = 0;
+
+            watches = watches.filter(i => i.purchasedPrice);
+
             watches.map(watch => {
                 total += watch.purchasedPrice;
             });
+
             grandTotal += total;
-            dataRows += `<tr><td>${nav[i].display}</td><td>${readablePrice(total)}</td></tr>`
-            console.log(dataRows, grandTotal);
+            numOfWatches += watches.length;
+            
+            dataRows += `<tr>
+                    <td>${nav[i].display}</td>
+                    <td>${readablePrice(total)}</td>
+                    <td>${watches.length}</td>
+                </tr>`;
             return watches;
         });
 
 
-        let headerRow = `<tr><th>Total</th><th>${readablePrice(grandTotal)}</th></tr>`; 
+        let headerRow = `<tr>
+                <th>Total</th>
+                <th>${readablePrice(grandTotal)}</th>
+                <th>${numOfWatches}</th>
+            </tr>`; 
         let html = headerRow + dataRows;
         $('#costSummary').append(html);
         $('#totalPrice').append(readablePrice(grandTotal));
@@ -89,22 +121,6 @@
         return Promise.all(promises);
     }
  
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
 
 
 })();

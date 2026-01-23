@@ -198,6 +198,7 @@ section#yearSelection select {
     margin-top: 0;
 }
 
+
 #dream-notice { 
   display: inline-block;
   animation: 500ms fadeIn;
@@ -206,6 +207,10 @@ section#yearSelection select {
   visibility: hidden;
 }
 
+
+.no-margin { 
+    margin: 0;    
+}
 
 .answer-blue { 
     color: rgb(74 103 251);

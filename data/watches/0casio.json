@@ -8,6 +8,51 @@
         "purchasedPrice": 140, 
         "acquisition_date": "2023-11-23"
     },
+      
+    {
+        "name": "G-Shock Square", 
+        "model": "DW-5600HR-1CR", 
+        "brand": "", 
+        "type": "feature",
+        "purchasedPrice": 114.24, 
+        "acquisition_date": "2024-01-13"
+    },
+
+    {
+        "name": "Casio MQ24-9E", 
+        "model": "MQ24-9E", 
+        "brand": "", 
+        "type": "mq24",
+        "purchasedPrice": 64.77, 
+        "acquisition_date": "2025-12-30"
+    },
+    {
+        "name": "Casio MQ24-1E", 
+        "model": "MQ24-1E", 
+        "brand": "", 
+        "type": "mq24",
+        "purchasedPrice": 19.26, 
+        "acquisition_date": "2023-12-30", 
+        "youtubeId": "9ud8YPRJf3w"
+    },
+    {
+        "name": "Casio MQ-24S-8B", 
+        "model": "MQ-24S-8B", 
+        "brand": "Casio", 
+        "type": "mq24",
+        "purchasedPrice": 16, 
+        "acquisition_date": "2023-11-13"
+    },
+    {
+        "name": "Casio MQ24-1E Analog Watch (Japan)", 
+        "model": "MQ24-1E", 
+        "brand": "Casio", 
+        "type": "mq24",
+        "purchasedPrice": 20, 
+        "acquisition_date": "2023-05-10", 
+        "youtubeId": "9ud8YPRJf3w"
+    },
+    
 
     {
         "name": "Casio F-91WM", 
@@ -53,6 +98,30 @@
         "purchasedPrice": 22, 
         "acquisition_date": "2024-10-26"
     },
+
+
+
+    {
+        "name": "Casio AQ-800E-7A White", 
+        "model": "AQ-800E-7A", 
+        "brand": "", 
+        "type": "",
+        "purchasedPrice": 54.38, 
+        "acquisition_date": "2023-12-23", 
+        "youtubeId": "mLouqSC0Eno"
+    },
+
+
+    {
+        "name": "Casio Duro Black and Silver", 
+        "filename": "casio-duro-black",
+        "model": "MDV106-1A", 
+        "brand": "Casio", 
+        "type": "duro",
+        "purchasedPrice": 70.90, 
+        "acquisition_date": "2024-02-27"
+    },
+ 
     
     {
         "name": "Casio Illuminator Metal Bezel Heavy Duty Resin Band", 
@@ -71,69 +140,12 @@
         "acquisition_date": "2024-03-08"
     },
     {
-        "name": "Casio Duro Black and Silver", 
-        "filename": "casio-duro-black",
-        "model": "MDV106-1A", 
-        "brand": "Casio", 
-        "type": "duro",
-        "purchasedPrice": 70.90, 
-        "acquisition_date": "2024-02-27"
-    },
- 
-    
-    {
-        "name": "G-Shock Square", 
-        "model": "DW-5600HR-1CR", 
-        "brand": "", 
-        "type": "feature",
-        "purchasedPrice": 114.24, 
-        "acquisition_date": "2024-01-13"
-    },
-    {
         "name": "Casio Square LED Illuminator", 
         "model": "MWD-110H-3AV", 
         "brand": "", 
         "type": "oversize",
         "purchasedPrice": 54.34, 
         "acquisition_date": "2024-01-13"
-    },
-   
-    {
-        "name": "Casio AQ-800E-7A White", 
-        "model": "AQ-800E-7A", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 54.38, 
-        "acquisition_date": "2023-12-23", 
-        "youtubeId": "mLouqSC0Eno"
-    },
-
-    {
-        "name": "Casio MQ24-1E Analog Watch", 
-        "model": "MQ24-1E", 
-        "brand": "Casio", 
-        "type": "analog",
-        "purchasedPrice": 0, 
-        "acquisition_date": "2023-05-10", 
-        "youtubeId": "9ud8YPRJf3w"
-    },
-    {
-        "name": "Casio MQ24-1E", 
-        "model": "MQ24-1E", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 19.26, 
-        "acquisition_date": "2023-12-30", 
-        "youtubeId": "9ud8YPRJf3w"
-    },
-    {
-        "name": "Casio MQ-24S-8B", 
-        "model": "MQ-24S-8B", 
-        "brand": "Casio", 
-        "type": "",
-        "purchasedPrice": 16, 
-        "acquisition_date": "2023-11-13"
     }
-
-    
+   
 ]

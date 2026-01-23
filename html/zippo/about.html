@@ -50,9 +50,9 @@
                         The first one that I bought was the <i>Navy Blue Matte</i>. 
                         The case feels amazing and I was instantly in love! &#x2764;
                         The flicking mechanism is fun. I am not a huge fan over 
-                        the <span class="squiggly">"distinctive <span class="blue">Zippo</span> click"</span>.
-                        Regardless, it's an added bonus and a fun gadget to fiddle with. 
-                        Since then, I have <span class="green">spent about <span id="cost"></span></span> on this collection. &#128184;
+                        the <span class="squiggly">"distinctive <span class="blue">Zippo</span> click"</span>,
+                        but it's an added bonus and a fun gadget to fiddle with. 
+                        Since then, I have collected <span class="green"> <span id="count"></span></span> zippos and spent about  <span class="green"><span id="cost"></span></span> on this collection. &#128184;
 
                          
 
@@ -120,6 +120,7 @@
     
         const cost = getTotalZippoCost(zippos);
         $('#cost').append(`$${cost}`);
+        $('#count').append(zippos.length);
 
     });
 
