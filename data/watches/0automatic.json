@@ -16,12 +16,12 @@
         "acquisition_date": ""
     },
     {
-        "name": "", 
-        "model": "", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 0, 
-        "acquisition_date": ""
+        "name": "Hamilton Jazzmaster Skeleton", 
+        "model": "hamilton-jazzmaster-skeleton", 
+        "brand": "Hamilton", 
+        "type": "automatic",
+        "purchasedPrice": 996.80, 
+        "acquisition_date": "2026-02-13"
     },
 
     {
