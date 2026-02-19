@@ -83,28 +83,11 @@
 
             $('#list').append(html);
 
-            // $('#totalPrice').append(totalPrice.toFixed(2));
-
         });
 
 
     });
     
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
 
 
     function getWatchBlockHTML(watch) { 
@@ -124,7 +107,7 @@
                     </span>
                     <br>
                     <span>
-                        <span>Price: CAD$</span><span class="amount">${watch.purchasedPrice}</span>
+                        <span>Price: CAD</span><span class="amount">${readablePrice(watch.purchasedPrice)}</span>
                     </span>
                     <br>
                     <span>
