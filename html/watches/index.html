@@ -26,7 +26,9 @@
 	
 			<section class="box">
                 <div class="box-content">
+                    
                     <div id="list"></div>
+                    <div id="sectionDescription"></div>
                 </div>
             </section>
 
@@ -49,7 +51,7 @@
         let submenuHtml = getSubmenuHtml(section, nav);    
         $('#submenu').append(submenuHtml); 
 
-
+        $('#sectionDescription').append(getSectionDescriptionHtml(section));
 
         $.getJSON(`../../data/watches/0${section}.json`, function (watches) {
             watches = watches.filter(z => z.name && z.purchasedPrice);
