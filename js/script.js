@@ -6,7 +6,14 @@
 
     function loadHeader() { 
         var isLocal = window.location.href.indexOf('localhost/') >= 0; 
-        var stockLink = `  <a href="../stock" >
+        var stockLink = `
+                <span class="navSectionHeader-desktop">INVESTING</span>
+                <span class="navSectionHeader-mobile">|</span>
+                <a href="../gold"> 
+                            <span class="nav-icon">&#127855;</span>
+                            <span class="nav-text">Gold</span>
+                        </a> 
+                <a href="../stock" >
                         <span class="nav-icon">&#128200;</span> 
                         Stock
                     </a> `
@@ -28,7 +35,7 @@
                 </a>
 
 
-                <span class="navSectionHeader-desktop">INVESTING</span>
+                <span class="navSectionHeader-desktop">NOTES</span>
                 <span class="navSectionHeader-mobile">|</span>
 
 
@@ -36,11 +43,11 @@
                     <span class="nav-icon">&#128214;</span> 
                     <span class="nav-text">Books</span>
                 </a> 
-
-                <a href="../gold"> 
-                    <span class="nav-icon">&#127855;</span>
-                    <span class="nav-text">Gold</span>
-                </a> 
+                <a href="../shortcuts" >
+                    <span class="nav-icon">&#128391;</span> 
+                    <span class="nav-text">Shortcuts</span>
+                </a>        
+                
             
                 ${isLocal ? stockLink : ''}
 
@@ -63,6 +70,7 @@
                     <span class="nav-text">Headphones</span>
                 </a>
 
+              
 
                 <span class="navSectionHeader-desktop">COLLECTIONS</span>
                 <span class="navSectionHeader-mobile">|</span>
@@ -128,7 +136,9 @@
             'design-patterns',
             'stock',
             'typerace', 
-            'watches'
+            'watches', 
+            'computers',
+            'shortcuts',
         ]; 
     
         let index = window.location.href.indexOf('portfolio/') + 'portfolio/'.length; 

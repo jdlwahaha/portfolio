@@ -23,7 +23,7 @@ const nav = [
             <strong>Notes</strong>
             <p>
                 I love watches and was super excited when smart watches were first introduced.
-                I always thought talking to your wrist to give commands or communicate like buzz lighter is super cool.
+                I always thought talking to your wrist to give commands or communicate like buzz lightyear is super cool.
                 Getting notifications was the best these smart watches could do back then, but still a huge leap.
             </p>
             <p>
