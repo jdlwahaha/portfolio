@@ -8,12 +8,12 @@
         "acquisition_date": ""
     },
     {
-        "name": "", 
-        "model": "", 
-        "brand": "", 
-        "type": "",
-        "purchasedPrice": 0, 
-        "acquisition_date": ""
+        "name": "Tissot Le Locle 29mm (brown leather strap)", 
+        "model": "tissot-le-locle-29mm", 
+        "brand": "Tissot", 
+        "type": "automatic",
+        "purchasedPrice": 666.4, 
+        "acquisition_date": "2026-05-17"
     },
     {
         "name": "Hamilton Jazzmaster Skeleton", 
