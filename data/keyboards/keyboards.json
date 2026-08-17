@@ -25,20 +25,7 @@
         "rating": 0,
         "review": ""
     },
-    {
-        "name": "Turtle Beach - Vulcan II TKL Pro",
-        "brand": "Turle Beach",
-        "switchType": "linear",
-        "msrp": 199.99,
-        "myPrice": 79.01,
-        "switchName": "Hall Effect",
-        "date": "2026/8/15",
-        "size": "tkl",
-        "filename": "turtle-beach-vulcan-ii-tkl-pro",
-        "youtubeId": "",
-        "rating": 1,
-        "review": "Terrible! Turtle Beach ruined the Roccat legacy. They reuse the vulcan name line and made it so cheap. The whole typing experience is nothing like the original Roccat Vulcan TKL. This one feels mushy, it's using Gateron white instead of its own proprietary switches. The aluminum is fuzzy instead of the premium brush. The knob control feels flat instead of 3D curved. It's missing extra control button beside the volume. Overall it's a significant downgrade from the original Roccat line. Avoid at all cost!"
-    },
+
     {
         "name": "ASUS ROG 20th Edition Azoth Extreme",
         "brand": "ASUS",
@@ -78,7 +65,20 @@
         "rating": 3,
         "review": ""
     },
-
+    {
+        "name": "Turtle Beach - Vulcan II TKL Pro",
+        "brand": "Turle Beach",
+        "switchType": "linear",
+        "msrp": 199.99,
+        "myPrice": 79.01,
+        "switchName": "Hall Effect",
+        "date": "2026/8/15",
+        "size": "tkl",
+        "filename": "turtle-beach-vulcan-ii-tkl-pro",
+        "youtubeId": "",
+        "rating": 1,
+        "review": "Terrible! Turtle Beach ruined the Roccat legacy. They reuse the vulcan name line and made it so cheap. The whole typing experience is nothing like the original Roccat Vulcan TKL. This one feels mushy, it's using Gateron white instead of its own proprietary switches. The aluminum is fuzzy instead of the premium brush. The knob control feels flat instead of 3D curved. It's missing extra control button beside the volume. Overall it's a significant downgrade from the original Roccat line. Avoid at all cost!"
+    },
     {
         "name": "Ajazz AK816 Pro 75% Gasket Hot-Swappable Bluetooth",
         "brand": "Ajazz",
