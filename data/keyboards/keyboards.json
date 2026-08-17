@@ -210,6 +210,19 @@
         "review": "This keyboard looks great, but there is a problem with wired mode that it doesn't stay connected and failed as being a keyboard. 5 out of 5 for looks though. It's a deocrated piece and nothing more."
     },
     {
+        "name": "Roccat Vulcan TKL Pro",
+        "brand": "Roccat",
+        "msrp": 159.99,
+        "myPrice": 145.58,
+        "switchType": "linear",
+        "switchName": "Roccat Red Titan Optical",
+        "size": "tkl",
+        "filename": "roccat-vulcan-tkl-pro",
+        "youtubeId": "R4T6DF7ocdk",
+        "rating": 5,
+        "review": "Love it! The typing experience is great! It's comfy to use without wrist rest. Highly recommend!"
+    },
+    {
         "name": "HyperX Origins Core",
         "brand": "HyperX",
         "switchType": "linear",
