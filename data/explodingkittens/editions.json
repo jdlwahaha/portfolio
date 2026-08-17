@@ -143,15 +143,48 @@
         "show_link": false
     },
     {
+        "name": "Power Hungry Pets", 
+        "filename": "powerhungrypets", 
+        "price": 12.99,
+        "type": "full_no", 
+        "players": "2-6",
+        "num_of_cards": 21, 
+        "release_year": "2024", 
+        "acquisition_date": "2025-10-12",
+        "show_link": false
+    },
+    {
         "name": "The Board Game", 
         "filename": "theboardgame", 
         "price": 24.99,
-        "type": "full", 
+        "type": "full_no", 
         "players": "2-6",
         "num_of_cards": 91, 
         "release_year": "2025", 
         "acquisition_date": "2025-11-05",
         "show_link": false
-
+    },
+    {
+        "name": "10 years of Chaos", 
+        "filename": "tenyearsofchaos", 
+        "price": 24.99,
+        "type": "full", 
+        "players": "2-5",
+        "num_of_cards": 64, 
+        "release_year": "2025", 
+        "acquisition_date": "2025-12-12",
+        "show_link": false
+    }, 
+    {
+        "name": "Rage Mode", 
+        "filename": "rage-mode-gray", 
+        "price": 24.99,
+        "type": "full", 
+        "players": "2-5",
+        "num_of_cards": 65, 
+        "release_year": "2026", 
+        "acquisition_date": "2026-08-15",
+        "show_link": false
     }
+    
 ]

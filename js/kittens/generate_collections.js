@@ -58,7 +58,7 @@
             case 'full': 
                 return 'Full Game'; 
             case 'full_no': 
-                return 'Full Game (Not compatible with other editions or expansions)'; 
+                return 'Full Game (Not compatible with original edition)'; 
             case 'expansion': 
                 return 'Expansion'; 
             default: 

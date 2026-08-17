@@ -1,6 +1,6 @@
 class KeyboardHTML { 
     static getKeyboardHtml(keyboard) { 
-        const thumbnail = `../../data/keyboards/thumbnails/${keyboard.filename}.png`;
+        const thumbnail = `../../data/keyboards/thumbnails/${keyboard.filename}.jpeg`;
         const youtubeLink = (keyboard.youtubeId)
                     ? `&nbsp;<a href="https://youtu.be/${keyboard.youtubeId}" target="_blank" title="Watch on YouTube">
                             <img src="../../data/logo/play.png" width="25"/>
