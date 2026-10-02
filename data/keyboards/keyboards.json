@@ -25,7 +25,32 @@
         "rating": 0,
         "review": ""
     },
-
+    {
+        "name": "ASUS ROG Azoth Wireless NX Snow - Moonlight White",
+        "brand": "ASUS",
+        "switchType": "linear",
+        "msrp": 369.99,
+        "myPrice": 244.61,
+        "switchName": "Asus NX Snow",
+        "size": "75%",
+        "filename": "asus-rog-azoth-moonlight-white",
+        "youtubeId": "",
+        "rating": 4,
+        "review": "Nice looking keyboard, but too expensive. Typing experience is really smooth. Love the switch. It comes with a basic keyboard mod kit including switch brush, lube, and switch holder. "
+    },   
+    {
+        "name": "ASUS M703 ROG Falcata Splitable 75% Gaming Keyboard - Magnetic switches",
+        "brand": "asus",
+        "switchType": "magnetic",
+        "msrp": 579.99,
+        "myPrice": 336.61,
+        "switchName": "",
+        "size": "",
+        "filename": "asus-m703-falcata-splitable",
+        "youtubeId": "",
+        "rating": 2,
+        "review": "It's an ok keyboard. Got this one for half off, but still too pricy (CDN$299.99) from Canaada Computer. The ability to split is cool, but it needs wire to connect the right keyboard and the wires that it comes with are too short."
+    },
     {
         "name": "ASUS ROG 20th Edition Azoth Extreme",
         "brand": "ASUS",
